@@ -1,0 +1,207 @@
+{
+  "collection_authorized": false,
+  "configurations": {
+    "0d1ec00f5f5ada4f7ca1016fbba20cb890f79499bc7697b5461359d13befe8a5": {
+      "gates": {
+        "ambient_change_rh_pct": 3.0,
+        "high_ambient_rh_pct": 90.0,
+        "saturation_rh_pct": 98.0,
+        "strong_delta_pa": 100.0,
+        "temp_mismatch_c": 1.0,
+        "weak_delta_pa": 30
+      },
+      "policy": {
+        "completion_grace_s": 10.0,
+        "max_event_gap_s": 3600.0,
+        "max_evidence_gap_s": 1800.0,
+        "min_cycle_gap_s": 30.0,
+        "review_after_weak_cycles": 3,
+        "stabilization_wait_s": 30.0,
+        "timestamp_tolerance_s": 1e-06
+      },
+      "protocol": {
+        "baseline_s": 30.0,
+        "flush_s": 20.0,
+        "head_window_s": 5.0,
+        "max_gap_factor": 2.5,
+        "min_phase_samples": 2,
+        "min_window_samples": 2,
+        "recovery_s": 90.0,
+        "sample_period_s": 1.0,
+        "tail_window_s": 10.0,
+        "time_tolerance_s": 1e-08,
+        "version": "1.0"
+      },
+      "version": "1.0"
+    },
+    "8430c826a757a4d5260b6da6f279796fe378a8a080a69425bd2f602c41111ed7": {
+      "gates": {
+        "ambient_change_rh_pct": 3.0,
+        "high_ambient_rh_pct": 90.0,
+        "saturation_rh_pct": 98.0,
+        "strong_delta_pa": 100.0,
+        "temp_mismatch_c": 1.0,
+        "weak_delta_pa": 40.0
+      },
+      "policy": {
+        "completion_grace_s": 10.0,
+        "max_event_gap_s": 3600.0,
+        "max_evidence_gap_s": 1800.0,
+        "min_cycle_gap_s": 30.0,
+        "review_after_weak_cycles": 3,
+        "stabilization_wait_s": 30.0,
+        "timestamp_tolerance_s": 1e-06
+      },
+      "protocol": {
+        "baseline_s": 30.0,
+        "flush_s": 20.0,
+        "head_window_s": 5.0,
+        "max_gap_factor": 2.5,
+        "min_phase_samples": 2,
+        "min_window_samples": 2,
+        "recovery_s": 90.0,
+        "sample_period_s": 1.0,
+        "tail_window_s": 10.0,
+        "time_tolerance_s": 1e-08,
+        "version": "1.0"
+      },
+      "version": "1.0"
+    },
+    "cfbe75beff06c035f0f2e051d8883037303d26e2c5ff8a039ab2b3c8a1fdedd8": {
+      "gates": {
+        "ambient_change_rh_pct": 3.0,
+        "high_ambient_rh_pct": 90.0,
+        "saturation_rh_pct": 98.0,
+        "strong_delta_pa": 100.0,
+        "temp_mismatch_c": 1.0,
+        "weak_delta_pa": 40.0
+      },
+      "policy": {
+        "completion_grace_s": 10.0,
+        "max_event_gap_s": 3600.0,
+        "max_evidence_gap_s": 1800.0,
+        "min_cycle_gap_s": 30.0,
+        "review_after_weak_cycles": 3,
+        "stabilization_wait_s": 30.0,
+        "timestamp_tolerance_s": 1e-06
+      },
+      "protocol": {
+        "baseline_s": 30.0,
+        "flush_s": 20.0,
+        "head_window_s": 5.0,
+        "max_gap_factor": 2.5,
+        "min_phase_samples": 2,
+        "min_window_samples": 2,
+        "recovery_s": 90.0,
+        "sample_period_s": 0.5,
+        "tail_window_s": 10.0,
+        "time_tolerance_s": 1e-08,
+        "version": "1.0"
+      },
+      "version": "1.0"
+    },
+    "d201eef7f4d2f7f989fb6a17564b6f1615b85d2b9839e428d512417b944524ce": {
+      "gates": {
+        "ambient_change_rh_pct": 3.0,
+        "high_ambient_rh_pct": 90.0,
+        "saturation_rh_pct": 98.0,
+        "strong_delta_pa": 100.0,
+        "temp_mismatch_c": 1.0,
+        "weak_delta_pa": 40.0
+      },
+      "policy": {
+        "completion_grace_s": 10.0,
+        "max_event_gap_s": 3600.0,
+        "max_evidence_gap_s": 1800.0,
+        "min_cycle_gap_s": 30.0,
+        "review_after_weak_cycles": 1,
+        "stabilization_wait_s": 30.0,
+        "timestamp_tolerance_s": 1e-06
+      },
+      "protocol": {
+        "baseline_s": 30.0,
+        "flush_s": 20.0,
+        "head_window_s": 5.0,
+        "max_gap_factor": 2.5,
+        "min_phase_samples": 2,
+        "min_window_samples": 2,
+        "recovery_s": 90.0,
+        "sample_period_s": 1.0,
+        "tail_window_s": 10.0,
+        "time_tolerance_s": 1e-08,
+        "version": "1.0"
+      },
+      "version": "1.0"
+    }
+  },
+  "counts": {
+    "assessed_cycles": 41,
+    "events": 156,
+    "saved_observation_rows_including_retries": 7048,
+    "scenarios": 19,
+    "weak_records": 36
+  },
+  "input_sha256": {
+    "docs/MEASUREMENT-CONTRACT.md": "a5981178f8da2d90ba70d64decad10c61b547d3246f591c69778678560cb0157",
+    "docs/MODEL-VALIDITY.md": "8ec8ade61674dfe035ccde9cab7070987698d57b287d41824e16cd7647f89ed8",
+    "docs/STATE-MACHINE.md": "55f54f52320a82e43000720b4759d29a97d363c76c3327fb43d2a06f93bf8536",
+    "docs/team/assignments/measurement-t04.md": "ccbe4af19af30604c8e191398f4517579c8a04c2a47a407a4d533c80b694565f",
+    "hanger-drying-architecture.md": "dfa4b7795b0ee20baa254636c8110087ff5207f65cc0608ff8934f0ea9c36ee1",
+    "research/validity/results/manifest.json": "160d0e99f2de0b13dea6510b45c6723f6d38e09b0629c361e4041e45c2c53652",
+    "theory/model.py": "a80f08265ab40087886dade605afa94cd6ebeba64d2cf239ea82e561eaef642b",
+    "theory/protocol.py": "122f41d26988e9c80175c96116cc750b9cba00c9ec569c38e32bef438a585cb5",
+    "theory/results/manifest.json": "3c3b043b1f76806be00e8202c4a110fe125e13235199d59f048f547eba36962d"
+  },
+  "manifest_version": 1,
+  "output_sha256": {
+    "events.json": "f3b588856665ef5855f08a77c31c6254b80feb3b2ba78ab874b6eca8003bd2a2",
+    "steps.jsonl": "725a0af98bbdf6b00f3ab577f55076d7fdcb5a42fae21f04ec5de0979487c2ca",
+    "summary.csv": "4744e9c034cd68a32a7d0a0db0bf3d75e228748fd93b0775fd63ede22117b187"
+  },
+  "randomness": {
+    "deterministic": true,
+    "event_random_seed": null,
+    "noise_rh_pct": 0.0,
+    "simulator_seed": 20261023
+  },
+  "scenario_hypotheses": {
+    "backward_time": "Current-domain clock anomaly clears evidence and needs explicit recovery with a fresh wait.",
+    "batch_switch": "Old batch packets and retired batch installation are rejected without importing evidence.",
+    "change_gates": "Any component of full configuration identity changes evidence domain and requires reinstall.",
+    "change_policy": "Any component of full configuration identity changes evidence domain and requires reinstall.",
+    "change_protocol": "Any component of full configuration identity changes evidence domain and requires reinstall.",
+    "clip_reinstallation": "Clip cancels active window; late data from the prior installation cannot count.",
+    "duplicate_delivery": "Same packet and same completed cycle under a new message ID are not recounted.",
+    "evidence_expiry": "A long idle gap ends the weak chain without inventing additional physical evidence.",
+    "forged_assessment": "Claimed result without raw observations is ignored and becomes UNKNOWN.",
+    "large_jump": "Current-domain clock anomaly clears evidence and needs explicit recovery with a fresh wait.",
+    "missing_tail": "Invalid cycle clears evidence; explicit recovery/reinstallation precedes another cycle.",
+    "missing_value": "Invalid cycle clears evidence; explicit recovery/reinstallation precedes another cycle.",
+    "normal_weak": "Wet-like surface with large leak remains unconfirmed after four cycles.",
+    "observed_clip_with_invalid": "Invalid cycle clears evidence; explicit recovery/reinstallation precedes another cycle.",
+    "reboot": "New boot resets monotonic domain, installation and evidence; old boot packets remain retired.",
+    "renamed_old_window": "Renaming a cycle does not make an old start timestamp valid.",
+    "same_time": "Current-domain clock anomaly clears evidence and needs explicit recovery with a fresh wait.",
+    "strong_resets": "Strong vapor-source evidence clears weak count without attributing source to cloth.",
+    "unfinished_timeout": "No finish before deadline; late packet cannot resurrect evidence."
+  },
+  "scope": "computer-only event ordering and evidence isolation; no physical stability or garment calibration",
+  "source_sha256": {
+    "machine.py": "1a695579016913b10cfe9f9b8b0d8b0f30ea188ecc195348fc93f96248817777",
+    "run.py": "c384539b83c1e83bfba8b1cbd56be05daf4622f262661b0f4b2336f57ef3f02e",
+    "scenarios.py": "8b7b4af4ac940c4c53c58eb79ae7208152db72d5d9dc11f4cdeabc3cf7eb70c8",
+    "test_state_machine.py": "e3fdf1763cb2980009415d38a2b4e437d506b8967aee3052ac2ba2c3396c3c36"
+  },
+  "state_machine_version": "1.0",
+  "synthetic": "SYNTHETIC_UNCALIBRATED",
+  "units": {
+    "end_s": "s in current boot domain",
+    "humidity": "%RH",
+    "monotonic_s": "s since current boot time origin",
+    "observations.time_s": "s since cycle start",
+    "pressure": "Pa",
+    "start_s": "s in current boot domain",
+    "temperature": "degC",
+    "weak_cycles": "count"
+  }
+}

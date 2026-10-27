@@ -1,0 +1,30 @@
+[
+  {
+    "data_status": "SYNTHETIC_UNCALIBRATED",
+    "max_observed_gap_Pa": 9.094947017729282e-13,
+    "other": "equilibrium_with_matched_wall",
+    "protocol": "default",
+    "reference": "wet_like_nominal"
+  },
+  {
+    "data_status": "SYNTHETIC_UNCALIBRATED",
+    "max_observed_gap_Pa": 1.8189894035458565e-12,
+    "other": "same_AB_different_parameters",
+    "protocol": "default",
+    "reference": "wet_like_nominal"
+  },
+  {
+    "data_status": "SYNTHETIC_UNCALIBRATED",
+    "max_observed_gap_Pa": 9.094947017729282e-13,
+    "other": "equilibrium_with_matched_wall",
+    "protocol": "three_second_long",
+    "reference": "wet_like_nominal"
+  },
+  {
+    "data_status": "SYNTHETIC_UNCALIBRATED",
+    "max_observed_gap_Pa": 9.094947017729282e-13,
+    "other": "same_AB_different_parameters",
+    "protocol": "three_second_long",
+    "reference": "wet_like_nominal"
+  }
+]

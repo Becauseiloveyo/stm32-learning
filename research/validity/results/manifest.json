@@ -1,0 +1,2181 @@
+{
+  "cases": {
+    "default/bias/equilibrium/-2/-1": {
+      "family": "RH_T_readout_bias",
+      "parameters": {
+        "ambient_rh_pct": 60.0,
+        "ambient_step_at_s": -1.0,
+        "ambient_step_rh_pct": 0.0,
+        "clip_at_s": -1.0,
+        "exchange_ml_s": 0.02,
+        "flush_extra_ml_s": 0.98,
+        "invalid_at_s": -1.0,
+        "leak_ml_s": 0.02,
+        "local_rh_bias_pct": 0.0,
+        "local_temp_bias_c": 0.0,
+        "noise_rh_pct": 0.0,
+        "passive_extra_ml_s": 0.38,
+        "sensor_tau_s": 4.0,
+        "surface_activity": 0.6,
+        "temp_c": 25.0,
+        "volume_ml": 5.0,
+        "wall_source_ug_s": 0.0
+      },
+      "profile": "default",
+      "scenario": {
+        "RH_bias_percentage_point": -2.0,
+        "T_readout_bias_degC": -1.0
+      },
+      "synthetic": "SYNTHETIC_UNCALIBRATED"
+    },
+    "default/bias/equilibrium/-2/0": {
+      "family": "RH_T_readout_bias",
+      "parameters": {
+        "ambient_rh_pct": 60.0,
+        "ambient_step_at_s": -1.0,
+        "ambient_step_rh_pct": 0.0,
+        "clip_at_s": -1.0,
+        "exchange_ml_s": 0.02,
+        "flush_extra_ml_s": 0.98,
+        "invalid_at_s": -1.0,
+        "leak_ml_s": 0.02,
+        "local_rh_bias_pct": 0.0,
+        "local_temp_bias_c": 0.0,
+        "noise_rh_pct": 0.0,
+        "passive_extra_ml_s": 0.38,
+        "sensor_tau_s": 4.0,
+        "surface_activity": 0.6,
+        "temp_c": 25.0,
+        "volume_ml": 5.0,
+        "wall_source_ug_s": 0.0
+      },
+      "profile": "default",
+      "scenario": {
+        "RH_bias_percentage_point": -2.0,
+        "T_readout_bias_degC": 0.0
+      },
+      "synthetic": "SYNTHETIC_UNCALIBRATED"
+    },
+    "default/bias/equilibrium/-2/1": {
+      "family": "RH_T_readout_bias",
+      "parameters": {
+        "ambient_rh_pct": 60.0,
+        "ambient_step_at_s": -1.0,
+        "ambient_step_rh_pct": 0.0,
+        "clip_at_s": -1.0,
+        "exchange_ml_s": 0.02,
+        "flush_extra_ml_s": 0.98,
+        "invalid_at_s": -1.0,
+        "leak_ml_s": 0.02,
+        "local_rh_bias_pct": 0.0,
+        "local_temp_bias_c": 0.0,
+        "noise_rh_pct": 0.0,
+        "passive_extra_ml_s": 0.38,
+        "sensor_tau_s": 4.0,
+        "surface_activity": 0.6,
+        "temp_c": 25.0,
+        "volume_ml": 5.0,
+        "wall_source_ug_s": 0.0
+      },
+      "profile": "default",
+      "scenario": {
+        "RH_bias_percentage_point": -2.0,
+        "T_readout_bias_degC": 1.0
+      },
+      "synthetic": "SYNTHETIC_UNCALIBRATED"
+    },
+    "default/bias/equilibrium/0/-1": {
+      "family": "RH_T_readout_bias",
+      "parameters": {
+        "ambient_rh_pct": 60.0,
+        "ambient_step_at_s": -1.0,
+        "ambient_step_rh_pct": 0.0,
+        "clip_at_s": -1.0,
+        "exchange_ml_s": 0.02,
+        "flush_extra_ml_s": 0.98,
+        "invalid_at_s": -1.0,
+        "leak_ml_s": 0.02,
+        "local_rh_bias_pct": 0.0,
+        "local_temp_bias_c": 0.0,
+        "noise_rh_pct": 0.0,
+        "passive_extra_ml_s": 0.38,
+        "sensor_tau_s": 4.0,
+        "surface_activity": 0.6,
+        "temp_c": 25.0,
+        "volume_ml": 5.0,
+        "wall_source_ug_s": 0.0
+      },
+      "profile": "default",
+      "scenario": {
+        "RH_bias_percentage_point": 0.0,
+        "T_readout_bias_degC": -1.0
+      },
+      "synthetic": "SYNTHETIC_UNCALIBRATED"
+    },
+    "default/bias/equilibrium/0/0": {
+      "family": "RH_T_readout_bias",
+      "parameters": {
+        "ambient_rh_pct": 60.0,
+        "ambient_step_at_s": -1.0,
+        "ambient_step_rh_pct": 0.0,
+        "clip_at_s": -1.0,
+        "exchange_ml_s": 0.02,
+        "flush_extra_ml_s": 0.98,
+        "invalid_at_s": -1.0,
+        "leak_ml_s": 0.02,
+        "local_rh_bias_pct": 0.0,
+        "local_temp_bias_c": 0.0,
+        "noise_rh_pct": 0.0,
+        "passive_extra_ml_s": 0.38,
+        "sensor_tau_s": 4.0,
+        "surface_activity": 0.6,
+        "temp_c": 25.0,
+        "volume_ml": 5.0,
+        "wall_source_ug_s": 0.0
+      },
+      "profile": "default",
+      "scenario": {
+        "RH_bias_percentage_point": 0.0,
+        "T_readout_bias_degC": 0.0
+      },
+      "synthetic": "SYNTHETIC_UNCALIBRATED"
+    },
+    "default/bias/equilibrium/0/1": {
+      "family": "RH_T_readout_bias",
+      "parameters": {
+        "ambient_rh_pct": 60.0,
+        "ambient_step_at_s": -1.0,
+        "ambient_step_rh_pct": 0.0,
+        "clip_at_s": -1.0,
+        "exchange_ml_s": 0.02,
+        "flush_extra_ml_s": 0.98,
+        "invalid_at_s": -1.0,
+        "leak_ml_s": 0.02,
+        "local_rh_bias_pct": 0.0,
+        "local_temp_bias_c": 0.0,
+        "noise_rh_pct": 0.0,
+        "passive_extra_ml_s": 0.38,
+        "sensor_tau_s": 4.0,
+        "surface_activity": 0.6,
+        "temp_c": 25.0,
+        "volume_ml": 5.0,
+        "wall_source_ug_s": 0.0
+      },
+      "profile": "default",
+      "scenario": {
+        "RH_bias_percentage_point": 0.0,
+        "T_readout_bias_degC": 1.0
+      },
+      "synthetic": "SYNTHETIC_UNCALIBRATED"
+    },
+    "default/bias/equilibrium/2/-1": {
+      "family": "RH_T_readout_bias",
+      "parameters": {
+        "ambient_rh_pct": 60.0,
+        "ambient_step_at_s": -1.0,
+        "ambient_step_rh_pct": 0.0,
+        "clip_at_s": -1.0,
+        "exchange_ml_s": 0.02,
+        "flush_extra_ml_s": 0.98,
+        "invalid_at_s": -1.0,
+        "leak_ml_s": 0.02,
+        "local_rh_bias_pct": 0.0,
+        "local_temp_bias_c": 0.0,
+        "noise_rh_pct": 0.0,
+        "passive_extra_ml_s": 0.38,
+        "sensor_tau_s": 4.0,
+        "surface_activity": 0.6,
+        "temp_c": 25.0,
+        "volume_ml": 5.0,
+        "wall_source_ug_s": 0.0
+      },
+      "profile": "default",
+      "scenario": {
+        "RH_bias_percentage_point": 2.0,
+        "T_readout_bias_degC": -1.0
+      },
+      "synthetic": "SYNTHETIC_UNCALIBRATED"
+    },
+    "default/bias/equilibrium/2/0": {
+      "family": "RH_T_readout_bias",
+      "parameters": {
+        "ambient_rh_pct": 60.0,
+        "ambient_step_at_s": -1.0,
+        "ambient_step_rh_pct": 0.0,
+        "clip_at_s": -1.0,
+        "exchange_ml_s": 0.02,
+        "flush_extra_ml_s": 0.98,
+        "invalid_at_s": -1.0,
+        "leak_ml_s": 0.02,
+        "local_rh_bias_pct": 0.0,
+        "local_temp_bias_c": 0.0,
+        "noise_rh_pct": 0.0,
+        "passive_extra_ml_s": 0.38,
+        "sensor_tau_s": 4.0,
+        "surface_activity": 0.6,
+        "temp_c": 25.0,
+        "volume_ml": 5.0,
+        "wall_source_ug_s": 0.0
+      },
+      "profile": "default",
+      "scenario": {
+        "RH_bias_percentage_point": 2.0,
+        "T_readout_bias_degC": 0.0
+      },
+      "synthetic": "SYNTHETIC_UNCALIBRATED"
+    },
+    "default/bias/equilibrium/2/1": {
+      "family": "RH_T_readout_bias",
+      "parameters": {
+        "ambient_rh_pct": 60.0,
+        "ambient_step_at_s": -1.0,
+        "ambient_step_rh_pct": 0.0,
+        "clip_at_s": -1.0,
+        "exchange_ml_s": 0.02,
+        "flush_extra_ml_s": 0.98,
+        "invalid_at_s": -1.0,
+        "leak_ml_s": 0.02,
+        "local_rh_bias_pct": 0.0,
+        "local_temp_bias_c": 0.0,
+        "noise_rh_pct": 0.0,
+        "passive_extra_ml_s": 0.38,
+        "sensor_tau_s": 4.0,
+        "surface_activity": 0.6,
+        "temp_c": 25.0,
+        "volume_ml": 5.0,
+        "wall_source_ug_s": 0.0
+      },
+      "profile": "default",
+      "scenario": {
+        "RH_bias_percentage_point": 2.0,
+        "T_readout_bias_degC": 1.0
+      },
+      "synthetic": "SYNTHETIC_UNCALIBRATED"
+    },
+    "default/bias/surface_source/-2/-1": {
+      "family": "RH_T_readout_bias",
+      "parameters": {
+        "ambient_rh_pct": 60.0,
+        "ambient_step_at_s": -1.0,
+        "ambient_step_rh_pct": 0.0,
+        "clip_at_s": -1.0,
+        "exchange_ml_s": 0.02,
+        "flush_extra_ml_s": 0.98,
+        "invalid_at_s": -1.0,
+        "leak_ml_s": 0.02,
+        "local_rh_bias_pct": 0.0,
+        "local_temp_bias_c": 0.0,
+        "noise_rh_pct": 0.0,
+        "passive_extra_ml_s": 0.38,
+        "sensor_tau_s": 4.0,
+        "surface_activity": 1.0,
+        "temp_c": 25.0,
+        "volume_ml": 5.0,
+        "wall_source_ug_s": 0.0
+      },
+      "profile": "default",
+      "scenario": {
+        "RH_bias_percentage_point": -2.0,
+        "T_readout_bias_degC": -1.0
+      },
+      "synthetic": "SYNTHETIC_UNCALIBRATED"
+    },
+    "default/bias/surface_source/-2/0": {
+      "family": "RH_T_readout_bias",
+      "parameters": {
+        "ambient_rh_pct": 60.0,
+        "ambient_step_at_s": -1.0,
+        "ambient_step_rh_pct": 0.0,
+        "clip_at_s": -1.0,
+        "exchange_ml_s": 0.02,
+        "flush_extra_ml_s": 0.98,
+        "invalid_at_s": -1.0,
+        "leak_ml_s": 0.02,
+        "local_rh_bias_pct": 0.0,
+        "local_temp_bias_c": 0.0,
+        "noise_rh_pct": 0.0,
+        "passive_extra_ml_s": 0.38,
+        "sensor_tau_s": 4.0,
+        "surface_activity": 1.0,
+        "temp_c": 25.0,
+        "volume_ml": 5.0,
+        "wall_source_ug_s": 0.0
+      },
+      "profile": "default",
+      "scenario": {
+        "RH_bias_percentage_point": -2.0,
+        "T_readout_bias_degC": 0.0
+      },
+      "synthetic": "SYNTHETIC_UNCALIBRATED"
+    },
+    "default/bias/surface_source/-2/1": {
+      "family": "RH_T_readout_bias",
+      "parameters": {
+        "ambient_rh_pct": 60.0,
+        "ambient_step_at_s": -1.0,
+        "ambient_step_rh_pct": 0.0,
+        "clip_at_s": -1.0,
+        "exchange_ml_s": 0.02,
+        "flush_extra_ml_s": 0.98,
+        "invalid_at_s": -1.0,
+        "leak_ml_s": 0.02,
+        "local_rh_bias_pct": 0.0,
+        "local_temp_bias_c": 0.0,
+        "noise_rh_pct": 0.0,
+        "passive_extra_ml_s": 0.38,
+        "sensor_tau_s": 4.0,
+        "surface_activity": 1.0,
+        "temp_c": 25.0,
+        "volume_ml": 5.0,
+        "wall_source_ug_s": 0.0
+      },
+      "profile": "default",
+      "scenario": {
+        "RH_bias_percentage_point": -2.0,
+        "T_readout_bias_degC": 1.0
+      },
+      "synthetic": "SYNTHETIC_UNCALIBRATED"
+    },
+    "default/bias/surface_source/0/-1": {
+      "family": "RH_T_readout_bias",
+      "parameters": {
+        "ambient_rh_pct": 60.0,
+        "ambient_step_at_s": -1.0,
+        "ambient_step_rh_pct": 0.0,
+        "clip_at_s": -1.0,
+        "exchange_ml_s": 0.02,
+        "flush_extra_ml_s": 0.98,
+        "invalid_at_s": -1.0,
+        "leak_ml_s": 0.02,
+        "local_rh_bias_pct": 0.0,
+        "local_temp_bias_c": 0.0,
+        "noise_rh_pct": 0.0,
+        "passive_extra_ml_s": 0.38,
+        "sensor_tau_s": 4.0,
+        "surface_activity": 1.0,
+        "temp_c": 25.0,
+        "volume_ml": 5.0,
+        "wall_source_ug_s": 0.0
+      },
+      "profile": "default",
+      "scenario": {
+        "RH_bias_percentage_point": 0.0,
+        "T_readout_bias_degC": -1.0
+      },
+      "synthetic": "SYNTHETIC_UNCALIBRATED"
+    },
+    "default/bias/surface_source/0/0": {
+      "family": "RH_T_readout_bias",
+      "parameters": {
+        "ambient_rh_pct": 60.0,
+        "ambient_step_at_s": -1.0,
+        "ambient_step_rh_pct": 0.0,
+        "clip_at_s": -1.0,
+        "exchange_ml_s": 0.02,
+        "flush_extra_ml_s": 0.98,
+        "invalid_at_s": -1.0,
+        "leak_ml_s": 0.02,
+        "local_rh_bias_pct": 0.0,
+        "local_temp_bias_c": 0.0,
+        "noise_rh_pct": 0.0,
+        "passive_extra_ml_s": 0.38,
+        "sensor_tau_s": 4.0,
+        "surface_activity": 1.0,
+        "temp_c": 25.0,
+        "volume_ml": 5.0,
+        "wall_source_ug_s": 0.0
+      },
+      "profile": "default",
+      "scenario": {
+        "RH_bias_percentage_point": 0.0,
+        "T_readout_bias_degC": 0.0
+      },
+      "synthetic": "SYNTHETIC_UNCALIBRATED"
+    },
+    "default/bias/surface_source/0/1": {
+      "family": "RH_T_readout_bias",
+      "parameters": {
+        "ambient_rh_pct": 60.0,
+        "ambient_step_at_s": -1.0,
+        "ambient_step_rh_pct": 0.0,
+        "clip_at_s": -1.0,
+        "exchange_ml_s": 0.02,
+        "flush_extra_ml_s": 0.98,
+        "invalid_at_s": -1.0,
+        "leak_ml_s": 0.02,
+        "local_rh_bias_pct": 0.0,
+        "local_temp_bias_c": 0.0,
+        "noise_rh_pct": 0.0,
+        "passive_extra_ml_s": 0.38,
+        "sensor_tau_s": 4.0,
+        "surface_activity": 1.0,
+        "temp_c": 25.0,
+        "volume_ml": 5.0,
+        "wall_source_ug_s": 0.0
+      },
+      "profile": "default",
+      "scenario": {
+        "RH_bias_percentage_point": 0.0,
+        "T_readout_bias_degC": 1.0
+      },
+      "synthetic": "SYNTHETIC_UNCALIBRATED"
+    },
+    "default/bias/surface_source/2/-1": {
+      "family": "RH_T_readout_bias",
+      "parameters": {
+        "ambient_rh_pct": 60.0,
+        "ambient_step_at_s": -1.0,
+        "ambient_step_rh_pct": 0.0,
+        "clip_at_s": -1.0,
+        "exchange_ml_s": 0.02,
+        "flush_extra_ml_s": 0.98,
+        "invalid_at_s": -1.0,
+        "leak_ml_s": 0.02,
+        "local_rh_bias_pct": 0.0,
+        "local_temp_bias_c": 0.0,
+        "noise_rh_pct": 0.0,
+        "passive_extra_ml_s": 0.38,
+        "sensor_tau_s": 4.0,
+        "surface_activity": 1.0,
+        "temp_c": 25.0,
+        "volume_ml": 5.0,
+        "wall_source_ug_s": 0.0
+      },
+      "profile": "default",
+      "scenario": {
+        "RH_bias_percentage_point": 2.0,
+        "T_readout_bias_degC": -1.0
+      },
+      "synthetic": "SYNTHETIC_UNCALIBRATED"
+    },
+    "default/bias/surface_source/2/0": {
+      "family": "RH_T_readout_bias",
+      "parameters": {
+        "ambient_rh_pct": 60.0,
+        "ambient_step_at_s": -1.0,
+        "ambient_step_rh_pct": 0.0,
+        "clip_at_s": -1.0,
+        "exchange_ml_s": 0.02,
+        "flush_extra_ml_s": 0.98,
+        "invalid_at_s": -1.0,
+        "leak_ml_s": 0.02,
+        "local_rh_bias_pct": 0.0,
+        "local_temp_bias_c": 0.0,
+        "noise_rh_pct": 0.0,
+        "passive_extra_ml_s": 0.38,
+        "sensor_tau_s": 4.0,
+        "surface_activity": 1.0,
+        "temp_c": 25.0,
+        "volume_ml": 5.0,
+        "wall_source_ug_s": 0.0
+      },
+      "profile": "default",
+      "scenario": {
+        "RH_bias_percentage_point": 2.0,
+        "T_readout_bias_degC": 0.0
+      },
+      "synthetic": "SYNTHETIC_UNCALIBRATED"
+    },
+    "default/bias/surface_source/2/1": {
+      "family": "RH_T_readout_bias",
+      "parameters": {
+        "ambient_rh_pct": 60.0,
+        "ambient_step_at_s": -1.0,
+        "ambient_step_rh_pct": 0.0,
+        "clip_at_s": -1.0,
+        "exchange_ml_s": 0.02,
+        "flush_extra_ml_s": 0.98,
+        "invalid_at_s": -1.0,
+        "leak_ml_s": 0.02,
+        "local_rh_bias_pct": 0.0,
+        "local_temp_bias_c": 0.0,
+        "noise_rh_pct": 0.0,
+        "passive_extra_ml_s": 0.38,
+        "sensor_tau_s": 4.0,
+        "surface_activity": 1.0,
+        "temp_c": 25.0,
+        "volume_ml": 5.0,
+        "wall_source_ug_s": 0.0
+      },
+      "profile": "default",
+      "scenario": {
+        "RH_bias_percentage_point": 2.0,
+        "T_readout_bias_degC": 1.0
+      },
+      "synthetic": "SYNTHETIC_UNCALIBRATED"
+    },
+    "default/drift/0/-0.5": {
+      "family": "slow_readout_bias",
+      "parameters": {
+        "ambient_rh_pct": 60.0,
+        "ambient_step_at_s": -1.0,
+        "ambient_step_rh_pct": 0.0,
+        "clip_at_s": -1.0,
+        "exchange_ml_s": 0.02,
+        "flush_extra_ml_s": 0.98,
+        "invalid_at_s": -1.0,
+        "leak_ml_s": 0.02,
+        "local_rh_bias_pct": 0.0,
+        "local_temp_bias_c": 0.0,
+        "noise_rh_pct": 0.0,
+        "passive_extra_ml_s": 0.38,
+        "sensor_tau_s": 4.0,
+        "surface_activity": 0.6,
+        "temp_c": 25.0,
+        "volume_ml": 5.0,
+        "wall_source_ug_s": 0.0
+      },
+      "profile": "default",
+      "scenario": {
+        "drift_Pa_s": -0.5,
+        "expected_rise_bias_Pa": -41.25,
+        "offset_Pa": 0.0
+      },
+      "synthetic": "SYNTHETIC_UNCALIBRATED"
+    },
+    "default/drift/0/0": {
+      "family": "slow_readout_bias",
+      "parameters": {
+        "ambient_rh_pct": 60.0,
+        "ambient_step_at_s": -1.0,
+        "ambient_step_rh_pct": 0.0,
+        "clip_at_s": -1.0,
+        "exchange_ml_s": 0.02,
+        "flush_extra_ml_s": 0.98,
+        "invalid_at_s": -1.0,
+        "leak_ml_s": 0.02,
+        "local_rh_bias_pct": 0.0,
+        "local_temp_bias_c": 0.0,
+        "noise_rh_pct": 0.0,
+        "passive_extra_ml_s": 0.38,
+        "sensor_tau_s": 4.0,
+        "surface_activity": 0.6,
+        "temp_c": 25.0,
+        "volume_ml": 5.0,
+        "wall_source_ug_s": 0.0
+      },
+      "profile": "default",
+      "scenario": {
+        "drift_Pa_s": 0.0,
+        "expected_rise_bias_Pa": 0.0,
+        "offset_Pa": 0.0
+      },
+      "synthetic": "SYNTHETIC_UNCALIBRATED"
+    },
+    "default/drift/0/0.5": {
+      "family": "slow_readout_bias",
+      "parameters": {
+        "ambient_rh_pct": 60.0,
+        "ambient_step_at_s": -1.0,
+        "ambient_step_rh_pct": 0.0,
+        "clip_at_s": -1.0,
+        "exchange_ml_s": 0.02,
+        "flush_extra_ml_s": 0.98,
+        "invalid_at_s": -1.0,
+        "leak_ml_s": 0.02,
+        "local_rh_bias_pct": 0.0,
+        "local_temp_bias_c": 0.0,
+        "noise_rh_pct": 0.0,
+        "passive_extra_ml_s": 0.38,
+        "sensor_tau_s": 4.0,
+        "surface_activity": 0.6,
+        "temp_c": 25.0,
+        "volume_ml": 5.0,
+        "wall_source_ug_s": 0.0
+      },
+      "profile": "default",
+      "scenario": {
+        "drift_Pa_s": 0.5,
+        "expected_rise_bias_Pa": 41.25,
+        "offset_Pa": 0.0
+      },
+      "synthetic": "SYNTHETIC_UNCALIBRATED"
+    },
+    "default/drift/30/-0.5": {
+      "family": "slow_readout_bias",
+      "parameters": {
+        "ambient_rh_pct": 60.0,
+        "ambient_step_at_s": -1.0,
+        "ambient_step_rh_pct": 0.0,
+        "clip_at_s": -1.0,
+        "exchange_ml_s": 0.02,
+        "flush_extra_ml_s": 0.98,
+        "invalid_at_s": -1.0,
+        "leak_ml_s": 0.02,
+        "local_rh_bias_pct": 0.0,
+        "local_temp_bias_c": 0.0,
+        "noise_rh_pct": 0.0,
+        "passive_extra_ml_s": 0.38,
+        "sensor_tau_s": 4.0,
+        "surface_activity": 0.6,
+        "temp_c": 25.0,
+        "volume_ml": 5.0,
+        "wall_source_ug_s": 0.0
+      },
+      "profile": "default",
+      "scenario": {
+        "drift_Pa_s": -0.5,
+        "expected_rise_bias_Pa": -41.25,
+        "offset_Pa": 30.0
+      },
+      "synthetic": "SYNTHETIC_UNCALIBRATED"
+    },
+    "default/drift/30/0": {
+      "family": "slow_readout_bias",
+      "parameters": {
+        "ambient_rh_pct": 60.0,
+        "ambient_step_at_s": -1.0,
+        "ambient_step_rh_pct": 0.0,
+        "clip_at_s": -1.0,
+        "exchange_ml_s": 0.02,
+        "flush_extra_ml_s": 0.98,
+        "invalid_at_s": -1.0,
+        "leak_ml_s": 0.02,
+        "local_rh_bias_pct": 0.0,
+        "local_temp_bias_c": 0.0,
+        "noise_rh_pct": 0.0,
+        "passive_extra_ml_s": 0.38,
+        "sensor_tau_s": 4.0,
+        "surface_activity": 0.6,
+        "temp_c": 25.0,
+        "volume_ml": 5.0,
+        "wall_source_ug_s": 0.0
+      },
+      "profile": "default",
+      "scenario": {
+        "drift_Pa_s": 0.0,
+        "expected_rise_bias_Pa": 0.0,
+        "offset_Pa": 30.0
+      },
+      "synthetic": "SYNTHETIC_UNCALIBRATED"
+    },
+    "default/drift/30/0.5": {
+      "family": "slow_readout_bias",
+      "parameters": {
+        "ambient_rh_pct": 60.0,
+        "ambient_step_at_s": -1.0,
+        "ambient_step_rh_pct": 0.0,
+        "clip_at_s": -1.0,
+        "exchange_ml_s": 0.02,
+        "flush_extra_ml_s": 0.98,
+        "invalid_at_s": -1.0,
+        "leak_ml_s": 0.02,
+        "local_rh_bias_pct": 0.0,
+        "local_temp_bias_c": 0.0,
+        "noise_rh_pct": 0.0,
+        "passive_extra_ml_s": 0.38,
+        "sensor_tau_s": 4.0,
+        "surface_activity": 0.6,
+        "temp_c": 25.0,
+        "volume_ml": 5.0,
+        "wall_source_ug_s": 0.0
+      },
+      "profile": "default",
+      "scenario": {
+        "drift_Pa_s": 0.5,
+        "expected_rise_bias_Pa": 41.25,
+        "offset_Pa": 30.0
+      },
+      "synthetic": "SYNTHETIC_UNCALIBRATED"
+    },
+    "default/outside_readout": {
+      "family": "domain_stress",
+      "parameters": {
+        "ambient_rh_pct": 60.0,
+        "ambient_step_at_s": -1.0,
+        "ambient_step_rh_pct": 0.0,
+        "clip_at_s": -1.0,
+        "exchange_ml_s": 0.02,
+        "flush_extra_ml_s": 0.98,
+        "invalid_at_s": -1.0,
+        "leak_ml_s": 0.02,
+        "local_rh_bias_pct": 0.0,
+        "local_temp_bias_c": 0.0,
+        "noise_rh_pct": 0.0,
+        "passive_extra_ml_s": 0.38,
+        "sensor_tau_s": 4.0,
+        "surface_activity": 0.6,
+        "temp_c": 25.0,
+        "volume_ml": 5.0,
+        "wall_source_ug_s": 0.0
+      },
+      "profile": "default",
+      "scenario": {
+        "offset_Pa": 2000.0
+      },
+      "synthetic": "SYNTHETIC_UNCALIBRATED"
+    },
+    "default/outside_wall": {
+      "family": "domain_stress",
+      "parameters": {
+        "ambient_rh_pct": 60.0,
+        "ambient_step_at_s": -1.0,
+        "ambient_step_rh_pct": 0.0,
+        "clip_at_s": -1.0,
+        "exchange_ml_s": 0.02,
+        "flush_extra_ml_s": 0.98,
+        "invalid_at_s": -1.0,
+        "leak_ml_s": 0.02,
+        "local_rh_bias_pct": 0.0,
+        "local_temp_bias_c": 0.0,
+        "noise_rh_pct": 0.0,
+        "passive_extra_ml_s": 0.38,
+        "sensor_tau_s": 4.0,
+        "surface_activity": 0.6,
+        "temp_c": 25.0,
+        "volume_ml": 2.0,
+        "wall_source_ug_s": 0.0
+      },
+      "profile": "default",
+      "scenario": {
+        "initial_inventory_ug": 600.0,
+        "initial_source_ug_s": 1.0,
+        "wall_tau_s": 600.0
+      },
+      "synthetic": "SYNTHETIC_UNCALIBRATED"
+    },
+    "default/response/0": {
+      "family": "local_response",
+      "parameters": {
+        "ambient_rh_pct": 60.0,
+        "ambient_step_at_s": -1.0,
+        "ambient_step_rh_pct": 0.0,
+        "clip_at_s": -1.0,
+        "exchange_ml_s": 0.02,
+        "flush_extra_ml_s": 0.98,
+        "invalid_at_s": -1.0,
+        "leak_ml_s": 0.02,
+        "local_rh_bias_pct": 0.0,
+        "local_temp_bias_c": 0.0,
+        "noise_rh_pct": 0.0,
+        "passive_extra_ml_s": 0.38,
+        "sensor_tau_s": 0.0,
+        "surface_activity": 1.0,
+        "temp_c": 25.0,
+        "volume_ml": 5.0,
+        "wall_source_ug_s": 0.0
+      },
+      "profile": "default",
+      "scenario": {
+        "ambient_is_constant": true,
+        "local_tau_s": 0.0
+      },
+      "synthetic": "SYNTHETIC_UNCALIBRATED"
+    },
+    "default/response/120": {
+      "family": "local_response",
+      "parameters": {
+        "ambient_rh_pct": 60.0,
+        "ambient_step_at_s": -1.0,
+        "ambient_step_rh_pct": 0.0,
+        "clip_at_s": -1.0,
+        "exchange_ml_s": 0.02,
+        "flush_extra_ml_s": 0.98,
+        "invalid_at_s": -1.0,
+        "leak_ml_s": 0.02,
+        "local_rh_bias_pct": 0.0,
+        "local_temp_bias_c": 0.0,
+        "noise_rh_pct": 0.0,
+        "passive_extra_ml_s": 0.38,
+        "sensor_tau_s": 120.0,
+        "surface_activity": 1.0,
+        "temp_c": 25.0,
+        "volume_ml": 5.0,
+        "wall_source_ug_s": 0.0
+      },
+      "profile": "default",
+      "scenario": {
+        "ambient_is_constant": true,
+        "local_tau_s": 120.0
+      },
+      "synthetic": "SYNTHETIC_UNCALIBRATED"
+    },
+    "default/response/30": {
+      "family": "local_response",
+      "parameters": {
+        "ambient_rh_pct": 60.0,
+        "ambient_step_at_s": -1.0,
+        "ambient_step_rh_pct": 0.0,
+        "clip_at_s": -1.0,
+        "exchange_ml_s": 0.02,
+        "flush_extra_ml_s": 0.98,
+        "invalid_at_s": -1.0,
+        "leak_ml_s": 0.02,
+        "local_rh_bias_pct": 0.0,
+        "local_temp_bias_c": 0.0,
+        "noise_rh_pct": 0.0,
+        "passive_extra_ml_s": 0.38,
+        "sensor_tau_s": 30.0,
+        "surface_activity": 1.0,
+        "temp_c": 25.0,
+        "volume_ml": 5.0,
+        "wall_source_ug_s": 0.0
+      },
+      "profile": "default",
+      "scenario": {
+        "ambient_is_constant": true,
+        "local_tau_s": 30.0
+      },
+      "synthetic": "SYNTHETIC_UNCALIBRATED"
+    },
+    "default/response/4": {
+      "family": "local_response",
+      "parameters": {
+        "ambient_rh_pct": 60.0,
+        "ambient_step_at_s": -1.0,
+        "ambient_step_rh_pct": 0.0,
+        "clip_at_s": -1.0,
+        "exchange_ml_s": 0.02,
+        "flush_extra_ml_s": 0.98,
+        "invalid_at_s": -1.0,
+        "leak_ml_s": 0.02,
+        "local_rh_bias_pct": 0.0,
+        "local_temp_bias_c": 0.0,
+        "noise_rh_pct": 0.0,
+        "passive_extra_ml_s": 0.38,
+        "sensor_tau_s": 4.0,
+        "surface_activity": 1.0,
+        "temp_c": 25.0,
+        "volume_ml": 5.0,
+        "wall_source_ug_s": 0.0
+      },
+      "profile": "default",
+      "scenario": {
+        "ambient_is_constant": true,
+        "local_tau_s": 4.0
+      },
+      "synthetic": "SYNTHETIC_UNCALIBRATED"
+    },
+    "default/wall/0.1/120": {
+      "family": "finite_wall",
+      "parameters": {
+        "ambient_rh_pct": 60.0,
+        "ambient_step_at_s": -1.0,
+        "ambient_step_rh_pct": 0.0,
+        "clip_at_s": -1.0,
+        "exchange_ml_s": 0.02,
+        "flush_extra_ml_s": 0.98,
+        "invalid_at_s": -1.0,
+        "leak_ml_s": 0.02,
+        "local_rh_bias_pct": 0.0,
+        "local_temp_bias_c": 0.0,
+        "noise_rh_pct": 0.0,
+        "passive_extra_ml_s": 0.38,
+        "sensor_tau_s": 4.0,
+        "surface_activity": 0.6,
+        "temp_c": 25.0,
+        "volume_ml": 5.0,
+        "wall_source_ug_s": 0.0
+      },
+      "profile": "default",
+      "scenario": {
+        "initial_condition": "gas and sensor at instantaneous-source passive equilibrium; wall decays from cycle start",
+        "initial_inventory_ug": 12.0,
+        "initial_source_ug_s": 0.1,
+        "wall_tau_s": 120.0
+      },
+      "synthetic": "SYNTHETIC_UNCALIBRATED"
+    },
+    "default/wall/0.1/125": {
+      "family": "finite_wall",
+      "parameters": {
+        "ambient_rh_pct": 60.0,
+        "ambient_step_at_s": -1.0,
+        "ambient_step_rh_pct": 0.0,
+        "clip_at_s": -1.0,
+        "exchange_ml_s": 0.02,
+        "flush_extra_ml_s": 0.98,
+        "invalid_at_s": -1.0,
+        "leak_ml_s": 0.02,
+        "local_rh_bias_pct": 0.0,
+        "local_temp_bias_c": 0.0,
+        "noise_rh_pct": 0.0,
+        "passive_extra_ml_s": 0.38,
+        "sensor_tau_s": 4.0,
+        "surface_activity": 0.6,
+        "temp_c": 25.0,
+        "volume_ml": 5.0,
+        "wall_source_ug_s": 0.0
+      },
+      "profile": "default",
+      "scenario": {
+        "initial_condition": "gas and sensor at instantaneous-source passive equilibrium; wall decays from cycle start",
+        "initial_inventory_ug": 12.5,
+        "initial_source_ug_s": 0.1,
+        "wall_tau_s": 125.0
+      },
+      "synthetic": "SYNTHETIC_UNCALIBRATED"
+    },
+    "default/wall/0.1/30": {
+      "family": "finite_wall",
+      "parameters": {
+        "ambient_rh_pct": 60.0,
+        "ambient_step_at_s": -1.0,
+        "ambient_step_rh_pct": 0.0,
+        "clip_at_s": -1.0,
+        "exchange_ml_s": 0.02,
+        "flush_extra_ml_s": 0.98,
+        "invalid_at_s": -1.0,
+        "leak_ml_s": 0.02,
+        "local_rh_bias_pct": 0.0,
+        "local_temp_bias_c": 0.0,
+        "noise_rh_pct": 0.0,
+        "passive_extra_ml_s": 0.38,
+        "sensor_tau_s": 4.0,
+        "surface_activity": 0.6,
+        "temp_c": 25.0,
+        "volume_ml": 5.0,
+        "wall_source_ug_s": 0.0
+      },
+      "profile": "default",
+      "scenario": {
+        "initial_condition": "gas and sensor at instantaneous-source passive equilibrium; wall decays from cycle start",
+        "initial_inventory_ug": 3.0,
+        "initial_source_ug_s": 0.1,
+        "wall_tau_s": 30.0
+      },
+      "synthetic": "SYNTHETIC_UNCALIBRATED"
+    },
+    "default/wall/0.1/600": {
+      "family": "finite_wall",
+      "parameters": {
+        "ambient_rh_pct": 60.0,
+        "ambient_step_at_s": -1.0,
+        "ambient_step_rh_pct": 0.0,
+        "clip_at_s": -1.0,
+        "exchange_ml_s": 0.02,
+        "flush_extra_ml_s": 0.98,
+        "invalid_at_s": -1.0,
+        "leak_ml_s": 0.02,
+        "local_rh_bias_pct": 0.0,
+        "local_temp_bias_c": 0.0,
+        "noise_rh_pct": 0.0,
+        "passive_extra_ml_s": 0.38,
+        "sensor_tau_s": 4.0,
+        "surface_activity": 0.6,
+        "temp_c": 25.0,
+        "volume_ml": 5.0,
+        "wall_source_ug_s": 0.0
+      },
+      "profile": "default",
+      "scenario": {
+        "initial_condition": "gas and sensor at instantaneous-source passive equilibrium; wall decays from cycle start",
+        "initial_inventory_ug": 60.0,
+        "initial_source_ug_s": 0.1,
+        "wall_tau_s": 600.0
+      },
+      "synthetic": "SYNTHETIC_UNCALIBRATED"
+    },
+    "default/wall/0/120": {
+      "family": "finite_wall",
+      "parameters": {
+        "ambient_rh_pct": 60.0,
+        "ambient_step_at_s": -1.0,
+        "ambient_step_rh_pct": 0.0,
+        "clip_at_s": -1.0,
+        "exchange_ml_s": 0.02,
+        "flush_extra_ml_s": 0.98,
+        "invalid_at_s": -1.0,
+        "leak_ml_s": 0.02,
+        "local_rh_bias_pct": 0.0,
+        "local_temp_bias_c": 0.0,
+        "noise_rh_pct": 0.0,
+        "passive_extra_ml_s": 0.38,
+        "sensor_tau_s": 4.0,
+        "surface_activity": 0.6,
+        "temp_c": 25.0,
+        "volume_ml": 5.0,
+        "wall_source_ug_s": 0.0
+      },
+      "profile": "default",
+      "scenario": {
+        "initial_condition": "gas and sensor at instantaneous-source passive equilibrium; wall decays from cycle start",
+        "initial_inventory_ug": 0.0,
+        "initial_source_ug_s": 0.0,
+        "wall_tau_s": 120.0
+      },
+      "synthetic": "SYNTHETIC_UNCALIBRATED"
+    },
+    "three_second_long/bias/equilibrium/-2/-1": {
+      "family": "RH_T_readout_bias",
+      "parameters": {
+        "ambient_rh_pct": 60.0,
+        "ambient_step_at_s": -1.0,
+        "ambient_step_rh_pct": 0.0,
+        "clip_at_s": -1.0,
+        "exchange_ml_s": 0.02,
+        "flush_extra_ml_s": 0.98,
+        "invalid_at_s": -1.0,
+        "leak_ml_s": 0.02,
+        "local_rh_bias_pct": 0.0,
+        "local_temp_bias_c": 0.0,
+        "noise_rh_pct": 0.0,
+        "passive_extra_ml_s": 0.38,
+        "sensor_tau_s": 4.0,
+        "surface_activity": 0.6,
+        "temp_c": 25.0,
+        "volume_ml": 5.0,
+        "wall_source_ug_s": 0.0
+      },
+      "profile": "three_second_long",
+      "scenario": {
+        "RH_bias_percentage_point": -2.0,
+        "T_readout_bias_degC": -1.0
+      },
+      "synthetic": "SYNTHETIC_UNCALIBRATED"
+    },
+    "three_second_long/bias/equilibrium/-2/0": {
+      "family": "RH_T_readout_bias",
+      "parameters": {
+        "ambient_rh_pct": 60.0,
+        "ambient_step_at_s": -1.0,
+        "ambient_step_rh_pct": 0.0,
+        "clip_at_s": -1.0,
+        "exchange_ml_s": 0.02,
+        "flush_extra_ml_s": 0.98,
+        "invalid_at_s": -1.0,
+        "leak_ml_s": 0.02,
+        "local_rh_bias_pct": 0.0,
+        "local_temp_bias_c": 0.0,
+        "noise_rh_pct": 0.0,
+        "passive_extra_ml_s": 0.38,
+        "sensor_tau_s": 4.0,
+        "surface_activity": 0.6,
+        "temp_c": 25.0,
+        "volume_ml": 5.0,
+        "wall_source_ug_s": 0.0
+      },
+      "profile": "three_second_long",
+      "scenario": {
+        "RH_bias_percentage_point": -2.0,
+        "T_readout_bias_degC": 0.0
+      },
+      "synthetic": "SYNTHETIC_UNCALIBRATED"
+    },
+    "three_second_long/bias/equilibrium/-2/1": {
+      "family": "RH_T_readout_bias",
+      "parameters": {
+        "ambient_rh_pct": 60.0,
+        "ambient_step_at_s": -1.0,
+        "ambient_step_rh_pct": 0.0,
+        "clip_at_s": -1.0,
+        "exchange_ml_s": 0.02,
+        "flush_extra_ml_s": 0.98,
+        "invalid_at_s": -1.0,
+        "leak_ml_s": 0.02,
+        "local_rh_bias_pct": 0.0,
+        "local_temp_bias_c": 0.0,
+        "noise_rh_pct": 0.0,
+        "passive_extra_ml_s": 0.38,
+        "sensor_tau_s": 4.0,
+        "surface_activity": 0.6,
+        "temp_c": 25.0,
+        "volume_ml": 5.0,
+        "wall_source_ug_s": 0.0
+      },
+      "profile": "three_second_long",
+      "scenario": {
+        "RH_bias_percentage_point": -2.0,
+        "T_readout_bias_degC": 1.0
+      },
+      "synthetic": "SYNTHETIC_UNCALIBRATED"
+    },
+    "three_second_long/bias/equilibrium/0/-1": {
+      "family": "RH_T_readout_bias",
+      "parameters": {
+        "ambient_rh_pct": 60.0,
+        "ambient_step_at_s": -1.0,
+        "ambient_step_rh_pct": 0.0,
+        "clip_at_s": -1.0,
+        "exchange_ml_s": 0.02,
+        "flush_extra_ml_s": 0.98,
+        "invalid_at_s": -1.0,
+        "leak_ml_s": 0.02,
+        "local_rh_bias_pct": 0.0,
+        "local_temp_bias_c": 0.0,
+        "noise_rh_pct": 0.0,
+        "passive_extra_ml_s": 0.38,
+        "sensor_tau_s": 4.0,
+        "surface_activity": 0.6,
+        "temp_c": 25.0,
+        "volume_ml": 5.0,
+        "wall_source_ug_s": 0.0
+      },
+      "profile": "three_second_long",
+      "scenario": {
+        "RH_bias_percentage_point": 0.0,
+        "T_readout_bias_degC": -1.0
+      },
+      "synthetic": "SYNTHETIC_UNCALIBRATED"
+    },
+    "three_second_long/bias/equilibrium/0/0": {
+      "family": "RH_T_readout_bias",
+      "parameters": {
+        "ambient_rh_pct": 60.0,
+        "ambient_step_at_s": -1.0,
+        "ambient_step_rh_pct": 0.0,
+        "clip_at_s": -1.0,
+        "exchange_ml_s": 0.02,
+        "flush_extra_ml_s": 0.98,
+        "invalid_at_s": -1.0,
+        "leak_ml_s": 0.02,
+        "local_rh_bias_pct": 0.0,
+        "local_temp_bias_c": 0.0,
+        "noise_rh_pct": 0.0,
+        "passive_extra_ml_s": 0.38,
+        "sensor_tau_s": 4.0,
+        "surface_activity": 0.6,
+        "temp_c": 25.0,
+        "volume_ml": 5.0,
+        "wall_source_ug_s": 0.0
+      },
+      "profile": "three_second_long",
+      "scenario": {
+        "RH_bias_percentage_point": 0.0,
+        "T_readout_bias_degC": 0.0
+      },
+      "synthetic": "SYNTHETIC_UNCALIBRATED"
+    },
+    "three_second_long/bias/equilibrium/0/1": {
+      "family": "RH_T_readout_bias",
+      "parameters": {
+        "ambient_rh_pct": 60.0,
+        "ambient_step_at_s": -1.0,
+        "ambient_step_rh_pct": 0.0,
+        "clip_at_s": -1.0,
+        "exchange_ml_s": 0.02,
+        "flush_extra_ml_s": 0.98,
+        "invalid_at_s": -1.0,
+        "leak_ml_s": 0.02,
+        "local_rh_bias_pct": 0.0,
+        "local_temp_bias_c": 0.0,
+        "noise_rh_pct": 0.0,
+        "passive_extra_ml_s": 0.38,
+        "sensor_tau_s": 4.0,
+        "surface_activity": 0.6,
+        "temp_c": 25.0,
+        "volume_ml": 5.0,
+        "wall_source_ug_s": 0.0
+      },
+      "profile": "three_second_long",
+      "scenario": {
+        "RH_bias_percentage_point": 0.0,
+        "T_readout_bias_degC": 1.0
+      },
+      "synthetic": "SYNTHETIC_UNCALIBRATED"
+    },
+    "three_second_long/bias/equilibrium/2/-1": {
+      "family": "RH_T_readout_bias",
+      "parameters": {
+        "ambient_rh_pct": 60.0,
+        "ambient_step_at_s": -1.0,
+        "ambient_step_rh_pct": 0.0,
+        "clip_at_s": -1.0,
+        "exchange_ml_s": 0.02,
+        "flush_extra_ml_s": 0.98,
+        "invalid_at_s": -1.0,
+        "leak_ml_s": 0.02,
+        "local_rh_bias_pct": 0.0,
+        "local_temp_bias_c": 0.0,
+        "noise_rh_pct": 0.0,
+        "passive_extra_ml_s": 0.38,
+        "sensor_tau_s": 4.0,
+        "surface_activity": 0.6,
+        "temp_c": 25.0,
+        "volume_ml": 5.0,
+        "wall_source_ug_s": 0.0
+      },
+      "profile": "three_second_long",
+      "scenario": {
+        "RH_bias_percentage_point": 2.0,
+        "T_readout_bias_degC": -1.0
+      },
+      "synthetic": "SYNTHETIC_UNCALIBRATED"
+    },
+    "three_second_long/bias/equilibrium/2/0": {
+      "family": "RH_T_readout_bias",
+      "parameters": {
+        "ambient_rh_pct": 60.0,
+        "ambient_step_at_s": -1.0,
+        "ambient_step_rh_pct": 0.0,
+        "clip_at_s": -1.0,
+        "exchange_ml_s": 0.02,
+        "flush_extra_ml_s": 0.98,
+        "invalid_at_s": -1.0,
+        "leak_ml_s": 0.02,
+        "local_rh_bias_pct": 0.0,
+        "local_temp_bias_c": 0.0,
+        "noise_rh_pct": 0.0,
+        "passive_extra_ml_s": 0.38,
+        "sensor_tau_s": 4.0,
+        "surface_activity": 0.6,
+        "temp_c": 25.0,
+        "volume_ml": 5.0,
+        "wall_source_ug_s": 0.0
+      },
+      "profile": "three_second_long",
+      "scenario": {
+        "RH_bias_percentage_point": 2.0,
+        "T_readout_bias_degC": 0.0
+      },
+      "synthetic": "SYNTHETIC_UNCALIBRATED"
+    },
+    "three_second_long/bias/equilibrium/2/1": {
+      "family": "RH_T_readout_bias",
+      "parameters": {
+        "ambient_rh_pct": 60.0,
+        "ambient_step_at_s": -1.0,
+        "ambient_step_rh_pct": 0.0,
+        "clip_at_s": -1.0,
+        "exchange_ml_s": 0.02,
+        "flush_extra_ml_s": 0.98,
+        "invalid_at_s": -1.0,
+        "leak_ml_s": 0.02,
+        "local_rh_bias_pct": 0.0,
+        "local_temp_bias_c": 0.0,
+        "noise_rh_pct": 0.0,
+        "passive_extra_ml_s": 0.38,
+        "sensor_tau_s": 4.0,
+        "surface_activity": 0.6,
+        "temp_c": 25.0,
+        "volume_ml": 5.0,
+        "wall_source_ug_s": 0.0
+      },
+      "profile": "three_second_long",
+      "scenario": {
+        "RH_bias_percentage_point": 2.0,
+        "T_readout_bias_degC": 1.0
+      },
+      "synthetic": "SYNTHETIC_UNCALIBRATED"
+    },
+    "three_second_long/bias/surface_source/-2/-1": {
+      "family": "RH_T_readout_bias",
+      "parameters": {
+        "ambient_rh_pct": 60.0,
+        "ambient_step_at_s": -1.0,
+        "ambient_step_rh_pct": 0.0,
+        "clip_at_s": -1.0,
+        "exchange_ml_s": 0.02,
+        "flush_extra_ml_s": 0.98,
+        "invalid_at_s": -1.0,
+        "leak_ml_s": 0.02,
+        "local_rh_bias_pct": 0.0,
+        "local_temp_bias_c": 0.0,
+        "noise_rh_pct": 0.0,
+        "passive_extra_ml_s": 0.38,
+        "sensor_tau_s": 4.0,
+        "surface_activity": 1.0,
+        "temp_c": 25.0,
+        "volume_ml": 5.0,
+        "wall_source_ug_s": 0.0
+      },
+      "profile": "three_second_long",
+      "scenario": {
+        "RH_bias_percentage_point": -2.0,
+        "T_readout_bias_degC": -1.0
+      },
+      "synthetic": "SYNTHETIC_UNCALIBRATED"
+    },
+    "three_second_long/bias/surface_source/-2/0": {
+      "family": "RH_T_readout_bias",
+      "parameters": {
+        "ambient_rh_pct": 60.0,
+        "ambient_step_at_s": -1.0,
+        "ambient_step_rh_pct": 0.0,
+        "clip_at_s": -1.0,
+        "exchange_ml_s": 0.02,
+        "flush_extra_ml_s": 0.98,
+        "invalid_at_s": -1.0,
+        "leak_ml_s": 0.02,
+        "local_rh_bias_pct": 0.0,
+        "local_temp_bias_c": 0.0,
+        "noise_rh_pct": 0.0,
+        "passive_extra_ml_s": 0.38,
+        "sensor_tau_s": 4.0,
+        "surface_activity": 1.0,
+        "temp_c": 25.0,
+        "volume_ml": 5.0,
+        "wall_source_ug_s": 0.0
+      },
+      "profile": "three_second_long",
+      "scenario": {
+        "RH_bias_percentage_point": -2.0,
+        "T_readout_bias_degC": 0.0
+      },
+      "synthetic": "SYNTHETIC_UNCALIBRATED"
+    },
+    "three_second_long/bias/surface_source/-2/1": {
+      "family": "RH_T_readout_bias",
+      "parameters": {
+        "ambient_rh_pct": 60.0,
+        "ambient_step_at_s": -1.0,
+        "ambient_step_rh_pct": 0.0,
+        "clip_at_s": -1.0,
+        "exchange_ml_s": 0.02,
+        "flush_extra_ml_s": 0.98,
+        "invalid_at_s": -1.0,
+        "leak_ml_s": 0.02,
+        "local_rh_bias_pct": 0.0,
+        "local_temp_bias_c": 0.0,
+        "noise_rh_pct": 0.0,
+        "passive_extra_ml_s": 0.38,
+        "sensor_tau_s": 4.0,
+        "surface_activity": 1.0,
+        "temp_c": 25.0,
+        "volume_ml": 5.0,
+        "wall_source_ug_s": 0.0
+      },
+      "profile": "three_second_long",
+      "scenario": {
+        "RH_bias_percentage_point": -2.0,
+        "T_readout_bias_degC": 1.0
+      },
+      "synthetic": "SYNTHETIC_UNCALIBRATED"
+    },
+    "three_second_long/bias/surface_source/0/-1": {
+      "family": "RH_T_readout_bias",
+      "parameters": {
+        "ambient_rh_pct": 60.0,
+        "ambient_step_at_s": -1.0,
+        "ambient_step_rh_pct": 0.0,
+        "clip_at_s": -1.0,
+        "exchange_ml_s": 0.02,
+        "flush_extra_ml_s": 0.98,
+        "invalid_at_s": -1.0,
+        "leak_ml_s": 0.02,
+        "local_rh_bias_pct": 0.0,
+        "local_temp_bias_c": 0.0,
+        "noise_rh_pct": 0.0,
+        "passive_extra_ml_s": 0.38,
+        "sensor_tau_s": 4.0,
+        "surface_activity": 1.0,
+        "temp_c": 25.0,
+        "volume_ml": 5.0,
+        "wall_source_ug_s": 0.0
+      },
+      "profile": "three_second_long",
+      "scenario": {
+        "RH_bias_percentage_point": 0.0,
+        "T_readout_bias_degC": -1.0
+      },
+      "synthetic": "SYNTHETIC_UNCALIBRATED"
+    },
+    "three_second_long/bias/surface_source/0/0": {
+      "family": "RH_T_readout_bias",
+      "parameters": {
+        "ambient_rh_pct": 60.0,
+        "ambient_step_at_s": -1.0,
+        "ambient_step_rh_pct": 0.0,
+        "clip_at_s": -1.0,
+        "exchange_ml_s": 0.02,
+        "flush_extra_ml_s": 0.98,
+        "invalid_at_s": -1.0,
+        "leak_ml_s": 0.02,
+        "local_rh_bias_pct": 0.0,
+        "local_temp_bias_c": 0.0,
+        "noise_rh_pct": 0.0,
+        "passive_extra_ml_s": 0.38,
+        "sensor_tau_s": 4.0,
+        "surface_activity": 1.0,
+        "temp_c": 25.0,
+        "volume_ml": 5.0,
+        "wall_source_ug_s": 0.0
+      },
+      "profile": "three_second_long",
+      "scenario": {
+        "RH_bias_percentage_point": 0.0,
+        "T_readout_bias_degC": 0.0
+      },
+      "synthetic": "SYNTHETIC_UNCALIBRATED"
+    },
+    "three_second_long/bias/surface_source/0/1": {
+      "family": "RH_T_readout_bias",
+      "parameters": {
+        "ambient_rh_pct": 60.0,
+        "ambient_step_at_s": -1.0,
+        "ambient_step_rh_pct": 0.0,
+        "clip_at_s": -1.0,
+        "exchange_ml_s": 0.02,
+        "flush_extra_ml_s": 0.98,
+        "invalid_at_s": -1.0,
+        "leak_ml_s": 0.02,
+        "local_rh_bias_pct": 0.0,
+        "local_temp_bias_c": 0.0,
+        "noise_rh_pct": 0.0,
+        "passive_extra_ml_s": 0.38,
+        "sensor_tau_s": 4.0,
+        "surface_activity": 1.0,
+        "temp_c": 25.0,
+        "volume_ml": 5.0,
+        "wall_source_ug_s": 0.0
+      },
+      "profile": "three_second_long",
+      "scenario": {
+        "RH_bias_percentage_point": 0.0,
+        "T_readout_bias_degC": 1.0
+      },
+      "synthetic": "SYNTHETIC_UNCALIBRATED"
+    },
+    "three_second_long/bias/surface_source/2/-1": {
+      "family": "RH_T_readout_bias",
+      "parameters": {
+        "ambient_rh_pct": 60.0,
+        "ambient_step_at_s": -1.0,
+        "ambient_step_rh_pct": 0.0,
+        "clip_at_s": -1.0,
+        "exchange_ml_s": 0.02,
+        "flush_extra_ml_s": 0.98,
+        "invalid_at_s": -1.0,
+        "leak_ml_s": 0.02,
+        "local_rh_bias_pct": 0.0,
+        "local_temp_bias_c": 0.0,
+        "noise_rh_pct": 0.0,
+        "passive_extra_ml_s": 0.38,
+        "sensor_tau_s": 4.0,
+        "surface_activity": 1.0,
+        "temp_c": 25.0,
+        "volume_ml": 5.0,
+        "wall_source_ug_s": 0.0
+      },
+      "profile": "three_second_long",
+      "scenario": {
+        "RH_bias_percentage_point": 2.0,
+        "T_readout_bias_degC": -1.0
+      },
+      "synthetic": "SYNTHETIC_UNCALIBRATED"
+    },
+    "three_second_long/bias/surface_source/2/0": {
+      "family": "RH_T_readout_bias",
+      "parameters": {
+        "ambient_rh_pct": 60.0,
+        "ambient_step_at_s": -1.0,
+        "ambient_step_rh_pct": 0.0,
+        "clip_at_s": -1.0,
+        "exchange_ml_s": 0.02,
+        "flush_extra_ml_s": 0.98,
+        "invalid_at_s": -1.0,
+        "leak_ml_s": 0.02,
+        "local_rh_bias_pct": 0.0,
+        "local_temp_bias_c": 0.0,
+        "noise_rh_pct": 0.0,
+        "passive_extra_ml_s": 0.38,
+        "sensor_tau_s": 4.0,
+        "surface_activity": 1.0,
+        "temp_c": 25.0,
+        "volume_ml": 5.0,
+        "wall_source_ug_s": 0.0
+      },
+      "profile": "three_second_long",
+      "scenario": {
+        "RH_bias_percentage_point": 2.0,
+        "T_readout_bias_degC": 0.0
+      },
+      "synthetic": "SYNTHETIC_UNCALIBRATED"
+    },
+    "three_second_long/bias/surface_source/2/1": {
+      "family": "RH_T_readout_bias",
+      "parameters": {
+        "ambient_rh_pct": 60.0,
+        "ambient_step_at_s": -1.0,
+        "ambient_step_rh_pct": 0.0,
+        "clip_at_s": -1.0,
+        "exchange_ml_s": 0.02,
+        "flush_extra_ml_s": 0.98,
+        "invalid_at_s": -1.0,
+        "leak_ml_s": 0.02,
+        "local_rh_bias_pct": 0.0,
+        "local_temp_bias_c": 0.0,
+        "noise_rh_pct": 0.0,
+        "passive_extra_ml_s": 0.38,
+        "sensor_tau_s": 4.0,
+        "surface_activity": 1.0,
+        "temp_c": 25.0,
+        "volume_ml": 5.0,
+        "wall_source_ug_s": 0.0
+      },
+      "profile": "three_second_long",
+      "scenario": {
+        "RH_bias_percentage_point": 2.0,
+        "T_readout_bias_degC": 1.0
+      },
+      "synthetic": "SYNTHETIC_UNCALIBRATED"
+    },
+    "three_second_long/drift/0/-0.5": {
+      "family": "slow_readout_bias",
+      "parameters": {
+        "ambient_rh_pct": 60.0,
+        "ambient_step_at_s": -1.0,
+        "ambient_step_rh_pct": 0.0,
+        "clip_at_s": -1.0,
+        "exchange_ml_s": 0.02,
+        "flush_extra_ml_s": 0.98,
+        "invalid_at_s": -1.0,
+        "leak_ml_s": 0.02,
+        "local_rh_bias_pct": 0.0,
+        "local_temp_bias_c": 0.0,
+        "noise_rh_pct": 0.0,
+        "passive_extra_ml_s": 0.38,
+        "sensor_tau_s": 4.0,
+        "surface_activity": 0.6,
+        "temp_c": 25.0,
+        "volume_ml": 5.0,
+        "wall_source_ug_s": 0.0
+      },
+      "profile": "three_second_long",
+      "scenario": {
+        "drift_Pa_s": -0.5,
+        "expected_rise_bias_Pa": -55.5,
+        "offset_Pa": 0.0
+      },
+      "synthetic": "SYNTHETIC_UNCALIBRATED"
+    },
+    "three_second_long/drift/0/0": {
+      "family": "slow_readout_bias",
+      "parameters": {
+        "ambient_rh_pct": 60.0,
+        "ambient_step_at_s": -1.0,
+        "ambient_step_rh_pct": 0.0,
+        "clip_at_s": -1.0,
+        "exchange_ml_s": 0.02,
+        "flush_extra_ml_s": 0.98,
+        "invalid_at_s": -1.0,
+        "leak_ml_s": 0.02,
+        "local_rh_bias_pct": 0.0,
+        "local_temp_bias_c": 0.0,
+        "noise_rh_pct": 0.0,
+        "passive_extra_ml_s": 0.38,
+        "sensor_tau_s": 4.0,
+        "surface_activity": 0.6,
+        "temp_c": 25.0,
+        "volume_ml": 5.0,
+        "wall_source_ug_s": 0.0
+      },
+      "profile": "three_second_long",
+      "scenario": {
+        "drift_Pa_s": 0.0,
+        "expected_rise_bias_Pa": 0.0,
+        "offset_Pa": 0.0
+      },
+      "synthetic": "SYNTHETIC_UNCALIBRATED"
+    },
+    "three_second_long/drift/0/0.5": {
+      "family": "slow_readout_bias",
+      "parameters": {
+        "ambient_rh_pct": 60.0,
+        "ambient_step_at_s": -1.0,
+        "ambient_step_rh_pct": 0.0,
+        "clip_at_s": -1.0,
+        "exchange_ml_s": 0.02,
+        "flush_extra_ml_s": 0.98,
+        "invalid_at_s": -1.0,
+        "leak_ml_s": 0.02,
+        "local_rh_bias_pct": 0.0,
+        "local_temp_bias_c": 0.0,
+        "noise_rh_pct": 0.0,
+        "passive_extra_ml_s": 0.38,
+        "sensor_tau_s": 4.0,
+        "surface_activity": 0.6,
+        "temp_c": 25.0,
+        "volume_ml": 5.0,
+        "wall_source_ug_s": 0.0
+      },
+      "profile": "three_second_long",
+      "scenario": {
+        "drift_Pa_s": 0.5,
+        "expected_rise_bias_Pa": 55.5,
+        "offset_Pa": 0.0
+      },
+      "synthetic": "SYNTHETIC_UNCALIBRATED"
+    },
+    "three_second_long/drift/30/-0.5": {
+      "family": "slow_readout_bias",
+      "parameters": {
+        "ambient_rh_pct": 60.0,
+        "ambient_step_at_s": -1.0,
+        "ambient_step_rh_pct": 0.0,
+        "clip_at_s": -1.0,
+        "exchange_ml_s": 0.02,
+        "flush_extra_ml_s": 0.98,
+        "invalid_at_s": -1.0,
+        "leak_ml_s": 0.02,
+        "local_rh_bias_pct": 0.0,
+        "local_temp_bias_c": 0.0,
+        "noise_rh_pct": 0.0,
+        "passive_extra_ml_s": 0.38,
+        "sensor_tau_s": 4.0,
+        "surface_activity": 0.6,
+        "temp_c": 25.0,
+        "volume_ml": 5.0,
+        "wall_source_ug_s": 0.0
+      },
+      "profile": "three_second_long",
+      "scenario": {
+        "drift_Pa_s": -0.5,
+        "expected_rise_bias_Pa": -55.5,
+        "offset_Pa": 30.0
+      },
+      "synthetic": "SYNTHETIC_UNCALIBRATED"
+    },
+    "three_second_long/drift/30/0": {
+      "family": "slow_readout_bias",
+      "parameters": {
+        "ambient_rh_pct": 60.0,
+        "ambient_step_at_s": -1.0,
+        "ambient_step_rh_pct": 0.0,
+        "clip_at_s": -1.0,
+        "exchange_ml_s": 0.02,
+        "flush_extra_ml_s": 0.98,
+        "invalid_at_s": -1.0,
+        "leak_ml_s": 0.02,
+        "local_rh_bias_pct": 0.0,
+        "local_temp_bias_c": 0.0,
+        "noise_rh_pct": 0.0,
+        "passive_extra_ml_s": 0.38,
+        "sensor_tau_s": 4.0,
+        "surface_activity": 0.6,
+        "temp_c": 25.0,
+        "volume_ml": 5.0,
+        "wall_source_ug_s": 0.0
+      },
+      "profile": "three_second_long",
+      "scenario": {
+        "drift_Pa_s": 0.0,
+        "expected_rise_bias_Pa": 0.0,
+        "offset_Pa": 30.0
+      },
+      "synthetic": "SYNTHETIC_UNCALIBRATED"
+    },
+    "three_second_long/drift/30/0.5": {
+      "family": "slow_readout_bias",
+      "parameters": {
+        "ambient_rh_pct": 60.0,
+        "ambient_step_at_s": -1.0,
+        "ambient_step_rh_pct": 0.0,
+        "clip_at_s": -1.0,
+        "exchange_ml_s": 0.02,
+        "flush_extra_ml_s": 0.98,
+        "invalid_at_s": -1.0,
+        "leak_ml_s": 0.02,
+        "local_rh_bias_pct": 0.0,
+        "local_temp_bias_c": 0.0,
+        "noise_rh_pct": 0.0,
+        "passive_extra_ml_s": 0.38,
+        "sensor_tau_s": 4.0,
+        "surface_activity": 0.6,
+        "temp_c": 25.0,
+        "volume_ml": 5.0,
+        "wall_source_ug_s": 0.0
+      },
+      "profile": "three_second_long",
+      "scenario": {
+        "drift_Pa_s": 0.5,
+        "expected_rise_bias_Pa": 55.5,
+        "offset_Pa": 30.0
+      },
+      "synthetic": "SYNTHETIC_UNCALIBRATED"
+    },
+    "three_second_long/outside_readout": {
+      "family": "domain_stress",
+      "parameters": {
+        "ambient_rh_pct": 60.0,
+        "ambient_step_at_s": -1.0,
+        "ambient_step_rh_pct": 0.0,
+        "clip_at_s": -1.0,
+        "exchange_ml_s": 0.02,
+        "flush_extra_ml_s": 0.98,
+        "invalid_at_s": -1.0,
+        "leak_ml_s": 0.02,
+        "local_rh_bias_pct": 0.0,
+        "local_temp_bias_c": 0.0,
+        "noise_rh_pct": 0.0,
+        "passive_extra_ml_s": 0.38,
+        "sensor_tau_s": 4.0,
+        "surface_activity": 0.6,
+        "temp_c": 25.0,
+        "volume_ml": 5.0,
+        "wall_source_ug_s": 0.0
+      },
+      "profile": "three_second_long",
+      "scenario": {
+        "offset_Pa": 2000.0
+      },
+      "synthetic": "SYNTHETIC_UNCALIBRATED"
+    },
+    "three_second_long/outside_wall": {
+      "family": "domain_stress",
+      "parameters": {
+        "ambient_rh_pct": 60.0,
+        "ambient_step_at_s": -1.0,
+        "ambient_step_rh_pct": 0.0,
+        "clip_at_s": -1.0,
+        "exchange_ml_s": 0.02,
+        "flush_extra_ml_s": 0.98,
+        "invalid_at_s": -1.0,
+        "leak_ml_s": 0.02,
+        "local_rh_bias_pct": 0.0,
+        "local_temp_bias_c": 0.0,
+        "noise_rh_pct": 0.0,
+        "passive_extra_ml_s": 0.38,
+        "sensor_tau_s": 4.0,
+        "surface_activity": 0.6,
+        "temp_c": 25.0,
+        "volume_ml": 2.0,
+        "wall_source_ug_s": 0.0
+      },
+      "profile": "three_second_long",
+      "scenario": {
+        "initial_inventory_ug": 600.0,
+        "initial_source_ug_s": 1.0,
+        "wall_tau_s": 600.0
+      },
+      "synthetic": "SYNTHETIC_UNCALIBRATED"
+    },
+    "three_second_long/response/0": {
+      "family": "local_response",
+      "parameters": {
+        "ambient_rh_pct": 60.0,
+        "ambient_step_at_s": -1.0,
+        "ambient_step_rh_pct": 0.0,
+        "clip_at_s": -1.0,
+        "exchange_ml_s": 0.02,
+        "flush_extra_ml_s": 0.98,
+        "invalid_at_s": -1.0,
+        "leak_ml_s": 0.02,
+        "local_rh_bias_pct": 0.0,
+        "local_temp_bias_c": 0.0,
+        "noise_rh_pct": 0.0,
+        "passive_extra_ml_s": 0.38,
+        "sensor_tau_s": 0.0,
+        "surface_activity": 1.0,
+        "temp_c": 25.0,
+        "volume_ml": 5.0,
+        "wall_source_ug_s": 0.0
+      },
+      "profile": "three_second_long",
+      "scenario": {
+        "ambient_is_constant": true,
+        "local_tau_s": 0.0
+      },
+      "synthetic": "SYNTHETIC_UNCALIBRATED"
+    },
+    "three_second_long/response/120": {
+      "family": "local_response",
+      "parameters": {
+        "ambient_rh_pct": 60.0,
+        "ambient_step_at_s": -1.0,
+        "ambient_step_rh_pct": 0.0,
+        "clip_at_s": -1.0,
+        "exchange_ml_s": 0.02,
+        "flush_extra_ml_s": 0.98,
+        "invalid_at_s": -1.0,
+        "leak_ml_s": 0.02,
+        "local_rh_bias_pct": 0.0,
+        "local_temp_bias_c": 0.0,
+        "noise_rh_pct": 0.0,
+        "passive_extra_ml_s": 0.38,
+        "sensor_tau_s": 120.0,
+        "surface_activity": 1.0,
+        "temp_c": 25.0,
+        "volume_ml": 5.0,
+        "wall_source_ug_s": 0.0
+      },
+      "profile": "three_second_long",
+      "scenario": {
+        "ambient_is_constant": true,
+        "local_tau_s": 120.0
+      },
+      "synthetic": "SYNTHETIC_UNCALIBRATED"
+    },
+    "three_second_long/response/30": {
+      "family": "local_response",
+      "parameters": {
+        "ambient_rh_pct": 60.0,
+        "ambient_step_at_s": -1.0,
+        "ambient_step_rh_pct": 0.0,
+        "clip_at_s": -1.0,
+        "exchange_ml_s": 0.02,
+        "flush_extra_ml_s": 0.98,
+        "invalid_at_s": -1.0,
+        "leak_ml_s": 0.02,
+        "local_rh_bias_pct": 0.0,
+        "local_temp_bias_c": 0.0,
+        "noise_rh_pct": 0.0,
+        "passive_extra_ml_s": 0.38,
+        "sensor_tau_s": 30.0,
+        "surface_activity": 1.0,
+        "temp_c": 25.0,
+        "volume_ml": 5.0,
+        "wall_source_ug_s": 0.0
+      },
+      "profile": "three_second_long",
+      "scenario": {
+        "ambient_is_constant": true,
+        "local_tau_s": 30.0
+      },
+      "synthetic": "SYNTHETIC_UNCALIBRATED"
+    },
+    "three_second_long/response/4": {
+      "family": "local_response",
+      "parameters": {
+        "ambient_rh_pct": 60.0,
+        "ambient_step_at_s": -1.0,
+        "ambient_step_rh_pct": 0.0,
+        "clip_at_s": -1.0,
+        "exchange_ml_s": 0.02,
+        "flush_extra_ml_s": 0.98,
+        "invalid_at_s": -1.0,
+        "leak_ml_s": 0.02,
+        "local_rh_bias_pct": 0.0,
+        "local_temp_bias_c": 0.0,
+        "noise_rh_pct": 0.0,
+        "passive_extra_ml_s": 0.38,
+        "sensor_tau_s": 4.0,
+        "surface_activity": 1.0,
+        "temp_c": 25.0,
+        "volume_ml": 5.0,
+        "wall_source_ug_s": 0.0
+      },
+      "profile": "three_second_long",
+      "scenario": {
+        "ambient_is_constant": true,
+        "local_tau_s": 4.0
+      },
+      "synthetic": "SYNTHETIC_UNCALIBRATED"
+    },
+    "three_second_long/wall/0.1/120": {
+      "family": "finite_wall",
+      "parameters": {
+        "ambient_rh_pct": 60.0,
+        "ambient_step_at_s": -1.0,
+        "ambient_step_rh_pct": 0.0,
+        "clip_at_s": -1.0,
+        "exchange_ml_s": 0.02,
+        "flush_extra_ml_s": 0.98,
+        "invalid_at_s": -1.0,
+        "leak_ml_s": 0.02,
+        "local_rh_bias_pct": 0.0,
+        "local_temp_bias_c": 0.0,
+        "noise_rh_pct": 0.0,
+        "passive_extra_ml_s": 0.38,
+        "sensor_tau_s": 4.0,
+        "surface_activity": 0.6,
+        "temp_c": 25.0,
+        "volume_ml": 5.0,
+        "wall_source_ug_s": 0.0
+      },
+      "profile": "three_second_long",
+      "scenario": {
+        "initial_condition": "gas and sensor at instantaneous-source passive equilibrium; wall decays from cycle start",
+        "initial_inventory_ug": 12.0,
+        "initial_source_ug_s": 0.1,
+        "wall_tau_s": 120.0
+      },
+      "synthetic": "SYNTHETIC_UNCALIBRATED"
+    },
+    "three_second_long/wall/0.1/125": {
+      "family": "finite_wall",
+      "parameters": {
+        "ambient_rh_pct": 60.0,
+        "ambient_step_at_s": -1.0,
+        "ambient_step_rh_pct": 0.0,
+        "clip_at_s": -1.0,
+        "exchange_ml_s": 0.02,
+        "flush_extra_ml_s": 0.98,
+        "invalid_at_s": -1.0,
+        "leak_ml_s": 0.02,
+        "local_rh_bias_pct": 0.0,
+        "local_temp_bias_c": 0.0,
+        "noise_rh_pct": 0.0,
+        "passive_extra_ml_s": 0.38,
+        "sensor_tau_s": 4.0,
+        "surface_activity": 0.6,
+        "temp_c": 25.0,
+        "volume_ml": 5.0,
+        "wall_source_ug_s": 0.0
+      },
+      "profile": "three_second_long",
+      "scenario": {
+        "initial_condition": "gas and sensor at instantaneous-source passive equilibrium; wall decays from cycle start",
+        "initial_inventory_ug": 12.5,
+        "initial_source_ug_s": 0.1,
+        "wall_tau_s": 125.0
+      },
+      "synthetic": "SYNTHETIC_UNCALIBRATED"
+    },
+    "three_second_long/wall/0.1/30": {
+      "family": "finite_wall",
+      "parameters": {
+        "ambient_rh_pct": 60.0,
+        "ambient_step_at_s": -1.0,
+        "ambient_step_rh_pct": 0.0,
+        "clip_at_s": -1.0,
+        "exchange_ml_s": 0.02,
+        "flush_extra_ml_s": 0.98,
+        "invalid_at_s": -1.0,
+        "leak_ml_s": 0.02,
+        "local_rh_bias_pct": 0.0,
+        "local_temp_bias_c": 0.0,
+        "noise_rh_pct": 0.0,
+        "passive_extra_ml_s": 0.38,
+        "sensor_tau_s": 4.0,
+        "surface_activity": 0.6,
+        "temp_c": 25.0,
+        "volume_ml": 5.0,
+        "wall_source_ug_s": 0.0
+      },
+      "profile": "three_second_long",
+      "scenario": {
+        "initial_condition": "gas and sensor at instantaneous-source passive equilibrium; wall decays from cycle start",
+        "initial_inventory_ug": 3.0,
+        "initial_source_ug_s": 0.1,
+        "wall_tau_s": 30.0
+      },
+      "synthetic": "SYNTHETIC_UNCALIBRATED"
+    },
+    "three_second_long/wall/0.1/600": {
+      "family": "finite_wall",
+      "parameters": {
+        "ambient_rh_pct": 60.0,
+        "ambient_step_at_s": -1.0,
+        "ambient_step_rh_pct": 0.0,
+        "clip_at_s": -1.0,
+        "exchange_ml_s": 0.02,
+        "flush_extra_ml_s": 0.98,
+        "invalid_at_s": -1.0,
+        "leak_ml_s": 0.02,
+        "local_rh_bias_pct": 0.0,
+        "local_temp_bias_c": 0.0,
+        "noise_rh_pct": 0.0,
+        "passive_extra_ml_s": 0.38,
+        "sensor_tau_s": 4.0,
+        "surface_activity": 0.6,
+        "temp_c": 25.0,
+        "volume_ml": 5.0,
+        "wall_source_ug_s": 0.0
+      },
+      "profile": "three_second_long",
+      "scenario": {
+        "initial_condition": "gas and sensor at instantaneous-source passive equilibrium; wall decays from cycle start",
+        "initial_inventory_ug": 60.0,
+        "initial_source_ug_s": 0.1,
+        "wall_tau_s": 600.0
+      },
+      "synthetic": "SYNTHETIC_UNCALIBRATED"
+    },
+    "three_second_long/wall/0/120": {
+      "family": "finite_wall",
+      "parameters": {
+        "ambient_rh_pct": 60.0,
+        "ambient_step_at_s": -1.0,
+        "ambient_step_rh_pct": 0.0,
+        "clip_at_s": -1.0,
+        "exchange_ml_s": 0.02,
+        "flush_extra_ml_s": 0.98,
+        "invalid_at_s": -1.0,
+        "leak_ml_s": 0.02,
+        "local_rh_bias_pct": 0.0,
+        "local_temp_bias_c": 0.0,
+        "noise_rh_pct": 0.0,
+        "passive_extra_ml_s": 0.38,
+        "sensor_tau_s": 4.0,
+        "surface_activity": 0.6,
+        "temp_c": 25.0,
+        "volume_ml": 5.0,
+        "wall_source_ug_s": 0.0
+      },
+      "profile": "three_second_long",
+      "scenario": {
+        "initial_condition": "gas and sensor at instantaneous-source passive equilibrium; wall decays from cycle start",
+        "initial_inventory_ug": 0.0,
+        "initial_source_ug_s": 0.0,
+        "wall_tau_s": 120.0
+      },
+      "synthetic": "SYNTHETIC_UNCALIBRATED"
+    }
+  },
+  "collection_authorized": false,
+  "counts": {
+    "complete_cycles": 66,
+    "cycle_cases": 70,
+    "error_only_step_cases": 10,
+    "not_applicable": 4,
+    "temperature_rows": 21,
+    "wall_trace_rows": 980
+  },
+  "gates_are_illustrative": {
+    "ambient_change_rh_pct": 3.0,
+    "high_ambient_rh_pct": 90.0,
+    "saturation_rh_pct": 98.0,
+    "strong_delta_pa": 100.0,
+    "temp_mismatch_c": 1.0,
+    "weak_delta_pa": 40.0
+  },
+  "input_sha256": {
+    "docs/MEASUREMENT-CONTRACT.md": "a5981178f8da2d90ba70d64decad10c61b547d3246f591c69778678560cb0157",
+    "docs/MODEL-VALIDITY-DRAFT.md": "a890d9922eac780fa239b89d3206f027fea6b24d69b49fd903aa0ef4ce9cb966",
+    "docs/PROBE-CONCEPTS.md": "115f10f49d53f538562e74300addc8a8808f9a889ab5b158883e34705751132a",
+    "docs/team/assignments/probe-t03.md": "c9109806277790cd076ac135b477a43a5785d2236ee6b24236da78eb2aa29b70",
+    "docs/team/baseline-v1/analysis/energy_budget.py": "f1d5d2f730e7dfc2bf31bbdc4d5e9cb146938614e0391cfed55b0db058352c45",
+    "docs/team/baseline-v1/hanger-drying-architecture.md": "7c9c0eed2afe2025ae473b1a62c350c47098cefa397fd20c97e1c831c0defe9c",
+    "docs/team/baseline-v1/power-notification-design.md": "ad4dc90989e807a277a8b0766114fc0f279064ebc838f222d63e4ef041d62685",
+    "docs/team/baseline-v1/snapshot.json": "ce5ab31d2dee908aa8d5ee78517aec9c682041ef66e71d28cc0693857b22d890",
+    "docs/team/baseline-v1/theory/README.md": "8fa7e3c4a8e3a728e472386627ab0a5e2527079fa6bfa8cb7070fcf66b9913b4",
+    "docs/team/baseline-v1/theory/model.py": "7b7850851ef28feec819e2dd378467b325f229451129fac37094f46285bb59da",
+    "docs/team/baseline-v1/theory/results/case-summary.csv": "ce40f459425aa9ff79a5ab63a9a1807886fd51b336d099a7a1eaedd091a3165b",
+    "docs/team/baseline-v1/theory/results/manifest.json": "fe380938f454060c888fae2fe62a14bcc6ee2ee988b744ce56af3639eaefcde2",
+    "docs/team/baseline-v1/theory/results/parameter-sweep.csv": "257ba1424640db9911a812cbbe2f39a3b16e24867cd5bc3391b9fb7e3bdf2c76",
+    "docs/team/baseline-v1/theory/run_simulation.py": "8579703aad06e79fb49e2b02fb28acc7fa55df17f75aadb935769a6c911db40d",
+    "docs/team/baseline-v1/theory/test_model.py": "fe336015f55ef5b95014cf8e8e9b17f93af3e0dbc6ecfd83908ee6078edc8b46",
+    "docs/team/reports/probe.md": "738345a93c75f1e95a9fdd0e7c4e7b67743e04a12b9fde2c2c3dd1c8d5682923",
+    "docs/verification/T01-review.md": "6dc89e6c5b8dc92ec76d5972ef4d66084adb0359468a5fa4c0433933a964826f",
+    "research/probe/analyze.py": "f537f1d33c18617efbecf1962309f4de7d34d515a1889580885581759279f9ad",
+    "research/probe/results-t02/case-summary.csv": "b85fa366dcedf4bb949f8a0963da870a9e824b9dda9f4055aa09ed84ba651f35",
+    "research/probe/results-t02/domain-summary.csv": "e97b11637393d908da940317df04e39b3138e3d55588e0ef4df8d1ec42619b91",
+    "research/probe/results-t02/envelope.csv": "d434b5327750c340ffcefaafc8d624e7bd0c1b9256a0de48b1cca6dc7c485bd6",
+    "research/probe/results-t02/manifest.json": "add77ae177b4ae1f578d4b853b2bee51786519667d16bd37276f2c108cfcd990",
+    "research/probe/results-t02/noise-reference.json": "69be23a1ceee34347162cc019c174558e5f731e7ee7ddd20ef81d197aabd51c3",
+    "research/probe/results-t02/observations.jsonl": "627cab7e08a9307556cdf2838e3a17c04d2db9c075cbd77fd9acde42999e42d8",
+    "research/probe/results-t02/pair-comparison.json": "c862a53ce764afc1041afca677e322756bf1be229c49b25bcfecbd553466e955",
+    "research/probe/results-t02/protocol-mapping.json": "290635dd0cb557f57ae86017f2aa6bdce4c6fb3dc3b4bdfc72b923ae2211465e",
+    "research/probe/results-t02/research-traces.csv": "1fd5e09972168f0a27ad8ab1d95c37d0b877a13fdfcc2e6c364baeff0e485b10",
+    "research/probe/results/case-summary.csv": "a078edc2817d099ba68b54dc2d25ebaaa20959d580af59a87771de9d365ff37c",
+    "research/probe/results/case-traces.csv": "42b2dd57bfe6f4e3cb46451dfb54535230e63d8b1d346c651ecb36b06af4e963",
+    "research/probe/results/common-step.csv": "d0adc1f9bf5584cb47abf0262ab197e0523f9eb7835f31e9bf0748dc4b42f61e",
+    "research/probe/results/coverage.csv": "7433029a37bc033f746a269c9c321113c71ffae523915a2b353653b55cd8f204",
+    "research/probe/results/decaying-wall.csv": "0cbcb7d7ec56f7c5023698a29803c19fc119ebc12f7353f0e3936278f8fa838c",
+    "research/probe/results/manifest.json": "398481ceeacdaa01c185fb99cdba0acd65ea4c768eac9b0f77bbc292b6b86047",
+    "research/probe/results/sensitivity.csv": "41b3f27e26c0744536f696ee63db263252bc4d8284d3341db17fabf1cd104c59",
+    "research/probe/results/temperature.csv": "eb5fa02fd58526a8eb4b97da013a6d0fcb54cae039b3c9a8c14b2f7b76ff572f",
+    "research/probe/sources.md": "23a2dc8740041e1e44f0f9a0b83cb8ea93a3400c7ea89d7500138587a2396836",
+    "research/probe/t02_replay.py": "8559b6d9c10f89985577f48d29b313b070cce2a98784e1bf5958dec80b61703b",
+    "research/probe/test_analysis.py": "8c2aa55f578e887c5d75a8afb88fb10f72ea182a86f363a7857e6d2123e849c4",
+    "research/probe/test_t02_replay.py": "67271390ea74fa9e01cd40760f4196f6ab6243689402ba606a5248bbce2907dd",
+    "theory/model.py": "a80f08265ab40087886dade605afa94cd6ebeba64d2cf239ea82e561eaef642b",
+    "theory/protocol.py": "122f41d26988e9c80175c96116cc750b9cba00c9ec569c38e32bef438a585cb5",
+    "theory/results/manifest.json": "3c3b043b1f76806be00e8202c4a110fe125e13235199d59f048f547eba36962d",
+    "theory/run_simulation.py": "219ba3984c44e027c2628ad5c89c15fab27cd742c1c809d6ad09f49c6295f966"
+  },
+  "manifest_version": 1,
+  "max_mass_residual_ug": 1.1349948758621053e-13,
+  "numerics": {
+    "max_internal_step_s": 0.05,
+    "step_also_limited_by_each_dynamic_time_constant_divided_by": 10,
+    "wall_method": "RK4"
+  },
+  "observation_keys": [
+    "observation_version",
+    "unit_system",
+    "protocol_sha256",
+    "time_s",
+    "phase",
+    "ambient_T_C",
+    "ambient_RH_pct",
+    "local_T_C",
+    "local_RH_pct",
+    "sensor_valid",
+    "clip_event"
+  ],
+  "output_sha256": {
+    "cycle-summary.csv": "963bb34fe9e3051ed45cf8c03bbf041a526c42888120325a09088afe3beb220a",
+    "observations.jsonl": "a413265176df3dc5c133bf2d77a69b6eb3f16fbc32edc2e6f0452862bb51b530",
+    "response-error.csv": "b5e64a7983bca8685e21c3e7f6064954b3af0dbc48e6d2dbef47c3a00ce0261e",
+    "response-summary.csv": "b93291c369b4dc18a83761bc6f9bbf81f9868579a690b7eff0bbd60c1a94e4b1",
+    "temperature.csv": "9a3eb4824c8a5d83ed4e2c7c04997e2f200e68c5f68c71be2979f42d36d233de",
+    "uncertainty.json": "3f04646df9a5e599ed9251dbd3f1e31fea6fd089df895ff52dbddc3718609613",
+    "wall-traces.csv": "fd2afc23b1e783630616957145e81bda685f3cae56d08be2d880e6da1e816fad"
+  },
+  "protocols": {
+    "default": {
+      "centroid_separation_s": 82.5,
+      "head_times_s": [
+        50.0,
+        51.0,
+        52.0,
+        53.0,
+        54.0,
+        55.0
+      ],
+      "sha256": "286acc0970edd40ace775bd55d1bca9bc34f603e29c863d9d3c99ac772e261bb",
+      "snapshot": {
+        "baseline_s": 30.0,
+        "flush_s": 20.0,
+        "head_window_s": 5.0,
+        "max_gap_factor": 2.5,
+        "min_phase_samples": 2,
+        "min_window_samples": 2,
+        "recovery_s": 90.0,
+        "sample_period_s": 1.0,
+        "tail_window_s": 10.0,
+        "time_tolerance_s": 1e-08,
+        "version": "1.0"
+      },
+      "tail_times_s": [
+        130.0,
+        131.0,
+        132.0,
+        133.0,
+        134.0,
+        135.0,
+        136.0,
+        137.0,
+        138.0,
+        139.0,
+        140.0
+      ]
+    },
+    "three_second_long": {
+      "centroid_separation_s": 111,
+      "head_times_s": [
+        42,
+        45,
+        48
+      ],
+      "sha256": "e6d6392dfa1cb10c0a1fd2262fe8bda4174099fa938819c755be9acacad6fdd5",
+      "snapshot": {
+        "baseline_s": 24,
+        "flush_s": 18,
+        "head_window_s": 6,
+        "max_gap_factor": 2.5,
+        "min_phase_samples": 2,
+        "min_window_samples": 2,
+        "recovery_s": 120,
+        "sample_period_s": 3,
+        "tail_window_s": 12,
+        "time_tolerance_s": 1e-08,
+        "version": "1.0"
+      },
+      "tail_times_s": [
+        150,
+        153,
+        156,
+        159,
+        162
+      ]
+    }
+  },
+  "randomness": {
+    "deterministic": true,
+    "extension_seed": null,
+    "main_simulator_seed": 20261023,
+    "noise_rh_pct": 0.0
+  },
+  "scope": "isothermal, unsaturated, single chamber; no garment water mass, calibration or dry-time prediction",
+  "source_sha256": {
+    "README.md": "f4405cd9681e2154b723d8621ad5be5ccfa211add8a77dadd9e245732ee4ba6c",
+    "run.py": "cdf171dc00da9a28381c12bccfb60780dffdc89f2e19de9531a6aab45a10e0f0",
+    "sources.md": "dcc6ee75cabd1f7d2c3c87a0dbba0b55829e7be71ddd2668cb981b931a723f5b",
+    "test_validity.py": "8e889b98eb03785ef9ad3593cec1642bc00f03d8e80440525b4e28e52ec94d87"
+  },
+  "synthetic": "SYNTHETIC_UNCALIBRATED",
+  "units": {
+    "RH": "percentage points",
+    "flow": "mL/s",
+    "mass": "ug",
+    "pressure": "Pa",
+    "pressure_drift": "Pa/s",
+    "temperature": "degC",
+    "time": "s",
+    "volume": "mL",
+    "wall_release": "ug/s"
+  }
+}

@@ -1,0 +1,50 @@
+{
+  "schema_version": 1,
+  "recorded_on": "2026-10-25",
+  "command": [
+    "python",
+    "-B",
+    "-X",
+    "utf8",
+    "tools/verify_state_machine_boundaries.py"
+  ],
+  "exit_code": 0,
+  "passed": true,
+  "scope": "Coordinator public-API acceptance. Independent event sequences; uses accepted synthetic single-cycle model, no hardware.",
+  "synthetic": "SYNTHETIC_UNCALIBRATED",
+  "checks": 24,
+  "labels": [
+    "fixture uses actual weak assessment",
+    "early start cannot count",
+    "first completed cycle counts once",
+    "exact redelivery is a no-op",
+    "new message ID cannot recount cycle",
+    "T01 permitted missing sample stays valid",
+    "legal sparse cycle preserves chain",
+    "incomplete cycle clears evidence",
+    "fault cannot immediately start",
+    "explicit recovery accepted",
+    "recovery yields a new chain",
+    "clip clears evidence and installation",
+    "old batch cannot advance clock or evidence",
+    "new garment starts at one",
+    "gate-only change changes identity and clears evidence",
+    "old configuration cannot change current state",
+    "reconfigured chain starts at one",
+    "new boot clears all evidence",
+    "old boot cannot alter new clock domain",
+    "time reversal cannot preserve/increase weak chain",
+    "time duplicate cannot preserve/increase weak chain",
+    "large time jump cannot preserve/increase weak chain",
+    "same interval with new cycle identity cannot preserve/increase weak chain",
+    "completion timeout invalidates pending cycle"
+  ],
+  "events": 51,
+  "collection_authorized": false,
+  "source_sha256": {
+    "tools/verify_state_machine_boundaries.py": "1ce9bf632e7a500590a5146cbf7355b96143c42a70bb77cd1bf80629afed455e",
+    "research/state_machine/machine.py": "1a695579016913b10cfe9f9b8b0d8b0f30ea188ecc195348fc93f96248817777",
+    "theory/model.py": "a80f08265ab40087886dade605afa94cd6ebeba64d2cf239ea82e561eaef642b",
+    "theory/protocol.py": "122f41d26988e9c80175c96116cc750b9cba00c9ec569c38e32bef438a585cb5"
+  }
+}

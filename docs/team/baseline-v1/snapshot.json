@@ -1,0 +1,18 @@
+{
+  "snapshot_version": 1,
+  "created_on": "2026-10-23",
+  "kind": "immutable_shared_research_baseline",
+  "warning": "Synthetic and uncalibrated; freezing does not validate physical assumptions.",
+  "files": {
+    "theory/model.py": "7b7850851ef28feec819e2dd378467b325f229451129fac37094f46285bb59da",
+    "theory/run_simulation.py": "8579703aad06e79fb49e2b02fb28acc7fa55df17f75aadb935769a6c911db40d",
+    "theory/test_model.py": "fe336015f55ef5b95014cf8e8e9b17f93af3e0dbc6ecfd83908ee6078edc8b46",
+    "theory/README.md": "8fa7e3c4a8e3a728e472386627ab0a5e2527079fa6bfa8cb7070fcf66b9913b4",
+    "theory/results/manifest.json": "fe380938f454060c888fae2fe62a14bcc6ee2ee988b744ce56af3639eaefcde2",
+    "theory/results/case-summary.csv": "ce40f459425aa9ff79a5ab63a9a1807886fd51b336d099a7a1eaedd091a3165b",
+    "theory/results/parameter-sweep.csv": "257ba1424640db9911a812cbbe2f39a3b16e24867cd5bc3391b9fb7e3bdf2c76",
+    "hanger-drying-architecture.md": "7c9c0eed2afe2025ae473b1a62c350c47098cefa397fd20c97e1c831c0defe9c",
+    "power-notification-design.md": "ad4dc90989e807a277a8b0766114fc0f279064ebc838f222d63e4ef041d62685",
+    "analysis/energy_budget.py": "f1d5d2f730e7dfc2bf31bbdc4d5e9cb146938614e0391cfed55b0db058352c45"
+  }
+}

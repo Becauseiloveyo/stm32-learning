@@ -1,0 +1,13 @@
+﻿case,hypothesis,state,reasons,recovery_rise_Pa,tail_delta_Pa
+wet_normal,wet-like surface; no whole-garment mass simulated,VAPOR_SOURCE_PRESENT,,285.2619421879282,314.03709760697484
+dry_equilibrium,surface in equilibrium with ambient,LOW_SIGNAL_UNCONFIRMED,low_signal_does_not_prove_dry,1.043395882898346,-0.552101020885361
+wet_leaky,wet-like surface with large unmeasured leak,LOW_SIGNAL_UNCONFIRMED,low_signal_does_not_prove_dry,6.411664671881356,16.088614927658206
+wet_high_humidity,wet-like surface in humid ambient,UNKNOWN,high_ambient_humidity,36.570714171026296,38.771548807596325
+ambient_step,ambient changes during recovery,UNKNOWN,ambient_changed,-97.55404624161757,-68.77889082257092
+clip_changed,observed clip event invalidates cycle,UNKNOWN,clip_changed,285.2619421879282,314.03709760697484
+sensor_failure,one failed sensor reading,UNKNOWN,invalid_sensor,,
+temperature_mismatch,unmatched temperature measurement bias,UNKNOWN,temperature_mismatch,340.7327493614706,741.9709072692575
+dry_wall_source,dry-like surface plus hypothetical wall desorption,VAPOR_SOURCE_PRESENT,,155.65544526426976,170.5812797715698
+slow_sensor,"slower enclosure response, not known by classifier",VAPOR_SOURCE_PRESENT,,195.77340103513276,239.6512172891991
+ambiguous_A,"K=.02, leak=.02, aw=1",VAPOR_SOURCE_PRESENT,,284.21854630503015,314.58919862785973
+ambiguous_B,"K=.04, leak=0, aw=.8; same observable equation as A",VAPOR_SOURCE_PRESENT,,284.21854630503043,314.5891986278598

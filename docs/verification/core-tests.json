@@ -1,0 +1,1166 @@
+{
+  "schema_version": 1,
+  "suite": "core",
+  "passed": true,
+  "recorded_at": "2026-10-26T21:15:51+08:00",
+  "command": [
+    "C:\\Users\\wc\\AppData\\Local\\Programs\\Python\\Python314\\python.exe",
+    "-B",
+    "-X",
+    "utf8",
+    "firmware/host/run.py",
+    "--record"
+  ],
+  "working_directory": "C:\\Users\\wc\\Documents\\ChatGPT\\微开发",
+  "python_version": "3.14.6",
+  "test_count": 20857,
+  "source_sha256": {
+    "docs/CORE-INTERFACE.md": "63774cb3b67f7d80168342775d73fa22dad9ebba4f1fb36fe03b9eba8c0937be",
+    "docs/ENERGY-SCHEDULING.md": "b9a4ae1c9e78defabc61444d79b8b77623bcd22bba4b098873212a8e3ec8057d",
+    "docs/MEASUREMENT-CONTRACT.md": "a5981178f8da2d90ba70d64decad10c61b547d3246f591c69778678560cb0157",
+    "docs/STATE-MACHINE.md": "55f54f52320a82e43000720b4759d29a97d363c76c3327fb43d2a06f93bf8536",
+    "docs/team/assignments/energy-t06.md": "3a20226f95ff449d8168a58cf0b0b4525809407952addf87846d1960e127f10c",
+    "docs/team/assignments/measurement-t06.md": "5c0c1d2e4513d35fdebc428c0ba87d95e6a1548cd9c7685c790f8e7627ff783f",
+    "firmware/core/hanger_core.c": "6ee86d28eec2034fe1fc507217e0763198f2608640728358fab097b6777ec1e4",
+    "firmware/core/hanger_core.h": "9c0e9a9ad9dfb7f5e4b74364bb22a890c8340975290eeba739651abfdf24c1b6",
+    "firmware/core/hanger_energy.c": "07d0e4d3879f4a1bd794799c0bb8093d23d29e2a2802270f8940e606eba59a99",
+    "firmware/core/hanger_energy.h": "c735903bab6a0f3962ccd5c59e488dd07ef10d40804b1aaaaeac6a9bcde9863d",
+    "firmware/core/hanger_mean_internal.h": "1b262486f3a4126471457b2aae1803aeca83f6ffc427bec6c0c3099ab5cb2953",
+    "firmware/core/hanger_measurement.c": "ed31a952332ddfea4858a2893a77f9b6115f59656e6a8f3d871ee8d1c304997d",
+    "firmware/core/hanger_measurement.h": "ad9436c309007cf836a797bcb5b5e0cec832ffeab887d33ef2d13d572867da54",
+    "firmware/core/hanger_sha256_internal.h": "61e5b016b8e3988ff70bb8331056283b4772c9e651f66ec5b948a76fd067c301",
+    "firmware/core/hanger_state.c": "ea12f3ebc649d83e8fa8a3082a727d3792e68882d8c1b2ae39a713fc5124d073",
+    "firmware/core/hanger_state.h": "6b663567c8989520d14a95b113cccd30b2f0f317078156ff7776b3ec7b1fced1",
+    "firmware/host/energy_bridge.c": "34976c34f2f04f1c751075cd9a6dee10e5243e2eecdd9ce1358724aa793323bc",
+    "firmware/host/energy_validation.py": "508699cc7f85ea121fb9575586328a873d23808526a4ec6f4b54adf7196bb81b",
+    "firmware/host/integration_mean_bridge.c": "002e0fdaaec24822108fd8a2e6bc5d923830e5f3bcd59732f15a234e44e495cb",
+    "firmware/host/integration_tests.c": "24472710d0c52e52a935d58dcf48d81bb6cbd3fe82faacec9dbd1b2c8ef11f54",
+    "firmware/host/integration_validation.py": "6616b2dcae173bb85f4c941d760e150793b474035208eb361ebafc7ddb43d20a",
+    "firmware/host/measurement_bridge.c": "842fac20c27e97ed5f0d15ece7299c92e6349ebe9f022ea04db9af37a769dfcb",
+    "firmware/host/measurement_validation.py": "ba34aa4fd9e5925baba39ea4ca562e5638f913c202936af23ebaae8f703170c3",
+    "firmware/host/run.py": "d50dad35511a0115ef2f6f6bb8b48fb9c9fc48424c9590255c89a0ad658f482c",
+    "firmware/host/test_runner.py": "2dae98d455abf6b4936b847cbb32b095e777e1794348ded9d3aa10d7a9a5178b",
+    "research/energy_t05/__init__.py": "4dd673a02f5cc8ec5ed47661f02635791d77bd586ab26277a75e5745a4884138",
+    "research/energy_t05/contracts.py": "958ac72f7944141d2cf3a3de00ec973e6d3914bb28509ca9718c200feb09590b",
+    "research/energy_t05/model.py": "2762b2dc3c26279ef304d06ffb2aaa2ca1aa1fe69728220a7aafcc1a397dd9ba",
+    "research/energy_t05/results/case-01-demand-ledger.jsonl": "aa49d25b675e7f60311f5fd4566a9800b744907b414123f0059cc3b8c470378f",
+    "research/energy_t05/results/case-01-fixed-ledger.jsonl": "934bd58f388b9de3dd8e8c53739b16ce5c00b822de67d5362986fe7b84c22396",
+    "research/energy_t05/results/case-02-demand-ledger.jsonl": "e473ec59b9fd02093d2cd517df45ad09cf6364f0e672b5a72a2ad63be271310c",
+    "research/energy_t05/results/case-02-fixed-ledger.jsonl": "744ec3b826a1a656ac45c70ccf374b827281c1dbe5f8aa69f7338fffaa7b3621",
+    "research/energy_t05/results/case-03-demand-ledger.jsonl": "dd71b8f8e981b4a7a3e9bff4a3921ef7015a4b977fb7fb179b68d6d31b604c9d",
+    "research/energy_t05/results/case-03-fixed-ledger.jsonl": "40c411dce8523251ed7dbfc37439a2efea5cee91a8fe862b082259f156649c3a",
+    "research/energy_t05/results/case-04-demand-ledger.jsonl": "16c218e3b22fd94b20e649cd0dabde01e18412980555b99af26981fcc008d01e",
+    "research/energy_t05/results/case-04-fixed-ledger.jsonl": "177a585a3afc724cbd7d378c99a44b1ed4d30600d6018e459f20f3d289156400",
+    "research/energy_t05/results/case-05-demand-ledger.jsonl": "6c26d372ed244a0427590c6a4502e243f26b5dc7f117f2f2129fcba4f8e9b574",
+    "research/energy_t05/results/case-05-fixed-ledger.jsonl": "7ff42f44f7db47dafa86c8d242a861899db0d7f36e8a9f6d2a9c2d4234623fb3",
+    "research/energy_t05/results/case-06-demand-ledger.jsonl": "feb7ed05323e3352b08a5c37a5369d0beb6314f497f64865e74b088325e0c36c",
+    "research/energy_t05/results/case-06-fixed-ledger.jsonl": "8f9fe3c67c157b5016d39a8d3ff8c3a96a8391d0877d800a3e436ae675a7c702",
+    "research/energy_t05/results/inputs.json": "aad2efe9f87f356b0dab45659509fa29c393f7e389ea9d2fef416b07ec007055",
+    "research/energy_t05/results/manifest.json": "86c85040f782cab1caa706f9fa54814fe124aaefc532402e9b103c3a8bf50521",
+    "research/energy_t05/run.py": "bfb7b04bab206ab51696a0d41166d55e7e4f08de0dfcb19e0304a05b3b9c1d36",
+    "research/energy_t05/scenarios.py": "cbf3c44b1e5b49467a29528d74a0ba2eb01964cd86ac4fdf4797a4bd18b34be9",
+    "research/energy_t05/test_energy.py": "b6a5f67827fbe9a340ab6552330747a745faccba6150734afa3ba52cb0295207",
+    "research/state_machine/machine.py": "1a695579016913b10cfe9f9b8b0d8b0f30ea188ecc195348fc93f96248817777",
+    "research/state_machine/results/events.json": "f3b588856665ef5855f08a77c31c6254b80feb3b2ba78ab874b6eca8003bd2a2",
+    "research/state_machine/results/manifest.json": "b6c7e6c243e2b3421aa6e6a8717acec35fb6c3c918977ff0b8cc50e4d9f384e4",
+    "research/state_machine/run.py": "c384539b83c1e83bfba8b1cbd56be05daf4622f262661b0f4b2336f57ef3f02e",
+    "research/state_machine/scenarios.py": "8b7b4af4ac940c4c53c58eb79ae7208152db72d5d9dc11f4cdeabc3cf7eb70c8",
+    "research/state_machine/test_state_machine.py": "e3fdf1763cb2980009415d38a2b4e437d506b8967aee3052ac2ba2c3396c3c36",
+    "theory/model.py": "a80f08265ab40087886dade605afa94cd6ebeba64d2cf239ea82e561eaef642b",
+    "theory/protocol.py": "122f41d26988e9c80175c96116cc750b9cba00c9ec569c38e32bef438a585cb5",
+    "theory/run_simulation.py": "219ba3984c44e027c2628ad5c89c15fab27cd742c1c809d6ad09f49c6295f966",
+    "theory/test_model.py": "e3aad824cb0ac3da22fc0343240898e4a1027767f7e17e5e256bd1197798f2e5",
+    "tools/project_status.py": "83cc95439ba04eee7cd29b679bf305ca9df6e5ede94e09c959b05e812d3f2927"
+  },
+  "results": {
+    "measurement": {
+      "passed": true,
+      "check_count": 18329,
+      "commands": [
+        [
+          "C:\\msys64=\\ucrt64\\bin\\gcc.exe",
+          "--version"
+        ],
+        [
+          "C:\\msys64=\\ucrt64\\bin\\gcc.exe",
+          "-std=c99",
+          "-Wall",
+          "-Wextra",
+          "-Werror",
+          "-pedantic",
+          "-O2",
+          "-ffp-contract=off",
+          "-fstack-usage",
+          "-I",
+          "..\\..\\..\\core",
+          "-c",
+          "..\\..\\..\\core\\hanger_measurement.c",
+          "-o",
+          "hanger_measurement.o"
+        ],
+        [
+          "C:\\msys64=\\ucrt64\\bin\\gcc.exe",
+          "-std=c99",
+          "-Wall",
+          "-Wextra",
+          "-Werror",
+          "-pedantic",
+          "-O2",
+          "-ffp-contract=off",
+          "-fstack-usage",
+          "-I",
+          "..\\..\\..\\core",
+          "-c",
+          "..\\..\\..\\core\\hanger_state.c",
+          "-o",
+          "hanger_state.o"
+        ],
+        [
+          "C:\\msys64=\\ucrt64\\bin\\gcc.exe",
+          "-std=c99",
+          "-Wall",
+          "-Wextra",
+          "-Werror",
+          "-pedantic",
+          "-O2",
+          "-ffp-contract=off",
+          "-fstack-usage",
+          "-I",
+          "..\\..\\..\\core",
+          "-c",
+          "..\\..\\measurement_bridge.c",
+          "-o",
+          "measurement_bridge.o"
+        ],
+        [
+          "C:\\msys64=\\ucrt64\\bin\\gcc.exe",
+          "-shared",
+          "hanger_measurement.o",
+          "hanger_state.o",
+          "measurement_bridge.o",
+          "-o",
+          "measurement_10464.dll",
+          "-lm"
+        ],
+        [
+          "C:\\msys64=\\ucrt64\\bin\\nm.exe",
+          "-u",
+          "hanger_measurement.o",
+          "hanger_state.o"
+        ]
+      ],
+      "command_cwd": "C:\\Users\\wc\\Documents\\ChatGPT\\微开发\\firmware\\host\\build\\measurement",
+      "source_sha256": {
+        "theory/model.py": "a80f08265ab40087886dade605afa94cd6ebeba64d2cf239ea82e561eaef642b",
+        "theory/protocol.py": "122f41d26988e9c80175c96116cc750b9cba00c9ec569c38e32bef438a585cb5",
+        "theory/run_simulation.py": "219ba3984c44e027c2628ad5c89c15fab27cd742c1c809d6ad09f49c6295f966",
+        "research/state_machine/machine.py": "1a695579016913b10cfe9f9b8b0d8b0f30ea188ecc195348fc93f96248817777",
+        "research/state_machine/scenarios.py": "8b7b4af4ac940c4c53c58eb79ae7208152db72d5d9dc11f4cdeabc3cf7eb70c8",
+        "research/state_machine/results/events.json": "f3b588856665ef5855f08a77c31c6254b80feb3b2ba78ab874b6eca8003bd2a2",
+        "firmware/core/hanger_measurement.h": "ad9436c309007cf836a797bcb5b5e0cec832ffeab887d33ef2d13d572867da54",
+        "firmware/core/hanger_measurement.c": "ed31a952332ddfea4858a2893a77f9b6115f59656e6a8f3d871ee8d1c304997d",
+        "firmware/core/hanger_state.h": "6b663567c8989520d14a95b113cccd30b2f0f317078156ff7776b3ec7b1fced1",
+        "firmware/core/hanger_state.c": "ea12f3ebc649d83e8fa8a3082a727d3792e68882d8c1b2ae39a713fc5124d073",
+        "firmware/core/hanger_mean_internal.h": "1b262486f3a4126471457b2aae1803aeca83f6ffc427bec6c0c3099ab5cb2953",
+        "firmware/core/hanger_sha256_internal.h": "61e5b016b8e3988ff70bb8331056283b4772c9e651f66ec5b948a76fd067c301",
+        "firmware/host/measurement_bridge.c": "842fac20c27e97ed5f0d15ece7299c92e6349ebe9f022ea04db9af37a769dfcb",
+        "firmware/host/measurement_validation.py": "ba34aa4fd9e5925baba39ea4ca562e5638f913c202936af23ebaae8f703170c3"
+      },
+      "metrics": {
+        "compiler": "gcc.exe (Rev5, Built by MSYS2 project) 16.1.0\nCopyright (C) 2026 Free Software Foundation, Inc.\nThis is free software; see the source for copying conditions.  There is NO\nwarranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.",
+        "numeric_max_abs_error_Pa": 0.0,
+        "numeric_tolerance_Pa": 1e-10,
+        "random_seed": 20261026,
+        "simulation_seed": 20261023,
+        "exact_mean_vectors": 249,
+        "measurement_vectors": 287,
+        "saved_T04_scenarios": 19,
+        "saved_T04_events": 156,
+        "total_reference_events": 320,
+        "sizeof_bytes": {
+          "hs_machine": 9616,
+          "hm_observation": 80,
+          "hs_event": 240,
+          "hs_output": 1000,
+          "hs_config": 192,
+          "hm_protocol": 80,
+          "hm_result": 32,
+          "hs_snapshot": 744,
+          "hs_receipt": 98,
+          "sha_context": 112,
+          "long_double": 16
+        },
+        "raw_buffer_512_bytes": 40960,
+        "stack_frames_host_bytes": {
+          "hm_sum_add": {
+            "bytes": 16,
+            "kind": "static"
+          },
+          "aligned": {
+            "bytes": 64,
+            "kind": "static"
+          },
+          "hm_mean": {
+            "bytes": 224,
+            "kind": "static"
+          },
+          "hm_protocol_valid.part.0": {
+            "bytes": 160,
+            "kind": "static"
+          },
+          "hm_total_s": {
+            "bytes": 8,
+            "kind": "static"
+          },
+          "hm_protocol_valid": {
+            "bytes": 64,
+            "kind": "static"
+          },
+          "hm_gates_valid": {
+            "bytes": 8,
+            "kind": "static"
+          },
+          "hm_protocol_equal": {
+            "bytes": 8,
+            "kind": "static"
+          },
+          "hm_gates_equal": {
+            "bytes": 8,
+            "kind": "static"
+          },
+          "hm_assess": {
+            "bytes": 912,
+            "kind": "static"
+          },
+          "hs_sha_block": {
+            "bytes": 480,
+            "kind": "static"
+          },
+          "valid_id": {
+            "bytes": 8,
+            "kind": "static"
+          },
+          "deadline_ok": {
+            "bytes": 8,
+            "kind": "static"
+          },
+          "detach": {
+            "bytes": 48,
+            "kind": "static"
+          },
+          "hs_sha_add": {
+            "bytes": 80,
+            "kind": "static"
+          },
+          "contains": {
+            "bytes": 64,
+            "kind": "static"
+          },
+          "reply.isra": {
+            "bytes": 64,
+            "kind": "static"
+          },
+          "stabilize": {
+            "bytes": 64,
+            "kind": "static"
+          },
+          "failure.isra": {
+            "bytes": 64,
+            "kind": "static"
+          },
+          "hp.part.0": {
+            "bytes": 80,
+            "kind": "static"
+          },
+          "hc": {
+            "bytes": 80,
+            "kind": "static"
+          },
+          "hs_config_valid": {
+            "bytes": 80,
+            "kind": "static"
+          },
+          "hs_config_equal": {
+            "bytes": 48,
+            "kind": "static"
+          },
+          "hs_init": {
+            "bytes": 64,
+            "kind": "static"
+          },
+          "hs_handle": {
+            "bytes": 384,
+            "kind": "static"
+          },
+          "mb_init": {
+            "bytes": 8,
+            "kind": "static"
+          },
+          "mb_handle": {
+            "bytes": 8,
+            "kind": "static"
+          },
+          "mb_assess": {
+            "bytes": 8,
+            "kind": "static"
+          },
+          "mb_size": {
+            "bytes": 8,
+            "kind": "static"
+          },
+          "mb_counts": {
+            "bytes": 8,
+            "kind": "static"
+          },
+          "mb_sha": {
+            "bytes": 256,
+            "kind": "static"
+          },
+          "mb_mean": {
+            "bytes": 528,
+            "kind": "static"
+          },
+          "mb_rounding_guard": {
+            "bytes": 64,
+            "kind": "static"
+          }
+        },
+        "core_frames_sum_excluding_libraries_bytes": 3088,
+        "limits": {
+          "samples": 512,
+          "messages": 64,
+          "cycles": 16,
+          "boots": 8,
+          "installations": 32,
+          "retired_batches": 16,
+          "id_ascii_bytes": 32,
+          "time_s": 1000000000.0
+        }
+      },
+      "reference_configuration": {
+        "version": "1.0",
+        "protocol": {
+          "version": "1.0",
+          "baseline_s": 30.0,
+          "flush_s": 20.0,
+          "recovery_s": 90.0,
+          "sample_period_s": 1.0,
+          "max_gap_factor": 2.5,
+          "head_window_s": 5.0,
+          "tail_window_s": 10.0,
+          "min_phase_samples": 2,
+          "min_window_samples": 2,
+          "time_tolerance_s": 1e-08
+        },
+        "gates": {
+          "high_ambient_rh_pct": 90.0,
+          "saturation_rh_pct": 98.0,
+          "ambient_change_rh_pct": 3.0,
+          "temp_mismatch_c": 1.0,
+          "strong_delta_pa": 100.0,
+          "weak_delta_pa": 40.0
+        },
+        "policy": {
+          "stabilization_wait_s": 30.0,
+          "min_cycle_gap_s": 30.0,
+          "max_evidence_gap_s": 1800.0,
+          "max_event_gap_s": 3600.0,
+          "completion_grace_s": 10.0,
+          "timestamp_tolerance_s": 1e-06,
+          "review_after_weak_cycles": 3
+        }
+      },
+      "verification_protocols": {
+        "default": {
+          "version": "1.0",
+          "baseline_s": 30.0,
+          "flush_s": 20.0,
+          "recovery_s": 90.0,
+          "sample_period_s": 1.0,
+          "max_gap_factor": 2.5,
+          "head_window_s": 5.0,
+          "tail_window_s": 10.0,
+          "min_phase_samples": 2,
+          "min_window_samples": 2,
+          "time_tolerance_s": 1e-08
+        },
+        "half_second": {
+          "version": "1.0",
+          "baseline_s": 30.0,
+          "flush_s": 20.0,
+          "recovery_s": 90.0,
+          "sample_period_s": 0.5,
+          "max_gap_factor": 2.5,
+          "head_window_s": 5.0,
+          "tail_window_s": 10.0,
+          "min_phase_samples": 2,
+          "min_window_samples": 2,
+          "time_tolerance_s": 1e-08
+        },
+        "three_second_long": {
+          "version": "1.0",
+          "baseline_s": 24,
+          "flush_s": 18,
+          "recovery_s": 120,
+          "sample_period_s": 3,
+          "max_gap_factor": 2.5,
+          "head_window_s": 6,
+          "tail_window_s": 12,
+          "min_phase_samples": 2,
+          "min_window_samples": 2,
+          "time_tolerance_s": 1e-08
+        }
+      },
+      "simulation_case_parameters": {
+        "wet_normal": {
+          "volume_ml": 5.0,
+          "exchange_ml_s": 0.02,
+          "leak_ml_s": 0.02,
+          "passive_extra_ml_s": 0.38,
+          "flush_extra_ml_s": 0.98,
+          "temp_c": 25.0,
+          "ambient_rh_pct": 60.0,
+          "surface_activity": 1.0,
+          "wall_source_ug_s": 0.0,
+          "sensor_tau_s": 4.0,
+          "noise_rh_pct": 0.1,
+          "local_rh_bias_pct": 0.0,
+          "local_temp_bias_c": 0.0,
+          "ambient_step_at_s": -1.0,
+          "ambient_step_rh_pct": 0.0,
+          "clip_at_s": -1.0,
+          "invalid_at_s": -1.0
+        },
+        "dry_equilibrium": {
+          "volume_ml": 5.0,
+          "exchange_ml_s": 0.02,
+          "leak_ml_s": 0.02,
+          "passive_extra_ml_s": 0.38,
+          "flush_extra_ml_s": 0.98,
+          "temp_c": 25.0,
+          "ambient_rh_pct": 60.0,
+          "surface_activity": 0.6,
+          "wall_source_ug_s": 0.0,
+          "sensor_tau_s": 4.0,
+          "noise_rh_pct": 0.1,
+          "local_rh_bias_pct": 0.0,
+          "local_temp_bias_c": 0.0,
+          "ambient_step_at_s": -1.0,
+          "ambient_step_rh_pct": 0.0,
+          "clip_at_s": -1.0,
+          "invalid_at_s": -1.0
+        },
+        "wet_leaky": {
+          "volume_ml": 5.0,
+          "exchange_ml_s": 0.02,
+          "leak_ml_s": 1.5,
+          "passive_extra_ml_s": 0.38,
+          "flush_extra_ml_s": 0.98,
+          "temp_c": 25.0,
+          "ambient_rh_pct": 60.0,
+          "surface_activity": 1.0,
+          "wall_source_ug_s": 0.0,
+          "sensor_tau_s": 4.0,
+          "noise_rh_pct": 0.1,
+          "local_rh_bias_pct": 0.0,
+          "local_temp_bias_c": 0.0,
+          "ambient_step_at_s": -1.0,
+          "ambient_step_rh_pct": 0.0,
+          "clip_at_s": -1.0,
+          "invalid_at_s": -1.0
+        },
+        "wet_high_humidity": {
+          "volume_ml": 5.0,
+          "exchange_ml_s": 0.02,
+          "leak_ml_s": 0.02,
+          "passive_extra_ml_s": 0.38,
+          "flush_extra_ml_s": 0.98,
+          "temp_c": 25.0,
+          "ambient_rh_pct": 95,
+          "surface_activity": 1.0,
+          "wall_source_ug_s": 0.0,
+          "sensor_tau_s": 4.0,
+          "noise_rh_pct": 0.1,
+          "local_rh_bias_pct": 0.0,
+          "local_temp_bias_c": 0.0,
+          "ambient_step_at_s": -1.0,
+          "ambient_step_rh_pct": 0.0,
+          "clip_at_s": -1.0,
+          "invalid_at_s": -1.0
+        },
+        "ambient_step": {
+          "volume_ml": 5.0,
+          "exchange_ml_s": 0.02,
+          "leak_ml_s": 0.02,
+          "passive_extra_ml_s": 0.38,
+          "flush_extra_ml_s": 0.98,
+          "temp_c": 25.0,
+          "ambient_rh_pct": 60.0,
+          "surface_activity": 1.0,
+          "wall_source_ug_s": 0.0,
+          "sensor_tau_s": 4.0,
+          "noise_rh_pct": 0.1,
+          "local_rh_bias_pct": 0.0,
+          "local_temp_bias_c": 0.0,
+          "ambient_step_at_s": 70,
+          "ambient_step_rh_pct": 15,
+          "clip_at_s": -1.0,
+          "invalid_at_s": -1.0
+        },
+        "clip_changed": {
+          "volume_ml": 5.0,
+          "exchange_ml_s": 0.02,
+          "leak_ml_s": 0.02,
+          "passive_extra_ml_s": 0.38,
+          "flush_extra_ml_s": 0.98,
+          "temp_c": 25.0,
+          "ambient_rh_pct": 60.0,
+          "surface_activity": 1.0,
+          "wall_source_ug_s": 0.0,
+          "sensor_tau_s": 4.0,
+          "noise_rh_pct": 0.1,
+          "local_rh_bias_pct": 0.0,
+          "local_temp_bias_c": 0.0,
+          "ambient_step_at_s": -1.0,
+          "ambient_step_rh_pct": 0.0,
+          "clip_at_s": 85,
+          "invalid_at_s": -1.0
+        },
+        "sensor_failure": {
+          "volume_ml": 5.0,
+          "exchange_ml_s": 0.02,
+          "leak_ml_s": 0.02,
+          "passive_extra_ml_s": 0.38,
+          "flush_extra_ml_s": 0.98,
+          "temp_c": 25.0,
+          "ambient_rh_pct": 60.0,
+          "surface_activity": 1.0,
+          "wall_source_ug_s": 0.0,
+          "sensor_tau_s": 4.0,
+          "noise_rh_pct": 0.1,
+          "local_rh_bias_pct": 0.0,
+          "local_temp_bias_c": 0.0,
+          "ambient_step_at_s": -1.0,
+          "ambient_step_rh_pct": 0.0,
+          "clip_at_s": -1.0,
+          "invalid_at_s": 85
+        },
+        "temperature_mismatch": {
+          "volume_ml": 5.0,
+          "exchange_ml_s": 0.02,
+          "leak_ml_s": 0.02,
+          "passive_extra_ml_s": 0.38,
+          "flush_extra_ml_s": 0.98,
+          "temp_c": 25.0,
+          "ambient_rh_pct": 60.0,
+          "surface_activity": 1.0,
+          "wall_source_ug_s": 0.0,
+          "sensor_tau_s": 4.0,
+          "noise_rh_pct": 0.1,
+          "local_rh_bias_pct": 0.0,
+          "local_temp_bias_c": 3,
+          "ambient_step_at_s": -1.0,
+          "ambient_step_rh_pct": 0.0,
+          "clip_at_s": -1.0,
+          "invalid_at_s": -1.0
+        },
+        "dry_wall_source": {
+          "volume_ml": 5.0,
+          "exchange_ml_s": 0.02,
+          "leak_ml_s": 0.02,
+          "passive_extra_ml_s": 0.38,
+          "flush_extra_ml_s": 0.98,
+          "temp_c": 25.0,
+          "ambient_rh_pct": 60.0,
+          "surface_activity": 0.6,
+          "wall_source_ug_s": 0.1,
+          "sensor_tau_s": 4.0,
+          "noise_rh_pct": 0.1,
+          "local_rh_bias_pct": 0.0,
+          "local_temp_bias_c": 0.0,
+          "ambient_step_at_s": -1.0,
+          "ambient_step_rh_pct": 0.0,
+          "clip_at_s": -1.0,
+          "invalid_at_s": -1.0
+        },
+        "slow_sensor": {
+          "volume_ml": 5.0,
+          "exchange_ml_s": 0.02,
+          "leak_ml_s": 0.02,
+          "passive_extra_ml_s": 0.38,
+          "flush_extra_ml_s": 0.98,
+          "temp_c": 25.0,
+          "ambient_rh_pct": 60.0,
+          "surface_activity": 1.0,
+          "wall_source_ug_s": 0.0,
+          "sensor_tau_s": 30,
+          "noise_rh_pct": 0.1,
+          "local_rh_bias_pct": 0.0,
+          "local_temp_bias_c": 0.0,
+          "ambient_step_at_s": -1.0,
+          "ambient_step_rh_pct": 0.0,
+          "clip_at_s": -1.0,
+          "invalid_at_s": -1.0
+        },
+        "ambiguous_A": {
+          "volume_ml": 5.0,
+          "exchange_ml_s": 0.02,
+          "leak_ml_s": 0.02,
+          "passive_extra_ml_s": 0.38,
+          "flush_extra_ml_s": 0.98,
+          "temp_c": 25.0,
+          "ambient_rh_pct": 60.0,
+          "surface_activity": 1.0,
+          "wall_source_ug_s": 0.0,
+          "sensor_tau_s": 4.0,
+          "noise_rh_pct": 0,
+          "local_rh_bias_pct": 0.0,
+          "local_temp_bias_c": 0.0,
+          "ambient_step_at_s": -1.0,
+          "ambient_step_rh_pct": 0.0,
+          "clip_at_s": -1.0,
+          "invalid_at_s": -1.0
+        },
+        "ambiguous_B": {
+          "volume_ml": 5.0,
+          "exchange_ml_s": 0.04,
+          "leak_ml_s": 0,
+          "passive_extra_ml_s": 0.38,
+          "flush_extra_ml_s": 0.98,
+          "temp_c": 25.0,
+          "ambient_rh_pct": 60.0,
+          "surface_activity": 0.8,
+          "wall_source_ug_s": 0.0,
+          "sensor_tau_s": 4.0,
+          "noise_rh_pct": 0,
+          "local_rh_bias_pct": 0.0,
+          "local_temp_bias_c": 0.0,
+          "ambient_step_at_s": -1.0,
+          "ambient_step_rh_pct": 0.0,
+          "clip_at_s": -1.0,
+          "invalid_at_s": -1.0
+        }
+      },
+      "scope": "Synthetic host C/Python differential comparison; no device, persistent storage or real garment calibration."
+    },
+    "energy": {
+      "passed": true,
+      "check_count": 1940,
+      "commands": [
+        [
+          "C:\\msys64=\\ucrt64\\bin\\gcc.exe",
+          "--version"
+        ],
+        [
+          "C:\\msys64=\\ucrt64\\bin\\gcc.exe",
+          "-std=c99",
+          "-Wall",
+          "-Wextra",
+          "-Werror",
+          "-pedantic",
+          "-O2",
+          "-fno-fast-math",
+          "-ffp-contract=off",
+          "-fstack-usage",
+          "-c",
+          "..\\..\\..\\..\\core\\hanger_energy.c",
+          "-o",
+          "hanger_energy.o"
+        ],
+        [
+          "C:\\msys64=\\ucrt64\\bin\\gcc.exe",
+          "-std=c99",
+          "-Wall",
+          "-Wextra",
+          "-Werror",
+          "-pedantic",
+          "-O2",
+          "-fno-fast-math",
+          "-ffp-contract=off",
+          "-fstack-usage",
+          "-c",
+          "..\\..\\..\\energy_bridge.c",
+          "-o",
+          "energy_bridge.o"
+        ],
+        [
+          "C:\\msys64=\\ucrt64\\bin\\gcc.exe",
+          "-shared",
+          "hanger_energy.o",
+          "energy_bridge.o",
+          "-o",
+          "energy_core.dll",
+          "-lm"
+        ]
+      ],
+      "command_cwd": "C:\\Users\\wc\\Documents\\ChatGPT\\微开发\\firmware\\host\\build\\energy\\energy_run_0c4m2eoj",
+      "label": "SYNTHETIC_UNCALIBRATED",
+      "collection_authorized": false,
+      "seed": 20261026,
+      "compiler": "gcc.exe (Rev5, Built by MSYS2 project) 16.1.0",
+      "source_sha256": {
+        "firmware/core/hanger_energy.h": "c735903bab6a0f3962ccd5c59e488dd07ef10d40804b1aaaaeac6a9bcde9863d",
+        "firmware/core/hanger_energy.c": "07d0e4d3879f4a1bd794799c0bb8093d23d29e2a2802270f8940e606eba59a99",
+        "firmware/host/energy_bridge.c": "34976c34f2f04f1c751075cd9a6dee10e5243e2eecdd9ce1358724aa793323bc",
+        "firmware/host/energy_validation.py": "508699cc7f85ea121fb9575586328a873d23808526a4ec6f4b54adf7196bb81b"
+      },
+      "input_sha256": {
+        "research/energy_t05/contracts.py": "958ac72f7944141d2cf3a3de00ec973e6d3914bb28509ca9718c200feb09590b",
+        "research/energy_t05/model.py": "2762b2dc3c26279ef304d06ffb2aaa2ca1aa1fe69728220a7aafcc1a397dd9ba",
+        "research/energy_t05/results/manifest.json": "86c85040f782cab1caa706f9fa54814fe124aaefc532402e9b103c3a8bf50521",
+        "research/state_machine/machine.py": "1a695579016913b10cfe9f9b8b0d8b0f30ea188ecc195348fc93f96248817777",
+        "theory/protocol.py": "122f41d26988e9c80175c96116cc750b9cba00c9ec569c38e32bef438a585cb5",
+        "theory/model.py": "a80f08265ab40087886dade605afa94cd6ebeba64d2cf239ea82e561eaef642b",
+        "docs/ENERGY-SCHEDULING.md": "b9a4ae1c9e78defabc61444d79b8b77623bcd22bba4b098873212a8e3ec8057d",
+        "docs/team/assignments/energy-t06.md": "3a20226f95ff449d8168a58cf0b0b4525809407952addf87846d1960e127f10c",
+        "research/energy_t05/results/inputs.json": "aad2efe9f87f356b0dab45659509fa29c393f7e389ea9d2fef416b07ec007055",
+        "research/energy_t05/results/case-01-fixed-ledger.jsonl": "934bd58f388b9de3dd8e8c53739b16ce5c00b822de67d5362986fe7b84c22396",
+        "research/energy_t05/results/case-01-demand-ledger.jsonl": "aa49d25b675e7f60311f5fd4566a9800b744907b414123f0059cc3b8c470378f",
+        "research/energy_t05/results/case-02-fixed-ledger.jsonl": "744ec3b826a1a656ac45c70ccf374b827281c1dbe5f8aa69f7338fffaa7b3621",
+        "research/energy_t05/results/case-02-demand-ledger.jsonl": "e473ec59b9fd02093d2cd517df45ad09cf6364f0e672b5a72a2ad63be271310c",
+        "research/energy_t05/results/case-03-fixed-ledger.jsonl": "40c411dce8523251ed7dbfc37439a2efea5cee91a8fe862b082259f156649c3a",
+        "research/energy_t05/results/case-03-demand-ledger.jsonl": "dd71b8f8e981b4a7a3e9bff4a3921ef7015a4b977fb7fb179b68d6d31b604c9d",
+        "research/energy_t05/results/case-04-fixed-ledger.jsonl": "177a585a3afc724cbd7d378c99a44b1ed4d30600d6018e459f20f3d289156400",
+        "research/energy_t05/results/case-04-demand-ledger.jsonl": "16c218e3b22fd94b20e649cd0dabde01e18412980555b99af26981fcc008d01e",
+        "research/energy_t05/results/case-05-fixed-ledger.jsonl": "7ff42f44f7db47dafa86c8d242a861899db0d7f36e8a9f6d2a9c2d4234623fb3",
+        "research/energy_t05/results/case-05-demand-ledger.jsonl": "6c26d372ed244a0427590c6a4502e243f26b5dc7f117f2f2129fcba4f8e9b574",
+        "research/energy_t05/results/case-06-fixed-ledger.jsonl": "8f9fe3c67c157b5016d39a8d3ff8c3a96a8391d0877d800a3e436ae675a7c702",
+        "research/energy_t05/results/case-06-demand-ledger.jsonl": "feb7ed05323e3352b08a5c37a5369d0beb6314f497f64865e74b088325e0c36c"
+      },
+      "metrics": {
+        "groups": {
+          "abi": 2,
+          "account": 202,
+          "admission": 191,
+          "analytic": 1,
+          "budget": 322,
+          "calendar": 7,
+          "conservation": 202,
+          "integer": 4,
+          "invalid": 149,
+          "invalid-reference": 54,
+          "power": 256,
+          "retry": 168,
+          "transport": 18,
+          "wifi-charge": 182,
+          "wifi-check": 182
+        },
+        "numeric_comparisons": 12147,
+        "abs_tolerance_wh": 2e-12,
+        "relative_tolerance": 2e-12,
+        "max_absolute_error": 3.552713678800501e-15,
+        "max_relative_error": 4.0,
+        "sizeof_bytes": {
+          "Config": 200,
+          "Protocol": 12,
+          "Budget": 120,
+          "Balance": 232,
+          "Power": 16,
+          "PowerResult": 32,
+          "Quota": 40,
+          "Wifi": 32,
+          "Admission": 80,
+          "AdmissionResult": 24,
+          "Retry": 16
+        },
+        "max_relative_error_above_abs_tol": 8.341386387847297e-15,
+        "stack_usage": [
+          {
+            "function": "energy_layout",
+            "bytes": 128,
+            "kind": "static",
+            "file": "energy_bridge.su"
+          },
+          {
+            "function": "energy_config",
+            "bytes": 8,
+            "kind": "static",
+            "file": "energy_bridge.su"
+          },
+          {
+            "function": "energy_protocol",
+            "bytes": 8,
+            "kind": "static",
+            "file": "energy_bridge.su"
+          },
+          {
+            "function": "energy_add",
+            "bytes": 8,
+            "kind": "static",
+            "file": "energy_bridge.su"
+          },
+          {
+            "function": "energy_budget",
+            "bytes": 8,
+            "kind": "static",
+            "file": "energy_bridge.su"
+          },
+          {
+            "function": "energy_account",
+            "bytes": 8,
+            "kind": "static",
+            "file": "energy_bridge.su"
+          },
+          {
+            "function": "energy_power",
+            "bytes": 8,
+            "kind": "static",
+            "file": "energy_bridge.su"
+          },
+          {
+            "function": "energy_quota_init",
+            "bytes": 8,
+            "kind": "static",
+            "file": "energy_bridge.su"
+          },
+          {
+            "function": "energy_quota_advance",
+            "bytes": 8,
+            "kind": "static",
+            "file": "energy_bridge.su"
+          },
+          {
+            "function": "energy_wifi_check",
+            "bytes": 8,
+            "kind": "static",
+            "file": "energy_bridge.su"
+          },
+          {
+            "function": "energy_wifi_charge",
+            "bytes": 8,
+            "kind": "static",
+            "file": "energy_bridge.su"
+          },
+          {
+            "function": "energy_admit",
+            "bytes": 8,
+            "kind": "static",
+            "file": "energy_bridge.su"
+          },
+          {
+            "function": "energy_retry",
+            "bytes": 8,
+            "kind": "static",
+            "file": "energy_bridge.su"
+          },
+          {
+            "function": "energy_reason",
+            "bytes": 8,
+            "kind": "static",
+            "file": "energy_bridge.su"
+          },
+          {
+            "function": "wifi_portions.part.0.isra",
+            "bytes": 16,
+            "kind": "static",
+            "file": "hanger_energy.su"
+          },
+          {
+            "function": "he_account.part.0",
+            "bytes": 432,
+            "kind": "static",
+            "file": "hanger_energy.su"
+          },
+          {
+            "function": "he_time_add",
+            "bytes": 8,
+            "kind": "static",
+            "file": "hanger_energy.su"
+          },
+          {
+            "function": "he_config_validate",
+            "bytes": 224,
+            "kind": "static",
+            "file": "hanger_energy.su"
+          },
+          {
+            "function": "he_protocol_validate",
+            "bytes": 8,
+            "kind": "static",
+            "file": "hanger_energy.su"
+          },
+          {
+            "function": "he_budget",
+            "bytes": 192,
+            "kind": "static",
+            "file": "hanger_energy.su"
+          },
+          {
+            "function": "he_account",
+            "bytes": 80,
+            "kind": "static",
+            "file": "hanger_energy.su"
+          },
+          {
+            "function": "he_power_update",
+            "bytes": 480,
+            "kind": "static",
+            "file": "hanger_energy.su"
+          },
+          {
+            "function": "he_quota_init",
+            "bytes": 64,
+            "kind": "static",
+            "file": "hanger_energy.su"
+          },
+          {
+            "function": "he_quota_advance",
+            "bytes": 8,
+            "kind": "static",
+            "file": "hanger_energy.su"
+          },
+          {
+            "function": "he_wifi_check",
+            "bytes": 208,
+            "kind": "static",
+            "file": "hanger_energy.su"
+          },
+          {
+            "function": "he_wifi_charge",
+            "bytes": 208,
+            "kind": "static",
+            "file": "hanger_energy.su"
+          },
+          {
+            "function": "he_admit",
+            "bytes": 352,
+            "kind": "static",
+            "file": "hanger_energy.su"
+          },
+          {
+            "function": "he_retry",
+            "bytes": 80,
+            "kind": "static",
+            "file": "hanger_energy.su"
+          },
+          {
+            "function": "he_reason_name",
+            "bytes": 8,
+            "kind": "static",
+            "file": "hanger_energy.su"
+          }
+        ],
+        "max_single_compiler_frame_bytes": 480,
+        "sum_all_compiler_frames_bytes": 2600,
+        "stack_limit_note": "No recursion or heap. Sum of all listed frames is a conservative core/bridge-only bound, not MCU/libm/interrupt stack proof.",
+        "wifi_max_loop_iterations": 86400
+      },
+      "artifacts": {
+        "build_dir": "C:\\Users\\wc\\Documents\\ChatGPT\\微开发\\firmware\\host\\build\\energy\\energy_run_0c4m2eoj",
+        "vectors": "C:\\Users\\wc\\Documents\\ChatGPT\\微开发\\firmware\\host\\build\\energy\\energy_run_0c4m2eoj\\energy_vectors.json",
+        "vectors_sha256": "02d7f12561517ab1550bf1fa868e57ef8f603db41f15dbfbf3f1728af9d299c0",
+        "library": "C:\\Users\\wc\\Documents\\ChatGPT\\微开发\\firmware\\host\\build\\energy\\energy_run_0c4m2eoj\\energy_core.dll"
+      },
+      "limits": [
+        "Primitives only; no full C T05 simulator, request queue, real T04 controller, observation generation or collection authorization.",
+        "Caller provides accepted protocol/config identity and trusted clock, installation/batch facts, finish-before-stop ordering and one active action.",
+        "Integer seconds; uint32 phase durations, uint64 absolute times with checked sums; wifi timeout <= 86400 seconds and four backoff slots.",
+        "C refuses an unpaid sub-epsilon boot instead of reproducing the Python epsilon-only permission edge.",
+        "Quota persistence is external; uninitialized ledger blocks wifi. Native host ABI/stack is not a target STM32 memory claim."
+      ]
+    },
+    "integration": {
+      "passed": true,
+      "check_count": 588,
+      "commands": [
+        [
+          "C:\\msys64=\\ucrt64\\bin\\gcc.exe",
+          "-std=c99",
+          "-Wall",
+          "-Wextra",
+          "-Werror",
+          "-pedantic",
+          "-fno-fast-math",
+          "-ffp-contract=off",
+          "-I",
+          "firmware/core",
+          "-O0",
+          "firmware\\core\\hanger_core.c",
+          "firmware\\core\\hanger_energy.c",
+          "firmware\\core\\hanger_measurement.c",
+          "firmware\\core\\hanger_state.c",
+          "firmware/host/integration_tests.c",
+          "-lm",
+          "-o",
+          "firmware\\host\\build\\integration\\integrationO0.exe"
+        ],
+        [
+          "C:\\Users\\wc\\Documents\\ChatGPT\\微开发\\firmware\\host\\build\\integration\\integrationO0.exe"
+        ],
+        [
+          "C:\\msys64=\\ucrt64\\bin\\gcc.exe",
+          "-std=c99",
+          "-Wall",
+          "-Wextra",
+          "-Werror",
+          "-pedantic",
+          "-fno-fast-math",
+          "-ffp-contract=off",
+          "-I",
+          "firmware/core",
+          "-O2",
+          "firmware\\core\\hanger_core.c",
+          "firmware\\core\\hanger_energy.c",
+          "firmware\\core\\hanger_measurement.c",
+          "firmware\\core\\hanger_state.c",
+          "firmware/host/integration_tests.c",
+          "-lm",
+          "-o",
+          "firmware\\host\\build\\integration\\integrationO2.exe"
+        ],
+        [
+          "C:\\Users\\wc\\Documents\\ChatGPT\\微开发\\firmware\\host\\build\\integration\\integrationO2.exe"
+        ],
+        [
+          "C:\\msys64=\\ucrt64\\bin\\gcc.exe",
+          "-std=c99",
+          "-Wall",
+          "-Wextra",
+          "-Werror",
+          "-pedantic",
+          "-fno-fast-math",
+          "-ffp-contract=off",
+          "-I",
+          "firmware/core",
+          "-O2",
+          "-shared",
+          "firmware/host/integration_mean_bridge.c",
+          "-lm",
+          "-o",
+          "firmware\\host\\build\\integration\\integration_mean_10464.dll"
+        ],
+        [
+          "C:\\msys64=\\ucrt64\\bin\\gcc.exe",
+          "-std=c99",
+          "-Wall",
+          "-Wextra",
+          "-Werror",
+          "-pedantic",
+          "-fno-fast-math",
+          "-ffp-contract=off",
+          "-I",
+          "firmware/core",
+          "-O2",
+          "-fstack-usage",
+          "-c",
+          "firmware\\core\\hanger_core.c",
+          "-o",
+          "firmware\\host\\build\\integration\\hanger_core.o"
+        ],
+        [
+          "C:\\msys64=\\ucrt64\\bin\\gcc.exe",
+          "-std=c99",
+          "-Wall",
+          "-Wextra",
+          "-Werror",
+          "-pedantic",
+          "-fno-fast-math",
+          "-ffp-contract=off",
+          "-I",
+          "firmware/core",
+          "-O2",
+          "-fstack-usage",
+          "-c",
+          "firmware\\core\\hanger_energy.c",
+          "-o",
+          "firmware\\host\\build\\integration\\hanger_energy.o"
+        ],
+        [
+          "C:\\msys64=\\ucrt64\\bin\\gcc.exe",
+          "-std=c99",
+          "-Wall",
+          "-Wextra",
+          "-Werror",
+          "-pedantic",
+          "-fno-fast-math",
+          "-ffp-contract=off",
+          "-I",
+          "firmware/core",
+          "-O2",
+          "-fstack-usage",
+          "-c",
+          "firmware\\core\\hanger_measurement.c",
+          "-o",
+          "firmware\\host\\build\\integration\\hanger_measurement.o"
+        ],
+        [
+          "C:\\msys64=\\ucrt64\\bin\\gcc.exe",
+          "-std=c99",
+          "-Wall",
+          "-Wextra",
+          "-Werror",
+          "-pedantic",
+          "-fno-fast-math",
+          "-ffp-contract=off",
+          "-I",
+          "firmware/core",
+          "-O2",
+          "-fstack-usage",
+          "-c",
+          "firmware\\core\\hanger_state.c",
+          "-o",
+          "firmware\\host\\build\\integration\\hanger_state.o"
+        ],
+        [
+          "C:\\msys64=\\ucrt64\\bin\\nm.exe",
+          "-u",
+          "firmware\\host\\build\\integration\\hanger_core.o",
+          "firmware\\host\\build\\integration\\hanger_energy.o",
+          "firmware\\host\\build\\integration\\hanger_measurement.o",
+          "firmware\\host\\build\\integration\\hanger_state.o"
+        ],
+        [
+          "C:\\msys64=\\ucrt64\\bin\\size.exe",
+          "firmware\\host\\build\\integration\\hanger_core.o",
+          "firmware\\host\\build\\integration\\hanger_energy.o",
+          "firmware\\host\\build\\integration\\hanger_measurement.o",
+          "firmware\\host\\build\\integration\\hanger_state.o"
+        ]
+      ],
+      "metrics": {
+        "linked_boundary_runs": {
+          "-O0": {
+            "passed": true,
+            "check_count": 69,
+            "hm_observation_bytes": 80,
+            "he_config_bytes": 200,
+            "he_quota_bytes": 40,
+            "hs_machine_bytes": 9616
+          },
+          "-O2": {
+            "passed": true,
+            "check_count": 69,
+            "hm_observation_bytes": 80,
+            "he_config_bytes": 200,
+            "he_quota_bytes": 40,
+            "hs_machine_bytes": 9616
+          }
+        },
+        "exact_mean_vectors": 510,
+        "exact_mean_seed": 2026102606,
+        "stack_usage_O2": {
+          "hanger_core.su": "firmware\\core\\hanger_core.c:4:11:hc_energy_protocol\t80\tstatic\n",
+          "hanger_energy.su": "firmware\\core\\hanger_energy.c:211:18:wifi_portions.part.0.isra\t16\tstatic\nfirmware\\core\\hanger_energy.c:96:11:he_account.part.0\t432\tstatic\nfirmware\\core\\hanger_energy.c:13:11:he_time_add\t8\tstatic\nfirmware\\core\\hanger_energy.c:21:11:he_config_validate\t224\tstatic\nfirmware\\core\\hanger_energy.c:55:11:he_protocol_validate\t8\tstatic\nfirmware\\core\\hanger_energy.c:63:11:he_budget\t192\tstatic\nfirmware\\core\\hanger_energy.c:96:11:he_account\t80\tstatic\nfirmware\\core\\hanger_energy.c:134:11:he_power_update\t480\tstatic\nfirmware\\core\\hanger_energy.c:184:11:he_quota_init\t64\tstatic\nfirmware\\core\\hanger_energy.c:196:11:he_quota_advance\t8\tstatic\nfirmware\\core\\hanger_energy.c:232:11:he_wifi_check\t208\tstatic\nfirmware\\core\\hanger_energy.c:258:11:he_wifi_charge\t208\tstatic\nfirmware\\core\\hanger_energy.c:284:11:he_admit\t352\tstatic\nfirmware\\core\\hanger_energy.c:333:11:he_retry\t80\tstatic\nfirmware\\core\\hanger_energy.c:353:13:he_reason_name\t8\tstatic\n",
+          "hanger_measurement.su": "firmware\\core\\hanger_mean_internal.h:18:13:hm_sum_add\t16\tstatic\nfirmware\\core\\hanger_measurement.c:9:12:aligned\t64\tstatic\nfirmware\\core\\hanger_mean_internal.h:31:15:hm_mean\t224\tstatic\nfirmware\\core\\hanger_measurement.c:13:5:hm_protocol_valid.part.0\t160\tstatic\nfirmware\\core\\hanger_measurement.c:7:8:hm_total_s\t8\tstatic\nfirmware\\core\\hanger_measurement.c:13:5:hm_protocol_valid\t64\tstatic\nfirmware\\core\\hanger_measurement.c:35:5:hm_gates_valid\t8\tstatic\nfirmware\\core\\hanger_measurement.c:44:5:hm_protocol_equal\t8\tstatic\nfirmware\\core\\hanger_measurement.c:52:5:hm_gates_equal\t8\tstatic\nfirmware\\core\\hanger_measurement.c:62:5:hm_assess\t912\tstatic\n",
+          "hanger_state.su": "firmware\\core\\hanger_sha256_internal.h:10:13:hs_sha_block\t480\tstatic\nfirmware\\core\\hanger_state.c:32:12:valid_id\t8\tstatic\nfirmware\\core\\hanger_state.c:65:12:deadline_ok\t8\tstatic\nfirmware\\core\\hanger_state.c:53:13:detach\t48\tstatic\nfirmware\\core\\hanger_sha256_internal.h:37:13:hs_sha_add\t80\tstatic\nfirmware\\core\\hanger_state.c:43:12:contains\t64\tstatic\nfirmware\\core\\hanger_state.c:57:12:reply.isra\t64\tstatic\nfirmware\\core\\hanger_state.c:66:12:stabilize\t64\tstatic\nfirmware\\core\\hanger_state.c:63:12:failure.isra\t64\tstatic\nfirmware\\core\\hanger_state.c:87:13:hp.part.0\t80\tstatic\nfirmware\\core\\hanger_state.c:93:13:hc\t80\tstatic\nfirmware\\core\\hanger_state.c:10:5:hs_config_valid\t80\tstatic\nfirmware\\core\\hanger_state.c:24:5:hs_config_equal\t48\tstatic\nfirmware\\core\\hanger_state.c:72:5:hs_init\t64\tstatic\nfirmware\\core\\hanger_state.c:117:5:hs_handle\t384\tstatic\n"
+        },
+        "object_sizes_host_only": "   text\t   data\t    bss\t    dec\t    hex\tfilename\n    620\t      0\t      0\t    620\t    26c\tfirmware\\host\\build\\integration\\hanger_core.o\n   7812\t      0\t      0\t   7812\t   1e84\tfirmware\\host\\build\\integration\\hanger_energy.o\n   6132\t      0\t      0\t   6132\t   17f4\tfirmware\\host\\build\\integration\\hanger_measurement.o\n  17436\t      0\t      0\t  17436\t   441c\tfirmware\\host\\build\\integration\\hanger_state.o\n",
+        "undefined_symbols": "\nfirmware\\host\\build\\integration\\hanger_core.o:\n                 U hm_protocol_valid\n\nfirmware\\host\\build\\integration\\hanger_energy.o:\n                 U fmax\n                 U fmin\n\nfirmware\\host\\build\\integration\\hanger_measurement.o:\n                 U exp\n                 U fegetround\n                 U floor\n                 U ldexp\n                 U memset\n                 U round\n\nfirmware\\host\\build\\integration\\hanger_state.o:\n                 U fegetround\n                 U hm_assess\n                 U hm_gates_equal\n                 U hm_gates_valid\n                 U hm_protocol_equal\n                 U hm_protocol_valid\n                 U hm_total_s\n                 U memcmp\n                 U memcpy\n                 U memset\n                 U strncmp\n",
+        "runner_checks": {
+          "check_count": 7,
+          "output": "test_boolean_count (firmware.host.test_runner.RunnerTests.test_boolean_count) ... ok\ntest_compiler_missing (firmware.host.test_runner.RunnerTests.test_compiler_missing) ... ok\ntest_complete (firmware.host.test_runner.RunnerTests.test_complete) ... ok\ntest_explicit_failure (firmware.host.test_runner.RunnerTests.test_explicit_failure) ... ok\ntest_malformed_result (firmware.host.test_runner.RunnerTests.test_malformed_result) ... ok\ntest_source_change (firmware.host.test_runner.RunnerTests.test_source_change) ... ok\ntest_zero_checks (firmware.host.test_runner.RunnerTests.test_zero_checks) ... ok\n\n----------------------------------------------------------------------\nRan 7 tests in 0.013s\n\nOK\n"
+        }
+      },
+      "scope": "Independent linked C boundary cases run at O0/O2; no heap imports; receipt failure cases. Host ABI only."
+    }
+  },
+  "exit_code": 0,
+  "scope": "T06 host-compiled C against synthetic Python reference vectors; no STM32/device validation.",
+  "compiler": {
+    "version": "gcc.exe (Rev5, Built by MSYS2 project) 16.1.0\nCopyright (C) 2026 Free Software Foundation, Inc.\nThis is free software; see the source for copying conditions.  There is NO\nwarranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.",
+    "target": "x86_64-w64-mingw32",
+    "path": "C:\\msys64=\\ucrt64\\bin\\gcc.exe",
+    "executable_sha256": "f96a3bdb1d3a3967b309d75c7413399391e857b5be4cb17162572ed66f6772a0"
+  },
+  "sources_stable_during_run": true
+}

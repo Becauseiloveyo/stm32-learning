@@ -1,0 +1,388 @@
+{
+  "manifest_version": 2,
+  "status": "SYNTHETIC_UNCALIBRATED",
+  "seed": 20261023,
+  "source_sha256": {
+    "model.py": "a80f08265ab40087886dade605afa94cd6ebeba64d2cf239ea82e561eaef642b",
+    "protocol.py": "122f41d26988e9c80175c96116cc750b9cba00c9ec569c38e32bef438a585cb5",
+    "run_simulation.py": "219ba3984c44e027c2628ad5c89c15fab27cd742c1c809d6ad09f49c6295f966"
+  },
+  "output_sha256": {
+    "trace-wet_normal.csv": "6fbb131520286a43af4711804d2518b9ebd83ca85563cc3940ec82fd2fd31246",
+    "trace-dry_equilibrium.csv": "7c5ce9297bf629dfe9f07016474d0731f7cc76ac92cb6e4418b5cb97cedd9307",
+    "trace-wet_leaky.csv": "a4ea17585a1911fada8145363aa5dad0aa7cd1798e19542c65a7e60d64ce65d5",
+    "trace-wet_high_humidity.csv": "cec2f3d70ff11465f4dceebbc0e7b717275304e0ce1575c9c60436313140201e",
+    "trace-ambient_step.csv": "0b38c807e3ee25d53519685be486ee185aad2ed9b405ce6bf0e4299d770ea4aa",
+    "trace-clip_changed.csv": "2c081923b544cca4da0c24090ba3a998b6360d7bb584ed314128297aee8119a4",
+    "trace-sensor_failure.csv": "68f821440d893dd63dc75a0499ad6107393e8f5208b37161752f9b554faca9c3",
+    "trace-temperature_mismatch.csv": "c3bab7af9bab4e65053b2175dd48b1b48be634bf2f9e7348389dfdf4cc94fa92",
+    "trace-dry_wall_source.csv": "94f00c48732399475ad84a733c47fe97f9dab7c2a4714f6a2f110317e9a44eb7",
+    "trace-slow_sensor.csv": "d958a184226f42d88892aac6519bb5a12a82ee36b833825200ba6b3693929dbc",
+    "trace-ambiguous_A.csv": "7539d446e2943a23e905afb7149b82ebe047d077a784258681ecb04b367334f9",
+    "trace-ambiguous_B.csv": "7e955fa6b41947217916ced9ea892af5957d0bee0a58f03da82bcb925366c398",
+    "case-summary.csv": "c6d6c9a42db48737904efc010ed72de86478ec2b9f196ed2eb2fffe900a1ab68",
+    "parameter-sweep.csv": "4056b40fa8970af6609e204904622eca79d74fa6cdf85c18553f3f7a739f058a",
+    "protocol-comparison.csv": "dab1ab6e55ebef665f6e5a4401c7a33c98acb50ec52be54ee49fbf313ccbcff1",
+    "simulation-overview.png": "cbe3cfef54cec50a8007dfaa1986c9c464e887999335423bbcf2682fc37f6b63",
+    "simulation-overview.svg": "f3ffa0e1687b8384cabace4a08f06a1a1b6d58a45848900edd6b655440190c70"
+  },
+  "plots_generated": true,
+  "observation_schema": {
+    "version": "1.0",
+    "unit_system": "s_degC_pctRH_Pa",
+    "units": {
+      "time_s": "s",
+      "ambient_T_C": "degC",
+      "ambient_RH_pct": "%RH",
+      "local_T_C": "degC",
+      "local_RH_pct": "%RH",
+      "delta_e_Pa": "Pa"
+    },
+    "missing_value": null,
+    "delta_e_Pa_is_diagnostic_only": true
+  },
+  "measurement_protocol": {
+    "version": "1.0",
+    "baseline_s": 30.0,
+    "flush_s": 20.0,
+    "recovery_s": 90.0,
+    "sample_period_s": 1.0,
+    "max_gap_factor": 2.5,
+    "head_window_s": 5.0,
+    "tail_window_s": 10.0,
+    "min_phase_samples": 2,
+    "min_window_samples": 2,
+    "time_tolerance_s": 1e-08
+  },
+  "protocol_sha256": "286acc0970edd40ace775bd55d1bca9bc34f603e29c863d9d3c99ac772e261bb",
+  "verification_protocols": {
+    "default": {
+      "parameters": {
+        "version": "1.0",
+        "baseline_s": 30.0,
+        "flush_s": 20.0,
+        "recovery_s": 90.0,
+        "sample_period_s": 1.0,
+        "max_gap_factor": 2.5,
+        "head_window_s": 5.0,
+        "tail_window_s": 10.0,
+        "min_phase_samples": 2,
+        "min_window_samples": 2,
+        "time_tolerance_s": 1e-08
+      },
+      "sha256": "286acc0970edd40ace775bd55d1bca9bc34f603e29c863d9d3c99ac772e261bb"
+    },
+    "half_second": {
+      "parameters": {
+        "version": "1.0",
+        "baseline_s": 30.0,
+        "flush_s": 20.0,
+        "recovery_s": 90.0,
+        "sample_period_s": 0.5,
+        "max_gap_factor": 2.5,
+        "head_window_s": 5.0,
+        "tail_window_s": 10.0,
+        "min_phase_samples": 2,
+        "min_window_samples": 2,
+        "time_tolerance_s": 1e-08
+      },
+      "sha256": "6c3da3e30f4d224b495f0fc2a8fe1d94268e66c5f0be29fbad7aa357301fb642"
+    },
+    "three_second_long": {
+      "parameters": {
+        "version": "1.0",
+        "baseline_s": 24,
+        "flush_s": 18,
+        "recovery_s": 120,
+        "sample_period_s": 3,
+        "max_gap_factor": 2.5,
+        "head_window_s": 6,
+        "tail_window_s": 12,
+        "min_phase_samples": 2,
+        "min_window_samples": 2,
+        "time_tolerance_s": 1e-08
+      },
+      "sha256": "e6d6392dfa1cb10c0a1fd2262fe8bda4174099fa938819c755be9acacad6fdd5"
+    }
+  },
+  "protocol_comparison_count": 15,
+  "scope": "isothermal short-window fixed-surface-potential model; no garment water mass",
+  "gates_are_illustrative": {
+    "high_ambient_rh_pct": 90.0,
+    "saturation_rh_pct": 98.0,
+    "ambient_change_rh_pct": 3.0,
+    "temp_mismatch_c": 1.0,
+    "strong_delta_pa": 100.0,
+    "weak_delta_pa": 40.0
+  },
+  "cases": {
+    "wet_normal": {
+      "parameters": {
+        "volume_ml": 5.0,
+        "exchange_ml_s": 0.02,
+        "leak_ml_s": 0.02,
+        "passive_extra_ml_s": 0.38,
+        "flush_extra_ml_s": 0.98,
+        "temp_c": 25.0,
+        "ambient_rh_pct": 60.0,
+        "surface_activity": 1.0,
+        "wall_source_ug_s": 0.0,
+        "sensor_tau_s": 4.0,
+        "noise_rh_pct": 0.1,
+        "local_rh_bias_pct": 0.0,
+        "local_temp_bias_c": 0.0,
+        "ambient_step_at_s": -1.0,
+        "ambient_step_rh_pct": 0.0,
+        "clip_at_s": -1.0,
+        "invalid_at_s": -1.0
+      },
+      "hypothesis": "wet-like surface; no whole-garment mass simulated"
+    },
+    "dry_equilibrium": {
+      "parameters": {
+        "volume_ml": 5.0,
+        "exchange_ml_s": 0.02,
+        "leak_ml_s": 0.02,
+        "passive_extra_ml_s": 0.38,
+        "flush_extra_ml_s": 0.98,
+        "temp_c": 25.0,
+        "ambient_rh_pct": 60.0,
+        "surface_activity": 0.6,
+        "wall_source_ug_s": 0.0,
+        "sensor_tau_s": 4.0,
+        "noise_rh_pct": 0.1,
+        "local_rh_bias_pct": 0.0,
+        "local_temp_bias_c": 0.0,
+        "ambient_step_at_s": -1.0,
+        "ambient_step_rh_pct": 0.0,
+        "clip_at_s": -1.0,
+        "invalid_at_s": -1.0
+      },
+      "hypothesis": "surface in equilibrium with ambient"
+    },
+    "wet_leaky": {
+      "parameters": {
+        "volume_ml": 5.0,
+        "exchange_ml_s": 0.02,
+        "leak_ml_s": 1.5,
+        "passive_extra_ml_s": 0.38,
+        "flush_extra_ml_s": 0.98,
+        "temp_c": 25.0,
+        "ambient_rh_pct": 60.0,
+        "surface_activity": 1.0,
+        "wall_source_ug_s": 0.0,
+        "sensor_tau_s": 4.0,
+        "noise_rh_pct": 0.1,
+        "local_rh_bias_pct": 0.0,
+        "local_temp_bias_c": 0.0,
+        "ambient_step_at_s": -1.0,
+        "ambient_step_rh_pct": 0.0,
+        "clip_at_s": -1.0,
+        "invalid_at_s": -1.0
+      },
+      "hypothesis": "wet-like surface with large unmeasured leak"
+    },
+    "wet_high_humidity": {
+      "parameters": {
+        "volume_ml": 5.0,
+        "exchange_ml_s": 0.02,
+        "leak_ml_s": 0.02,
+        "passive_extra_ml_s": 0.38,
+        "flush_extra_ml_s": 0.98,
+        "temp_c": 25.0,
+        "ambient_rh_pct": 95,
+        "surface_activity": 1.0,
+        "wall_source_ug_s": 0.0,
+        "sensor_tau_s": 4.0,
+        "noise_rh_pct": 0.1,
+        "local_rh_bias_pct": 0.0,
+        "local_temp_bias_c": 0.0,
+        "ambient_step_at_s": -1.0,
+        "ambient_step_rh_pct": 0.0,
+        "clip_at_s": -1.0,
+        "invalid_at_s": -1.0
+      },
+      "hypothesis": "wet-like surface in humid ambient"
+    },
+    "ambient_step": {
+      "parameters": {
+        "volume_ml": 5.0,
+        "exchange_ml_s": 0.02,
+        "leak_ml_s": 0.02,
+        "passive_extra_ml_s": 0.38,
+        "flush_extra_ml_s": 0.98,
+        "temp_c": 25.0,
+        "ambient_rh_pct": 60.0,
+        "surface_activity": 1.0,
+        "wall_source_ug_s": 0.0,
+        "sensor_tau_s": 4.0,
+        "noise_rh_pct": 0.1,
+        "local_rh_bias_pct": 0.0,
+        "local_temp_bias_c": 0.0,
+        "ambient_step_at_s": 70,
+        "ambient_step_rh_pct": 15,
+        "clip_at_s": -1.0,
+        "invalid_at_s": -1.0
+      },
+      "hypothesis": "ambient changes during recovery"
+    },
+    "clip_changed": {
+      "parameters": {
+        "volume_ml": 5.0,
+        "exchange_ml_s": 0.02,
+        "leak_ml_s": 0.02,
+        "passive_extra_ml_s": 0.38,
+        "flush_extra_ml_s": 0.98,
+        "temp_c": 25.0,
+        "ambient_rh_pct": 60.0,
+        "surface_activity": 1.0,
+        "wall_source_ug_s": 0.0,
+        "sensor_tau_s": 4.0,
+        "noise_rh_pct": 0.1,
+        "local_rh_bias_pct": 0.0,
+        "local_temp_bias_c": 0.0,
+        "ambient_step_at_s": -1.0,
+        "ambient_step_rh_pct": 0.0,
+        "clip_at_s": 85,
+        "invalid_at_s": -1.0
+      },
+      "hypothesis": "observed clip event invalidates cycle"
+    },
+    "sensor_failure": {
+      "parameters": {
+        "volume_ml": 5.0,
+        "exchange_ml_s": 0.02,
+        "leak_ml_s": 0.02,
+        "passive_extra_ml_s": 0.38,
+        "flush_extra_ml_s": 0.98,
+        "temp_c": 25.0,
+        "ambient_rh_pct": 60.0,
+        "surface_activity": 1.0,
+        "wall_source_ug_s": 0.0,
+        "sensor_tau_s": 4.0,
+        "noise_rh_pct": 0.1,
+        "local_rh_bias_pct": 0.0,
+        "local_temp_bias_c": 0.0,
+        "ambient_step_at_s": -1.0,
+        "ambient_step_rh_pct": 0.0,
+        "clip_at_s": -1.0,
+        "invalid_at_s": 85
+      },
+      "hypothesis": "one failed sensor reading"
+    },
+    "temperature_mismatch": {
+      "parameters": {
+        "volume_ml": 5.0,
+        "exchange_ml_s": 0.02,
+        "leak_ml_s": 0.02,
+        "passive_extra_ml_s": 0.38,
+        "flush_extra_ml_s": 0.98,
+        "temp_c": 25.0,
+        "ambient_rh_pct": 60.0,
+        "surface_activity": 1.0,
+        "wall_source_ug_s": 0.0,
+        "sensor_tau_s": 4.0,
+        "noise_rh_pct": 0.1,
+        "local_rh_bias_pct": 0.0,
+        "local_temp_bias_c": 3,
+        "ambient_step_at_s": -1.0,
+        "ambient_step_rh_pct": 0.0,
+        "clip_at_s": -1.0,
+        "invalid_at_s": -1.0
+      },
+      "hypothesis": "unmatched temperature measurement bias"
+    },
+    "dry_wall_source": {
+      "parameters": {
+        "volume_ml": 5.0,
+        "exchange_ml_s": 0.02,
+        "leak_ml_s": 0.02,
+        "passive_extra_ml_s": 0.38,
+        "flush_extra_ml_s": 0.98,
+        "temp_c": 25.0,
+        "ambient_rh_pct": 60.0,
+        "surface_activity": 0.6,
+        "wall_source_ug_s": 0.1,
+        "sensor_tau_s": 4.0,
+        "noise_rh_pct": 0.1,
+        "local_rh_bias_pct": 0.0,
+        "local_temp_bias_c": 0.0,
+        "ambient_step_at_s": -1.0,
+        "ambient_step_rh_pct": 0.0,
+        "clip_at_s": -1.0,
+        "invalid_at_s": -1.0
+      },
+      "hypothesis": "dry-like surface plus hypothetical wall desorption"
+    },
+    "slow_sensor": {
+      "parameters": {
+        "volume_ml": 5.0,
+        "exchange_ml_s": 0.02,
+        "leak_ml_s": 0.02,
+        "passive_extra_ml_s": 0.38,
+        "flush_extra_ml_s": 0.98,
+        "temp_c": 25.0,
+        "ambient_rh_pct": 60.0,
+        "surface_activity": 1.0,
+        "wall_source_ug_s": 0.0,
+        "sensor_tau_s": 30,
+        "noise_rh_pct": 0.1,
+        "local_rh_bias_pct": 0.0,
+        "local_temp_bias_c": 0.0,
+        "ambient_step_at_s": -1.0,
+        "ambient_step_rh_pct": 0.0,
+        "clip_at_s": -1.0,
+        "invalid_at_s": -1.0
+      },
+      "hypothesis": "slower enclosure response, not known by classifier"
+    },
+    "ambiguous_A": {
+      "parameters": {
+        "volume_ml": 5.0,
+        "exchange_ml_s": 0.02,
+        "leak_ml_s": 0.02,
+        "passive_extra_ml_s": 0.38,
+        "flush_extra_ml_s": 0.98,
+        "temp_c": 25.0,
+        "ambient_rh_pct": 60.0,
+        "surface_activity": 1.0,
+        "wall_source_ug_s": 0.0,
+        "sensor_tau_s": 4.0,
+        "noise_rh_pct": 0,
+        "local_rh_bias_pct": 0.0,
+        "local_temp_bias_c": 0.0,
+        "ambient_step_at_s": -1.0,
+        "ambient_step_rh_pct": 0.0,
+        "clip_at_s": -1.0,
+        "invalid_at_s": -1.0
+      },
+      "hypothesis": "K=.02, leak=.02, aw=1"
+    },
+    "ambiguous_B": {
+      "parameters": {
+        "volume_ml": 5.0,
+        "exchange_ml_s": 0.04,
+        "leak_ml_s": 0,
+        "passive_extra_ml_s": 0.38,
+        "flush_extra_ml_s": 0.98,
+        "temp_c": 25.0,
+        "ambient_rh_pct": 60.0,
+        "surface_activity": 0.8,
+        "wall_source_ug_s": 0.0,
+        "sensor_tau_s": 4.0,
+        "noise_rh_pct": 0,
+        "local_rh_bias_pct": 0.0,
+        "local_temp_bias_c": 0.0,
+        "ambient_step_at_s": -1.0,
+        "ambient_step_rh_pct": 0.0,
+        "clip_at_s": -1.0,
+        "invalid_at_s": -1.0
+      },
+      "hypothesis": "K=.04, leak=0, aw=.8; same observable equation as A"
+    }
+  },
+  "identical_response_max_gap_Pa": 1.8189894035458565e-12,
+  "example_standard_uncertainty_Pa": 47.488661553614435,
+  "uncertainty_note": "Input uRH=1 percentage point and uT=0.1 C are hypothetical standard uncertainties, not SHT45 spec conversions.",
+  "sweep_case_count": 60
+}

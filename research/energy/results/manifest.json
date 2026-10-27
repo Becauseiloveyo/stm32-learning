@@ -1,0 +1,47 @@
+{
+  "schema_version": 1,
+  "label": "SYNTHETIC_UNMEASURED_ENERGY_ONLY",
+  "seed": null,
+  "time_axis": "elapsed integer minutes; t=0 is synthetic day 0 midnight, no wall-clock timezone",
+  "python": "3.14.6",
+  "source_baseline_sha256": {
+    "docs/team/baseline-v1/analysis/energy_budget.py": "f1d5d2f730e7dfc2bf31bbdc4d5e9cb146938614e0391cfed55b0db058352c45",
+    "docs/team/baseline-v1/power-notification-design.md": "ad4dc90989e807a277a8b0766114fc0f279064ebc838f222d63e4ef041d62685"
+  },
+  "source_sha256": {
+    "research/energy/model.py": "fe841f2f07a2973ac5da23b3558e306d6f6226413f0cf687052059f38725e399",
+    "research/energy/scenarios.py": "4c563987d9413a57e12d92d8947eb619154dfdd8ae866f0b4ef56b8b07804110",
+    "research/energy/run.py": "5ba7d098e4cccc4ec3a0bfda265f54460859a8425f24c9e0d4565d048525de6b",
+    "research/energy/test_energy.py": "4dd363f6b6ca1dc028e18bab42f8bcd20c4562e3be67174d3195f6a77aea31af"
+  },
+  "output_sha256": {
+    "case-01/input.json": "d096d768c50df1502087be77d04d01bfc0763290f2cf13987b1301f43bb1950c",
+    "case-01/fixed-ledger.csv": "8788e5efb5f8727b985c7dfbc37d7167776f41d27053c7597fa9411a0d434447",
+    "case-01/fixed-trace.json": "7d0d6a22b6d7e9bfdea32cdd3dc7e7596bcdfa6f410c37f92ba2a56c08ecf2de",
+    "case-01/demand-ledger.csv": "60b62547a8bbf767a69d1328ea631787005ad880cb8605edd01f0a1eadda6dd7",
+    "case-01/demand-trace.json": "f520b3fe8df55db35a0b77f5b974f83a85951c23a63cb862fb60cc6eedc76d25",
+    "case-02/input.json": "b8bcfe6729458c9464e11b18c24b7c238e5ed9be5292ecb2c5c4e3ae234a25a4",
+    "case-02/fixed-ledger.csv": "0fce147da2daa555fefd91eb26c4f8d8db1e39825075f785353d79caa2ca898b",
+    "case-02/fixed-trace.json": "2bc49d1e7f24a8e8678a7083efde925f4786e3961232d0643b5c7b13b635db5c",
+    "case-02/demand-ledger.csv": "c5fd6efb2a735bb7b9be403a68ff4be076c9e51f159973aae458464788d97082",
+    "case-02/demand-trace.json": "8c5226fde6ecbe5f44136c2ab0dde2ae80faa1ab36aef6e9e063e12d8028a537",
+    "case-03/input.json": "6085f25aa568a18aab50299cc47cb21534163ff96575128a4f5aa19c8e57e45d",
+    "case-03/fixed-ledger.csv": "77c416300030f2a35a48511e05f1461857c8658446340cec7cc3d88625a0595e",
+    "case-03/fixed-trace.json": "105ae1fcfc8863d3d102668bbfdccecdca451e5eafc8922cad241b510df0521f",
+    "case-03/demand-ledger.csv": "b37fa23b4a9fc1e0f26ca9dd421530a56834fd9a9291eacc1989e2b989cd9a2c",
+    "case-03/demand-trace.json": "81d1d3665b9d4e8ba16b247b6456a0e08c92c7fb6bbeac10a224be8081b2b4ca",
+    "case-04/input.json": "234d505d00503223da85b8a7c2b2d43465414881231c34d14887ae52af05b896",
+    "case-04/fixed-ledger.csv": "5157bc76b5be72fa81ac1ed5c9ad85d1fe2be28f7bc47d8d371aba00226d3ebd",
+    "case-04/fixed-trace.json": "4cc626c629701181c974391df853a16cac7d1fab21c0baa97446d4f73c62df48",
+    "case-04/demand-ledger.csv": "1e5eeac833a8c82f3c392541833a6a77101c2d71d1897c708b26fd68d5e5f2f5",
+    "case-04/demand-trace.json": "356a1716396c97f7824cf06e42a74152d0c2c94e9bc56737194e4113545b42e9",
+    "case-05/input.json": "57266311f0d11b8c096c8441300b2aa4da47bda8e4015de53d51313a883d79a9",
+    "case-05/fixed-ledger.csv": "15d630d6c6a3a2504f90f2903bf9ef6ae2820e96c4222d6a34c82129b2fb23c4",
+    "case-05/fixed-trace.json": "3bb877eb05dcc501a9bda9e2dcca0b229150859caf8f57ff985a4018d5ee8ab9",
+    "case-05/demand-ledger.csv": "9078d055141a7e18b9af1c48b095d0bde1086f5851af93d99f2685fea4f37eca",
+    "case-05/demand-trace.json": "93ca49ddba7d389a97ea38cfb195fab2137578722ab9e6172f25af01ea0a5d84",
+    "summary.csv": "06dc658124924b4e3890fd5e212fe3ef7fdf717ffe08f6d32867c70e897b3e15"
+  },
+  "config_source": "Each case input.json is the complete executable parameter snapshot.",
+  "test_receipt": "This manifest is not a test receipt; run test_energy separately."
+}

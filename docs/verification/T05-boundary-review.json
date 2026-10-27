@@ -1,0 +1,159 @@
+{
+  "schema_version": 1,
+  "recorded_on": "2026-10-25",
+  "command": [
+    "python",
+    "-B",
+    "-X",
+    "utf8",
+    "tools/verify_energy_boundaries.py"
+  ],
+  "exit_code": 0,
+  "scope": "Coordinator independent synthetic API sequences and analytic balances. No worker scenario/test imports; no hardware.",
+  "synthetic": "SYNTHETIC_UNCALIBRATED",
+  "passed": true,
+  "checks": 28,
+  "labels": [
+    "one-hour background has analytic battery consumption",
+    "idle final reserve",
+    "full reserve spills harvest after supplying load",
+    "empty reserve exposes unpaid stopped background",
+    "empty reserve does not invent paid actions",
+    "full protocol executes 140 seconds",
+    "stage and actuator integral is 4.38 joules",
+    "one cycle yields one unconfirmed weak record",
+    "paid complete cycle may have no valid result",
+    "invalid result is retained in request denominator",
+    "exact energy and deadline finish before stopping",
+    "slightly insufficient reserve never starts",
+    "deadline cannot shorten protocol",
+    "future sun cannot fund expired opportunity",
+    "old batch cancelled without completing",
+    "partial flush pays closure once",
+    "new batch respects reserved old window",
+    "old request is not moved to new garment",
+    "failed connections consume two full timeout budgets",
+    "retry limit cannot masquerade as delivery",
+    "retry backoff starts after failure",
+    "comparison uses the same three request denominator",
+    "sparse demand preserves explicit evidence expiry",
+    "fixed sampling can retain a longer weak chain",
+    "saving energy is reported alongside evidence difference",
+    "offline trigger remains explicitly missed",
+    "recovery needs a new observed installation",
+    "recovery starts a fresh evidence chain"
+  ],
+  "cases": [
+    {
+      "name": "analytic_idle",
+      "policy": "demand",
+      "actions": 0,
+      "events": 61,
+      "ledger_intervals": 2
+    },
+    {
+      "name": "analytic_spill",
+      "policy": "demand",
+      "actions": 0,
+      "events": 61,
+      "ledger_intervals": 2
+    },
+    {
+      "name": "analytic_empty",
+      "policy": "demand",
+      "actions": 0,
+      "events": 0,
+      "ledger_intervals": 1
+    },
+    {
+      "name": "one_cycle",
+      "policy": "demand",
+      "actions": 1,
+      "events": 12,
+      "ledger_intervals": 8
+    },
+    {
+      "name": "quality_invalid",
+      "policy": "demand",
+      "actions": 1,
+      "events": 13,
+      "ledger_intervals": 8
+    },
+    {
+      "name": "exact_admission",
+      "policy": "demand",
+      "actions": 1,
+      "events": 8,
+      "ledger_intervals": 9
+    },
+    {
+      "name": "below_admission",
+      "policy": "demand",
+      "actions": 0,
+      "events": 5,
+      "ledger_intervals": 2
+    },
+    {
+      "name": "deadline_too_early",
+      "policy": "demand",
+      "actions": 0,
+      "events": 10,
+      "ledger_intervals": 2
+    },
+    {
+      "name": "future_solar",
+      "policy": "demand",
+      "actions": 0,
+      "events": 5,
+      "ledger_intervals": 3
+    },
+    {
+      "name": "batch_during_flush",
+      "policy": "demand",
+      "actions": 2,
+      "events": 13,
+      "ledger_intervals": 13
+    },
+    {
+      "name": "failed_wifi",
+      "policy": "demand",
+      "actions": 2,
+      "events": 9,
+      "ledger_intervals": 6
+    },
+    {
+      "name": "sparse_requests",
+      "policy": "demand",
+      "actions": 3,
+      "events": 97,
+      "ledger_intervals": 20
+    },
+    {
+      "name": "sparse_requests",
+      "policy": "fixed",
+      "actions": 9,
+      "events": 101,
+      "ledger_intervals": 56
+    },
+    {
+      "name": "offline_recovery",
+      "policy": "demand",
+      "actions": 1,
+      "events": 8,
+      "ledger_intervals": 10
+    }
+  ],
+  "sources_stable_during_run": true,
+  "source_sha256": {
+    "research/energy_t05/__init__.py": "4dd673a02f5cc8ec5ed47661f02635791d77bd586ab26277a75e5745a4884138",
+    "research/energy_t05/contracts.py": "958ac72f7944141d2cf3a3de00ec973e6d3914bb28509ca9718c200feb09590b",
+    "research/energy_t05/model.py": "2762b2dc3c26279ef304d06ffb2aaa2ca1aa1fe69728220a7aafcc1a397dd9ba",
+    "research/energy_t05/run.py": "bfb7b04bab206ab51696a0d41166d55e7e4f08de0dfcb19e0304a05b3b9c1d36",
+    "research/energy_t05/scenarios.py": "cbf3c44b1e5b49467a29528d74a0ba2eb01964cd86ac4fdf4797a4bd18b34be9",
+    "research/energy_t05/test_energy.py": "b6a5f67827fbe9a340ab6552330747a745faccba6150734afa3ba52cb0295207",
+    "research/state_machine/machine.py": "1a695579016913b10cfe9f9b8b0d8b0f30ea188ecc195348fc93f96248817777",
+    "theory/model.py": "a80f08265ab40087886dade605afa94cd6ebeba64d2cf239ea82e561eaef642b",
+    "theory/protocol.py": "122f41d26988e9c80175c96116cc750b9cba00c9ec569c38e32bef438a585cb5",
+    "tools/verify_energy_boundaries.py": "2503e60bf2625eb67fbbf00c8051618fbdad7a4379738b24910a2587743c693f"
+  }
+}

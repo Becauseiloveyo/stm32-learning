@@ -1,0 +1,4 @@
+﻿case,K_each_face_ml_s,front_Q_ml_s,back_Q_ml_s,relative_instantaneous_flux,data_status
+both_faces_exposed_assumption,0.02,0.4,0.4,1.0,SYNTHETIC_UNCALIBRATED
+front_exchange_restricted_assumption,0.02,0.02,0.4,0.7625,SYNTHETIC_UNCALIBRATED
+both_faces_exchange_restricted_assumption,0.02,0.02,0.005,0.36750000000000005,SYNTHETIC_UNCALIBRATED

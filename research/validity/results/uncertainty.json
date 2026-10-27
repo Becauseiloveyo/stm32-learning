@@ -1,0 +1,172 @@
+{
+  "assumed_standard_uncertainties": {
+    "RH_percentage_point": 1.0,
+    "T_degC": 0.1
+  },
+  "components": [
+    {
+      "coefficient": 31.617360356966916,
+      "id": "local_RH",
+      "kind": "residual_measurement"
+    },
+    {
+      "coefficient": 113.10570813825693,
+      "id": "local_T",
+      "kind": "residual_measurement"
+    },
+    {
+      "coefficient": -31.617360356966916,
+      "id": "ambient_RH",
+      "kind": "residual_measurement"
+    },
+    {
+      "coefficient": -113.10570813825693,
+      "id": "ambient_T",
+      "kind": "residual_measurement"
+    }
+  ],
+  "covariance_variable_units": [
+    "percentage_point",
+    "degC",
+    "percentage_point",
+    "degC"
+  ],
+  "examples": [
+    {
+      "covariance": [
+        [
+          1.0,
+          0.0,
+          -0.8,
+          0.0
+        ],
+        [
+          0.0,
+          0.010000000000000002,
+          0.0,
+          -0.008000000000000002
+        ],
+        [
+          -0.8,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          -0.008000000000000002,
+          0.0,
+          0.010000000000000002
+        ]
+      ],
+      "residual_standard_uncertainty_Pa": 63.71272523661759,
+      "rho_same_quantity_between_probes": -0.8
+    },
+    {
+      "covariance": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.010000000000000002,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          0.010000000000000002
+        ]
+      ],
+      "residual_standard_uncertainty_Pa": 47.488661553614435,
+      "rho_same_quantity_between_probes": 0.0
+    },
+    {
+      "covariance": [
+        [
+          1.0,
+          0.0,
+          0.8,
+          0.0
+        ],
+        [
+          0.0,
+          0.010000000000000002,
+          0.0,
+          0.008000000000000002
+        ],
+        [
+          0.8,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.008000000000000002,
+          0.0,
+          0.010000000000000002
+        ]
+      ],
+      "residual_standard_uncertainty_Pa": 21.23757507887253,
+      "rho_same_quantity_between_probes": 0.8
+    },
+    {
+      "covariance": [
+        [
+          1.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.010000000000000002,
+          0.0,
+          0.010000000000000002
+        ],
+        [
+          1.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.010000000000000002,
+          0.0,
+          0.010000000000000002
+        ]
+      ],
+      "residual_standard_uncertainty_Pa": 0.0,
+      "rho_same_quantity_between_probes": 1.0
+    }
+  ],
+  "explicit_dynamic_effects": [
+    "sensor response",
+    "specified RH/T bias",
+    "slow bias",
+    "finite wall source"
+  ],
+  "note": "All covariance examples assumed; temporal covariance and calibration are absent. Do not add explicit effects again as random variance.",
+  "operating_point": {
+    "RH_pct": 60.0,
+    "T_degC": 25.0
+  },
+  "scope": "single-point differential vapor pressure; not a cycle feature or system accuracy",
+  "spec_accuracy_conversion": false,
+  "synthetic": "SYNTHETIC_UNCALIBRATED",
+  "system_accuracy": null,
+  "unknown_model_bias": null
+}

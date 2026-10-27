@@ -1,0 +1,103 @@
+{
+  "default": {
+    "baseline_interval_s": [
+      0,
+      30.0
+    ],
+    "boundary_rule": "transition sample in new phase; command acts on following interval; final sample retained",
+    "flush_interval_s": [
+      30.0,
+      50.0
+    ],
+    "head_times_s": [
+      50.0,
+      51.0,
+      52.0,
+      53.0,
+      54.0,
+      55.0
+    ],
+    "phase_sample_counts": {
+      "baseline": 30,
+      "flush": 20,
+      "recovery": 91
+    },
+    "protocol_sha256": "286acc0970edd40ace775bd55d1bca9bc34f603e29c863d9d3c99ac772e261bb",
+    "recovery_interval_s": [
+      50.0,
+      140.0
+    ],
+    "snapshot": {
+      "baseline_s": 30.0,
+      "flush_s": 20.0,
+      "head_window_s": 5.0,
+      "max_gap_factor": 2.5,
+      "min_phase_samples": 2,
+      "min_window_samples": 2,
+      "recovery_s": 90.0,
+      "sample_period_s": 1.0,
+      "tail_window_s": 10.0,
+      "time_tolerance_s": 1e-08,
+      "version": "1.0"
+    },
+    "tail_times_s": [
+      130.0,
+      131.0,
+      132.0,
+      133.0,
+      134.0,
+      135.0,
+      136.0,
+      137.0,
+      138.0,
+      139.0,
+      140.0
+    ]
+  },
+  "three_second_long": {
+    "baseline_interval_s": [
+      0,
+      24
+    ],
+    "boundary_rule": "transition sample in new phase; command acts on following interval; final sample retained",
+    "flush_interval_s": [
+      24,
+      42
+    ],
+    "head_times_s": [
+      42,
+      45,
+      48
+    ],
+    "phase_sample_counts": {
+      "baseline": 8,
+      "flush": 6,
+      "recovery": 41
+    },
+    "protocol_sha256": "e6d6392dfa1cb10c0a1fd2262fe8bda4174099fa938819c755be9acacad6fdd5",
+    "recovery_interval_s": [
+      42,
+      162
+    ],
+    "snapshot": {
+      "baseline_s": 24,
+      "flush_s": 18,
+      "head_window_s": 6,
+      "max_gap_factor": 2.5,
+      "min_phase_samples": 2,
+      "min_window_samples": 2,
+      "recovery_s": 120,
+      "sample_period_s": 3,
+      "tail_window_s": 12,
+      "time_tolerance_s": 1e-08,
+      "version": "1.0"
+    },
+    "tail_times_s": [
+      150,
+      153,
+      156,
+      159,
+      162
+    ]
+  }
+}

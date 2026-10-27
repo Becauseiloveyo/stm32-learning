@@ -1,0 +1,24 @@
+{
+  "schema_version": 1,
+  "recorded_at": "2026-10-25T19:14:48+08:00",
+  "command": [
+    "python",
+    "-B",
+    "-X",
+    "utf8",
+    "research/energy_t05/run.py",
+    "--verify"
+  ],
+  "exit_code": 0,
+  "passed": true,
+  "output_content_and_mtime_unchanged": true,
+  "manifest_sha256": "86c85040f782cab1caa706f9fa54814fe124aaefc532402e9b103c3a8bf50521",
+  "counts": {
+    "events": 8734,
+    "policy_runs": 12,
+    "raw_observation_rows": 63873,
+    "scenarios": 6
+  },
+  "output_count": 38,
+  "scope": "Actual coordinator read-only verification of saved inputs, T04 events, full energy recomputation and unchanged output files; synthetic only."
+}

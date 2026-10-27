@@ -1,0 +1,222 @@
+{
+  "name": "hysteresis_pulses",
+  "minutes": 360,
+  "config": {
+    "capacity_wh": 3.885,
+    "initial_wh": 0.049,
+    "dc_efficiency": 0.85,
+    "running_base_w": 0.0011666666666666668,
+    "stopped_base_w": 5e-05,
+    "stop_wh": 0.05,
+    "restart_wh": 0.15,
+    "low_enter_wh": 0.3,
+    "low_exit_wh": 0.45,
+    "boot_load_wh": 0.002,
+    "measurement_load_wh": 0.0011388888888888887,
+    "measurement_minutes": 5,
+    "wifi_success_load_wh": 0.0009999999999999998,
+    "wifi_timeout_load_wh": 0.0033333333333333335,
+    "wifi_daily_battery_limit_wh": 0.08,
+    "max_wifi_attempts": 5,
+    "retry_minutes": [
+      1,
+      5,
+      15,
+      60
+    ],
+    "fixed_period_minutes": 10
+  },
+  "requests": [
+    {
+      "event_id": "measure-3",
+      "at_minute": 3,
+      "deadline_minute": 33,
+      "kind": "measurement",
+      "reason": "external_recheck_assumption",
+      "critical": true,
+      "session_id": "synthetic-garment-1",
+      "protocol_version": "energy-placeholder-v1"
+    },
+    {
+      "event_id": "summary-7",
+      "at_minute": 7,
+      "deadline_minute": 97,
+      "kind": "wifi",
+      "reason": "hourly_summary",
+      "critical": false,
+      "session_id": "synthetic-garment-1",
+      "protocol_version": "energy-placeholder-v1"
+    },
+    {
+      "event_id": "state-17",
+      "at_minute": 17,
+      "deadline_minute": 107,
+      "kind": "wifi",
+      "reason": "external_research_state_event",
+      "critical": true,
+      "session_id": "synthetic-garment-1",
+      "protocol_version": "energy-placeholder-v1"
+    },
+    {
+      "event_id": "measure-43",
+      "at_minute": 43,
+      "deadline_minute": 73,
+      "kind": "measurement",
+      "reason": "external_recheck_assumption",
+      "critical": true,
+      "session_id": "synthetic-garment-1",
+      "protocol_version": "energy-placeholder-v1"
+    },
+    {
+      "event_id": "summary-67",
+      "at_minute": 67,
+      "deadline_minute": 157,
+      "kind": "wifi",
+      "reason": "hourly_summary",
+      "critical": false,
+      "session_id": "synthetic-garment-1",
+      "protocol_version": "energy-placeholder-v1"
+    },
+    {
+      "event_id": "measure-83",
+      "at_minute": 83,
+      "deadline_minute": 113,
+      "kind": "measurement",
+      "reason": "external_recheck_assumption",
+      "critical": true,
+      "session_id": "synthetic-garment-1",
+      "protocol_version": "energy-placeholder-v1"
+    },
+    {
+      "event_id": "measure-123",
+      "at_minute": 123,
+      "deadline_minute": 153,
+      "kind": "measurement",
+      "reason": "external_recheck_assumption",
+      "critical": true,
+      "session_id": "synthetic-garment-1",
+      "protocol_version": "energy-placeholder-v1"
+    },
+    {
+      "event_id": "summary-127",
+      "at_minute": 127,
+      "deadline_minute": 217,
+      "kind": "wifi",
+      "reason": "hourly_summary",
+      "critical": false,
+      "session_id": "synthetic-garment-1",
+      "protocol_version": "energy-placeholder-v1"
+    },
+    {
+      "event_id": "measure-163",
+      "at_minute": 163,
+      "deadline_minute": 193,
+      "kind": "measurement",
+      "reason": "external_recheck_assumption",
+      "critical": true,
+      "session_id": "synthetic-garment-1",
+      "protocol_version": "energy-placeholder-v1"
+    },
+    {
+      "event_id": "summary-187",
+      "at_minute": 187,
+      "deadline_minute": 277,
+      "kind": "wifi",
+      "reason": "hourly_summary",
+      "critical": false,
+      "session_id": "synthetic-garment-1",
+      "protocol_version": "energy-placeholder-v1"
+    },
+    {
+      "event_id": "measure-203",
+      "at_minute": 203,
+      "deadline_minute": 233,
+      "kind": "measurement",
+      "reason": "external_recheck_assumption",
+      "critical": true,
+      "session_id": "synthetic-garment-1",
+      "protocol_version": "energy-placeholder-v1"
+    },
+    {
+      "event_id": "measure-243",
+      "at_minute": 243,
+      "deadline_minute": 273,
+      "kind": "measurement",
+      "reason": "external_recheck_assumption",
+      "critical": true,
+      "session_id": "synthetic-garment-1",
+      "protocol_version": "energy-placeholder-v1"
+    },
+    {
+      "event_id": "summary-247",
+      "at_minute": 247,
+      "deadline_minute": 337,
+      "kind": "wifi",
+      "reason": "hourly_summary",
+      "critical": false,
+      "session_id": "synthetic-garment-1",
+      "protocol_version": "energy-placeholder-v1"
+    },
+    {
+      "event_id": "measure-283",
+      "at_minute": 283,
+      "deadline_minute": 313,
+      "kind": "measurement",
+      "reason": "external_recheck_assumption",
+      "critical": true,
+      "session_id": "synthetic-garment-1",
+      "protocol_version": "energy-placeholder-v1"
+    },
+    {
+      "event_id": "measure-323",
+      "at_minute": 323,
+      "deadline_minute": 353,
+      "kind": "measurement",
+      "reason": "external_recheck_assumption",
+      "critical": true,
+      "session_id": "synthetic-garment-1",
+      "protocol_version": "energy-placeholder-v1"
+    }
+  ],
+  "solar": [
+    {
+      "start_minute": 0,
+      "end_minute": 10,
+      "battery_w": 0.048
+    },
+    {
+      "start_minute": 20,
+      "end_minute": 30,
+      "battery_w": 0.048
+    },
+    {
+      "start_minute": 40,
+      "end_minute": 50,
+      "battery_w": 0.048
+    },
+    {
+      "start_minute": 60,
+      "end_minute": 70,
+      "battery_w": 0.048
+    },
+    {
+      "start_minute": 80,
+      "end_minute": 90,
+      "battery_w": 0.048
+    },
+    {
+      "start_minute": 100,
+      "end_minute": 110,
+      "battery_w": 0.048
+    },
+    {
+      "start_minute": 240,
+      "end_minute": 260,
+      "battery_w": 0.6
+    }
+  ],
+  "network": [],
+  "description": "Six 0.008 Wh pulses below restart, then 0.2 Wh; no repeated boots.",
+  "label": "SYNTHETIC_UNMEASURED_ENERGY_ONLY",
+  "seed": null
+}

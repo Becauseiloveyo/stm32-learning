@@ -1,0 +1,40 @@
+{
+  "schema_version": 1,
+  "suite": "state_machine",
+  "recorded_at": "2026-10-25T12:07:54+08:00",
+  "command": [
+    "C:\\Users\\wc\\AppData\\Local\\Programs\\Python\\Python314\\python.exe",
+    "-X",
+    "utf8",
+    "-m",
+    "unittest",
+    "discover",
+    "-s",
+    "research/state_machine",
+    "-p",
+    "test_*.py",
+    "-v"
+  ],
+  "working_directory": "C:\\Users\\wc\\Documents\\ChatGPT\\微开发",
+  "python_version": "3.14.6",
+  "exit_code": 0,
+  "test_count": 31,
+  "passed": true,
+  "sources_stable_during_run": true,
+  "source_sha256": {
+    "docs/MEASUREMENT-CONTRACT.md": "a5981178f8da2d90ba70d64decad10c61b547d3246f591c69778678560cb0157",
+    "docs/MODEL-VALIDITY.md": "8ec8ade61674dfe035ccde9cab7070987698d57b287d41824e16cd7647f89ed8",
+    "docs/STATE-MACHINE.md": "55f54f52320a82e43000720b4759d29a97d363c76c3327fb43d2a06f93bf8536",
+    "research/state_machine/machine.py": "1a695579016913b10cfe9f9b8b0d8b0f30ea188ecc195348fc93f96248817777",
+    "research/state_machine/run.py": "c384539b83c1e83bfba8b1cbd56be05daf4622f262661b0f4b2336f57ef3f02e",
+    "research/state_machine/scenarios.py": "8b7b4af4ac940c4c53c58eb79ae7208152db72d5d9dc11f4cdeabc3cf7eb70c8",
+    "research/state_machine/test_state_machine.py": "e3fdf1763cb2980009415d38a2b4e437d506b8967aee3052ac2ba2c3396c3c36",
+    "theory/model.py": "a80f08265ab40087886dade605afa94cd6ebeba64d2cf239ea82e561eaef642b",
+    "theory/protocol.py": "122f41d26988e9c80175c96116cc750b9cba00c9ec569c38e32bef438a585cb5",
+    "theory/run_simulation.py": "219ba3984c44e027c2628ad5c89c15fab27cd742c1c809d6ad09f49c6295f966",
+    "theory/test_model.py": "e3aad824cb0ac3da22fc0343240898e4a1027767f7e17e5e256bd1197798f2e5",
+    "tools/verify_state_machine_boundaries.py": "1ce9bf632e7a500590a5146cbf7355b96143c42a70bb77cd1bf80629afed455e"
+  },
+  "output": "test_all_configuration_components_have_distinct_identity (test_state_machine.StateMachineChecks.test_all_configuration_components_have_distinct_identity) ... ok\ntest_batch_switch_rejects_old_packets_without_mutating_new_batch (test_state_machine.StateMachineChecks.test_batch_switch_rejects_old_packets_without_mutating_new_batch) ... ok\ntest_changed_payload_under_same_message_id_faults (test_state_machine.StateMachineChecks.test_changed_payload_under_same_message_id_faults) ... ok\ntest_claimed_weak_assessment_cannot_replace_raw_observations (test_state_machine.StateMachineChecks.test_claimed_weak_assessment_cannot_replace_raw_observations) ... ok\ntest_clip_in_invalid_observations_still_requires_reinstall (test_state_machine.StateMachineChecks.test_clip_in_invalid_observations_still_requires_reinstall) ... ok\ntest_clip_midcycle_cancels_and_old_installation_cannot_return (test_state_machine.StateMachineChecks.test_clip_midcycle_cancels_and_old_installation_cannot_return) ... ok\ntest_configuration_changes_require_new_installation_and_do_not_inherit (test_state_machine.StateMachineChecks.test_configuration_changes_require_new_installation_and_do_not_inherit) ... ok\ntest_cycle_relabel_or_finish_without_start_never_recounts (test_state_machine.StateMachineChecks.test_cycle_relabel_or_finish_without_start_never_recounts) ... ok\ntest_cycle_spacing_closed_boundary (test_state_machine.StateMachineChecks.test_cycle_spacing_closed_boundary) ... ok\ntest_equal_backwards_and_large_jump_times_reset_without_regressing_clock (test_state_machine.StateMachineChecks.test_equal_backwards_and_large_jump_times_reset_without_regressing_clock) ... ok\ntest_identical_message_and_cycle_retries_are_idempotent (test_state_machine.StateMachineChecks.test_identical_message_and_cycle_retries_are_idempotent) ... ok\ntest_identity_bounds_reject_empty_whitespace_and_control_characters (test_state_machine.StateMachineChecks.test_identity_bounds_reject_empty_whitespace_and_control_characters) ... ok\ntest_idle_evidence_gap_boundary_and_pending_window_are_distinct (test_state_machine.StateMachineChecks.test_idle_evidence_gap_boundary_and_pending_window_are_distinct) ... ok\ntest_idle_tick_expiry_and_no_background_clock (test_state_machine.StateMachineChecks.test_idle_tick_expiry_and_no_background_clock) ... ok\ntest_incomplete_cycle_envelope_and_raw_window_are_both_required (test_state_machine.StateMachineChecks.test_incomplete_cycle_envelope_and_raw_window_are_both_required) ... ok\ntest_installation_wait_boundary_and_measurement_transition (test_state_machine.StateMachineChecks.test_installation_wait_boundary_and_measurement_transition) ... ok\ntest_invalid_policy_configuration_rejected_at_construction (test_state_machine.StateMachineChecks.test_invalid_policy_configuration_rejected_at_construction) ... ok\ntest_malformed_envelopes_and_configuration_are_explicit (test_state_machine.StateMachineChecks.test_malformed_envelopes_and_configuration_are_explicit) ... ok\ntest_max_event_gap_boundary (test_state_machine.StateMachineChecks.test_max_event_gap_boundary) ... ok\ntest_new_controller_has_no_persisted_evidence (test_state_machine.StateMachineChecks.test_new_controller_has_no_persisted_evidence) ... ok\ntest_old_time_window_with_new_cycle_id_fails (test_state_machine.StateMachineChecks.test_old_time_window_with_new_cycle_id_fails) ... ok\ntest_raw_strong_readings_override_forged_weak_claim (test_state_machine.StateMachineChecks.test_raw_strong_readings_override_forged_weak_claim) ... ok\ntest_reboot_retired_boot_and_reused_boot_ids (test_state_machine.StateMachineChecks.test_reboot_retired_boot_and_reused_boot_ids) ... ok\ntest_repeated_wet_leak_signal_never_authorizes_collection (test_state_machine.StateMachineChecks.test_repeated_wet_leak_signal_never_authorizes_collection) ... ok\ntest_saved_outputs_replay_and_verify_detects_tampering_without_writing (test_state_machine.StateMachineChecks.test_saved_outputs_replay_and_verify_detects_tampering_without_writing) ... ok\ntest_scenarios_replay_deterministically_with_exposed_safety_invariants (test_state_machine.StateMachineChecks.test_scenarios_replay_deterministically_with_exposed_safety_invariants) ... ok\ntest_second_cycle_cannot_start_while_measuring (test_state_machine.StateMachineChecks.test_second_cycle_cannot_start_while_measuring) ... ok\ntest_seeded_event_mutations_never_manufacture_evidence (test_state_machine.StateMachineChecks.test_seeded_event_mutations_never_manufacture_evidence) ... ok\ntest_strong_and_unknown_reset_evidence_and_recovery_waits (test_state_machine.StateMachineChecks.test_strong_and_unknown_reset_evidence_and_recovery_waits) ... ok\ntest_timeout_boundary_and_late_finish_cannot_resurrect (test_state_machine.StateMachineChecks.test_timeout_boundary_and_late_finish_cannot_resurrect) ... ok\ntest_truth_and_diagnostic_fields_are_never_read_even_for_deduplication (test_state_machine.StateMachineChecks.test_truth_and_diagnostic_fields_are_never_read_even_for_deduplication) ... ok\n\n----------------------------------------------------------------------\nRan 31 tests in 0.865s\n\nOK\n",
+  "scope": "T04 multicycle evidence boundaries and replay; synthetic, no hardware validation."
+}

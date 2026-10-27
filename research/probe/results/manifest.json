@@ -1,0 +1,198 @@
+{
+  "schema_version": 1,
+  "data_status": "SYNTHETIC_UNCALIBRATED",
+  "date": "2026-10-23",
+  "seed": null,
+  "randomness": "None: deterministic analytic calculations; no measurement noise added",
+  "scope": "independent short-window preparation for T02/T03; no current theory imports",
+  "baseline": {
+    "snapshot_sha256": "ce5ab31d2dee908aa8d5ee78517aec9c682041ef66e71d28cc0693857b22d890",
+    "snapshot_version": 1,
+    "files_checked": {
+      "theory/model.py": "7b7850851ef28feec819e2dd378467b325f229451129fac37094f46285bb59da",
+      "theory/run_simulation.py": "8579703aad06e79fb49e2b02fb28acc7fa55df17f75aadb935769a6c911db40d",
+      "theory/test_model.py": "fe336015f55ef5b95014cf8e8e9b17f93af3e0dbc6ecfd83908ee6078edc8b46",
+      "theory/README.md": "8fa7e3c4a8e3a728e472386627ab0a5e2527079fa6bfa8cb7070fcf66b9913b4",
+      "theory/results/manifest.json": "fe380938f454060c888fae2fe62a14bcc6ee2ee988b744ce56af3639eaefcde2",
+      "theory/results/case-summary.csv": "ce40f459425aa9ff79a5ab63a9a1807886fd51b336d099a7a1eaedd091a3165b",
+      "theory/results/parameter-sweep.csv": "257ba1424640db9911a812cbbe2f39a3b16e24867cd5bc3391b9fb7e3bdf2c76",
+      "hanger-drying-architecture.md": "7c9c0eed2afe2025ae473b1a62c350c47098cefa397fd20c97e1c831c0defe9c",
+      "power-notification-design.md": "ad4dc90989e807a277a8b0766114fc0f279064ebc838f222d63e4ef041d62685",
+      "analysis/energy_budget.py": "f1d5d2f730e7dfc2bf31bbdc4d5e9cb146938614e0391cfed55b0db058352c45"
+    }
+  },
+  "protocol": {
+    "dt_s": 1,
+    "baseline_s": 30,
+    "flush_s": 20,
+    "recovery_s": 90,
+    "passive_extra_ml_s": 0.38,
+    "flush_extra_ml_s": 0.98,
+    "head_relative_s_inclusive": [
+      0,
+      5
+    ],
+    "tail_relative_s_inclusive": [
+      80,
+      90
+    ]
+  },
+  "cases": {
+    "wet_like_nominal": {
+      "volume_ml": 5.0,
+      "exchange_ml_s": 0.02,
+      "leak_ml_s": 0.02,
+      "temp_c": 25.0,
+      "ambient_rh_pct": 60.0,
+      "surface_activity": 1.0,
+      "wall_source_ug_s": 0.0,
+      "sensor_tau_s": 4.0
+    },
+    "wet_like_large_leak": {
+      "volume_ml": 5.0,
+      "exchange_ml_s": 0.02,
+      "leak_ml_s": 1.5,
+      "temp_c": 25.0,
+      "ambient_rh_pct": 60.0,
+      "surface_activity": 1.0,
+      "wall_source_ug_s": 0.0,
+      "sensor_tau_s": 4.0
+    },
+    "equilibrium_surface": {
+      "volume_ml": 5.0,
+      "exchange_ml_s": 0.02,
+      "leak_ml_s": 0.02,
+      "temp_c": 25.0,
+      "ambient_rh_pct": 60.0,
+      "surface_activity": 0.6,
+      "wall_source_ug_s": 0.0,
+      "sensor_tau_s": 4.0
+    },
+    "equilibrium_with_matched_wall": {
+      "volume_ml": 5.0,
+      "exchange_ml_s": 0.02,
+      "leak_ml_s": 0.02,
+      "temp_c": 25.0,
+      "ambient_rh_pct": 60.0,
+      "surface_activity": 0.6,
+      "wall_source_ug_s": 0.1838269057568515,
+      "sensor_tau_s": 4.0
+    },
+    "same_AB_different_parameters": {
+      "volume_ml": 5.0,
+      "exchange_ml_s": 0.04,
+      "leak_ml_s": 0.0,
+      "temp_c": 25.0,
+      "ambient_rh_pct": 60.0,
+      "surface_activity": 0.8,
+      "wall_source_ug_s": 0.0,
+      "sensor_tau_s": 4.0
+    },
+    "sensor_30s": {
+      "volume_ml": 5.0,
+      "exchange_ml_s": 0.02,
+      "leak_ml_s": 0.02,
+      "temp_c": 25.0,
+      "ambient_rh_pct": 60.0,
+      "surface_activity": 1.0,
+      "wall_source_ug_s": 0.0,
+      "sensor_tau_s": 30.0
+    },
+    "sensor_120s_stress": {
+      "volume_ml": 5.0,
+      "exchange_ml_s": 0.02,
+      "leak_ml_s": 0.02,
+      "temp_c": 25.0,
+      "ambient_rh_pct": 60.0,
+      "surface_activity": 1.0,
+      "wall_source_ug_s": 0.0,
+      "sensor_tau_s": 120.0
+    },
+    "small_K_stress": {
+      "volume_ml": 5.0,
+      "exchange_ml_s": 0.002,
+      "leak_ml_s": 0.02,
+      "temp_c": 25.0,
+      "ambient_rh_pct": 60.0,
+      "surface_activity": 1.0,
+      "wall_source_ug_s": 0.0,
+      "sensor_tau_s": 4.0
+    }
+  },
+  "sweep_grid": {
+    "volume_ml": [
+      2,
+      5,
+      10
+    ],
+    "leak_ml_s": [
+      0.005,
+      0.02,
+      0.1,
+      0.5,
+      1.5
+    ],
+    "wall_source_ug_s": [
+      0.0,
+      0.02,
+      0.1
+    ],
+    "sensor_tau_s": [
+      4.0,
+      30.0,
+      120.0
+    ]
+  },
+  "sweep_count": 135,
+  "out_of_domain_window_count": 0,
+  "formal_equilibrium_out_of_domain_count": 9,
+  "structure_mapping": "None; all structures have unknown actual leakage and wall source",
+  "matched_wall_source_ug_s": 0.1838269057568515,
+  "matched_wall_max_gap_Pa": 0.0,
+  "same_AB_max_gap_Pa": 2.2737367544323206e-13,
+  "common_step": {
+    "step_Pa": -300.0,
+    "local_tau_s": 30.0,
+    "ambient_tau_s": 4.0,
+    "analytic_peak_time_s": 9.29955240250276,
+    "analytic_peak_delta_Pa": 190.69905381106383
+  },
+  "decaying_wall": {
+    "S0_ug_s": 0.1,
+    "wall_tau_s": [
+      30,
+      120,
+      600
+    ],
+    "y0_Pa": 0.0,
+    "sensor_filter": "not applied",
+    "model": "finite desorption inventory only; no uptake"
+  },
+  "uncertainty_example": {
+    "d_e_d_RH_Pa_per_percentage_point": 31.617360356966916,
+    "d_e_d_T_Pa_per_C": 113.10570813825693,
+    "u_delta_Pa_independent": 47.488661553614435,
+    "u_RH_percentage_points_assumed": 1.0,
+    "u_T_C_assumed": 0.1
+  },
+  "source_sha256": {
+    "analyze.py": "f537f1d33c18617efbecf1962309f4de7d34d515a1889580885581759279f9ad",
+    "test_analysis.py": "8c2aa55f578e887c5d75a8afb88fb10f72ea182a86f363a7857e6d2123e849c4"
+  },
+  "outputs_sha256": {
+    "case-summary.csv": "a078edc2817d099ba68b54dc2d25ebaaa20959d580af59a87771de9d365ff37c",
+    "case-traces.csv": "42b2dd57bfe6f4e3cb46451dfb54535230e63d8b1d346c651ecb36b06af4e963",
+    "common-step.csv": "d0adc1f9bf5584cb47abf0262ab197e0523f9eb7835f31e9bf0748dc4b42f61e",
+    "coverage.csv": "7433029a37bc033f746a269c9c321113c71ffae523915a2b353653b55cd8f204",
+    "decaying-wall.csv": "0cbcb7d7ec56f7c5023698a29803c19fc119ebc12f7353f0e3936278f8fa838c",
+    "sensitivity.csv": "41b3f27e26c0744536f696ee63db263252bc4d8284d3341db17fabf1cd104c59",
+    "temperature.csv": "eb5fa02fd58526a8eb4b97da013a6d0fcb54cae039b3c9a8c14b2f7b76ff572f"
+  },
+  "limitations": [
+    "No hardware data or calibrated flow",
+    "No cloth moisture or thermal dynamics",
+    "No product thresholds or classifier",
+    "Open placement has no established mixed volume",
+    "Formal saturated equilibria must not be extrapolated beyond the unsaturated window"
+  ]
+}

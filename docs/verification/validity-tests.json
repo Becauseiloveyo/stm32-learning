@@ -1,0 +1,38 @@
+{
+  "schema_version": 1,
+  "suite": "validity",
+  "recorded_at": "2026-10-24T19:26:49+08:00",
+  "command": [
+    "C:\\Users\\wc\\AppData\\Local\\Programs\\Python\\Python314\\python.exe",
+    "-X",
+    "utf8",
+    "-m",
+    "unittest",
+    "discover",
+    "-s",
+    "research/validity",
+    "-p",
+    "test_*.py",
+    "-v"
+  ],
+  "working_directory": "C:\\Users\\wc\\Documents\\ChatGPT\\微开发",
+  "python_version": "3.14.6",
+  "exit_code": 0,
+  "test_count": 19,
+  "passed": true,
+  "sources_stable_during_run": true,
+  "source_sha256": {
+    "docs/MEASUREMENT-CONTRACT.md": "a5981178f8da2d90ba70d64decad10c61b547d3246f591c69778678560cb0157",
+    "docs/MODEL-VALIDITY.md": "8ec8ade61674dfe035ccde9cab7070987698d57b287d41824e16cd7647f89ed8",
+    "docs/PROBE-CONCEPTS.md": "115f10f49d53f538562e74300addc8a8808f9a889ab5b158883e34705751132a",
+    "research/validity/run.py": "cdf171dc00da9a28381c12bccfb60780dffdc89f2e19de9531a6aab45a10e0f0",
+    "research/validity/sources.md": "dcc6ee75cabd1f7d2c3c87a0dbba0b55829e7be71ddd2668cb981b931a723f5b",
+    "research/validity/test_validity.py": "8e889b98eb03785ef9ad3593cec1642bc00f03d8e80440525b4e28e52ec94d87",
+    "theory/model.py": "a80f08265ab40087886dade605afa94cd6ebeba64d2cf239ea82e561eaef642b",
+    "theory/protocol.py": "122f41d26988e9c80175c96116cc750b9cba00c9ec569c38e32bef438a585cb5",
+    "theory/run_simulation.py": "219ba3984c44e027c2628ad5c89c15fab27cd742c1c809d6ad09f49c6295f966",
+    "theory/test_model.py": "e3aad824cb0ac3da22fc0343240898e4a1027767f7e17e5e256bd1197798f2e5"
+  },
+  "output": "test_full_verify_recomputes_without_writes (test_validity.ArtifactTests.test_full_verify_recomputes_without_writes) ... ok\ntest_saved_artifacts_counts_labels_and_no_error_only_classification (test_validity.ArtifactTests.test_saved_artifacts_counts_labels_and_no_error_only_classification) ... ok\ntest_verify_detects_stale_source_hash (test_validity.ArtifactTests.test_verify_detects_stale_source_hash) ... ok\ntest_verify_rejects_changed_result_even_with_updated_output_hash (test_validity.ArtifactTests.test_verify_rejects_changed_result_even_with_updated_output_hash) ... ok\ntest_budget_rejects_double_count_nonresidual_and_invalid_covariance (test_validity.ValidityTests.test_budget_rejects_double_count_nonresidual_and_invalid_covariance) ... ok\ntest_classifier_cannot_read_synthetic_truth (test_validity.ValidityTests.test_classifier_cannot_read_synthetic_truth) ... ok\ntest_common_step_equal_response_sign_and_analytic_peak (test_validity.ValidityTests.test_common_step_equal_response_sign_and_analytic_peak) ... ok\ntest_drift_feature_has_analytic_window_centroid_dependence (test_validity.ValidityTests.test_drift_feature_has_analytic_window_centroid_dependence) ... ok\ntest_extension_rejects_unsupported_and_duplicate_wall_source (test_validity.ValidityTests.test_extension_rejects_unsupported_and_duplicate_wall_source) ... ok\ntest_mass_balance_with_independent_simpson_integral (test_validity.ValidityTests.test_mass_balance_with_independent_simpson_integral) ... ok\ntest_physical_and_readout_domain_failures_without_clipping (test_validity.ValidityTests.test_physical_and_readout_domain_failures_without_clipping) ... ok\ntest_protocol_windows_and_fractional_sampling (test_validity.ValidityTests.test_protocol_windows_and_fractional_sampling) ... ok\ntest_temperature_bias_differs_from_real_temperature_at_equal_vapor (test_validity.ValidityTests.test_temperature_bias_differs_from_real_temperature_at_equal_vapor) ... ok\ntest_uncertainty_jacobian_and_cross_probe_covariance (test_validity.ValidityTests.test_uncertainty_jacobian_and_cross_probe_covariance) ... ok\ntest_wall_equal_rates_and_triple_equal_sensor_limit (test_validity.ValidityTests.test_wall_equal_rates_and_triple_equal_sensor_limit) ... ok\ntest_wall_long_lifetime_recovers_constant_source_limit (test_validity.ValidityTests.test_wall_long_lifetime_recovers_constant_source_limit) ... ok\ntest_wall_step_convergence_and_instant_sensor (test_validity.ValidityTests.test_wall_step_convergence_and_instant_sensor) ... ok\ntest_wall_unequal_rates_against_analytic_solution_and_sensor_convolution (test_validity.ValidityTests.test_wall_unequal_rates_against_analytic_solution_and_sensor_convolution) ... ok\ntest_wall_zero_source_recovers_accepted_model_for_both_protocols (test_validity.ValidityTests.test_wall_zero_source_recovers_accepted_model_for_both_protocols) ... ok\n\n----------------------------------------------------------------------\nRan 19 tests in 0.845s\n\nOK\n",
+  "scope": "T03 sensitivity, conservation and validity checks; synthetic, no hardware validation."
+}

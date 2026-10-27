@@ -1,0 +1,362 @@
+{
+  "schema_version": 1,
+  "updated_on": "2026-10-27",
+  "phase": "theory_only_no_hardware_purchase",
+  "active_task": null,
+  "next_task": "T08",
+  "tasks": {
+    "T00": {
+      "status": "done",
+      "depends_on": []
+    },
+    "T01": {
+      "status": "done",
+      "depends_on": [
+        "T00"
+      ],
+      "evidence": [
+        "docs/verification/T01-review.md",
+        "docs/verification/latest-tests.json",
+        "docs/verification/T01-artifact-review.json"
+      ]
+    },
+    "T02": {
+      "status": "done",
+      "depends_on": [
+        "T01"
+      ],
+      "evidence": [
+        "docs/PROBE-CONCEPTS.md",
+        "docs/verification/T02-review.md",
+        "docs/verification/probe-tests.json",
+        "research/probe/results-t02/manifest.json"
+      ]
+    },
+    "T03": {
+      "status": "done",
+      "depends_on": [
+        "T02"
+      ],
+      "evidence": [
+        "docs/MODEL-VALIDITY.md",
+        "docs/verification/T03-review.md",
+        "docs/verification/validity-tests.json",
+        "research/validity/results/manifest.json"
+      ]
+    },
+    "T04": {
+      "status": "done",
+      "depends_on": [
+        "T03"
+      ],
+      "evidence": [
+        "docs/STATE-MACHINE.md",
+        "docs/verification/T04-review.md",
+        "docs/verification/state-machine-tests.json",
+        "docs/verification/T04-boundary-review.json",
+        "research/state_machine/results/manifest.json"
+      ]
+    },
+    "T05": {
+      "status": "done",
+      "depends_on": [
+        "T04"
+      ],
+      "evidence": [
+        "docs/ENERGY-SCHEDULING.md",
+        "docs/verification/T05-review.md",
+        "docs/verification/energy-tests.json",
+        "docs/verification/T05-boundary-review.json",
+        "docs/verification/T05-artifact-review.json",
+        "research/energy_t05/results/manifest.json"
+      ]
+    },
+    "T06": {
+      "status": "done",
+      "depends_on": [
+        "T05"
+      ],
+      "evidence": [
+        "docs/CORE-INTERFACE.md",
+        "docs/verification/T06-review.md",
+        "docs/verification/core-tests.json",
+        "docs/team/reports/measurement-t06.md",
+        "docs/team/reports/energy-t06.md",
+        "firmware/host/run.py"
+      ]
+    },
+    "T07": {
+      "status": "done",
+      "depends_on": [
+        "T06"
+      ],
+      "evidence": [
+        "docs/NOTIFICATION-CONTRACT.md",
+        "docs/verification/T07-review.md",
+        "docs/verification/notification-tests.json",
+        "research/notification_t07/results/accepted-v2/manifest.json",
+        "research/notification_t07/results/accepted-v2/receipt.json",
+        "docs/team/reports/notification-t07.md"
+      ]
+    },
+    "T08": {
+      "status": "ready",
+      "depends_on": [
+        "T07"
+      ]
+    },
+    "H01": {
+      "status": "deferred",
+      "depends_on": [
+        "T08"
+      ]
+    }
+  },
+  "current_findings": [
+    "T07 离线接入完成：真实 T04 原始观测状态机生成研究复核提示，SQLite 保存最新快照、有界 outbox、服务任务与接收去重；没有真实收衣授权或手机推送。",
+    "最终协调收据记录于 2026-10-27T14:20:09+08:00，61 项检查通过（模块 43、独立边界 13、收据失败 5），37 个来源和 8 个场景产物在运行期间稳定。",
+    "连续情景含 53 条原始事件、22 个合成测量周期、3 个 boot 域、11 个检查点；四个 SQLite 最终表和完整链路复算一致，累计 3 条研究提示不是 3 次真实干衣验证。",
+    "重连先同步最新状态、旧版本淘汰、证据时间固定 TTL、重启新身份清证据、迟到/重复 ACK 无操作与满队列撤销均有软件证据；服务端仍无法知道未上报的离线变化。",
+    "并行恢复导致一次来源不稳定的验收正确失败；旧 accepted 及失败收据保留，当前唯一验收场景目录为 research/notification_t07/results/accepted-v2。",
+    "T01–T05 来源及产物未变。T06 因项目工具入口更新于 2026-10-26T21:15:51+08:00 重编通过 20857 项检查；C/Python 模型未改，此后仅核对新鲜度。",
+    "下一任务 T08：汇总用户要求、理论证据与最小未来实测，评估主动采样是否仍值得；真实判干、太阳能/无线峰值、手机后台、Flash 和长期回收仍未验证。"
+  ],
+  "open_issues": [
+    {
+      "id": "U01",
+      "summary": "真实漏风、壁面放湿、安装误差和织物参数未知",
+      "resolve_in": [
+        "H01"
+      ],
+      "T02_contribution": "已明确三结构的未知量、独立观测需求和缩小范围方案；未获得真实参数。见 docs/PROBE-CONCEPTS.md 第 8 节。",
+      "T03_contribution": "已完成有限壁源、响应／偏置误差及质量关系的受限分析，列明独立观测与最小实验；真实参数仍未知。见 MODEL-VALIDITY 第 5–8 节。"
+    },
+    {
+      "id": "U02",
+      "summary": "没有独立实测数据，不能标定收衣阈值或声称准确率",
+      "resolve_in": [
+        "H01"
+      ]
+    },
+    {
+      "id": "U03",
+      "summary": "实际收能、无线峰值和低温／老化下容量未知",
+      "resolve_in": [
+        "H01"
+      ],
+      "T05_contribution": "已完成秒级平均能量守恒、完整动作预留、低储能／无光／弱网／恢复与双策略服务对照。实际收能、无线峰值、压降、热静置及低温老化容量仍须实测；T05 软件分析不关闭该实物问题。"
+    },
+    {
+      "id": "U05",
+      "summary": "已完成协议窗口、动态与偏置敏感性审查；装壳双路响应、RH/T 动态耦合及真实误差分布仍无独立标定，合法周期不能证明实物稳定",
+      "resolve_in": [
+        "H01"
+      ],
+      "evidence": "docs/PROBE-CONCEPTS.md 第 7 节：慢响应和小 K 在两协议中状态改变。",
+      "T03_contribution": "已区分可执行保护与无法观测的失配，未将仿真真值或假设相关系数当作实际参数。见 MODEL-VALIDITY 第 4、6、7 节。"
+    },
+    {
+      "id": "U06",
+      "summary": "C 核心已有有界历史与耗尽锁存、主机资源测算；长期防重放回收、真实掉电一致性及低资源 STM32 适配仍未验证",
+      "resolve_in": [
+        "T08",
+        "H01"
+      ],
+      "evidence": "docs/CORE-INTERFACE.md；docs/verification/T06-review.md；docs/verification/core-tests.json",
+      "T05_contribution": "能量调度补充了日额度、墙钟预留、失败队列和原始观测的容量及掉电边界需求；PC 模拟不提供硬件持久化保证。见 ENERGY-SCHEDULING 与 T05-review。",
+      "T06_contribution": "固定容量、恰满／超限、重复与重启边界已在主机验证；未静默淘汰历史。默认输入加状态为 20896 字节主机 ABI 基线，不能据此适配小 RAM 芯片。T08 应评估压缩／流式处理、可信序号水位和后续软件验证任务；H01 才能验证实际掉电与目标功耗。",
+      "T07_contribution": "本地主机增加事务序号、启动隔离、outbox 摘要与耗尽安全 head，进程中断/重复确认验证通过；不解决 C 历史长期回收、Flash 物理掉电或数据库回滚/克隆。"
+    },
+    {
+      "id": "U07",
+      "summary": "真实设备身份/认证、手机后台推送、无线能量准入与持久队列的联动尚未实现；离线未上报状态存在不可消除的知识延迟",
+      "resolve_in": [
+        "T08",
+        "H01"
+      ],
+      "T07_contribution": "已完成本地协议与四阶段确认、场景复算和失败检查，见 NOTIFICATION-CONTRACT 与 T07-review；不证明真实送达率或设备续航。"
+    }
+  ],
+  "last_handoff": {
+    "task": "T07",
+    "summary": "完成离线远程提醒正式接入与协调验收；修复重复 ACK，整合队列损坏检测；保留过期版本及失败来源收据，当前正式证据为 accepted-v2。按用户询问将项目暂定名称记录在 PROJECT/README。",
+    "changed_files": [
+      "README.md",
+      "docs/PROJECT.md",
+      "docs/STATUS.json",
+      "docs/TEAM.md",
+      "docs/DECISIONS.md",
+      "docs/team/assignments/notification-t07.md",
+      "docs/team/reports/notification-t07.md",
+      "docs/NOTIFICATION-CONTRACT.md",
+      "docs/verification/T07-review.md",
+      "docs/verification/T07-interrupted-run.json",
+      "docs/verification/notification-tests.json",
+      "docs/verification/core-tests.json",
+      "tools/project_status.py",
+      "tools/notification_acceptance.py",
+      "tools/test_notification_boundaries.py",
+      "tools/test_notification_receipt.py",
+      "research/notification_t07/contract.py",
+      "research/notification_t07/crash_worker.py",
+      "research/notification_t07/device.py",
+      "research/notification_t07/fixtures.py",
+      "research/notification_t07/README.md",
+      "research/notification_t07/run_checks.py",
+      "research/notification_t07/scenarios.py",
+      "research/notification_t07/service.py",
+      "research/notification_t07/storage.py",
+      "research/notification_t07/test_notification.py",
+      "research/notification_t07/results/accepted/device.sqlite3",
+      "research/notification_t07/results/accepted/receipt.json",
+      "research/notification_t07/results/accepted/receiver-b.sqlite3",
+      "research/notification_t07/results/accepted/receiver.sqlite3",
+      "research/notification_t07/results/accepted/service.sqlite3",
+      "research/notification_t07/results/accepted/tests.txt",
+      "research/notification_t07/results/accepted/trace.json",
+      "research/notification_t07/results/accepted-v2/device.sqlite3",
+      "research/notification_t07/results/accepted-v2/manifest.json",
+      "research/notification_t07/results/accepted-v2/receipt.json",
+      "research/notification_t07/results/accepted-v2/receiver-b.sqlite3",
+      "research/notification_t07/results/accepted-v2/receiver.sqlite3",
+      "research/notification_t07/results/accepted-v2/service.sqlite3",
+      "research/notification_t07/results/accepted-v2/tests.txt",
+      "research/notification_t07/results/accepted-v2/trace.json"
+    ],
+    "verification": [
+      "python -B -X utf8 research/notification_t07/run_checks.py --output research/notification_t07/results/accepted-v2：退出 0；43 项通过；生成 manifest/receipt、53 条原始事件和 4 个 SQLite 文件。",
+      "python -B -X utf8 tools/project_status.py --record-notification-tests --check：退出 0；2026-10-27T14:20:09+08:00；61 项通过，来源与产物稳定。入口亦核对原始事件重放、数据库对照和临时目录完整复算。",
+      "T06 相关工具源变更后，2026-10-26T21:15:51+08:00 实际重编 20857 项通过；上游源码与结果未改，T01–T05 不重复运行。",
+      "最终只读状态检查及当前 Markdown 本地链接/引用文件核对，结果见 T07-review。"
+    ],
+    "limitations": "仅本机合成数据和 SQLite/串行模拟；未集成 C 通知或 T05 无线能量控制，无真实收衣授权、手机/云推送、Flash 掉电、准确率或太阳能续航证据；服务不能知道设备未上报的离线变化。",
+    "resume_action": "执行 T08：先读 ROADMAP 的 T08、PROJECT 的 R01–R08、T01–T07 协调审查及 first-validation-plan.md，再按需要展开对应契约。标记 T08 in_progress 后建立 docs/THEORY-REVIEW.md，逐项映射用户要求/当前实现/证据/未知量/最小实测；统一术语和参数引用，评估主动采样及长期存储、无线能量和提醒接入取舍，更新未来最小硬件验证计划。仍零采购、不部署、不启动 H01。"
+  },
+  "team_work": {
+    "mode": "shared_checkout_with_file_ownership",
+    "coordinator_thread_id": "01a1594e-04de-7300-91a4-9f5fdc631133",
+    "project_id": "04dc09dc-052d-4bb3-baed-f9b430a36c34",
+    "baseline": "docs/team/baseline-v1/snapshot.json",
+    "members": {
+      "measurement": {
+        "scope": "T06 accepted measurement",
+        "assignment": "docs/team/assignments/measurement-t06.md",
+        "report": "docs/team/reports/measurement-t06.md",
+        "thread_id": "01a167d5-bc4a-7900-8f7a-57bbafb6b189",
+        "host_id": "local",
+        "dispatch_state": "delivery_submitted",
+        "review_state": "accepted_T06",
+        "initial_progress_snapshot": {
+          "thread_status": "active",
+          "turn_status": "inProgress",
+          "wait_cursor": "6f3b6f46-a928-446d-879e-8ea17efe79b4:1",
+          "note": "派发后的初次快照，不是实时状态；恢复协调时重新查询。"
+        },
+        "coordinator_review": "docs/verification/T06-review.md",
+        "prior_reports": [
+          "docs/team/reports/measurement.md",
+          "docs/team/reports/measurement-t04.md"
+        ],
+        "latest_progress_snapshot": {
+          "completed_at": "2026-10-26T16:18:50+08:00",
+          "thread_status": "idle",
+          "turn_status": "completed",
+          "wait_cursor": "47cb17f5-2a6c-443c-b62b-b7910620ee77:18",
+          "note": "T06 角色交付完成且协调验收；未来重新派发前核对当前状态与文件所有权。"
+        }
+      },
+      "probe": {
+        "scope": "T03 accepted",
+        "assignment": "docs/team/assignments/probe-t03.md",
+        "report": "docs/team/reports/probe-t03.md",
+        "thread_id": "01a167d6-9f52-7693-aa5d-826591c244f0",
+        "host_id": "local",
+        "dispatch_state": "delivery_submitted",
+        "review_state": "accepted_T03",
+        "initial_progress_snapshot": {
+          "thread_status": "active",
+          "turn_status": "inProgress",
+          "wait_cursor": "fcd7fadb-37cc-4d02-8e4b-7b33bd4bf749:1",
+          "note": "派发后的初次快照，不是实时状态；恢复协调时重新查询。"
+        },
+        "latest_progress_snapshot": {
+          "checked_at": "2026-10-24T19:28:45+08:00",
+          "thread_status": "idle",
+          "turn_status": "completed",
+          "wait_cursor": "250e269f-94ba-4234-ac12-8d8920ebf24b:4",
+          "note": "T03 交付完成快照；再次派发前核对状态与所有权。"
+        },
+        "coordinator_review": "docs/verification/T03-review.md",
+        "prior_reports": [
+          "docs/team/reports/probe.md",
+          "docs/team/reports/probe-t02.md"
+        ]
+      },
+      "energy": {
+        "scope": "T06 accepted energy",
+        "assignment": "docs/team/assignments/energy-t06.md",
+        "report": "docs/team/reports/energy-t06.md",
+        "thread_id": "01a167d6-a60d-77b3-8334-b0205a56f140",
+        "host_id": "local",
+        "dispatch_state": "delivery_submitted",
+        "review_state": "accepted_T06",
+        "initial_progress_snapshot": {
+          "thread_status": "active",
+          "turn_status": "inProgress",
+          "wait_cursor": "26d7e066-46bc-4c8a-8fb5-5bbd8b18737b:1",
+          "note": "派发后的初次快照，不是实时状态；恢复协调时重新查询。"
+        },
+        "coordinator_review": "docs/verification/T06-review.md",
+        "prior_reports": [
+          "docs/team/reports/energy.md",
+          "docs/team/reports/energy-t05.md"
+        ],
+        "latest_progress_snapshot": {
+          "completed_at": "2026-10-26T16:02:53+08:00",
+          "thread_status": "idle",
+          "turn_status": "completed",
+          "wait_cursor": "f922ffc9-acd2-4ff3-9ebf-8cd2123b6db6:13",
+          "note": "T06 角色交付完成且协调验收；未来重新派发前核对当前状态与文件所有权。"
+        }
+      },
+      "notification": {
+        "scope": "T07 integrated by coordinator",
+        "assignment": "docs/team/assignments/notification-t07.md",
+        "report": "docs/team/reports/notification-t07.md",
+        "thread_id": "01a167d6-ad9c-7b81-9390-a6ec81c3f3b0",
+        "host_id": "local",
+        "dispatch_state": "coordinator_integrated",
+        "review_state": "accepted_T07",
+        "initial_progress_snapshot": {
+          "thread_status": "active",
+          "turn_status": "inProgress",
+          "wait_cursor": "27147eed-668b-4be6-a404-b07cd3b8e238:1",
+          "note": "派发后的初次快照，不是实时状态；恢复协调时重新查询。"
+        },
+        "latest_progress_snapshot": {
+          "checked_at": "2026-10-27T14:25:25+08:00",
+          "thread_status": "idle",
+          "turn_status": "completed",
+          "wait_cursor": "e765212c-984d-4efe-9210-410991f27b2f:5",
+          "note": "角色明确停止写入后协调者独占整合、重新生成与验收；再次派发前核对所有权。"
+        },
+        "coordinator_review": "docs/verification/T07-review.md",
+        "prior_reports": [
+          "docs/team/reports/notification.md"
+        ]
+      }
+    }
+  },
+  "resolved_issues": [
+    {
+      "id": "U04",
+      "summary": "当前物理模型与判定阈值所在模块尚未分离，不同采样协议可能与硬编码检查不一致",
+      "resolve_in": [
+        "T01"
+      ],
+      "resolved_on": "2026-10-23",
+      "resolution": "协议／物理参数／门限统一入口及默认回归通过协调验收",
+      "evidence": "docs/verification/T01-review.md"
+    }
+  ]
+}

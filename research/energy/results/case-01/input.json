@@ -1,0 +1,1317 @@
+{
+  "name": "nominal_two_days",
+  "minutes": 2880,
+  "config": {
+    "capacity_wh": 3.885,
+    "initial_wh": 3.885,
+    "dc_efficiency": 0.85,
+    "running_base_w": 0.0011666666666666668,
+    "stopped_base_w": 5e-05,
+    "stop_wh": 0.05,
+    "restart_wh": 0.15,
+    "low_enter_wh": 0.3,
+    "low_exit_wh": 0.45,
+    "boot_load_wh": 0.002,
+    "measurement_load_wh": 0.0011388888888888887,
+    "measurement_minutes": 5,
+    "wifi_success_load_wh": 0.0009999999999999998,
+    "wifi_timeout_load_wh": 0.0033333333333333335,
+    "wifi_daily_battery_limit_wh": 0.08,
+    "max_wifi_attempts": 5,
+    "retry_minutes": [
+      1,
+      5,
+      15,
+      60
+    ],
+    "fixed_period_minutes": 10
+  },
+  "requests": [
+    {
+      "event_id": "measure-3",
+      "at_minute": 3,
+      "deadline_minute": 33,
+      "kind": "measurement",
+      "reason": "external_recheck_assumption",
+      "critical": true,
+      "session_id": "synthetic-garment-1",
+      "protocol_version": "energy-placeholder-v1"
+    },
+    {
+      "event_id": "summary-7",
+      "at_minute": 7,
+      "deadline_minute": 97,
+      "kind": "wifi",
+      "reason": "hourly_summary",
+      "critical": false,
+      "session_id": "synthetic-garment-1",
+      "protocol_version": "energy-placeholder-v1"
+    },
+    {
+      "event_id": "state-17",
+      "at_minute": 17,
+      "deadline_minute": 107,
+      "kind": "wifi",
+      "reason": "external_research_state_event",
+      "critical": true,
+      "session_id": "synthetic-garment-1",
+      "protocol_version": "energy-placeholder-v1"
+    },
+    {
+      "event_id": "measure-43",
+      "at_minute": 43,
+      "deadline_minute": 73,
+      "kind": "measurement",
+      "reason": "external_recheck_assumption",
+      "critical": true,
+      "session_id": "synthetic-garment-1",
+      "protocol_version": "energy-placeholder-v1"
+    },
+    {
+      "event_id": "summary-67",
+      "at_minute": 67,
+      "deadline_minute": 157,
+      "kind": "wifi",
+      "reason": "hourly_summary",
+      "critical": false,
+      "session_id": "synthetic-garment-1",
+      "protocol_version": "energy-placeholder-v1"
+    },
+    {
+      "event_id": "measure-83",
+      "at_minute": 83,
+      "deadline_minute": 113,
+      "kind": "measurement",
+      "reason": "external_recheck_assumption",
+      "critical": true,
+      "session_id": "synthetic-garment-1",
+      "protocol_version": "energy-placeholder-v1"
+    },
+    {
+      "event_id": "measure-123",
+      "at_minute": 123,
+      "deadline_minute": 153,
+      "kind": "measurement",
+      "reason": "external_recheck_assumption",
+      "critical": true,
+      "session_id": "synthetic-garment-1",
+      "protocol_version": "energy-placeholder-v1"
+    },
+    {
+      "event_id": "summary-127",
+      "at_minute": 127,
+      "deadline_minute": 217,
+      "kind": "wifi",
+      "reason": "hourly_summary",
+      "critical": false,
+      "session_id": "synthetic-garment-1",
+      "protocol_version": "energy-placeholder-v1"
+    },
+    {
+      "event_id": "measure-163",
+      "at_minute": 163,
+      "deadline_minute": 193,
+      "kind": "measurement",
+      "reason": "external_recheck_assumption",
+      "critical": true,
+      "session_id": "synthetic-garment-1",
+      "protocol_version": "energy-placeholder-v1"
+    },
+    {
+      "event_id": "summary-187",
+      "at_minute": 187,
+      "deadline_minute": 277,
+      "kind": "wifi",
+      "reason": "hourly_summary",
+      "critical": false,
+      "session_id": "synthetic-garment-1",
+      "protocol_version": "energy-placeholder-v1"
+    },
+    {
+      "event_id": "measure-203",
+      "at_minute": 203,
+      "deadline_minute": 233,
+      "kind": "measurement",
+      "reason": "external_recheck_assumption",
+      "critical": true,
+      "session_id": "synthetic-garment-1",
+      "protocol_version": "energy-placeholder-v1"
+    },
+    {
+      "event_id": "measure-243",
+      "at_minute": 243,
+      "deadline_minute": 273,
+      "kind": "measurement",
+      "reason": "external_recheck_assumption",
+      "critical": true,
+      "session_id": "synthetic-garment-1",
+      "protocol_version": "energy-placeholder-v1"
+    },
+    {
+      "event_id": "summary-247",
+      "at_minute": 247,
+      "deadline_minute": 337,
+      "kind": "wifi",
+      "reason": "hourly_summary",
+      "critical": false,
+      "session_id": "synthetic-garment-1",
+      "protocol_version": "energy-placeholder-v1"
+    },
+    {
+      "event_id": "measure-283",
+      "at_minute": 283,
+      "deadline_minute": 313,
+      "kind": "measurement",
+      "reason": "external_recheck_assumption",
+      "critical": true,
+      "session_id": "synthetic-garment-1",
+      "protocol_version": "energy-placeholder-v1"
+    },
+    {
+      "event_id": "summary-307",
+      "at_minute": 307,
+      "deadline_minute": 397,
+      "kind": "wifi",
+      "reason": "hourly_summary",
+      "critical": false,
+      "session_id": "synthetic-garment-1",
+      "protocol_version": "energy-placeholder-v1"
+    },
+    {
+      "event_id": "measure-323",
+      "at_minute": 323,
+      "deadline_minute": 353,
+      "kind": "measurement",
+      "reason": "external_recheck_assumption",
+      "critical": true,
+      "session_id": "synthetic-garment-1",
+      "protocol_version": "energy-placeholder-v1"
+    },
+    {
+      "event_id": "measure-363",
+      "at_minute": 363,
+      "deadline_minute": 393,
+      "kind": "measurement",
+      "reason": "external_recheck_assumption",
+      "critical": true,
+      "session_id": "synthetic-garment-1",
+      "protocol_version": "energy-placeholder-v1"
+    },
+    {
+      "event_id": "summary-367",
+      "at_minute": 367,
+      "deadline_minute": 457,
+      "kind": "wifi",
+      "reason": "hourly_summary",
+      "critical": false,
+      "session_id": "synthetic-garment-1",
+      "protocol_version": "energy-placeholder-v1"
+    },
+    {
+      "event_id": "state-377",
+      "at_minute": 377,
+      "deadline_minute": 467,
+      "kind": "wifi",
+      "reason": "external_research_state_event",
+      "critical": true,
+      "session_id": "synthetic-garment-1",
+      "protocol_version": "energy-placeholder-v1"
+    },
+    {
+      "event_id": "measure-403",
+      "at_minute": 403,
+      "deadline_minute": 433,
+      "kind": "measurement",
+      "reason": "external_recheck_assumption",
+      "critical": true,
+      "session_id": "synthetic-garment-1",
+      "protocol_version": "energy-placeholder-v1"
+    },
+    {
+      "event_id": "summary-427",
+      "at_minute": 427,
+      "deadline_minute": 517,
+      "kind": "wifi",
+      "reason": "hourly_summary",
+      "critical": false,
+      "session_id": "synthetic-garment-1",
+      "protocol_version": "energy-placeholder-v1"
+    },
+    {
+      "event_id": "measure-443",
+      "at_minute": 443,
+      "deadline_minute": 473,
+      "kind": "measurement",
+      "reason": "external_recheck_assumption",
+      "critical": true,
+      "session_id": "synthetic-garment-1",
+      "protocol_version": "energy-placeholder-v1"
+    },
+    {
+      "event_id": "measure-483",
+      "at_minute": 483,
+      "deadline_minute": 513,
+      "kind": "measurement",
+      "reason": "external_recheck_assumption",
+      "critical": true,
+      "session_id": "synthetic-garment-1",
+      "protocol_version": "energy-placeholder-v1"
+    },
+    {
+      "event_id": "summary-487",
+      "at_minute": 487,
+      "deadline_minute": 577,
+      "kind": "wifi",
+      "reason": "hourly_summary",
+      "critical": false,
+      "session_id": "synthetic-garment-1",
+      "protocol_version": "energy-placeholder-v1"
+    },
+    {
+      "event_id": "measure-523",
+      "at_minute": 523,
+      "deadline_minute": 553,
+      "kind": "measurement",
+      "reason": "external_recheck_assumption",
+      "critical": true,
+      "session_id": "synthetic-garment-1",
+      "protocol_version": "energy-placeholder-v1"
+    },
+    {
+      "event_id": "summary-547",
+      "at_minute": 547,
+      "deadline_minute": 637,
+      "kind": "wifi",
+      "reason": "hourly_summary",
+      "critical": false,
+      "session_id": "synthetic-garment-1",
+      "protocol_version": "energy-placeholder-v1"
+    },
+    {
+      "event_id": "measure-563",
+      "at_minute": 563,
+      "deadline_minute": 593,
+      "kind": "measurement",
+      "reason": "external_recheck_assumption",
+      "critical": true,
+      "session_id": "synthetic-garment-1",
+      "protocol_version": "energy-placeholder-v1"
+    },
+    {
+      "event_id": "measure-603",
+      "at_minute": 603,
+      "deadline_minute": 633,
+      "kind": "measurement",
+      "reason": "external_recheck_assumption",
+      "critical": true,
+      "session_id": "synthetic-garment-1",
+      "protocol_version": "energy-placeholder-v1"
+    },
+    {
+      "event_id": "summary-607",
+      "at_minute": 607,
+      "deadline_minute": 697,
+      "kind": "wifi",
+      "reason": "hourly_summary",
+      "critical": false,
+      "session_id": "synthetic-garment-1",
+      "protocol_version": "energy-placeholder-v1"
+    },
+    {
+      "event_id": "measure-643",
+      "at_minute": 643,
+      "deadline_minute": 673,
+      "kind": "measurement",
+      "reason": "external_recheck_assumption",
+      "critical": true,
+      "session_id": "synthetic-garment-1",
+      "protocol_version": "energy-placeholder-v1"
+    },
+    {
+      "event_id": "summary-667",
+      "at_minute": 667,
+      "deadline_minute": 757,
+      "kind": "wifi",
+      "reason": "hourly_summary",
+      "critical": false,
+      "session_id": "synthetic-garment-1",
+      "protocol_version": "energy-placeholder-v1"
+    },
+    {
+      "event_id": "measure-683",
+      "at_minute": 683,
+      "deadline_minute": 713,
+      "kind": "measurement",
+      "reason": "external_recheck_assumption",
+      "critical": true,
+      "session_id": "synthetic-garment-1",
+      "protocol_version": "energy-placeholder-v1"
+    },
+    {
+      "event_id": "measure-723",
+      "at_minute": 723,
+      "deadline_minute": 753,
+      "kind": "measurement",
+      "reason": "external_recheck_assumption",
+      "critical": true,
+      "session_id": "synthetic-garment-1",
+      "protocol_version": "energy-placeholder-v1"
+    },
+    {
+      "event_id": "summary-727",
+      "at_minute": 727,
+      "deadline_minute": 817,
+      "kind": "wifi",
+      "reason": "hourly_summary",
+      "critical": false,
+      "session_id": "synthetic-garment-1",
+      "protocol_version": "energy-placeholder-v1"
+    },
+    {
+      "event_id": "state-737",
+      "at_minute": 737,
+      "deadline_minute": 827,
+      "kind": "wifi",
+      "reason": "external_research_state_event",
+      "critical": true,
+      "session_id": "synthetic-garment-1",
+      "protocol_version": "energy-placeholder-v1"
+    },
+    {
+      "event_id": "measure-763",
+      "at_minute": 763,
+      "deadline_minute": 793,
+      "kind": "measurement",
+      "reason": "external_recheck_assumption",
+      "critical": true,
+      "session_id": "synthetic-garment-1",
+      "protocol_version": "energy-placeholder-v1"
+    },
+    {
+      "event_id": "summary-787",
+      "at_minute": 787,
+      "deadline_minute": 877,
+      "kind": "wifi",
+      "reason": "hourly_summary",
+      "critical": false,
+      "session_id": "synthetic-garment-1",
+      "protocol_version": "energy-placeholder-v1"
+    },
+    {
+      "event_id": "measure-803",
+      "at_minute": 803,
+      "deadline_minute": 833,
+      "kind": "measurement",
+      "reason": "external_recheck_assumption",
+      "critical": true,
+      "session_id": "synthetic-garment-1",
+      "protocol_version": "energy-placeholder-v1"
+    },
+    {
+      "event_id": "measure-843",
+      "at_minute": 843,
+      "deadline_minute": 873,
+      "kind": "measurement",
+      "reason": "external_recheck_assumption",
+      "critical": true,
+      "session_id": "synthetic-garment-1",
+      "protocol_version": "energy-placeholder-v1"
+    },
+    {
+      "event_id": "summary-847",
+      "at_minute": 847,
+      "deadline_minute": 937,
+      "kind": "wifi",
+      "reason": "hourly_summary",
+      "critical": false,
+      "session_id": "synthetic-garment-1",
+      "protocol_version": "energy-placeholder-v1"
+    },
+    {
+      "event_id": "measure-883",
+      "at_minute": 883,
+      "deadline_minute": 913,
+      "kind": "measurement",
+      "reason": "external_recheck_assumption",
+      "critical": true,
+      "session_id": "synthetic-garment-1",
+      "protocol_version": "energy-placeholder-v1"
+    },
+    {
+      "event_id": "summary-907",
+      "at_minute": 907,
+      "deadline_minute": 997,
+      "kind": "wifi",
+      "reason": "hourly_summary",
+      "critical": false,
+      "session_id": "synthetic-garment-1",
+      "protocol_version": "energy-placeholder-v1"
+    },
+    {
+      "event_id": "measure-923",
+      "at_minute": 923,
+      "deadline_minute": 953,
+      "kind": "measurement",
+      "reason": "external_recheck_assumption",
+      "critical": true,
+      "session_id": "synthetic-garment-1",
+      "protocol_version": "energy-placeholder-v1"
+    },
+    {
+      "event_id": "measure-963",
+      "at_minute": 963,
+      "deadline_minute": 993,
+      "kind": "measurement",
+      "reason": "external_recheck_assumption",
+      "critical": true,
+      "session_id": "synthetic-garment-1",
+      "protocol_version": "energy-placeholder-v1"
+    },
+    {
+      "event_id": "summary-967",
+      "at_minute": 967,
+      "deadline_minute": 1057,
+      "kind": "wifi",
+      "reason": "hourly_summary",
+      "critical": false,
+      "session_id": "synthetic-garment-1",
+      "protocol_version": "energy-placeholder-v1"
+    },
+    {
+      "event_id": "measure-1003",
+      "at_minute": 1003,
+      "deadline_minute": 1033,
+      "kind": "measurement",
+      "reason": "external_recheck_assumption",
+      "critical": true,
+      "session_id": "synthetic-garment-1",
+      "protocol_version": "energy-placeholder-v1"
+    },
+    {
+      "event_id": "summary-1027",
+      "at_minute": 1027,
+      "deadline_minute": 1117,
+      "kind": "wifi",
+      "reason": "hourly_summary",
+      "critical": false,
+      "session_id": "synthetic-garment-1",
+      "protocol_version": "energy-placeholder-v1"
+    },
+    {
+      "event_id": "measure-1043",
+      "at_minute": 1043,
+      "deadline_minute": 1073,
+      "kind": "measurement",
+      "reason": "external_recheck_assumption",
+      "critical": true,
+      "session_id": "synthetic-garment-1",
+      "protocol_version": "energy-placeholder-v1"
+    },
+    {
+      "event_id": "measure-1083",
+      "at_minute": 1083,
+      "deadline_minute": 1113,
+      "kind": "measurement",
+      "reason": "external_recheck_assumption",
+      "critical": true,
+      "session_id": "synthetic-garment-1",
+      "protocol_version": "energy-placeholder-v1"
+    },
+    {
+      "event_id": "summary-1087",
+      "at_minute": 1087,
+      "deadline_minute": 1177,
+      "kind": "wifi",
+      "reason": "hourly_summary",
+      "critical": false,
+      "session_id": "synthetic-garment-1",
+      "protocol_version": "energy-placeholder-v1"
+    },
+    {
+      "event_id": "state-1097",
+      "at_minute": 1097,
+      "deadline_minute": 1187,
+      "kind": "wifi",
+      "reason": "external_research_state_event",
+      "critical": true,
+      "session_id": "synthetic-garment-1",
+      "protocol_version": "energy-placeholder-v1"
+    },
+    {
+      "event_id": "measure-1123",
+      "at_minute": 1123,
+      "deadline_minute": 1153,
+      "kind": "measurement",
+      "reason": "external_recheck_assumption",
+      "critical": true,
+      "session_id": "synthetic-garment-1",
+      "protocol_version": "energy-placeholder-v1"
+    },
+    {
+      "event_id": "summary-1147",
+      "at_minute": 1147,
+      "deadline_minute": 1237,
+      "kind": "wifi",
+      "reason": "hourly_summary",
+      "critical": false,
+      "session_id": "synthetic-garment-1",
+      "protocol_version": "energy-placeholder-v1"
+    },
+    {
+      "event_id": "measure-1163",
+      "at_minute": 1163,
+      "deadline_minute": 1193,
+      "kind": "measurement",
+      "reason": "external_recheck_assumption",
+      "critical": true,
+      "session_id": "synthetic-garment-1",
+      "protocol_version": "energy-placeholder-v1"
+    },
+    {
+      "event_id": "measure-1203",
+      "at_minute": 1203,
+      "deadline_minute": 1233,
+      "kind": "measurement",
+      "reason": "external_recheck_assumption",
+      "critical": true,
+      "session_id": "synthetic-garment-1",
+      "protocol_version": "energy-placeholder-v1"
+    },
+    {
+      "event_id": "summary-1207",
+      "at_minute": 1207,
+      "deadline_minute": 1297,
+      "kind": "wifi",
+      "reason": "hourly_summary",
+      "critical": false,
+      "session_id": "synthetic-garment-1",
+      "protocol_version": "energy-placeholder-v1"
+    },
+    {
+      "event_id": "measure-1243",
+      "at_minute": 1243,
+      "deadline_minute": 1273,
+      "kind": "measurement",
+      "reason": "external_recheck_assumption",
+      "critical": true,
+      "session_id": "synthetic-garment-1",
+      "protocol_version": "energy-placeholder-v1"
+    },
+    {
+      "event_id": "summary-1267",
+      "at_minute": 1267,
+      "deadline_minute": 1357,
+      "kind": "wifi",
+      "reason": "hourly_summary",
+      "critical": false,
+      "session_id": "synthetic-garment-1",
+      "protocol_version": "energy-placeholder-v1"
+    },
+    {
+      "event_id": "measure-1283",
+      "at_minute": 1283,
+      "deadline_minute": 1313,
+      "kind": "measurement",
+      "reason": "external_recheck_assumption",
+      "critical": true,
+      "session_id": "synthetic-garment-1",
+      "protocol_version": "energy-placeholder-v1"
+    },
+    {
+      "event_id": "measure-1323",
+      "at_minute": 1323,
+      "deadline_minute": 1353,
+      "kind": "measurement",
+      "reason": "external_recheck_assumption",
+      "critical": true,
+      "session_id": "synthetic-garment-1",
+      "protocol_version": "energy-placeholder-v1"
+    },
+    {
+      "event_id": "summary-1327",
+      "at_minute": 1327,
+      "deadline_minute": 1417,
+      "kind": "wifi",
+      "reason": "hourly_summary",
+      "critical": false,
+      "session_id": "synthetic-garment-1",
+      "protocol_version": "energy-placeholder-v1"
+    },
+    {
+      "event_id": "measure-1363",
+      "at_minute": 1363,
+      "deadline_minute": 1393,
+      "kind": "measurement",
+      "reason": "external_recheck_assumption",
+      "critical": true,
+      "session_id": "synthetic-garment-1",
+      "protocol_version": "energy-placeholder-v1"
+    },
+    {
+      "event_id": "summary-1387",
+      "at_minute": 1387,
+      "deadline_minute": 1477,
+      "kind": "wifi",
+      "reason": "hourly_summary",
+      "critical": false,
+      "session_id": "synthetic-garment-1",
+      "protocol_version": "energy-placeholder-v1"
+    },
+    {
+      "event_id": "measure-1403",
+      "at_minute": 1403,
+      "deadline_minute": 1433,
+      "kind": "measurement",
+      "reason": "external_recheck_assumption",
+      "critical": true,
+      "session_id": "synthetic-garment-1",
+      "protocol_version": "energy-placeholder-v1"
+    },
+    {
+      "event_id": "measure-1443",
+      "at_minute": 1443,
+      "deadline_minute": 1473,
+      "kind": "measurement",
+      "reason": "external_recheck_assumption",
+      "critical": true,
+      "session_id": "synthetic-garment-1",
+      "protocol_version": "energy-placeholder-v1"
+    },
+    {
+      "event_id": "summary-1447",
+      "at_minute": 1447,
+      "deadline_minute": 1537,
+      "kind": "wifi",
+      "reason": "hourly_summary",
+      "critical": false,
+      "session_id": "synthetic-garment-1",
+      "protocol_version": "energy-placeholder-v1"
+    },
+    {
+      "event_id": "state-1457",
+      "at_minute": 1457,
+      "deadline_minute": 1547,
+      "kind": "wifi",
+      "reason": "external_research_state_event",
+      "critical": true,
+      "session_id": "synthetic-garment-1",
+      "protocol_version": "energy-placeholder-v1"
+    },
+    {
+      "event_id": "measure-1483",
+      "at_minute": 1483,
+      "deadline_minute": 1513,
+      "kind": "measurement",
+      "reason": "external_recheck_assumption",
+      "critical": true,
+      "session_id": "synthetic-garment-1",
+      "protocol_version": "energy-placeholder-v1"
+    },
+    {
+      "event_id": "summary-1507",
+      "at_minute": 1507,
+      "deadline_minute": 1597,
+      "kind": "wifi",
+      "reason": "hourly_summary",
+      "critical": false,
+      "session_id": "synthetic-garment-1",
+      "protocol_version": "energy-placeholder-v1"
+    },
+    {
+      "event_id": "measure-1523",
+      "at_minute": 1523,
+      "deadline_minute": 1553,
+      "kind": "measurement",
+      "reason": "external_recheck_assumption",
+      "critical": true,
+      "session_id": "synthetic-garment-1",
+      "protocol_version": "energy-placeholder-v1"
+    },
+    {
+      "event_id": "measure-1563",
+      "at_minute": 1563,
+      "deadline_minute": 1593,
+      "kind": "measurement",
+      "reason": "external_recheck_assumption",
+      "critical": true,
+      "session_id": "synthetic-garment-1",
+      "protocol_version": "energy-placeholder-v1"
+    },
+    {
+      "event_id": "summary-1567",
+      "at_minute": 1567,
+      "deadline_minute": 1657,
+      "kind": "wifi",
+      "reason": "hourly_summary",
+      "critical": false,
+      "session_id": "synthetic-garment-1",
+      "protocol_version": "energy-placeholder-v1"
+    },
+    {
+      "event_id": "measure-1603",
+      "at_minute": 1603,
+      "deadline_minute": 1633,
+      "kind": "measurement",
+      "reason": "external_recheck_assumption",
+      "critical": true,
+      "session_id": "synthetic-garment-1",
+      "protocol_version": "energy-placeholder-v1"
+    },
+    {
+      "event_id": "summary-1627",
+      "at_minute": 1627,
+      "deadline_minute": 1717,
+      "kind": "wifi",
+      "reason": "hourly_summary",
+      "critical": false,
+      "session_id": "synthetic-garment-1",
+      "protocol_version": "energy-placeholder-v1"
+    },
+    {
+      "event_id": "measure-1643",
+      "at_minute": 1643,
+      "deadline_minute": 1673,
+      "kind": "measurement",
+      "reason": "external_recheck_assumption",
+      "critical": true,
+      "session_id": "synthetic-garment-1",
+      "protocol_version": "energy-placeholder-v1"
+    },
+    {
+      "event_id": "measure-1683",
+      "at_minute": 1683,
+      "deadline_minute": 1713,
+      "kind": "measurement",
+      "reason": "external_recheck_assumption",
+      "critical": true,
+      "session_id": "synthetic-garment-1",
+      "protocol_version": "energy-placeholder-v1"
+    },
+    {
+      "event_id": "summary-1687",
+      "at_minute": 1687,
+      "deadline_minute": 1777,
+      "kind": "wifi",
+      "reason": "hourly_summary",
+      "critical": false,
+      "session_id": "synthetic-garment-1",
+      "protocol_version": "energy-placeholder-v1"
+    },
+    {
+      "event_id": "measure-1723",
+      "at_minute": 1723,
+      "deadline_minute": 1753,
+      "kind": "measurement",
+      "reason": "external_recheck_assumption",
+      "critical": true,
+      "session_id": "synthetic-garment-1",
+      "protocol_version": "energy-placeholder-v1"
+    },
+    {
+      "event_id": "summary-1747",
+      "at_minute": 1747,
+      "deadline_minute": 1837,
+      "kind": "wifi",
+      "reason": "hourly_summary",
+      "critical": false,
+      "session_id": "synthetic-garment-1",
+      "protocol_version": "energy-placeholder-v1"
+    },
+    {
+      "event_id": "measure-1763",
+      "at_minute": 1763,
+      "deadline_minute": 1793,
+      "kind": "measurement",
+      "reason": "external_recheck_assumption",
+      "critical": true,
+      "session_id": "synthetic-garment-1",
+      "protocol_version": "energy-placeholder-v1"
+    },
+    {
+      "event_id": "measure-1803",
+      "at_minute": 1803,
+      "deadline_minute": 1833,
+      "kind": "measurement",
+      "reason": "external_recheck_assumption",
+      "critical": true,
+      "session_id": "synthetic-garment-1",
+      "protocol_version": "energy-placeholder-v1"
+    },
+    {
+      "event_id": "summary-1807",
+      "at_minute": 1807,
+      "deadline_minute": 1897,
+      "kind": "wifi",
+      "reason": "hourly_summary",
+      "critical": false,
+      "session_id": "synthetic-garment-1",
+      "protocol_version": "energy-placeholder-v1"
+    },
+    {
+      "event_id": "state-1817",
+      "at_minute": 1817,
+      "deadline_minute": 1907,
+      "kind": "wifi",
+      "reason": "external_research_state_event",
+      "critical": true,
+      "session_id": "synthetic-garment-1",
+      "protocol_version": "energy-placeholder-v1"
+    },
+    {
+      "event_id": "measure-1843",
+      "at_minute": 1843,
+      "deadline_minute": 1873,
+      "kind": "measurement",
+      "reason": "external_recheck_assumption",
+      "critical": true,
+      "session_id": "synthetic-garment-1",
+      "protocol_version": "energy-placeholder-v1"
+    },
+    {
+      "event_id": "summary-1867",
+      "at_minute": 1867,
+      "deadline_minute": 1957,
+      "kind": "wifi",
+      "reason": "hourly_summary",
+      "critical": false,
+      "session_id": "synthetic-garment-1",
+      "protocol_version": "energy-placeholder-v1"
+    },
+    {
+      "event_id": "measure-1883",
+      "at_minute": 1883,
+      "deadline_minute": 1913,
+      "kind": "measurement",
+      "reason": "external_recheck_assumption",
+      "critical": true,
+      "session_id": "synthetic-garment-1",
+      "protocol_version": "energy-placeholder-v1"
+    },
+    {
+      "event_id": "measure-1923",
+      "at_minute": 1923,
+      "deadline_minute": 1953,
+      "kind": "measurement",
+      "reason": "external_recheck_assumption",
+      "critical": true,
+      "session_id": "synthetic-garment-1",
+      "protocol_version": "energy-placeholder-v1"
+    },
+    {
+      "event_id": "summary-1927",
+      "at_minute": 1927,
+      "deadline_minute": 2017,
+      "kind": "wifi",
+      "reason": "hourly_summary",
+      "critical": false,
+      "session_id": "synthetic-garment-1",
+      "protocol_version": "energy-placeholder-v1"
+    },
+    {
+      "event_id": "measure-1963",
+      "at_minute": 1963,
+      "deadline_minute": 1993,
+      "kind": "measurement",
+      "reason": "external_recheck_assumption",
+      "critical": true,
+      "session_id": "synthetic-garment-1",
+      "protocol_version": "energy-placeholder-v1"
+    },
+    {
+      "event_id": "summary-1987",
+      "at_minute": 1987,
+      "deadline_minute": 2077,
+      "kind": "wifi",
+      "reason": "hourly_summary",
+      "critical": false,
+      "session_id": "synthetic-garment-1",
+      "protocol_version": "energy-placeholder-v1"
+    },
+    {
+      "event_id": "measure-2003",
+      "at_minute": 2003,
+      "deadline_minute": 2033,
+      "kind": "measurement",
+      "reason": "external_recheck_assumption",
+      "critical": true,
+      "session_id": "synthetic-garment-1",
+      "protocol_version": "energy-placeholder-v1"
+    },
+    {
+      "event_id": "measure-2043",
+      "at_minute": 2043,
+      "deadline_minute": 2073,
+      "kind": "measurement",
+      "reason": "external_recheck_assumption",
+      "critical": true,
+      "session_id": "synthetic-garment-1",
+      "protocol_version": "energy-placeholder-v1"
+    },
+    {
+      "event_id": "summary-2047",
+      "at_minute": 2047,
+      "deadline_minute": 2137,
+      "kind": "wifi",
+      "reason": "hourly_summary",
+      "critical": false,
+      "session_id": "synthetic-garment-1",
+      "protocol_version": "energy-placeholder-v1"
+    },
+    {
+      "event_id": "measure-2083",
+      "at_minute": 2083,
+      "deadline_minute": 2113,
+      "kind": "measurement",
+      "reason": "external_recheck_assumption",
+      "critical": true,
+      "session_id": "synthetic-garment-1",
+      "protocol_version": "energy-placeholder-v1"
+    },
+    {
+      "event_id": "summary-2107",
+      "at_minute": 2107,
+      "deadline_minute": 2197,
+      "kind": "wifi",
+      "reason": "hourly_summary",
+      "critical": false,
+      "session_id": "synthetic-garment-1",
+      "protocol_version": "energy-placeholder-v1"
+    },
+    {
+      "event_id": "measure-2123",
+      "at_minute": 2123,
+      "deadline_minute": 2153,
+      "kind": "measurement",
+      "reason": "external_recheck_assumption",
+      "critical": true,
+      "session_id": "synthetic-garment-1",
+      "protocol_version": "energy-placeholder-v1"
+    },
+    {
+      "event_id": "measure-2163",
+      "at_minute": 2163,
+      "deadline_minute": 2193,
+      "kind": "measurement",
+      "reason": "external_recheck_assumption",
+      "critical": true,
+      "session_id": "synthetic-garment-1",
+      "protocol_version": "energy-placeholder-v1"
+    },
+    {
+      "event_id": "summary-2167",
+      "at_minute": 2167,
+      "deadline_minute": 2257,
+      "kind": "wifi",
+      "reason": "hourly_summary",
+      "critical": false,
+      "session_id": "synthetic-garment-1",
+      "protocol_version": "energy-placeholder-v1"
+    },
+    {
+      "event_id": "state-2177",
+      "at_minute": 2177,
+      "deadline_minute": 2267,
+      "kind": "wifi",
+      "reason": "external_research_state_event",
+      "critical": true,
+      "session_id": "synthetic-garment-1",
+      "protocol_version": "energy-placeholder-v1"
+    },
+    {
+      "event_id": "measure-2203",
+      "at_minute": 2203,
+      "deadline_minute": 2233,
+      "kind": "measurement",
+      "reason": "external_recheck_assumption",
+      "critical": true,
+      "session_id": "synthetic-garment-1",
+      "protocol_version": "energy-placeholder-v1"
+    },
+    {
+      "event_id": "summary-2227",
+      "at_minute": 2227,
+      "deadline_minute": 2317,
+      "kind": "wifi",
+      "reason": "hourly_summary",
+      "critical": false,
+      "session_id": "synthetic-garment-1",
+      "protocol_version": "energy-placeholder-v1"
+    },
+    {
+      "event_id": "measure-2243",
+      "at_minute": 2243,
+      "deadline_minute": 2273,
+      "kind": "measurement",
+      "reason": "external_recheck_assumption",
+      "critical": true,
+      "session_id": "synthetic-garment-1",
+      "protocol_version": "energy-placeholder-v1"
+    },
+    {
+      "event_id": "measure-2283",
+      "at_minute": 2283,
+      "deadline_minute": 2313,
+      "kind": "measurement",
+      "reason": "external_recheck_assumption",
+      "critical": true,
+      "session_id": "synthetic-garment-1",
+      "protocol_version": "energy-placeholder-v1"
+    },
+    {
+      "event_id": "summary-2287",
+      "at_minute": 2287,
+      "deadline_minute": 2377,
+      "kind": "wifi",
+      "reason": "hourly_summary",
+      "critical": false,
+      "session_id": "synthetic-garment-1",
+      "protocol_version": "energy-placeholder-v1"
+    },
+    {
+      "event_id": "measure-2323",
+      "at_minute": 2323,
+      "deadline_minute": 2353,
+      "kind": "measurement",
+      "reason": "external_recheck_assumption",
+      "critical": true,
+      "session_id": "synthetic-garment-1",
+      "protocol_version": "energy-placeholder-v1"
+    },
+    {
+      "event_id": "summary-2347",
+      "at_minute": 2347,
+      "deadline_minute": 2437,
+      "kind": "wifi",
+      "reason": "hourly_summary",
+      "critical": false,
+      "session_id": "synthetic-garment-1",
+      "protocol_version": "energy-placeholder-v1"
+    },
+    {
+      "event_id": "measure-2363",
+      "at_minute": 2363,
+      "deadline_minute": 2393,
+      "kind": "measurement",
+      "reason": "external_recheck_assumption",
+      "critical": true,
+      "session_id": "synthetic-garment-1",
+      "protocol_version": "energy-placeholder-v1"
+    },
+    {
+      "event_id": "measure-2403",
+      "at_minute": 2403,
+      "deadline_minute": 2433,
+      "kind": "measurement",
+      "reason": "external_recheck_assumption",
+      "critical": true,
+      "session_id": "synthetic-garment-1",
+      "protocol_version": "energy-placeholder-v1"
+    },
+    {
+      "event_id": "summary-2407",
+      "at_minute": 2407,
+      "deadline_minute": 2497,
+      "kind": "wifi",
+      "reason": "hourly_summary",
+      "critical": false,
+      "session_id": "synthetic-garment-1",
+      "protocol_version": "energy-placeholder-v1"
+    },
+    {
+      "event_id": "measure-2443",
+      "at_minute": 2443,
+      "deadline_minute": 2473,
+      "kind": "measurement",
+      "reason": "external_recheck_assumption",
+      "critical": true,
+      "session_id": "synthetic-garment-1",
+      "protocol_version": "energy-placeholder-v1"
+    },
+    {
+      "event_id": "summary-2467",
+      "at_minute": 2467,
+      "deadline_minute": 2557,
+      "kind": "wifi",
+      "reason": "hourly_summary",
+      "critical": false,
+      "session_id": "synthetic-garment-1",
+      "protocol_version": "energy-placeholder-v1"
+    },
+    {
+      "event_id": "measure-2483",
+      "at_minute": 2483,
+      "deadline_minute": 2513,
+      "kind": "measurement",
+      "reason": "external_recheck_assumption",
+      "critical": true,
+      "session_id": "synthetic-garment-1",
+      "protocol_version": "energy-placeholder-v1"
+    },
+    {
+      "event_id": "measure-2523",
+      "at_minute": 2523,
+      "deadline_minute": 2553,
+      "kind": "measurement",
+      "reason": "external_recheck_assumption",
+      "critical": true,
+      "session_id": "synthetic-garment-1",
+      "protocol_version": "energy-placeholder-v1"
+    },
+    {
+      "event_id": "summary-2527",
+      "at_minute": 2527,
+      "deadline_minute": 2617,
+      "kind": "wifi",
+      "reason": "hourly_summary",
+      "critical": false,
+      "session_id": "synthetic-garment-1",
+      "protocol_version": "energy-placeholder-v1"
+    },
+    {
+      "event_id": "state-2537",
+      "at_minute": 2537,
+      "deadline_minute": 2627,
+      "kind": "wifi",
+      "reason": "external_research_state_event",
+      "critical": true,
+      "session_id": "synthetic-garment-1",
+      "protocol_version": "energy-placeholder-v1"
+    },
+    {
+      "event_id": "measure-2563",
+      "at_minute": 2563,
+      "deadline_minute": 2593,
+      "kind": "measurement",
+      "reason": "external_recheck_assumption",
+      "critical": true,
+      "session_id": "synthetic-garment-1",
+      "protocol_version": "energy-placeholder-v1"
+    },
+    {
+      "event_id": "summary-2587",
+      "at_minute": 2587,
+      "deadline_minute": 2677,
+      "kind": "wifi",
+      "reason": "hourly_summary",
+      "critical": false,
+      "session_id": "synthetic-garment-1",
+      "protocol_version": "energy-placeholder-v1"
+    },
+    {
+      "event_id": "measure-2603",
+      "at_minute": 2603,
+      "deadline_minute": 2633,
+      "kind": "measurement",
+      "reason": "external_recheck_assumption",
+      "critical": true,
+      "session_id": "synthetic-garment-1",
+      "protocol_version": "energy-placeholder-v1"
+    },
+    {
+      "event_id": "measure-2643",
+      "at_minute": 2643,
+      "deadline_minute": 2673,
+      "kind": "measurement",
+      "reason": "external_recheck_assumption",
+      "critical": true,
+      "session_id": "synthetic-garment-1",
+      "protocol_version": "energy-placeholder-v1"
+    },
+    {
+      "event_id": "summary-2647",
+      "at_minute": 2647,
+      "deadline_minute": 2737,
+      "kind": "wifi",
+      "reason": "hourly_summary",
+      "critical": false,
+      "session_id": "synthetic-garment-1",
+      "protocol_version": "energy-placeholder-v1"
+    },
+    {
+      "event_id": "measure-2683",
+      "at_minute": 2683,
+      "deadline_minute": 2713,
+      "kind": "measurement",
+      "reason": "external_recheck_assumption",
+      "critical": true,
+      "session_id": "synthetic-garment-1",
+      "protocol_version": "energy-placeholder-v1"
+    },
+    {
+      "event_id": "summary-2707",
+      "at_minute": 2707,
+      "deadline_minute": 2797,
+      "kind": "wifi",
+      "reason": "hourly_summary",
+      "critical": false,
+      "session_id": "synthetic-garment-1",
+      "protocol_version": "energy-placeholder-v1"
+    },
+    {
+      "event_id": "measure-2723",
+      "at_minute": 2723,
+      "deadline_minute": 2753,
+      "kind": "measurement",
+      "reason": "external_recheck_assumption",
+      "critical": true,
+      "session_id": "synthetic-garment-1",
+      "protocol_version": "energy-placeholder-v1"
+    },
+    {
+      "event_id": "measure-2763",
+      "at_minute": 2763,
+      "deadline_minute": 2793,
+      "kind": "measurement",
+      "reason": "external_recheck_assumption",
+      "critical": true,
+      "session_id": "synthetic-garment-1",
+      "protocol_version": "energy-placeholder-v1"
+    },
+    {
+      "event_id": "summary-2767",
+      "at_minute": 2767,
+      "deadline_minute": 2857,
+      "kind": "wifi",
+      "reason": "hourly_summary",
+      "critical": false,
+      "session_id": "synthetic-garment-1",
+      "protocol_version": "energy-placeholder-v1"
+    },
+    {
+      "event_id": "measure-2803",
+      "at_minute": 2803,
+      "deadline_minute": 2833,
+      "kind": "measurement",
+      "reason": "external_recheck_assumption",
+      "critical": true,
+      "session_id": "synthetic-garment-1",
+      "protocol_version": "energy-placeholder-v1"
+    },
+    {
+      "event_id": "measure-2843",
+      "at_minute": 2843,
+      "deadline_minute": 2873,
+      "kind": "measurement",
+      "reason": "external_recheck_assumption",
+      "critical": true,
+      "session_id": "synthetic-garment-1",
+      "protocol_version": "energy-placeholder-v1"
+    }
+  ],
+  "solar": [
+    {
+      "start_minute": 600,
+      "end_minute": 960,
+      "battery_w": 0.049999999999999996
+    },
+    {
+      "start_minute": 2040,
+      "end_minute": 2400,
+      "battery_w": 0.049999999999999996
+    }
+  ],
+  "network": [],
+  "description": "Full candidate store; 0.30 Wh/day battery-side assumed harvest.",
+  "label": "SYNTHETIC_UNMEASURED_ENERGY_ONLY",
+  "seed": null
+}
