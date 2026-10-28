@@ -24,7 +24,7 @@
 |---|---|
 | [PROJECT.md](docs/PROJECT.md) | 用户要求、当前约束、证据边界 |
 | [详细功能说明](docs/FEATURES.md) | 使用过程、各项产品功能、已有软件证据与待实现边界 |
-| [防水与测量兼容设计](docs/WATERPROOFING-DESIGN.md) | 分区、冷凝、透气/响应、雨后恢复及未闭环问题矩阵 |
+| [充电口防水设计](docs/WATERPROOFING-DESIGN.md) | 仅充电口的位置、封盖、操作条件和未来验证；其他部位不纳入 |
 | [下一阶段开发计划书](docs/NEXT-PHASE-PLAN.md) | 无太阳能范围、T10 工作包/验收、结构与电池预算、Terra 分工 |
 | [预测、雨情与供电研究](docs/PREDICTION-RAIN-POWER-DESIGN.md) | T09 热湿模型、面料、受水和通信；光伏预算属历史内容 |
 | [原衣架结构研究](docs/HANGER-INTEGRATION-PLAN.md) | 旧面板方案追溯；通风、取放和测点约束迁移到新 T12 |
