@@ -335,7 +335,8 @@
       "python -B -X utf8 tools/check_garment_m2.py --write-receipt：7/7 组通过，包含 14 项工作 unittest、22 个协调时间覆盖案例、16 个质量边界/缺失案例、隐藏数据隔离和反例复算；组数与子测试数不相加。",
       "M1 验收的 15 个来源和 M2 冻结的 10 个输入保持匹配；M2a 源/产物清单匹配，审查期间来源未变。",
       "协调者用 .25 s midpoint 对照反例四个区终点，在 1e-7 kg、1e-4°C 数值容差内；不是实物准确率。",
-      "project_status.py --check 与 M1/M2a --check-receipt 均返回 0；32 个变更文档本地链接存在；未重跑旧模型/C/通知数值。"
+      "project_status.py --check 与 M1/M2a --check-receipt 均返回 0；32 个变更文档本地链接存在；未重跑旧模型/C/通知数值。",
+      "M2a 内容提交 edb68a0e32ea1a90dad46e79c05e65fa4d17a6e9；两次普通推送均连接失败，尚未同步。M1 远端 review 经 GitHub 连接器复读存在；当前 M2a 路径未出现。"
     ],
     "limitations": "没有耦合气路/传感映射、自动接触检测、真实数据校正或 ETA；外部证据区间为可得输入假设。合成场景不证明实物性能，收衣授权恒 false。",
     "unresolved_issues": [
@@ -350,7 +351,7 @@
       "U10",
       "U11"
     ],
-    "resume_action": "下一次继续 T10 M2b：先运行 python -B -X utf8 tools/project_status.py --check、tools/check_garment_m1.py --check-receipt、tools/check_garment_m2.py --check-receipt（后两者同样通过 python -B -X utf8 调用）；核对现有 Terra 对话 idle 后按 algorithm-t10-m2b 任务书派发。只写 estimation_m2b 新目录/指定新说明报告，M1/M2a 字节保持。先计算显式先验和未来条件下的时间包络，未知映射不进行虚假的观测筛选；超域/失败/未达目标保留未知上界，交付后协调验收。"
+    "resume_action": "先按 github_sync 重试待推送提交并核对远端；网络仍失败可继续本地开发。下一次继续 T10 M2b：先运行 python -B -X utf8 tools/project_status.py --check、tools/check_garment_m1.py --check-receipt、tools/check_garment_m2.py --check-receipt（后两者同样通过 python -B -X utf8 调用）；核对现有 Terra 对话 idle 后按 algorithm-t10-m2b 任务书派发。只写 estimation_m2b 新目录/指定新说明报告，M1/M2a 字节保持。先计算显式先验和未来条件下的时间包络，未知映射不进行虚假的观测筛选；超域/失败/未达目标保留未知上界，交付后协调验收。"
   },
   "team_work": {
     "mode": "shared_checkout_with_file_ownership",
@@ -727,8 +728,8 @@
     "repository": "Becauseiloveyo/stm32-learning",
     "branch": "master",
     "baseline_commit": "d2bdf65",
-    "status": "M1_synced_M2a_pending_commit",
-    "scope": "M1 内容已核对远端 ebd731c；本轮 M2a 验收与下一任务书待提交同步。",
+    "status": "pending_network_retry",
+    "scope": "M1 accepted content is remote; M2a accepted content and M2b brief are local, awaiting push.",
     "prepared_content_verified": true,
     "evidence": "docs/NEXT-PHASE-PLAN.md 第 10 节；docs/STATUS.json last_handoff",
     "verified_on": "2026-10-29",
@@ -738,13 +739,14 @@
       "git push origin master 成功：先 edf4ed3，再 ebd731c；M1 内容提交已同步。",
       "git ls-remote origin refs/heads/master 核对 ebd731c9cf7a8897664d7782727ad3c6f3beffbc。"
     ],
-    "receipt_note": "当前 M2a 派发状态将在下一批协调提交同步；以上内容提交已由普通 push 确认。",
-    "last_attempt_on": "2026-10-28",
+    "receipt_note": "verified_content_commit 仍为已确认远端 M1 的 ebd731c；本记录不声称 M2a 已同步。同步回执单独本地提交，避免提交自引用。",
+    "last_attempt_on": "2026-10-29",
     "last_attempt_errors": [
-      "First push: Recv failure: Connection was reset",
-      "Second push: Failed to connect to github.com:443 after 21070 ms",
-      "Current-turn push before M1 integration: Recv failure: Connection was reset"
+      "M2a push: RPC failed / curl 28 github.com:443 connection timeout; exit 1.",
+      "Remote ls-remote: connection timeout; GitHub connector M2a review path returned 404 while M1 review was readable.",
+      "M2a retry with HTTP/1.1 and bounded low-speed settings: github.com:443 connection timeout; exit 1."
     ],
-    "resume_action": "本轮 M2a 交付验收后提交和推送相应文件；不发布仍在修改的工作产物。"
+    "resume_action": "正常重试 git push origin master，同步待推 M2a 内容与状态回执后核对远端；不强推，不重做已通过模型。网络失败不阻塞本地 M2b。",
+    "pending_content_commit": "edb68a0e32ea1a90dad46e79c05e65fa4d17a6e9"
   }
 }
