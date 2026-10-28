@@ -283,7 +283,8 @@
       "变更文档 93 个本地链接全部存在；全局 active_task/next_task 保持 T10 in_progress。",
       "已向专用 Terra 对话发送范围澄清，要求仅确认、不改文件、不执行 M2。",
       "4 个算法冻结输入 SHA-256 保持匹配；变更空白检查通过；未改模型源码或旧数值收据。",
-      "Terra cursor :4 已确认充电口范围澄清；未改文件、未复跑、未执行 M2，线程 idle。"
+      "Terra cursor :4 已确认充电口范围澄清；未改文件、未复跑、未执行 M2，线程 idle。",
+      "内容提交 a461690c0598d8602122112ed9aa806fb7ea89bb 已推送；连接器核对远端 PROJECT blob 一致。Git HTTPS 间歇失败，不声称额外 ls-remote 检查通过。"
     ],
     "limitations": "本轮仅文档与范围修订。M1 修订稿仍待独立验收，观测/ETA、结构电池、联动和真实硬件/手机验证仍未完成。",
     "unresolved_issues": [
@@ -627,7 +628,8 @@
         "变更文档 93 个本地链接全部存在；全局 active_task/next_task 保持 T10 in_progress。",
         "已向专用 Terra 对话发送范围澄清，要求仅确认、不改文件、不执行 M2。",
         "4 个算法冻结输入 SHA-256 保持匹配；变更空白检查通过；未改模型源码或旧数值收据。",
-        "Terra cursor :4 已确认充电口范围澄清；未改文件、未复跑、未执行 M2，线程 idle。"
+        "Terra cursor :4 已确认充电口范围澄清；未改文件、未复跑、未执行 M2，线程 idle。",
+        "内容提交 a461690c0598d8602122112ed9aa806fb7ea89bb 已推送；连接器核对远端 PROJECT blob 一致。Git HTTPS 间歇失败，不声称额外 ls-remote 检查通过。"
       ]
     }
   ],
@@ -647,17 +649,17 @@
     "repository": "Becauseiloveyo/stm32-learning",
     "branch": "master",
     "baseline_commit": "d2bdf65",
-    "status": "pending_current_scope_update",
+    "status": "verified_coordinator_only",
     "scope": "Coordinator charging-port-only scope and remaining-work plan; unaccepted algorithm outputs excluded.",
     "prepared_content_verified": true,
-    "evidence": "docs/verification/no-solar-plan-review.md",
+    "evidence": "docs/NEXT-PHASE-PLAN.md 第 10 节；docs/STATUS.json last_handoff",
     "verified_on": "2026-10-28",
-    "verified_content_commit": "32ceeb4f1d4634f43fc1d2cd1db4ce83ea28c67e",
-    "remote_head_at_verification": "32ceeb4f1d4634f43fc1d2cd1db4ce83ea28c67e",
+    "verified_content_commit": "a461690c0598d8602122112ed9aa806fb7ea89bb",
+    "remote_head_at_verification": null,
     "verification": [
-      "16 个协调者文件普通推送成功，远端 refs/heads/master 与内容提交相同。",
-      "算法独占目录、模型说明与角色报告未纳入提交；工作对话未验收实现保持本地。"
+      "git push 已确认内容提交成功；GitHub 连接器读取 master 的 PROJECT R19 与本地 blob 66afff032d79892ca8872a118ef01445a09f93cd 一致。",
+      "Git HTTPS 间歇连接失败，额外 ls-remote 核对未完成；使用连接器核对远端需求内容。未验收模型产物仍不提交。"
     ],
-    "receipt_note": "本字段确认内容提交；同步回执作为随后一条独立提交保存，其最终远端 HEAD 由 Git 另行核对，避免提交记录自引用。"
+    "receipt_note": "本字段确认前一内容提交与远端 R19 文件；本同步回执单独提交，避免提交记录自引用。"
   }
 }
