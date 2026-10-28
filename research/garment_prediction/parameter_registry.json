@@ -1,0 +1,253 @@
+{
+  "label": "SYNTHETIC_UNCALIBRATED",
+  "software_domain_note": "Bounds are validation limits, not evidence of real-material validity. No distribution or calibration is asserted.",
+  "fields": {
+    "dry_kg": {
+      "unit": "kg",
+      "software_domain": ">0 finite",
+      "source_or_assumption": "合成区域干质量"
+    },
+    "evap_m2": {
+      "unit": "m2",
+      "software_domain": ">=0 finite",
+      "source_or_assumption": "合成有效蒸发面积；0 仅用于退化解析验证"
+    },
+    "proj_m2": {
+      "unit": "m2",
+      "software_domain": ">=0 finite",
+      "source_or_assumption": "合成日照投影面积"
+    },
+    "heat_m2": {
+      "unit": "m2",
+      "software_domain": ">=0 finite",
+      "source_or_assumption": "合成对流面积；0 仅用于退化解析验证"
+    },
+    "rad_m2": {
+      "unit": "m2",
+      "software_domain": ">=0 finite",
+      "source_or_assumption": "合成长波面积"
+    },
+    "xb": {
+      "unit": "kg water/kg dry",
+      "software_domain": ">0 finite",
+      "source_or_assumption": "合成水活度尺度"
+    },
+    "resistance_s_m": {
+      "unit": "s/m",
+      "software_domain": ">0 finite",
+      "source_or_assumption": "合成静风等效传质阻力"
+    },
+    "drain_per_s": {
+      "unit": "1/s",
+      "software_domain": ">=0 finite",
+      "source_or_assumption": "合成线性排液率"
+    },
+    "alpha": {
+      "unit": "1",
+      "software_domain": "0..1",
+      "source_or_assumption": "合成短波吸收率"
+    },
+    "emissivity": {
+      "unit": "1",
+      "software_domain": "0..1",
+      "source_or_assumption": "合成长波发射率"
+    },
+    "air_c": {
+      "unit": "degC",
+      "software_domain": "0..50",
+      "source_or_assumption": "人为环境情景"
+    },
+    "rh": {
+      "unit": "1",
+      "software_domain": "0..1",
+      "source_or_assumption": "人为相对湿度情景"
+    },
+    "wind_m_s": {
+      "unit": "m/s",
+      "software_domain": "0..10",
+      "source_or_assumption": "人为衣物附近有效风速情景"
+    },
+    "solar_w_m2": {
+      "unit": "W/m2",
+      "software_domain": "0..1200",
+      "source_or_assumption": "人为衣物平面辐照情景，不是电能"
+    },
+    "surround_c": {
+      "unit": "degC",
+      "software_domain": "0..50",
+      "source_or_assumption": "人为等效周围辐射温度情景"
+    },
+    "rain_kg_s": {
+      "unit": "kg/s",
+      "software_domain": "0..0.01",
+      "source_or_assumption": "人为指定单区截获液水输入，非雨头推断"
+    },
+    "rain_c": {
+      "unit": "degC",
+      "software_domain": "0..50",
+      "source_or_assumption": "人为指定入水温度"
+    },
+    "initial_x_kg_kg": {
+      "unit": "kg/kg",
+      "software_domain": "0..5",
+      "source_or_assumption": "人为干基初始水分"
+    },
+    "initial_temperature_c": {
+      "unit": "degC",
+      "software_domain": "0..50",
+      "source_or_assumption": "人为初始衣温"
+    },
+    "duration_s": {
+      "unit": "s",
+      "software_domain": ">=0 finite",
+      "source_or_assumption": "人为计算时长"
+    },
+    "step_s": {
+      "unit": "s",
+      "software_domain": ">0 finite",
+      "source_or_assumption": "人为积分步长；不能保证稳定，越界失败"
+    },
+    "water_kg": {
+      "unit": "kg",
+      "software_domain": "0..5*dry_kg",
+      "source_or_assumption": "区域状态，初值或积分结果"
+    },
+    "energy_j": {
+      "unit": "J",
+      "software_domain": "finite; temperature from U must be 0..50 C",
+      "source_or_assumption": "以 0 C 干布和液水为参考的区域显热"
+    },
+    "collection_authorized": {
+      "unit": "boolean",
+      "software_domain": "always false",
+      "source_or_assumption": "研究模型强制不授权收衣"
+    },
+    "seed": {
+      "unit": "1",
+      "software_domain": "null",
+      "source_or_assumption": "确定性例子无随机数"
+    },
+    "label": {
+      "unit": "text",
+      "software_domain": "SYNTHETIC_UNCALIBRATED",
+      "source_or_assumption": "固定合成标记"
+    },
+    "source": {
+      "unit": "text",
+      "software_domain": "nonempty description",
+      "source_or_assumption": "合成情景来源说明"
+    },
+    "ordinary, slow": {
+      "unit": "record",
+      "software_domain": "each Zone passes validation",
+      "source_or_assumption": "普通区/慢区人为合成；非材料分类"
+    },
+    "drive": {
+      "unit": "record",
+      "software_domain": "Drive passes validation",
+      "source_or_assumption": "人为固定驱动"
+    },
+    "method": {
+      "unit": "enum",
+      "software_domain": "rk4 or midpoint",
+      "source_or_assumption": "研究积分法，midpoint 为对照"
+    }
+  },
+  "constants": {
+    "SIGMA": {
+      "value": "5.670374419e-8",
+      "unit": "W/(m2 K4)",
+      "source_or_assumption": "NIST 2022 CODATA 搜索结果摘要给出 5.670374419...e-8 W/(m2 K4)，代码为截位近似；直接访问页面受限，未读取完整页面。https://physics.nist.gov/cgi-bin/cuu/Value?sigma"
+    },
+    "CW": {
+      "value": "4180",
+      "unit": "J/(kg K)",
+      "source_or_assumption": "液态水比热近似；示例常数未针对衣物标定"
+    },
+    "CD": {
+      "value": "1400",
+      "unit": "J/(kg K)",
+      "source_or_assumption": "干布比热人为合成"
+    },
+    "LV": {
+      "value": "2500000",
+      "unit": "J/kg",
+      "source_or_assumption": "0 C 液水汽化参考焓近似；未计吸附热"
+    },
+    "CV": {
+      "value": "1850",
+      "unit": "J/(kg K)",
+      "source_or_assumption": "水汽比热近似；传入蒸汽焓按表面温度近似"
+    },
+    "saturation_pressure_610.94": {
+      "value": "610.94",
+      "unit": "Pa",
+      "source_or_assumption": "Alduchov & Eskridge (1996) 原论文出版页访问 403；系数经 Ferreira (2024) 附录 D 方程 D1 间接核对，原文细节未核对；6.1094 hPa=610.94 Pa。https://rmets.onlinelibrary.wiley.com/doi/10.1002/qj.4609 ; 原论文 DOI https://doi.org/10.1175/1520-0450(1996)035%3C0601:IMFAOS%3E2.0.CO;2"
+    },
+    "saturation_pressure_17.625": {
+      "value": "17.625",
+      "unit": "1",
+      "source_or_assumption": "Alduchov & Eskridge (1996) 原论文出版页访问 403；系数经 Ferreira (2024) 附录 D 方程 D1 间接核对，原文细节未核对；6.1094 hPa=610.94 Pa。https://rmets.onlinelibrary.wiley.com/doi/10.1002/qj.4609 ; 原论文 DOI https://doi.org/10.1175/1520-0450(1996)035%3C0601:IMFAOS%3E2.0.CO;2"
+    },
+    "saturation_pressure_243.04": {
+      "value": "243.04",
+      "unit": "degC",
+      "source_or_assumption": "Alduchov & Eskridge (1996) 原论文出版页访问 403；系数经 Ferreira (2024) 附录 D 方程 D1 间接核对，原文细节未核对；6.1094 hPa=610.94 Pa。https://rmets.onlinelibrary.wiley.com/doi/10.1002/qj.4609 ; 原论文 DOI https://doi.org/10.1175/1520-0450(1996)035%3C0601:IMFAOS%3E2.0.CO;2"
+    },
+    "vapor_gas_constant": {
+      "value": "461.5",
+      "unit": "J/(kg K)",
+      "source_or_assumption": "水汽气体常数近似"
+    },
+    "kelvin_offset": {
+      "value": "273.15",
+      "unit": "K",
+      "source_or_assumption": "摄氏转绝对温度偏移"
+    },
+    "natural_convection": {
+      "value": "4.0",
+      "unit": "W/(m2 K)",
+      "source_or_assumption": "人为合成自然对流基线"
+    },
+    "wind_convection_coefficient": {
+      "value": "4.0",
+      "unit": "W/(m2 K)",
+      "source_or_assumption": "人为合成换热系数，乘 sqrt(v/(1 m/s))"
+    },
+    "wind_reference": {
+      "value": "1",
+      "unit": "m/s",
+      "source_or_assumption": "传质与对流公式隐含的风速归一化参考"
+    },
+    "domain_temperature": {
+      "value": "0..50",
+      "unit": "degC",
+      "source_or_assumption": "研究软件域，非物理材料适用范围"
+    },
+    "domain_x": {
+      "value": "0..5",
+      "unit": "kg/kg",
+      "source_or_assumption": "研究软件域，不是已标定材料容量"
+    },
+    "domain_wind": {
+      "value": "0..10",
+      "unit": "m/s",
+      "source_or_assumption": "研究软件域"
+    },
+    "domain_solar": {
+      "value": "0..1200",
+      "unit": "W/m2",
+      "source_or_assumption": "研究软件域"
+    },
+    "domain_rain": {
+      "value": "0..0.01",
+      "unit": "kg/s",
+      "source_or_assumption": "研究软件域"
+    },
+    "domain_rh": {
+      "value": "0..1",
+      "unit": "1",
+      "source_or_assumption": "相对湿度比例研究域"
+    }
+  }
+}

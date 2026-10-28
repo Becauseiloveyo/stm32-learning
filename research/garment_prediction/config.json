@@ -1,0 +1,9 @@
+{
+  "label": "SYNTHETIC_UNCALIBRATED",
+  "seed": null,
+  "source": "manually chosen numerical exercise, not garment measurements; see frozen T09 model proposal and T09-sources.md",
+  "ordinary": {"dry_kg": 0.3, "evap_m2": 0.45, "proj_m2": 0.18, "heat_m2": 0.45, "rad_m2": 0.4, "xb": 0.15, "resistance_s_m": 140.0, "drain_per_s": 0.00001, "alpha": 0.6, "emissivity": 0.9},
+  "slow": {"dry_kg": 0.1, "evap_m2": 0.1, "proj_m2": 0.035, "heat_m2": 0.12, "rad_m2": 0.1, "xb": 0.22, "resistance_s_m": 220.0, "drain_per_s": 0.000005, "alpha": 0.6, "emissivity": 0.9},
+  "drive": {"air_c":25, "rh":0.5, "wind_m_s":0.5, "solar_w_m2":200, "surround_c":25, "rain_kg_s":0, "rain_c":25},
+  "initial_x_kg_kg":0.6, "initial_temperature_c":25, "duration_s":1800, "step_s":2
+}

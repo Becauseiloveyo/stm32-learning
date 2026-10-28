@@ -1,0 +1,146 @@
+{
+  "config": {
+    "label": "SYNTHETIC_UNCALIBRATED",
+    "seed": null,
+    "source": "manually chosen numerical exercise, not garment measurements; see frozen T09 model proposal and T09-sources.md",
+    "ordinary": {
+      "dry_kg": 0.3,
+      "evap_m2": 0.45,
+      "proj_m2": 0.18,
+      "heat_m2": 0.45,
+      "rad_m2": 0.4,
+      "xb": 0.15,
+      "resistance_s_m": 140.0,
+      "drain_per_s": 1e-05,
+      "alpha": 0.6,
+      "emissivity": 0.9
+    },
+    "slow": {
+      "dry_kg": 0.1,
+      "evap_m2": 0.1,
+      "proj_m2": 0.035,
+      "heat_m2": 0.12,
+      "rad_m2": 0.1,
+      "xb": 0.22,
+      "resistance_s_m": 220.0,
+      "drain_per_s": 5e-06,
+      "alpha": 0.6,
+      "emissivity": 0.9
+    },
+    "drive": {
+      "air_c": 25,
+      "rh": 0.5,
+      "wind_m_s": 0.5,
+      "solar_w_m2": 200,
+      "surround_c": 25,
+      "rain_kg_s": 0,
+      "rain_c": 25
+    },
+    "initial_x_kg_kg": 0.6,
+    "initial_temperature_c": 25,
+    "duration_s": 1800,
+    "step_s": 2
+  },
+  "two_zone": [
+    {
+      "water_kg": 0.13716970306303417,
+      "energy_j": 19182.628435333892,
+      "temperature_c": 19.31067056310197,
+      "delta_water_kg": -0.04283029693696583,
+      "delta_energy_j": -10127.371564666111,
+      "ledger_water_kg": -0.042830486815224104,
+      "ledger_energy_j": -10128.020404133822,
+      "water_residual_kg": 1.8987825827626592e-07,
+      "energy_residual_j": 0.6488394677107863,
+      "steps": 900,
+      "collection_authorized": false,
+      "label": "SYNTHETIC_UNCALIBRATED"
+    },
+    {
+      "water_kg": 0.05233303574770043,
+      "energy_j": 7656.993887871739,
+      "temperature_c": 21.34341266175181,
+      "delta_water_kg": -0.0076669642522995685,
+      "delta_energy_j": -2113.006112128259,
+      "ledger_water_kg": -0.007666973067882861,
+      "ledger_energy_j": -2113.0431898127176,
+      "water_residual_kg": 8.81558329286769e-09,
+      "energy_residual_j": 0.0370776844588363,
+      "steps": 900,
+      "collection_authorized": false,
+      "label": "SYNTHETIC_UNCALIBRATED"
+    }
+  ],
+  "ordinary_convergence": {
+    "20": {
+      "water_kg": 0.1371696935714811,
+      "energy_j": 19182.627834242925,
+      "temperature_c": 19.31067072925763,
+      "delta_water_kg": -0.0428303064285189,
+      "delta_energy_j": -10127.372165757079,
+      "ledger_water_kg": -0.042849386940721816,
+      "ledger_energy_j": -10192.658611538907,
+      "water_residual_kg": 1.9080512202916677e-05,
+      "energy_residual_j": 65.28644578182866,
+      "steps": 90,
+      "collection_authorized": false,
+      "label": "SYNTHETIC_UNCALIBRATED"
+    },
+    "10": {
+      "water_kg": 0.1371697025342378,
+      "energy_j": 19182.62840194165,
+      "temperature_c": 19.310670572455447,
+      "delta_water_kg": -0.042830297465762196,
+      "delta_energy_j": -10127.371598058355,
+      "ledger_water_kg": -0.04283504890836095,
+      "ledger_energy_j": -10143.612708322094,
+      "water_residual_kg": 4.751442598753541e-06,
+      "energy_residual_j": 16.241110263739756,
+      "steps": 180,
+      "collection_authorized": false,
+      "label": "SYNTHETIC_UNCALIBRATED"
+    },
+    "2": {
+      "water_kg": 0.13716970306303417,
+      "energy_j": 19182.628435333892,
+      "temperature_c": 19.31067056310197,
+      "delta_water_kg": -0.04283029693696583,
+      "delta_energy_j": -10127.371564666111,
+      "ledger_water_kg": -0.042830486815224104,
+      "ledger_energy_j": -10128.020404133822,
+      "water_residual_kg": 1.8987825827626592e-07,
+      "energy_residual_j": 0.6488394677107863,
+      "steps": 900,
+      "collection_authorized": false,
+      "label": "SYNTHETIC_UNCALIBRATED"
+    },
+    "1": {
+      "water_kg": 0.1371697030637586,
+      "energy_j": 19182.628435379524,
+      "temperature_c": 19.310670563089037,
+      "delta_water_kg": -0.04283029693624138,
+      "delta_energy_j": -10127.37156462048,
+      "ledger_water_kg": -0.04283034440466936,
+      "ledger_energy_j": -10127.533769201145,
+      "water_residual_kg": 4.7468427979979744e-08,
+      "energy_residual_j": 0.162204580665275,
+      "steps": 1800,
+      "collection_authorized": false,
+      "label": "SYNTHETIC_UNCALIBRATED"
+    }
+  },
+  "ordinary_midpoint_reference": {
+    "water_kg": 0.13716970320514696,
+    "energy_j": 19182.62844572211,
+    "temperature_c": 19.310670562011815,
+    "delta_water_kg": -0.042830296794853034,
+    "delta_energy_j": -10127.371554277892,
+    "ledger_water_kg": -0.04283030520292889,
+    "ledger_energy_j": -10127.400708407888,
+    "water_residual_kg": 8.40807585361647e-09,
+    "energy_residual_j": 0.029154129995731637,
+    "steps": 7200,
+    "collection_authorized": false,
+    "label": "SYNTHETIC_UNCALIBRATED"
+  }
+}

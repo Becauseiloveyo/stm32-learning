@@ -10,7 +10,7 @@
 
 - 任务书：`assignments/algorithm-t10.md`；冻结输入：`baseline-t10-m1/snapshot.json`。
 - 唯一写入：`research/garment_prediction/**`、`docs/GARMENT-PREDICTION.md`、`reports/algorithm-t10.md`。不改已有 theory、C、能源/通知实现及其收据。
-- 先交付 M1 契约、前向热湿模型与数值检查，然后停止写入并交接；协调者审查后明确派发 M2 观测与集合预测。M1 完成不等于 T10 完成。
+- M1 交付后保持其源码/说明/报告/收据字节；后续按 `assignments/algorithm-t10-m2.md` 派发 M2a，唯一写入该任务书的新目录/文档/报告，替代上行的宽泛写入权限。M2b 在 M2a 验收后另派；各次交付均停止写入。动态状态只读 STATUS，M1 完成不等于 T10 完成。
 - 协调者负责全局状态、模型审查、充电口防水/结构接口、后续指令与 GitHub 同步；工作对话不得自行提交/推送、创建代理或向其他对话发送消息。
 - 其他角色不修改该算法所有权范围；不能在其工作期间把未验收文件当稳定接口或纳入已通过的 GitHub 交付。
 
