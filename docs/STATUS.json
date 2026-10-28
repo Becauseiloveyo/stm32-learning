@@ -253,7 +253,7 @@
     "task": null,
     "kind": "planning_only_no_solar",
     "previous_implementation_task": "T09",
-    "summary": "无太阳能下一阶段计划、现行入口、Terra 审查和仓库导出核对完成；T10 ready，本轮不执行实现。待普通推送及远端确认。",
+    "summary": "已取消当前产品光伏、完成计划书及 Terra 分工审查，并将前轮研究资料和现行无太阳能计划同步至 GitHub；T10 ready，本轮未执行后续模型实现。",
     "changed_files": [
       ".gitattributes",
       "README.md",
@@ -282,7 +282,8 @@
       "两份 GPT-6.1 Terra 报告已读取并整合，最终复核的历史术语/旧交接标注建议已修正；冻结输入四个指纹一致。",
       "现行文档 112 个本地链接存在；T09 的 11 个来源与 2 个产物指纹一致；待提交文件常见凭据模式未检出。",
       "python -B -X utf8 tools/project_status.py --check 返回 0；只读核对，未重跑旧模型或 C 测试。",
-      "暂存树导出后全部跟踪文件与工作区字节一致，导出副本恢复检查返回 0，T09 11+2 指纹通过；38 个实质变更文件的空白检查通过。"
+      "暂存树导出后全部跟踪文件与工作区字节一致，导出副本恢复检查返回 0，T09 11+2 指纹通过；38 个实质变更文件的空白检查通过。",
+      "内容提交 803d2917598becc208bc3378365993ac652089f4 已普通推送至 master，远端 SHA 一致；GitHub 连接复读计划书成功。"
     ],
     "limitations": "新模型、无光伏端到端能源情景、手机界面、实际硬件均未完成；电池/USB 是候选。历史光伏源码与结果保留，不冒充新方案验证。",
     "unresolved_issues": [
@@ -499,7 +500,7 @@
     {
       "date": "2026-10-28",
       "request": "移除太阳能，编写下一步计划书，同步 GitHub stm32-learning，并用 GPT-6.1 Terra 分派重复审查",
-      "status": "in_progress",
+      "status": "done",
       "scope": "规划、文档及仓库同步；不自动执行下一模型实现任务",
       "resume_action": "执行 T10：先读 ROADMAP 的 T10、NEXT-PHASE-PLAN 第 5 节、PROJECT 当前 R10/R15 和 T09 设计第 2–6/12 节及来源登记；将 T10 设为 in_progress/active_task。在独立 research/garment_prediction/ 按契约→两区热湿积分→观测适配→条件时间集合→独立验收推进。保留衣物日照，不引入光伏供电；几何/面料/初值有来源或合成标签。先守恒/极限/收敛/超域，再检验真值与未来天气隔离；收衣授权仍 false。可按 TEAM 用 gpt-6.1-terra medium/high 分派清单和独立审查，不采购/部署。",
       "changed_files": [
@@ -530,7 +531,8 @@
         "两份 GPT-6.1 Terra 报告已读取并整合，最终复核的历史术语/旧交接标注建议已修正；冻结输入四个指纹一致。",
         "现行文档 112 个本地链接存在；T09 的 11 个来源与 2 个产物指纹一致；待提交文件常见凭据模式未检出。",
         "python -B -X utf8 tools/project_status.py --check 返回 0；只读核对，未重跑旧模型或 C 测试。",
-        "暂存树导出后全部跟踪文件与工作区字节一致，导出副本恢复检查返回 0，T09 11+2 指纹通过；38 个实质变更文件的空白检查通过。"
+        "暂存树导出后全部跟踪文件与工作区字节一致，导出副本恢复检查返回 0，T09 11+2 指纹通过；38 个实质变更文件的空白检查通过。",
+        "内容提交 803d2917598becc208bc3378365993ac652089f4 已普通推送至 master，远端 SHA 一致；GitHub 连接复读计划书成功。"
       ],
       "limitations": "新模型、无光伏端到端能源情景、手机界面、实际硬件均未完成；电池/USB 是候选。历史光伏源码与结果保留，不冒充新方案验证。",
       "unresolved_issues": [
@@ -543,7 +545,8 @@
         "U08",
         "U09",
         "U10"
-      ]
+      ],
+      "summary": "已取消当前产品光伏、完成计划书及 Terra 分工审查，并将前轮研究资料和现行无太阳能计划同步至 GitHub；T10 ready，本轮未执行后续模型实现。"
     }
   ],
   "resolved_issues": [
@@ -562,9 +565,17 @@
     "repository": "Becauseiloveyo/stm32-learning",
     "branch": "master",
     "baseline_commit": "d2bdf65",
-    "status": "ready_to_push",
+    "status": "verified",
     "scope": "Unsynced T09 materials and later planning plus current no-solar plan; preserve historical evidence, no force push or deployment.",
     "prepared_content_verified": true,
-    "evidence": "docs/verification/no-solar-plan-review.md"
+    "evidence": "docs/verification/no-solar-plan-review.md",
+    "verified_on": "2026-10-28",
+    "verified_content_commit": "803d2917598becc208bc3378365993ac652089f4",
+    "remote_head_at_verification": "803d2917598becc208bc3378365993ac652089f4",
+    "verification": [
+      "普通 git push 成功，git ls-remote 与本地 HEAD 相同。",
+      "GitHub 连接按内容提交读取 NEXT-PHASE-PLAN 前 15 行，确认远端是无太阳能计划。"
+    ],
+    "receipt_note": "本字段确认内容提交；同步回执作为随后一条独立提交保存，其最终远端 HEAD 由 Git 另行核对，避免提交记录自引用。"
   }
 }
