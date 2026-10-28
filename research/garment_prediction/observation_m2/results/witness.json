@@ -1,0 +1,239 @@
+{
+  "label": "SYNTHETIC_UNCALIBRATED",
+  "seed": null,
+  "assumption": "Conditional ideal central state and local-only observational dependence, independent M1 zones. Sample packet is a manual interface demonstration, not calculated sensor RH. No real sensor mapping is claimed.",
+  "cases": [
+    {
+      "producer_only": {
+        "slow_x_initial_kg_kg": 0.3,
+        "ideal_central_trajectory": [
+          {
+            "time_s": 0,
+            "water_kg": 0.18,
+            "x_kg_kg": 0.6,
+            "temperature_c": 25.0
+          },
+          {
+            "time_s": 300.0,
+            "water_kg": 0.17107925626683185,
+            "x_kg_kg": 0.5702641875561062,
+            "temperature_c": 19.095175104869337
+          },
+          {
+            "time_s": 600,
+            "water_kg": 0.16416369642064152,
+            "x_kg_kg": 0.5472123214021384,
+            "temperature_c": 19.05952795392048
+          }
+        ],
+        "zones": [
+          {
+            "water_kg": 0.16416369642064152,
+            "energy_j": 21083.7308454098,
+            "temperature_c": 19.05952795392048,
+            "delta_water_kg": -0.015836303579358474,
+            "delta_energy_j": -8226.269154590205,
+            "ledger_water_kg": -0.015836493521643607,
+            "ledger_energy_j": -8226.917925017164,
+            "water_residual_kg": 1.8994228513299904e-07,
+            "energy_residual_j": 0.6487704269584356,
+            "steps": 300,
+            "collection_authorized": false,
+            "label": "SYNTHETIC_UNCALIBRATED"
+          },
+          {
+            "water_kg": 0.028245360044887965,
+            "energy_j": 6050.02105832618,
+            "temperature_c": 23.443732684237947,
+            "delta_water_kg": -0.0017546399551120334,
+            "delta_energy_j": -584.9789416738195,
+            "ledger_water_kg": -0.0017546443544139213,
+            "ledger_energy_j": -584.99915694832,
+            "water_residual_kg": 4.399301887841531e-09,
+            "energy_residual_j": 0.02021527450051508,
+            "steps": 300,
+            "collection_authorized": false,
+            "label": "SYNTHETIC_UNCALIBRATED"
+          }
+        ]
+      },
+      "public_observation": {
+        "now_s": 600,
+        "installation_id": "synthetic-installation",
+        "contact": {
+          "state": "confirmed",
+          "source": "synthetic_external",
+          "coverage_start_s": 580,
+          "coverage_end_s": 595,
+          "issued_at_s": 595
+        },
+        "charging_heat": {
+          "state": "no_known_interference",
+          "source": "synthetic_external",
+          "coverage_start_s": 580,
+          "coverage_end_s": 595,
+          "issued_at_s": 595
+        },
+        "samples": {
+          "ambient_temp": {
+            "value": 25.0,
+            "unit": "degC",
+            "measured_at_s": 590,
+            "received_at_s": 592,
+            "uncertainty_abs": 0.2,
+            "source": "synthetic_input"
+          },
+          "ambient_rh": {
+            "value": 0.5,
+            "unit": "fraction",
+            "measured_at_s": 590,
+            "received_at_s": 592,
+            "uncertainty_abs": 0.02,
+            "source": "synthetic_input"
+          },
+          "local_temp": {
+            "value": 24.0,
+            "unit": "degC",
+            "measured_at_s": 590,
+            "received_at_s": 592,
+            "uncertainty_abs": 0.2,
+            "source": "synthetic_input"
+          },
+          "local_rh": {
+            "value": 0.6,
+            "unit": "fraction",
+            "measured_at_s": 590,
+            "received_at_s": 592,
+            "uncertainty_abs": 0.02,
+            "source": "synthetic_input"
+          }
+        }
+      },
+      "consumer": {
+        "local_record_allowed": true,
+        "contact_state_effective": "confirmed",
+        "quality_reasons": [],
+        "diagnostic_only": false,
+        "whole_garment_state": "unknown",
+        "collection_authorized": false,
+        "label": "SYNTHETIC_UNCALIBRATED"
+      }
+    },
+    {
+      "producer_only": {
+        "slow_x_initial_kg_kg": 1.2,
+        "ideal_central_trajectory": [
+          {
+            "time_s": 0,
+            "water_kg": 0.18,
+            "x_kg_kg": 0.6,
+            "temperature_c": 25.0
+          },
+          {
+            "time_s": 300.0,
+            "water_kg": 0.17107925626683185,
+            "x_kg_kg": 0.5702641875561062,
+            "temperature_c": 19.095175104869337
+          },
+          {
+            "time_s": 600,
+            "water_kg": 0.16416369642064152,
+            "x_kg_kg": 0.5472123214021384,
+            "temperature_c": 19.05952795392048
+          }
+        ],
+        "zones": [
+          {
+            "water_kg": 0.16416369642064152,
+            "energy_j": 21083.7308454098,
+            "temperature_c": 19.05952795392048,
+            "delta_water_kg": -0.015836303579358474,
+            "delta_energy_j": -8226.269154590205,
+            "ledger_water_kg": -0.015836493521643607,
+            "ledger_energy_j": -8226.917925017164,
+            "water_residual_kg": 1.8994228513299904e-07,
+            "energy_residual_j": 0.6487704269584356,
+            "steps": 300,
+            "collection_authorized": false,
+            "label": "SYNTHETIC_UNCALIBRATED"
+          },
+          {
+            "water_kg": 0.11648085453505476,
+            "energy_j": 12985.30293874279,
+            "temperature_c": 20.713846958207917,
+            "delta_water_kg": -0.0035191454649452364,
+            "delta_energy_j": -3054.6970612572077,
+            "ledger_water_kg": -0.003519151935805739,
+            "ledger_energy_j": -3054.7235746055026,
+            "water_residual_kg": 6.4708605028093724e-09,
+            "energy_residual_j": 0.026513348294884054,
+            "steps": 300,
+            "collection_authorized": false,
+            "label": "SYNTHETIC_UNCALIBRATED"
+          }
+        ]
+      },
+      "public_observation": {
+        "now_s": 600,
+        "installation_id": "synthetic-installation",
+        "contact": {
+          "state": "confirmed",
+          "source": "synthetic_external",
+          "coverage_start_s": 580,
+          "coverage_end_s": 595,
+          "issued_at_s": 595
+        },
+        "charging_heat": {
+          "state": "no_known_interference",
+          "source": "synthetic_external",
+          "coverage_start_s": 580,
+          "coverage_end_s": 595,
+          "issued_at_s": 595
+        },
+        "samples": {
+          "ambient_temp": {
+            "value": 25.0,
+            "unit": "degC",
+            "measured_at_s": 590,
+            "received_at_s": 592,
+            "uncertainty_abs": 0.2,
+            "source": "synthetic_input"
+          },
+          "ambient_rh": {
+            "value": 0.5,
+            "unit": "fraction",
+            "measured_at_s": 590,
+            "received_at_s": 592,
+            "uncertainty_abs": 0.02,
+            "source": "synthetic_input"
+          },
+          "local_temp": {
+            "value": 24.0,
+            "unit": "degC",
+            "measured_at_s": 590,
+            "received_at_s": 592,
+            "uncertainty_abs": 0.2,
+            "source": "synthetic_input"
+          },
+          "local_rh": {
+            "value": 0.6,
+            "unit": "fraction",
+            "measured_at_s": 590,
+            "received_at_s": 592,
+            "uncertainty_abs": 0.02,
+            "source": "synthetic_input"
+          }
+        }
+      },
+      "consumer": {
+        "local_record_allowed": true,
+        "contact_state_effective": "confirmed",
+        "quality_reasons": [],
+        "diagnostic_only": false,
+        "whole_garment_state": "unknown",
+        "collection_authorized": false,
+        "label": "SYNTHETIC_UNCALIBRATED"
+      }
+    }
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "purpose": "Read-only accepted inputs for T10 M2a; no concurrent changes to these paths. Verify bytes before use. Current user requirements override historical plans.",
+  "accepted_commit": "ebd731c9cf7a8897664d7782727ad3c6f3beffbc",
+  "inputs_sha256": {
+    "docs/PROJECT.md": "4e6131524c73e7256a5a67ce9c1a3e15ceb6400df47eb73dd9fc930f89ce5bc0",
+    "docs/verification/T10-M1-review.md": "be4a0001d750339c8fc2410941af3b7c020f36620b214a6f4bce15cf4e862c18",
+    "docs/verification/T10-M1-tests.json": "d5c468a1c455e33151eaf88513404ade3a0752c69fc26732f0f8fb7e7f886982",
+    "docs/GARMENT-PREDICTION.md": "1c49178c800235b4c93e7420d2b599ef0bfae37e5b33e746f3b6f2d22802faca",
+    "research/garment_prediction/model.py": "61aa50f8e24fbd470a54522144ecf60b4fe820be4f92506d5e37442ab1523830",
+    "research/garment_prediction/config.json": "28af85d23873571ce1caa80b7aef9d735d1e705a213040010cbd0af9d8fe583e",
+    "research/garment_prediction/parameter_registry.json": "81b5b0ed9fa5ed6a6e7fef4370798e8aa1b2416d1e90da074a4da51c35696950",
+    "docs/CENTRAL-CONTACT-REVIEW.md": "85bb83da815d5d352eda62d283299c61d0ff48d5ed056393f6f550798b860b22",
+    "docs/MEASUREMENT-CONTRACT.md": "a5981178f8da2d90ba70d64decad10c61b547d3246f591c69778678560cb0157",
+    "docs/PREDICTION-RAIN-POWER-DESIGN.md": "226c4ebe6ab314833b7cf26073ca1a2d34a54e131fe0da9cb3da909ff5a1cc4a"
+  }
+}

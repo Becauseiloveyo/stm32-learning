@@ -1,0 +1,136 @@
+{
+  "schema_version": 1,
+  "task": "T10",
+  "milestone": "M2a restricted observation interface",
+  "created_at_utc": "2026-10-28T18:14:15.449987+00:00",
+  "passed": true,
+  "collection_authorized": false,
+  "label": "SYNTHETIC_UNCALIBRATED",
+  "seed": null,
+  "command": "python -B -X utf8 tools/check_garment_m2.py --write-receipt",
+  "python": "3.14.6 (tags/v3.14.6:c63aec6, Jun 10 2026, 10:26:10) [MSC v.1944 64 bit (AMD64)]",
+  "reviewed_sha256": {
+    "docs/CENTRAL-CONTACT-REVIEW.md": "85bb83da815d5d352eda62d283299c61d0ff48d5ed056393f6f550798b860b22",
+    "docs/GARMENT-OBSERVATION.md": "cc71c5d2cb467b196560bd9721516b39cbf67b85a74db8f73c9f723bf982c710",
+    "docs/GARMENT-PREDICTION.md": "1c49178c800235b4c93e7420d2b599ef0bfae37e5b33e746f3b6f2d22802faca",
+    "docs/MEASUREMENT-CONTRACT.md": "a5981178f8da2d90ba70d64decad10c61b547d3246f591c69778678560cb0157",
+    "docs/PREDICTION-RAIN-POWER-DESIGN.md": "226c4ebe6ab314833b7cf26073ca1a2d34a54e131fe0da9cb3da909ff5a1cc4a",
+    "docs/PROJECT.md": "4e6131524c73e7256a5a67ce9c1a3e15ceb6400df47eb73dd9fc930f89ce5bc0",
+    "docs/team/assignments/algorithm-t10-m2.md": "4702ba6f616a3f1e4621baa968794f3b8ef190a68406c0e57fb31b85139fcb4e",
+    "docs/team/baseline-t10-m1/NEXT-PHASE-PLAN.md": "9ed21dfe5d1dcfacca726617b68f60335cdf48a9b57e373ebda04e1a463dbe17",
+    "docs/team/baseline-t10-m1/PREDICTION-RAIN-POWER-DESIGN.md": "226c4ebe6ab314833b7cf26073ca1a2d34a54e131fe0da9cb3da909ff5a1cc4a",
+    "docs/team/baseline-t10-m1/T09-sources.md": "304be1f3b66c1665c865bab64efbe273394a14dd7683a60111bcfdbbfa49c74f",
+    "docs/team/baseline-t10-m1/snapshot.json": "8261dfdc9e7e026da0d70d4ceef30ce88dd72094433f286c6bec4e8ba54906d7",
+    "docs/team/baseline-t10-m1/t10-readiness.md": "c2330b81aa03924f000c8cfd3751d8e0f964cafc9c0c387ede62616202f869b0",
+    "docs/team/baseline-t10-m2/snapshot.json": "027fd13141b5b1fabbeee8120f55600f72eeb10e332c349fe4970970d153edc6",
+    "docs/team/reports/algorithm-t10-m2.md": "81d1132a99686090beef80d19a0c8cd1048dead44098d73e8b3423f9bd02c4fa",
+    "docs/team/reports/algorithm-t10.md": "1171560420ba8a2d7a3b5daf082fd547d6decf3aa9b3c5afdcb1cac1c36a9e86",
+    "docs/verification/T10-M1-review.md": "be4a0001d750339c8fc2410941af3b7c020f36620b214a6f4bce15cf4e862c18",
+    "docs/verification/T10-M1-tests.json": "d5c468a1c455e33151eaf88513404ade3a0752c69fc26732f0f8fb7e7f886982",
+    "research/garment_prediction/config.json": "28af85d23873571ce1caa80b7aef9d735d1e705a213040010cbd0af9d8fe583e",
+    "research/garment_prediction/model.py": "61aa50f8e24fbd470a54522144ecf60b4fe820be4f92506d5e37442ab1523830",
+    "research/garment_prediction/observation_m2/config.json": "390e5c8adb92cdef2934c5a4d836ebe7ca24c41508b9aeb417cdc4f9fb721ab9",
+    "research/garment_prediction/observation_m2/contract.py": "409aeaa6b156b48c02b2ea4b6c9b3a18ac96f14984e6b1ec89eb1f304bea6da9",
+    "research/garment_prediction/observation_m2/replay.py": "c2b55db7ef30cabf45e1528c4fd09ba9f79df1fb3e84e4fe1e3724fbb4cbac97",
+    "research/garment_prediction/observation_m2/results/manifest.json": "ad8fce4c2f671b398b46232e83c9a9db112f6994075c0e67972480b63e77566b",
+    "research/garment_prediction/observation_m2/results/witness.json": "1eee506737738abe9a495367eaa6a1e7b5c6b38469f8e1e67ddd6efa8dd969db",
+    "research/garment_prediction/observation_m2/test_contract.py": "5fef4ef6df634a09ca7480d6f33be038e4b8b3420fb8aae39827a916e939d1f4",
+    "research/garment_prediction/observation_m2/witness.py": "5138ccd92a36e4f7373bd3061f8a626a007a6c183964f3d341831b771074552d",
+    "research/garment_prediction/parameter_registry.json": "81b5b0ed9fa5ed6a6e7fef4370798e8aa1b2416d1e90da074a4da51c35696950",
+    "research/garment_prediction/replay.py": "3c75862f59c303477009c37ccfa3754f273bf603cd8a1c977e326b20d0bcb226",
+    "research/garment_prediction/results/example.json": "9dabf68d034f98dee44a9ad282c505ba2ee30a7309c2531fba63bdfc4dc8b166",
+    "research/garment_prediction/results/manifest.json": "be0e061b28b048ee4d14a7ee0075fc00cdb24e9cc4ad880428e767f632d95426",
+    "research/garment_prediction/test_model.py": "4b2eff1921843a8ae6720eea00f8477649631b937192b3e75927feed8ef95a14",
+    "tools/check_garment_m1.py": "87c180e8079056f584fe3029f5fd69185fc26c2176242f3f00d37fbd5d832661",
+    "tools/check_garment_m2.py": "15f5315c1c53a3c44f88416ef852688e5c183c1d2c10e1fa21cdeeab948433f7"
+  },
+  "checks": [
+    {
+      "name": "worker_suite",
+      "passed": true,
+      "detail": {
+        "command": [
+          "C:\\Users\\wc\\AppData\\Local\\Programs\\Python\\Python314\\python.exe",
+          "-B",
+          "-X",
+          "utf8",
+          "research/garment_prediction/observation_m2/test_contract.py"
+        ],
+        "exit_code": 0,
+        "test_count": 14,
+        "output": "test_contact_states (__main__.ContractTests.test_contact_states) ... ok\ntest_evidence_coverage_before_and_after (__main__.ContractTests.test_evidence_coverage_before_and_after) ... ok\ntest_evidence_exact_boundary_and_retrospective (__main__.ContractTests.test_evidence_exact_boundary_and_retrospective) ... ok\ntest_good_is_local_only (__main__.ContractTests.test_good_is_local_only) ... ok\ntest_heat (__main__.ContractTests.test_heat) ... ok\ntest_hidden_projection (__main__.ContractTests.test_hidden_projection) ... ok\ntest_invalid (__main__.ContractTests.test_invalid) ... ok\ntest_invalid_evidence_intervals (__main__.ContractTests.test_invalid_evidence_intervals) ... ok\ntest_missing_stale_delay_and_error (__main__.ContractTests.test_missing_stale_delay_and_error) ... ok\ntest_nonidentifiable_witness (__main__.ContractTests.test_nonidentifiable_witness) ... ok\ntest_not_contact_distinct_from_unknown (__main__.ContractTests.test_not_contact_distinct_from_unknown) ... ok\ntest_partial_coverage (__main__.ContractTests.test_partial_coverage) ... ok\ntest_sample_time_skew (__main__.ContractTests.test_sample_time_skew) ... ok\ntest_stale_contact (__main__.ContractTests.test_stale_contact) ... ok\n\n----------------------------------------------------------------------\nRan 14 tests in 0.079s\n\nOK\n"
+      }
+    },
+    {
+      "name": "manifest_frozen_inputs_and_M1",
+      "passed": true,
+      "detail": {
+        "inputs": 28,
+        "artifacts": 1,
+        "M1_unchanged_files": 15,
+        "frozen_M2_inputs": 10
+      }
+    },
+    {
+      "name": "evidence_coverage_and_invalid_intervals",
+      "passed": true,
+      "detail": {
+        "cases": 22,
+        "semantics": "asserted coverage, not automatic contact detection"
+      }
+    },
+    {
+      "name": "quality_boundaries_and_missing_channels",
+      "passed": true,
+      "detail": {
+        "cases": 16,
+        "limit": "software policy boundaries only"
+      }
+    },
+    {
+      "name": "hidden_data_isolation",
+      "passed": true,
+      "detail": {
+        "hidden_fields_unread": 3,
+        "consumer_input_detached": true
+      }
+    },
+    {
+      "name": "replay_and_conditional_witness",
+      "passed": true,
+      "detail": {
+        "same_platform_replay": "exact",
+        "hidden_water_difference_kg": 0.0882354944901668,
+        "midpoint_reference_errors": [
+          {
+            "water_kg": 1.5410953069228128e-10,
+            "temperature_c": 1.9628750180800125e-08
+          },
+          {
+            "water_kg": 3.2652179571268647e-12,
+            "temperature_c": 2.1780429904083576e-08
+          },
+          {
+            "water_kg": 1.5410953069228128e-10,
+            "temperature_c": 1.9628750180800125e-08
+          },
+          {
+            "water_kg": 3.2628719170979537e-11,
+            "temperature_c": 1.8525010503367412e-07
+          }
+        ],
+        "limits": "Same M1 physics; conditional ideal-state witness. Manual RH packet is not a sensor simulation."
+      }
+    },
+    {
+      "name": "sources_unchanged_during_review",
+      "passed": true,
+      "detail": null
+    }
+  ],
+  "limits": [
+    "No coupled sensor/garment observation model or calibration.",
+    "Evidence coverage is an externally asserted input, not automatic detection.",
+    "No posterior probabilities, ETA or real collection decisions."
+  ]
+}

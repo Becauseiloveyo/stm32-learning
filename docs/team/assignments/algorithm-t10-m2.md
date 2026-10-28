@@ -16,7 +16,7 @@
 - `research/garment_prediction/model.py`、`config.json`、`parameter_registry.json`、`docs/GARMENT-PREDICTION.md`。
 - `docs/CENTRAL-CONTACT-REVIEW.md`、`docs/MEASUREMENT-CONTRACT.md`，以及 `docs/PREDICTION-RAIN-POWER-DESIGN.md` 第 4–6 节；确有必要时再读它们引用的局部气路模型。
 
-M1 收据所列文件全部只读并先核对哈希；该包不更改前向模型、旧报告/清单/数值收据。若发现必须修正 M1 的问题，在新报告提出，停止依赖该问题的部分，由协调者处理。
+先核对 `docs/team/baseline-t10-m2/snapshot.json` 的输入指纹；本包执行期间这些路径无人并发改动。M1 收据所列文件全部只读并先核对哈希；该包不更改前向模型、旧报告/清单/数值收据。若发现必须修正 M1 的问题，在新报告提出，停止依赖该问题的部分，由协调者处理。
 
 唯一写入：`research/garment_prediction/observation_m2/**`、`docs/GARMENT-OBSERVATION.md`、`docs/team/reports/algorithm-t10-m2.md`。禁止改全局状态、计划、任务书、旧模型说明和主 verification；不提交、推送、建代理或自行联系其他对话。
 

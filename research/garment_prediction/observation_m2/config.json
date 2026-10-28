@@ -1,0 +1,81 @@
+{
+  "label": "SYNTHETIC_UNCALIBRATED",
+  "seed": null,
+  "policy": {
+    "max_sample_age_s": 120,
+    "max_delivery_delay_s": 20,
+    "max_contact_age_s": 120,
+    "max_uncertainty": {
+      "ambient_temp": 0.5,
+      "ambient_rh": 0.05,
+      "local_temp": 0.5,
+      "local_rh": 0.05
+    },
+    "max_sample_skew_s": 30
+  },
+  "policy_source": "Hand-selected software stress limits for demonstration only; not calibrated sensor specifications.",
+  "central_condition": {
+    "central_zone": "ordinary",
+    "central_x_initial_kg_kg": 0.6,
+    "central_initial_temperature_c": 25
+  },
+  "hidden_slow_x_initial_kg_kg": [
+    0.3,
+    1.2
+  ],
+  "duration_s": 600,
+  "step_s": 2,
+  "assumption": "Conditional ideal central state and local-only observational dependence, independent M1 zones. Sample packet is a manual interface demonstration, not calculated sensor RH. No real sensor mapping is claimed.",
+  "packet": {
+    "now_s": 600,
+    "installation_id": "synthetic-installation",
+    "contact": {
+      "state": "confirmed",
+      "source": "synthetic_external",
+      "coverage_start_s": 580,
+      "coverage_end_s": 595,
+      "issued_at_s": 595
+    },
+    "charging_heat": {
+      "state": "no_known_interference",
+      "source": "synthetic_external",
+      "coverage_start_s": 580,
+      "coverage_end_s": 595,
+      "issued_at_s": 595
+    },
+    "samples": {
+      "ambient_temp": {
+        "value": 25.0,
+        "unit": "degC",
+        "measured_at_s": 590,
+        "received_at_s": 592,
+        "uncertainty_abs": 0.2,
+        "source": "synthetic_input"
+      },
+      "ambient_rh": {
+        "value": 0.5,
+        "unit": "fraction",
+        "measured_at_s": 590,
+        "received_at_s": 592,
+        "uncertainty_abs": 0.02,
+        "source": "synthetic_input"
+      },
+      "local_temp": {
+        "value": 24.0,
+        "unit": "degC",
+        "measured_at_s": 590,
+        "received_at_s": 592,
+        "uncertainty_abs": 0.2,
+        "source": "synthetic_input"
+      },
+      "local_rh": {
+        "value": 0.6,
+        "unit": "fraction",
+        "measured_at_s": 590,
+        "received_at_s": 592,
+        "uncertainty_abs": 0.02,
+        "source": "synthetic_input"
+      }
+    }
+  }
+}
