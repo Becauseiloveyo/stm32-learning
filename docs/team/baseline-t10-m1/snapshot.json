@@ -1,0 +1,21 @@
+{
+  "purpose": "Frozen inputs for T10 M1; use assignment for current scope and resolve referenced source paths from original location",
+  "files": {
+    "docs/NEXT-PHASE-PLAN.md": {
+      "snapshot": "docs/team/baseline-t10-m1/NEXT-PHASE-PLAN.md",
+      "sha256": "9ed21dfe5d1dcfacca726617b68f60335cdf48a9b57e373ebda04e1a463dbe17"
+    },
+    "docs/PREDICTION-RAIN-POWER-DESIGN.md": {
+      "snapshot": "docs/team/baseline-t10-m1/PREDICTION-RAIN-POWER-DESIGN.md",
+      "sha256": "226c4ebe6ab314833b7cf26073ca1a2d34a54e131fe0da9cb3da909ff5a1cc4a"
+    },
+    "docs/references/T09-sources.md": {
+      "snapshot": "docs/team/baseline-t10-m1/T09-sources.md",
+      "sha256": "304be1f3b66c1665c865bab64efbe273394a14dd7683a60111bcfdbbfa49c74f"
+    },
+    "docs/team/reports/t10-readiness.md": {
+      "snapshot": "docs/team/baseline-t10-m1/t10-readiness.md",
+      "sha256": "c2330b81aa03924f000c8cfd3751d8e0f964cafc9c0c387ede62616202f869b0"
+    }
+  }
+}

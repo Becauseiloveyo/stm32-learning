@@ -2,7 +2,7 @@
   "schema_version": 1,
   "updated_on": "2026-10-28",
   "phase": "theory_only_no_hardware_purchase",
-  "active_task": null,
+  "active_task": "T10",
   "next_task": "T10",
   "tasks": {
     "T00": {
@@ -131,10 +131,12 @@
       ]
     },
     "T10": {
-      "status": "ready",
+      "status": "in_progress",
       "depends_on": [
         "T09"
-      ]
+      ],
+      "milestone": "M1: contract, two-zone forward physics and numerical validation; coordinator review before estimator integration",
+      "execution_mode": "Dedicated user-requested Terra project conversation; shared checkout, scoped ownership."
     },
     "T11": {
       "status": "pending",
@@ -153,12 +155,13 @@
   "current_findings": [
     "2026-10-28 用户取消太阳能并要求计划书、GitHub 同步和 Terra 分工，登记为 R15–R17；R05/R12/R14 中光伏部分已被替代。",
     "现行建议为电池＋人工 USB 充电；容量、化学体系、充电接口和真实续航未冻结。衣物日照仍是干燥模型输入，不增加电池能量。",
-    "T09 方程、来源与历史计算仍保留，完整两区域模型/观测适配/条件时间估计器尚未实现；下一任务 T10 优先，不再等待面板布局。",
+    "T10 已由用户要求的 Terra 专用对话开始 M1。首轮前向原型已交付但未验收，协调者复跑当时 7 项检查通过并要求修订边界/解析对照/参数契约；完整估计器尚未实现。",
     "T12 已改为 T10 之后的衣架结构与电池预算；T11 接无光伏/人工充电、雨情、新通知和最小界面，最后 T08 总审查。",
     "现有 Python/C 能量接口仍含历史 Solar/solar_battery_wh 等语义；本轮只规划。T11 如改动必须同步契约和相应验证，不能用旧光伏通过记录证明新版续航。",
     "T01–T07 的工作区源码、参数和收据未改；T09 参数及生成物未改。Git 同步须保持其原始字节，避免自动换行转换造成指纹不一致。",
     "NASA 武汉 2024 环境数据可继续用于衣物模型；PVGIS 2023 与面板预算为历史，不是当前必跑任务或阳台实测。",
-    "12 KB U031 与约 20.4 KiB 现有主机基线的差距、实物标定、真实远程认证/推送与电池峰值能力仍未解决。"
+    "12 KB U031 与约 20.4 KiB 现有主机基线的差距、实物标定、真实远程认证/推送与电池峰值能力仍未解决。",
+    "R18–R19 登记专用算法对话和防水要求；新增湿/干分区、膜/气路响应、冷凝、充电口与雨后恢复设计，尚无整机防水或 IP 通过证据。"
   ],
   "open_issues": [
     {
@@ -247,45 +250,47 @@
         "H01"
       ],
       "evidence": "docs/NEXT-PHASE-PLAN.md 第 6 节；旧面板讨论保留于 HANGER-INTEGRATION-PLAN 仅作历史"
+    },
+    {
+      "id": "U11",
+      "summary": "防水结构、透汽/响应、凝露及受水后的观测恢复未实测；传感器健康状态尚无真实检测实现，整机 IP 等级未确定或验证",
+      "resolve_in": [
+        "T10",
+        "T12",
+        "T11",
+        "H01"
+      ],
+      "evidence": "docs/WATERPROOFING-DESIGN.md"
     }
   ],
   "last_handoff": {
-    "task": null,
-    "kind": "planning_only_no_solar",
-    "previous_implementation_task": "T09",
-    "summary": "已取消当前产品光伏、完成计划书及 Terra 分工审查，并将前轮研究资料和现行无太阳能计划同步至 GitHub；T10 ready，本轮未执行后续模型实现。",
+    "task": "T10",
+    "kind": "coordination_and_waterproofing",
+    "summary": "已创建并指挥 Terra 算法专用对话，首轮 M1 部分交付经初审后已要求修订；防水、测量有效性及完整性矩阵已补入计划。",
     "changed_files": [
-      ".gitattributes",
       "README.md",
       "docs/PROJECT.md",
       "docs/STATUS.json",
       "docs/ROADMAP.md",
-      "docs/FEATURES.md",
       "docs/DECISIONS.md",
       "docs/TEAM.md",
+      "docs/FEATURES.md",
       "docs/NEXT-PHASE-PLAN.md",
-      "docs/HANGER-INTEGRATION-PLAN.md",
-      "docs/PREDICTION-RAIN-POWER-DESIGN.md",
-      "research/design_extension/README.md",
-      "docs/team/assignments/no-solar-audit.md",
-      "docs/team/assignments/t10-readiness.md",
-      "docs/team/reports/no-solar-audit.md",
-      "docs/team/reports/t10-readiness.md",
-      "docs/team/baseline-no-solar-20261028/PROJECT.md",
-      "docs/team/baseline-no-solar-20261028/ROADMAP.md",
-      "docs/team/baseline-no-solar-20261028/PREDICTION-RAIN-POWER-DESIGN.md",
-      "docs/team/baseline-no-solar-20261028/HANGER-INTEGRATION-PLAN.md",
-      "docs/team/baseline-no-solar-20261028/snapshot.json",
-      "docs/verification/no-solar-plan-review.md"
+      "docs/WATERPROOFING-DESIGN.md",
+      "docs/team/assignments/algorithm-t10.md",
+      "docs/verification/T10-M1-review.md",
+      "docs/team/baseline-t10-m1/NEXT-PHASE-PLAN.md",
+      "docs/team/baseline-t10-m1/PREDICTION-RAIN-POWER-DESIGN.md",
+      "docs/team/baseline-t10-m1/T09-sources.md",
+      "docs/team/baseline-t10-m1/t10-readiness.md",
+      "docs/team/baseline-t10-m1/snapshot.json"
     ],
     "verification": [
-      "两份 GPT-6.1 Terra 报告已读取并整合，最终复核的历史术语/旧交接标注建议已修正；冻结输入四个指纹一致。",
-      "现行文档 112 个本地链接存在；T09 的 11 个来源与 2 个产物指纹一致；待提交文件常见凭据模式未检出。",
-      "python -B -X utf8 tools/project_status.py --check 返回 0；只读核对，未重跑旧模型或 C 测试。",
-      "暂存树导出后全部跟踪文件与工作区字节一致，导出副本恢复检查返回 0，T09 11+2 指纹通过；38 个实质变更文件的空白检查通过。",
-      "内容提交 803d2917598becc208bc3378365993ac652089f4 已普通推送至 master，远端 SHA 一致；GitHub 连接复读计划书成功。"
+      "已核对项目及线程，专用 gpt-6.1-terra/xhigh 创建成功；首轮进展已通过 wait_threads 和角色报告读取。",
+      "首轮 test_model.py 的 7 项检查由协调者复跑通过，仅是当时原型检查，不是返修版或 M1/T10 验收。",
+      "协调文档 88 个本地链接、4 个冻结输入及 T09 的 13 个来源/产物指纹核对通过；project_status.py --check 返回 0，旧模型/C 测试未重跑。"
     ],
-    "limitations": "新模型、无光伏端到端能源情景、手机界面、实际硬件均未完成；电池/USB 是候选。历史光伏源码与结果保留，不冒充新方案验证。",
+    "limitations": "T10 M1 未验收，模型仍由工作对话修订；未实现完整观测/ETA、真实手机或硬件。防水仅设计与未来验证，不具备 IP/实物测量证据。",
     "unresolved_issues": [
       "U01",
       "U02",
@@ -295,9 +300,10 @@
       "U07",
       "U08",
       "U09",
-      "U10"
+      "U10",
+      "U11"
     ],
-    "resume_action": "执行 T10：先读 ROADMAP 的 T10、NEXT-PHASE-PLAN 第 5 节、PROJECT 当前 R10/R15 和 T09 设计第 2–6/12 节及来源登记；将 T10 设为 in_progress/active_task。在独立 research/garment_prediction/ 按契约→两区热湿积分→观测适配→条件时间集合→独立验收推进。保留衣物日照，不引入光伏供电；几何/面料/初值有来源或合成标签。先守恒/极限/收敛/超域，再检验真值与未来天气隔离；收衣授权仍 false。可按 TEAM 用 gpt-6.1-terra medium/high 分派清单和独立审查，不采购/部署。"
+    "resume_action": "T10 M1 已交给专用 Terra 对话 01a18179-0c80-73f3-aa5b-9ff1c0b4b4da，首轮因边界/独立解析/参数契约待补已派修订。先用 wait_threads/角色报告核对进展，尊重 research/garment_prediction、GARMENT-PREDICTION 和角色报告的所有权；交付并停止写入后按 T10-M1-review 独立验收。有限耗尽若与所选闭合不相容，应依据非负性/解析证据审查范围而非虚构物理机制。未接受 M1 前不派 M2，T10 保持 in_progress；水后观测边界见 WATERPROOFING-DESIGN。只同步已审定的协调文档，不提交在写/未验收的模型。"
   },
   "team_work": {
     "mode": "shared_checkout_with_file_ownership",
@@ -411,6 +417,24 @@
         "prior_reports": [
           "docs/team/reports/notification.md"
         ]
+      },
+      "algorithm": {
+        "scope": "T10 M1 contract, forward physics and numerical validation",
+        "assignment": "docs/team/assignments/algorithm-t10.md",
+        "report": "docs/team/reports/algorithm-t10.md",
+        "thread_id": "01a18179-0c80-73f3-aa5b-9ff1c0b4b4da",
+        "host_id": "local",
+        "model": "gpt-6.1-terra",
+        "thinking": "xhigh",
+        "dispatch_state": "revision_instructions_sent",
+        "review_state": "M1_revision_requested",
+        "baseline": "docs/team/baseline-t10-m1/snapshot.json",
+        "coordinator_review": "docs/verification/T10-M1-review.md",
+        "latest_progress_snapshot": {
+          "cursor": "da239c35-0a30-494a-8271-1300b566809c:2",
+          "thread_status": "idle_at_first_delivery",
+          "note": "首轮交付及防水补充已完成快照；随后协调者已明确派发 M1 修订，不能当作实时状态。"
+        }
       }
     },
     "model_policy": {
@@ -547,6 +571,39 @@
         "U10"
       ],
       "summary": "已取消当前产品光伏、完成计划书及 Terra 分工审查，并将前轮研究资料和现行无太阳能计划同步至 GitHub；T10 ready，本轮未执行后续模型实现。"
+    },
+    {
+      "date": "2026-10-28",
+      "request": "为算法模型创建 Terra 专用对话，由协调者指挥；补充防水与完整性审查",
+      "status": "done",
+      "scope": "派发 T10 M1，同时补充防水设计/模型接口/验证清单；非实物防护验收",
+      "changed_files": [
+        "README.md",
+        "docs/PROJECT.md",
+        "docs/STATUS.json",
+        "docs/ROADMAP.md",
+        "docs/DECISIONS.md",
+        "docs/TEAM.md",
+        "docs/FEATURES.md",
+        "docs/NEXT-PHASE-PLAN.md",
+        "docs/WATERPROOFING-DESIGN.md",
+        "docs/team/assignments/algorithm-t10.md",
+        "docs/verification/T10-M1-review.md",
+        "docs/team/baseline-t10-m1/NEXT-PHASE-PLAN.md",
+        "docs/team/baseline-t10-m1/PREDICTION-RAIN-POWER-DESIGN.md",
+        "docs/team/baseline-t10-m1/T09-sources.md",
+        "docs/team/baseline-t10-m1/t10-readiness.md",
+        "docs/team/baseline-t10-m1/snapshot.json"
+      ],
+      "next_task": "T10",
+      "resume_action": "T10 M1 已交给专用 Terra 对话 01a18179-0c80-73f3-aa5b-9ff1c0b4b4da，首轮因边界/独立解析/参数契约待补已派修订。先用 wait_threads/角色报告核对进展，尊重 research/garment_prediction、GARMENT-PREDICTION 和角色报告的所有权；交付并停止写入后按 T10-M1-review 独立验收。有限耗尽若与所选闭合不相容，应依据非负性/解析证据审查范围而非虚构物理机制。未接受 M1 前不派 M2，T10 保持 in_progress；水后观测边界见 WATERPROOFING-DESIGN。只同步已审定的协调文档，不提交在写/未验收的模型。",
+      "summary": "已创建并指挥 Terra 算法专用对话，首轮 M1 部分交付经初审后已要求修订；防水、测量有效性及完整性矩阵已补入计划。",
+      "verification": [
+        "已核对项目及线程，专用 gpt-6.1-terra/xhigh 创建成功；首轮进展已通过 wait_threads 和角色报告读取。",
+        "首轮 test_model.py 的 7 项检查由协调者复跑通过，仅是当时原型检查，不是返修版或 M1/T10 验收。",
+        "协调文档 88 个本地链接、4 个冻结输入及 T09 的 13 个来源/产物指纹核对通过；project_status.py --check 返回 0，旧模型/C 测试未重跑。"
+      ],
+      "limitations": "T10 M1 未验收，模型仍由工作对话修订；未实现完整观测/ETA、真实手机或硬件。防水仅设计与未来验证，不具备 IP/实物测量证据。"
     }
   ],
   "resolved_issues": [
@@ -565,8 +622,8 @@
     "repository": "Becauseiloveyo/stm32-learning",
     "branch": "master",
     "baseline_commit": "d2bdf65",
-    "status": "verified",
-    "scope": "Unsynced T09 materials and later planning plus current no-solar plan; preserve historical evidence, no force push or deployment.",
+    "status": "coordination_ready_to_push",
+    "scope": "Coordinator task assignment, frozen inputs, waterproofing and review only; actively edited/unaccepted algorithm outputs excluded.",
     "prepared_content_verified": true,
     "evidence": "docs/verification/no-solar-plan-review.md",
     "verified_on": "2026-10-28",
