@@ -2,7 +2,9 @@
 
 暂定名称：**基于 STM32 的低功耗衣物干燥监测与远程提醒系统**。
 
-面向家庭阳台的 STM32 个人作品：监测衣物干燥状态，支持手机离家后的提醒，评估太阳能与电池供电。当前阶段仅做电脑上的理论与软件开发，暂不采购设备。
+面向家庭阳台的 STM32 课程设计与个人作品：研究干燥状态、条件剩余时间与受水风险，支持离家手机提醒。2026-10-28 已按用户要求取消太阳能，供电候选为可充电电池与人工 USB 充电。当前仅用电脑做理论与软件，暂不采购。
+
+下一步准备见 [开发计划书](docs/NEXT-PHASE-PLAN.md)：先实现完整衣物模型，再完善无光伏的衣架结构、电池预算和通知联动。衣物受日照仍是干燥输入；历史光伏计算保留追溯，不作为当前产品要求。
 
 ## 从这里恢复工作
 
@@ -21,6 +23,10 @@
 | 文件 | 职责 |
 |---|---|
 | [PROJECT.md](docs/PROJECT.md) | 用户要求、当前约束、证据边界 |
+| [详细功能说明](docs/FEATURES.md) | 使用过程、各项产品功能、已有软件证据与待实现边界 |
+| [下一阶段开发计划书](docs/NEXT-PHASE-PLAN.md) | 无太阳能范围、T10 工作包/验收、结构与电池预算、Terra 分工 |
+| [预测、雨情与供电研究](docs/PREDICTION-RAIN-POWER-DESIGN.md) | T09 热湿模型、面料、受水和通信；光伏预算属历史内容 |
+| [原衣架结构研究](docs/HANGER-INTEGRATION-PLAN.md) | 旧面板方案追溯；通风、取放和测点约束迁移到新 T12 |
 | [ROADMAP.md](docs/ROADMAP.md) | 任务依赖、输入、输出、验收与停止条件 |
 | [STATUS.json](docs/STATUS.json) | 唯一的任务进度、当前任务、下一步和未解决事项 |
 | [DECISIONS.md](docs/DECISIONS.md) | 为什么做某个决定、依据和重新评估条件 |
@@ -31,7 +37,7 @@
 | [纯 C 核心接口](docs/CORE-INTERFACE.md) | 主机构建、C/Python 对照、单位、内存与设备层边界 |
 | [远程提醒契约](docs/NOTIFICATION-CONTRACT.md) | 离线消息身份、最新状态、持久确认与研究提醒边界 |
 | [总体架构](hanger-drying-architecture.md) | 系统与测量方法的设计背景 |
-| [供电与通知](power-notification-design.md) | 能量模型、远程事件和未来产品方案 |
+| [原供电与通知研究](power-notification-design.md) | 保留字节指纹的历史依据；光伏方案已退出当前范围 |
 | [硬件实验清单](first-validation-plan.md) | 预算允许后使用的实验计划 |
 
 可执行参数以代码及运行生成的参数清单为准；说明文档中的示例数值不是第二套配置。任务进度只在 STATUS.json 中维护，其他文件引用它，避免多个进度表互相矛盾。
@@ -88,4 +94,4 @@ T07 的协调收据为 `docs/verification/notification-tests.json`，核对通�
 
 > 继续此目录中的衣架项目。先读取 AGENTS.md、docs/PROJECT.md、docs/STATUS.json，运行 python -X utf8 tools/project_status.py，再读取 docs/ROADMAP.md 中 next_task 指定的任务及其输入。不要凭聊天记忆补齐事实。按验收条件执行一个任务，结束时更新状态、决策和验证记录。当前只做零采购的理论与软件开发。
 
-项目文件能降低上下文丢失的影响，但它们也会过期；依靠明确来源和可重跑检查恢复状态。当前工作树尚未形成 Git 提交，检查工具不会自动提交、推送或回滚文件。
+项目文件能降低上下文丢失的影响，但它们也会过期；依靠明确来源和可重跑检查恢复状态。GitHub 仓库为 [Becauseiloveyo/stm32-learning](https://github.com/Becauseiloveyo/stm32-learning)，同步状态以 Git 和 STATUS 核对；检查工具不会自动提交、推送或回滚。

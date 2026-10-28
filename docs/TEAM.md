@@ -4,6 +4,16 @@
 
 ## 工作方式
 
+### 2026-10-28 无太阳能版本规划分工
+
+用户明确授权将简单繁琐的工作分派给最新可用的 GPT-6.1 Terra。本轮使用 `gpt-6.1-terra` 子代理：资料依赖盘点采用 medium，T10 验收清单整理采用 high；协调者负责架构、全局文档、最终验收和 GitHub 同步。模型名称按本会话可用工具选取，不推断其他未知版本。
+
+- 太阳能依赖审查：任务书 `assignments/no-solar-audit.md`，唯一写入 `reports/no-solar-audit.md`。
+- T10 准备审查：任务书 `assignments/t10-readiness.md`，唯一写入 `reports/t10-readiness.md`。
+- 冻结输入：`baseline-no-solar-20261028/snapshot.json` 及其副本。这些记录的是调整前历史；用户最新指令移除光伏供电优先。原模型源码本轮不变，可只读核对。
+- 两角色不得修改主线、执行模型实现、提交、推送、创建更多代理或向其他对话派发工作。报告交付后由协调者整合；不创建新的用户侧对话。
+- 后续机械性清点/文档核对优先 medium；涉及数值边界与测试设计采用 high。每次只给当前任务最小输入、明确写入路径及验收条件，不自动启动后续任务。
+
 ### T07 接入补充
 
 T06 验收后，远程提醒角色按 `assignments/notification-t07.md` 实现正式状态映射和离线持久通知链路。唯一写入范围为 `research/notification_t07/**`、`docs/NOTIFICATION-CONTRACT.md`、`reports/notification-t07.md`。旧通知原型及草案保持只读；已验收 Python/C 源码和结果也保持只读。协调者负责独立验收、工具、全局状态与主收据。T07 不部署服务，不接真实手机，也不执行 T08。

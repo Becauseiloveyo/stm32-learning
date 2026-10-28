@@ -1,0 +1,3 @@
+# Research manifests hash exact file bytes. Do not change line endings on add/checkout.
+# Preserve the accepted working files, including existing CRLF evidence artifacts.
+* -text

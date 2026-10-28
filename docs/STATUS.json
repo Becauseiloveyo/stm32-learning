@@ -1,9 +1,9 @@
 {
   "schema_version": 1,
-  "updated_on": "2026-10-27",
+  "updated_on": "2026-10-28",
   "phase": "theory_only_no_hardware_purchase",
   "active_task": null,
-  "next_task": "T08",
+  "next_task": "T10",
   "tasks": {
     "T00": {
       "status": "done",
@@ -100,9 +100,9 @@
       ]
     },
     "T08": {
-      "status": "ready",
+      "status": "pending",
       "depends_on": [
-        "T07"
+        "T11"
       ]
     },
     "H01": {
@@ -110,16 +110,55 @@
       "depends_on": [
         "T08"
       ]
+    },
+    "T09": {
+      "status": "done",
+      "depends_on": [
+        "T07"
+      ],
+      "acceptance": [
+        "文献与公开数据来源可追溯，明确可用参数和缺口",
+        "定义甩干初值、热湿耦合、面料不确定性与条件剩余时间算法",
+        "定义雨情证据、通信方案、能量/面积预算与新旧接口边界",
+        "记录计算核对与下一项零采购模型实现任务"
+      ],
+      "evidence": [
+        "docs/PREDICTION-RAIN-POWER-DESIGN.md",
+        "docs/references/T09-sources.md",
+        "docs/verification/T09-review.md",
+        "research/design_extension/results/manifest.json",
+        "research/design_extension/results/summary.json"
+      ]
+    },
+    "T10": {
+      "status": "ready",
+      "depends_on": [
+        "T09"
+      ]
+    },
+    "T11": {
+      "status": "pending",
+      "depends_on": [
+        "T12"
+      ]
+    },
+    "T12": {
+      "status": "pending",
+      "depends_on": [
+        "T10"
+      ],
+      "scope_revision": "2026-10-28: original PV layout/harvesting scope withdrawn by user; now battery-powered hanger layout and manual-charge feasibility"
     }
   },
   "current_findings": [
-    "T07 离线接入完成：真实 T04 原始观测状态机生成研究复核提示，SQLite 保存最新快照、有界 outbox、服务任务与接收去重；没有真实收衣授权或手机推送。",
-    "最终协调收据记录于 2026-10-27T14:20:09+08:00，61 项检查通过（模块 43、独立边界 13、收据失败 5），37 个来源和 8 个场景产物在运行期间稳定。",
-    "连续情景含 53 条原始事件、22 个合成测量周期、3 个 boot 域、11 个检查点；四个 SQLite 最终表和完整链路复算一致，累计 3 条研究提示不是 3 次真实干衣验证。",
-    "重连先同步最新状态、旧版本淘汰、证据时间固定 TTL、重启新身份清证据、迟到/重复 ACK 无操作与满队列撤销均有软件证据；服务端仍无法知道未上报的离线变化。",
-    "并行恢复导致一次来源不稳定的验收正确失败；旧 accepted 及失败收据保留，当前唯一验收场景目录为 research/notification_t07/results/accepted-v2。",
-    "T01–T05 来源及产物未变。T06 因项目工具入口更新于 2026-10-26T21:15:51+08:00 重编通过 20857 项检查；C/Python 模型未改，此后仅核对新鲜度。",
-    "下一任务 T08：汇总用户要求、理论证据与最小未来实测，评估主动采样是否仍值得；真实判干、太阳能/无线峰值、手机后台、Flash 和长期回收仍未验证。"
+    "2026-10-28 用户取消太阳能并要求计划书、GitHub 同步和 Terra 分工，登记为 R15–R17；R05/R12/R14 中光伏部分已被替代。",
+    "现行建议为电池＋人工 USB 充电；容量、化学体系、充电接口和真实续航未冻结。衣物日照仍是干燥模型输入，不增加电池能量。",
+    "T09 方程、来源与历史计算仍保留，完整两区域模型/观测适配/条件时间估计器尚未实现；下一任务 T10 优先，不再等待面板布局。",
+    "T12 已改为 T10 之后的衣架结构与电池预算；T11 接无光伏/人工充电、雨情、新通知和最小界面，最后 T08 总审查。",
+    "现有 Python/C 能量接口仍含历史 Solar/solar_battery_wh 等语义；本轮只规划。T11 如改动必须同步契约和相应验证，不能用旧光伏通过记录证明新版续航。",
+    "T01–T07 的工作区源码、参数和收据未改；T09 参数及生成物未改。Git 同步须保持其原始字节，避免自动换行转换造成指纹不一致。",
+    "NASA 武汉 2024 环境数据可继续用于衣物模型；PVGIS 2023 与面板预算为历史，不是当前必跑任务或阳台实测。",
+    "12 KB U031 与约 20.4 KiB 现有主机基线的差距、实物标定、真实远程认证/推送与电池峰值能力仍未解决。"
   ],
   "open_issues": [
     {
@@ -129,22 +168,26 @@
         "H01"
       ],
       "T02_contribution": "已明确三结构的未知量、独立观测需求和缩小范围方案；未获得真实参数。见 docs/PROBE-CONCEPTS.md 第 8 节。",
-      "T03_contribution": "已完成有限壁源、响应／偏置误差及质量关系的受限分析，列明独立观测与最小实验；真实参数仍未知。见 MODEL-VALIDITY 第 5–8 节。"
+      "T03_contribution": "已完成有限壁源、响应／偏置误差及质量关系的受限分析，列明独立观测与最小实验；真实参数仍未知。见 MODEL-VALIDITY 第 5–8 节。",
+      "T09_contribution": "T09 提出两区域热湿方程和观测适配，实际面料、覆盖、漏风与太阳吸收仍未标定。"
     },
     {
       "id": "U02",
       "summary": "没有独立实测数据，不能标定收衣阈值或声称准确率",
       "resolve_in": [
         "H01"
-      ]
+      ],
+      "T09_contribution": "T09 只定义合成端点与条件时间集合，未获得衣物真值；仿真精度不能作实物准确率。"
     },
     {
       "id": "U03",
-      "summary": "实际收能、无线峰值和低温／老化下容量未知",
+      "summary": "真实负载、无线峰值、充电热以及温度/老化下电池可用容量未知；太阳能已退出当前范围",
       "resolve_in": [
         "H01"
       ],
-      "T05_contribution": "已完成秒级平均能量守恒、完整动作预留、低储能／无光／弱网／恢复与双策略服务对照。实际收能、无线峰值、压降、热静置及低温老化容量仍须实测；T05 软件分析不关闭该实物问题。"
+      "T05_contribution": "已完成秒级平均能量守恒、完整动作预留、低储能／无光／弱网／恢复与双策略服务对照。实际收能、无线峰值、压降、热静置及低温老化容量仍须实测；T05 软件分析不关闭该实物问题。",
+      "T09_contribution": "T09 已取得武汉公开辐照并计算面积/容量情景；真实遮挡、负载、无线峰值和电池能力仍未知。",
+      "no_solar_revision": "T05/T09 收能分析保留为历史；T12/T11 需新电池与人工充电情景，H01 才能核实实物性能。"
     },
     {
       "id": "U05",
@@ -165,7 +208,8 @@
       "evidence": "docs/CORE-INTERFACE.md；docs/verification/T06-review.md；docs/verification/core-tests.json",
       "T05_contribution": "能量调度补充了日额度、墙钟预留、失败队列和原始观测的容量及掉电边界需求；PC 模拟不提供硬件持久化保证。见 ENERGY-SCHEDULING 与 T05-review。",
       "T06_contribution": "固定容量、恰满／超限、重复与重启边界已在主机验证；未静默淘汰历史。默认输入加状态为 20896 字节主机 ABI 基线，不能据此适配小 RAM 芯片。T08 应评估压缩／流式处理、可信序号水位和后续软件验证任务；H01 才能验证实际掉电与目标功耗。",
-      "T07_contribution": "本地主机增加事务序号、启动隔离、outbox 摘要与耗尽安全 head，进程中断/重复确认验证通过；不解决 C 历史长期回收、Flash 物理掉电或数据库回滚/克隆。"
+      "T07_contribution": "本地主机增加事务序号、启动隔离、outbox 摘要与耗尽安全 head，进程中断/重复确认验证通过；不解决 C 历史长期回收、Flash 物理掉电或数据库回滚/克隆。",
+      "T09_contribution": "T09 官方规格核对 U031 仅 12 KB SRAM；不能原样容纳现有主机基线，目标内存优化/回收方案仍待实现。"
     },
     {
       "id": "U07",
@@ -174,63 +218,85 @@
         "T08",
         "H01"
       ],
-      "T07_contribution": "已完成本地协议与四阶段确认、场景复算和失败检查，见 NOTIFICATION-CONTRACT 与 T07-review；不证明真实送达率或设备续航。"
+      "T07_contribution": "已完成本地协议与四阶段确认、场景复算和失败检查，见 NOTIFICATION-CONTRACT 与 T07-review；不证明真实送达率或设备续航。",
+      "T09_contribution": "T09 比较局域网、转发、P2P 和网关，默认本地电脑模拟；真实认证/手机推送与新雨情优先事件尚未接入。"
+    },
+    {
+      "id": "U08",
+      "summary": "完整衣物热湿模型与条件时间估计尚未实现；初始水量、面料、有效风与气路的不可辨识及模型失配需要显式检验",
+      "resolve_in": [
+        "T10",
+        "H01"
+      ],
+      "evidence": "docs/PREDICTION-RAIN-POWER-DESIGN.md 第 2–6、12 节"
+    },
+    {
+      "id": "U09",
+      "summary": "本地雨头、凝露/喷溅区分、暴露位置与秒级延迟尚未实测，雨事件与能量/通知版本化接入尚未实现",
+      "resolve_in": [
+        "T11",
+        "H01"
+      ],
+      "evidence": "docs/PREDICTION-RAIN-POWER-DESIGN.md 第 7–10 节"
+    },
+    {
+      "id": "U10",
+      "summary": "无面板后的主机/电池占位、衣架取放净空、参考/局部探头及雨头互扰尚未验证；原光伏受光问题退出当前范围",
+      "resolve_in": [
+        "T12",
+        "H01"
+      ],
+      "evidence": "docs/NEXT-PHASE-PLAN.md 第 6 节；旧面板讨论保留于 HANGER-INTEGRATION-PLAN 仅作历史"
     }
   ],
   "last_handoff": {
-    "task": "T07",
-    "summary": "完成离线远程提醒正式接入与协调验收；修复重复 ACK，整合队列损坏检测；保留过期版本及失败来源收据，当前正式证据为 accepted-v2。按用户询问将项目暂定名称记录在 PROJECT/README。",
+    "task": null,
+    "kind": "planning_only_no_solar",
+    "previous_implementation_task": "T09",
+    "summary": "无太阳能下一阶段计划、现行入口、Terra 审查和仓库导出核对完成；T10 ready，本轮不执行实现。待普通推送及远端确认。",
     "changed_files": [
+      ".gitattributes",
       "README.md",
       "docs/PROJECT.md",
       "docs/STATUS.json",
-      "docs/TEAM.md",
+      "docs/ROADMAP.md",
+      "docs/FEATURES.md",
       "docs/DECISIONS.md",
-      "docs/team/assignments/notification-t07.md",
-      "docs/team/reports/notification-t07.md",
-      "docs/NOTIFICATION-CONTRACT.md",
-      "docs/verification/T07-review.md",
-      "docs/verification/T07-interrupted-run.json",
-      "docs/verification/notification-tests.json",
-      "docs/verification/core-tests.json",
-      "tools/project_status.py",
-      "tools/notification_acceptance.py",
-      "tools/test_notification_boundaries.py",
-      "tools/test_notification_receipt.py",
-      "research/notification_t07/contract.py",
-      "research/notification_t07/crash_worker.py",
-      "research/notification_t07/device.py",
-      "research/notification_t07/fixtures.py",
-      "research/notification_t07/README.md",
-      "research/notification_t07/run_checks.py",
-      "research/notification_t07/scenarios.py",
-      "research/notification_t07/service.py",
-      "research/notification_t07/storage.py",
-      "research/notification_t07/test_notification.py",
-      "research/notification_t07/results/accepted/device.sqlite3",
-      "research/notification_t07/results/accepted/receipt.json",
-      "research/notification_t07/results/accepted/receiver-b.sqlite3",
-      "research/notification_t07/results/accepted/receiver.sqlite3",
-      "research/notification_t07/results/accepted/service.sqlite3",
-      "research/notification_t07/results/accepted/tests.txt",
-      "research/notification_t07/results/accepted/trace.json",
-      "research/notification_t07/results/accepted-v2/device.sqlite3",
-      "research/notification_t07/results/accepted-v2/manifest.json",
-      "research/notification_t07/results/accepted-v2/receipt.json",
-      "research/notification_t07/results/accepted-v2/receiver-b.sqlite3",
-      "research/notification_t07/results/accepted-v2/receiver.sqlite3",
-      "research/notification_t07/results/accepted-v2/service.sqlite3",
-      "research/notification_t07/results/accepted-v2/tests.txt",
-      "research/notification_t07/results/accepted-v2/trace.json"
+      "docs/TEAM.md",
+      "docs/NEXT-PHASE-PLAN.md",
+      "docs/HANGER-INTEGRATION-PLAN.md",
+      "docs/PREDICTION-RAIN-POWER-DESIGN.md",
+      "research/design_extension/README.md",
+      "docs/team/assignments/no-solar-audit.md",
+      "docs/team/assignments/t10-readiness.md",
+      "docs/team/reports/no-solar-audit.md",
+      "docs/team/reports/t10-readiness.md",
+      "docs/team/baseline-no-solar-20261028/PROJECT.md",
+      "docs/team/baseline-no-solar-20261028/ROADMAP.md",
+      "docs/team/baseline-no-solar-20261028/PREDICTION-RAIN-POWER-DESIGN.md",
+      "docs/team/baseline-no-solar-20261028/HANGER-INTEGRATION-PLAN.md",
+      "docs/team/baseline-no-solar-20261028/snapshot.json",
+      "docs/verification/no-solar-plan-review.md"
     ],
     "verification": [
-      "python -B -X utf8 research/notification_t07/run_checks.py --output research/notification_t07/results/accepted-v2：退出 0；43 项通过；生成 manifest/receipt、53 条原始事件和 4 个 SQLite 文件。",
-      "python -B -X utf8 tools/project_status.py --record-notification-tests --check：退出 0；2026-10-27T14:20:09+08:00；61 项通过，来源与产物稳定。入口亦核对原始事件重放、数据库对照和临时目录完整复算。",
-      "T06 相关工具源变更后，2026-10-26T21:15:51+08:00 实际重编 20857 项通过；上游源码与结果未改，T01–T05 不重复运行。",
-      "最终只读状态检查及当前 Markdown 本地链接/引用文件核对，结果见 T07-review。"
+      "两份 GPT-6.1 Terra 报告已读取并整合，最终复核的历史术语/旧交接标注建议已修正；冻结输入四个指纹一致。",
+      "现行文档 112 个本地链接存在；T09 的 11 个来源与 2 个产物指纹一致；待提交文件常见凭据模式未检出。",
+      "python -B -X utf8 tools/project_status.py --check 返回 0；只读核对，未重跑旧模型或 C 测试。",
+      "暂存树导出后全部跟踪文件与工作区字节一致，导出副本恢复检查返回 0，T09 11+2 指纹通过；38 个实质变更文件的空白检查通过。"
     ],
-    "limitations": "仅本机合成数据和 SQLite/串行模拟；未集成 C 通知或 T05 无线能量控制，无真实收衣授权、手机/云推送、Flash 掉电、准确率或太阳能续航证据；服务不能知道设备未上报的离线变化。",
-    "resume_action": "执行 T08：先读 ROADMAP 的 T08、PROJECT 的 R01–R08、T01–T07 协调审查及 first-validation-plan.md，再按需要展开对应契约。标记 T08 in_progress 后建立 docs/THEORY-REVIEW.md，逐项映射用户要求/当前实现/证据/未知量/最小实测；统一术语和参数引用，评估主动采样及长期存储、无线能量和提醒接入取舍，更新未来最小硬件验证计划。仍零采购、不部署、不启动 H01。"
+    "limitations": "新模型、无光伏端到端能源情景、手机界面、实际硬件均未完成；电池/USB 是候选。历史光伏源码与结果保留，不冒充新方案验证。",
+    "unresolved_issues": [
+      "U01",
+      "U02",
+      "U03",
+      "U05",
+      "U06",
+      "U07",
+      "U08",
+      "U09",
+      "U10"
+    ],
+    "resume_action": "执行 T10：先读 ROADMAP 的 T10、NEXT-PHASE-PLAN 第 5 节、PROJECT 当前 R10/R15 和 T09 设计第 2–6/12 节及来源登记；将 T10 设为 in_progress/active_task。在独立 research/garment_prediction/ 按契约→两区热湿积分→观测适配→条件时间集合→独立验收推进。保留衣物日照，不引入光伏供电；几何/面料/初值有来源或合成标签。先守恒/极限/收敛/超域，再检验真值与未来天气隔离；收衣授权仍 false。可按 TEAM 用 gpt-6.1-terra medium/high 分派清单和独立审查，不采购/部署。"
   },
   "team_work": {
     "mode": "shared_checkout_with_file_ownership",
@@ -345,8 +411,141 @@
           "docs/team/reports/notification.md"
         ]
       }
+    },
+    "model_policy": {
+      "requested_by_user_on": "2026-10-28",
+      "model": "gpt-6.1-terra",
+      "routine_audit_reasoning": "medium",
+      "acceptance_and_numerical_review_reasoning": "high",
+      "scope": "Explicitly authorized bounded subagent work; coordinator owns architecture, integration, global status and GitHub writes."
+    },
+    "planning_subagents": {
+      "no_solar_audit": {
+        "agent": "/root/no_solar_audit",
+        "model": "gpt-6.1-terra",
+        "reasoning": "medium",
+        "report": "docs/team/reports/no-solar-audit.md",
+        "status": "accepted_planning_report",
+        "final_review": "复核现行入口一致；两项历史术语/旧交接标注建议由协调者已修正。"
+      },
+      "t10_readiness": {
+        "agent": "/root/t10_readiness",
+        "model": "gpt-6.1-terra",
+        "reasoning": "high",
+        "report": "docs/team/reports/t10-readiness.md",
+        "status": "accepted_planning_report"
+      }
     }
   },
+  "documentation_updates": [
+    {
+      "date": "2026-10-27",
+      "request": "详细说明项目功能",
+      "status": "done",
+      "scope": "文档整理，不执行或改变路线图任务；保留 T07 last_handoff。",
+      "summary": "新增详细功能说明，区分用户要求、候选产品功能、当前电脑软件证据和实物/手机待验证能力。",
+      "changed_files": [
+        "docs/FEATURES.md",
+        "README.md",
+        "docs/STATUS.json"
+      ],
+      "verification": [
+        "FEATURES 与 README 的 34 个本地链接存在性核对通过，README 入口与当前无收衣授权边界核对通过。",
+        "python -B -X utf8 tools/project_status.py --check：退出 0；当前来源和既有验证收据匹配，仅只读核对，未重跑模型或 C 编译。"
+      ],
+      "limitations": "无功能代码或参数变更，无硬件/App/云部署；功能建议未升级为用户冻结规格。",
+      "unresolved_issues": "U01、U02、U03、U05、U06、U07 保持未解决。",
+      "next_task": "T08",
+      "resume_action": "继续开发时按 last_handoff.resume_action 执行 T08 理论总审查；本说明不构成 T08 完成证据。",
+      "superseded_as_current_plan_by": "2026-10-28 no-solar plan; keep this record as history, use top-level next_task and last_handoff only."
+    },
+    {
+      "date": "2026-10-28",
+      "request": "依据挂衣后的空间与遮挡约束，完善衣架结构、太阳能可行性和开发计划",
+      "status": "done",
+      "scope": "仅设计与路线调整；不自动执行 T10 或新增的结构仿真任务",
+      "resume_action": "执行 T12：读 ROADMAP 的 T12、PROJECT R14、HANGER-INTEGRATION-PLAN 第 2–5 节及 T09 预算配置/辐照来源；先把 T12 设为 in_progress 和 active_task，再在独立 research/hanger_layout/ 建立带来源的合成几何配置、正视/侧视图、净空/遮挡失败情景及收能范围。分别检查钩口/穿脱/相邻衣物、有效面积与封装面积、局部阴影电气未知、损失不重复计入及板/衣物日照差异；不改旧模型或采购。T12 验收后再进入 T10。",
+      "changed_files": [
+        "README.md",
+        "docs/PROJECT.md",
+        "docs/STATUS.json",
+        "docs/ROADMAP.md",
+        "docs/FEATURES.md",
+        "docs/DECISIONS.md",
+        "docs/PREDICTION-RAIN-POWER-DESIGN.md",
+        "docs/HANGER-INTEGRATION-PLAN.md"
+      ],
+      "next_task": "T12",
+      "summary": "补全挂衣后的结构/遮挡约束、小面板预算解释和功能优先级；新增 T12 前置结构/收能任务。本轮没有执行 T12/T10 实现。",
+      "verification": [
+        "调用既有 solar_Wh / required_area_cm2 复算 8/25/50 cm² 及需求面积：退出 0；未更改参数或生成物。",
+        "98 个本地文档链接及 8 个变更文件存在性核对通过；T09 的 11 个来源和 2 个生成物 SHA-256 与原清单一致。",
+        "python -B -X utf8 tools/project_status.py --check：退出 0；任务依赖与旧验证来源一致。只读核对，不重跑旧模型或 C 测试。"
+      ],
+      "limitations": "候选结构、尺寸示例、能耗和收能假设均未经实物验证；没有 CAD/强度/局部遮挡电气模拟、真实 App 或新增算法实现。",
+      "unresolved_issues": [
+        "U01",
+        "U02",
+        "U03",
+        "U05",
+        "U06",
+        "U07",
+        "U08",
+        "U09",
+        "U10"
+      ],
+      "superseded_as_current_plan_by": "2026-10-28 no-solar plan; keep this record as history, use top-level next_task and last_handoff only."
+    },
+    {
+      "date": "2026-10-28",
+      "request": "移除太阳能，编写下一步计划书，同步 GitHub stm32-learning，并用 GPT-6.1 Terra 分派重复审查",
+      "status": "in_progress",
+      "scope": "规划、文档及仓库同步；不自动执行下一模型实现任务",
+      "resume_action": "执行 T10：先读 ROADMAP 的 T10、NEXT-PHASE-PLAN 第 5 节、PROJECT 当前 R10/R15 和 T09 设计第 2–6/12 节及来源登记；将 T10 设为 in_progress/active_task。在独立 research/garment_prediction/ 按契约→两区热湿积分→观测适配→条件时间集合→独立验收推进。保留衣物日照，不引入光伏供电；几何/面料/初值有来源或合成标签。先守恒/极限/收敛/超域，再检验真值与未来天气隔离；收衣授权仍 false。可按 TEAM 用 gpt-6.1-terra medium/high 分派清单和独立审查，不采购/部署。",
+      "changed_files": [
+        ".gitattributes",
+        "README.md",
+        "docs/PROJECT.md",
+        "docs/STATUS.json",
+        "docs/ROADMAP.md",
+        "docs/FEATURES.md",
+        "docs/DECISIONS.md",
+        "docs/TEAM.md",
+        "docs/NEXT-PHASE-PLAN.md",
+        "docs/HANGER-INTEGRATION-PLAN.md",
+        "docs/PREDICTION-RAIN-POWER-DESIGN.md",
+        "research/design_extension/README.md",
+        "docs/team/assignments/no-solar-audit.md",
+        "docs/team/assignments/t10-readiness.md",
+        "docs/team/reports/no-solar-audit.md",
+        "docs/team/reports/t10-readiness.md",
+        "docs/team/baseline-no-solar-20261028/PROJECT.md",
+        "docs/team/baseline-no-solar-20261028/ROADMAP.md",
+        "docs/team/baseline-no-solar-20261028/PREDICTION-RAIN-POWER-DESIGN.md",
+        "docs/team/baseline-no-solar-20261028/HANGER-INTEGRATION-PLAN.md",
+        "docs/team/baseline-no-solar-20261028/snapshot.json"
+      ],
+      "next_task": "T10",
+      "verification": [
+        "两份 GPT-6.1 Terra 报告已读取并整合，最终复核的历史术语/旧交接标注建议已修正；冻结输入四个指纹一致。",
+        "现行文档 112 个本地链接存在；T09 的 11 个来源与 2 个产物指纹一致；待提交文件常见凭据模式未检出。",
+        "python -B -X utf8 tools/project_status.py --check 返回 0；只读核对，未重跑旧模型或 C 测试。",
+        "暂存树导出后全部跟踪文件与工作区字节一致，导出副本恢复检查返回 0，T09 11+2 指纹通过；38 个实质变更文件的空白检查通过。"
+      ],
+      "limitations": "新模型、无光伏端到端能源情景、手机界面、实际硬件均未完成；电池/USB 是候选。历史光伏源码与结果保留，不冒充新方案验证。",
+      "unresolved_issues": [
+        "U01",
+        "U02",
+        "U03",
+        "U05",
+        "U06",
+        "U07",
+        "U08",
+        "U09",
+        "U10"
+      ]
+    }
+  ],
   "resolved_issues": [
     {
       "id": "U04",
@@ -358,5 +557,14 @@
       "resolution": "协议／物理参数／门限统一入口及默认回归通过协调验收",
       "evidence": "docs/verification/T01-review.md"
     }
-  ]
+  ],
+  "github_sync": {
+    "repository": "Becauseiloveyo/stm32-learning",
+    "branch": "master",
+    "baseline_commit": "d2bdf65",
+    "status": "ready_to_push",
+    "scope": "Unsynced T09 materials and later planning plus current no-solar plan; preserve historical evidence, no force push or deployment.",
+    "prepared_content_verified": true,
+    "evidence": "docs/verification/no-solar-plan-review.md"
+  }
 }

@@ -1,0 +1,31 @@
+{
+  "label": "DESIGN_ASSUMPTIONS_NOT_MEASURED",
+  "seed": null,
+  "seed_note": "Deterministic arithmetic and archived public data; no random sampling.",
+  "baseline_mW": 0.2,
+  "baseline_scope": "Whole always-on dry-state budget including sleeping MCU, rain front-end, regulators and leakage; not a datasheet measurement.",
+  "passive_sample_J": 0.02,
+  "passive_samples_per_day": 1440,
+  "misc_load_Wh_per_day": 0.004,
+  "wifi_W": 0.6,
+  "wifi_success_s": 6,
+  "wifi_timeout_s": 20,
+  "active_cycle_J": 4.38,
+  "active_cycle_note": "Existing T05 illustrative incremental cycle: 0.002 W * 140 s + 0.2 W * 20 s + 0.1 J. Extra to passive tasks. Not changing its runtime configuration.",
+  "load_conversion_efficiency": 0.85,
+  "budget_margin": 1.25,
+  "pv_efficiency": 0.20,
+  "pv_to_battery_derating": 0.60,
+  "site_exposure_factor": 0.50,
+  "irradiation_cases_Wh_m2_day": [2000, 500, 100],
+  "panel_active_areas_cm2": [25, 50, 100],
+  "battery_nominal_V": 3.7,
+  "usable_capacity_fraction": 0.70,
+  "dark_days": 7,
+  "modes": {
+    "passive_reference": {"wifi_attempts": 24, "wifi_attempt_s": 6, "active_cycles": 0},
+    "active_36": {"wifi_attempts": 24, "wifi_attempt_s": 6, "active_cycles": 36},
+    "weak_network": {"wifi_attempts": 48, "wifi_attempt_s": 20, "active_cycles": 36}
+  },
+  "limitations": "No garment-time prediction; no real electrical measurements; budgets omit dedicated wind instrumentation and an always-on gateway. Rainier activity may exceed the baseline. PV derating and exposure are separate assumptions, not actual glass or balcony measurements. Battery sizing is average energy only; no peak, temperature, aging, recharge or lifetime guarantee. Prices not quoted."
+}

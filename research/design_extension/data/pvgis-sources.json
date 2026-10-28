@@ -1,0 +1,272 @@
+[
+  {
+    "name": "horizontal",
+    "url": "https://re.jrc.ec.europa.eu/api/v5_3/seriescalc?lat=30.59&lon=114.3&startyear=2023&endyear=2023&raddatabase=PVGIS-ERA5&angle=0&aspect=0&components=1&pvcalculation=0&outputformat=json&usehorizon=1",
+    "requested_tilt_deg": 0,
+    "requested_aspect_deg": 0,
+    "recorded_at": "2026-10-27T19:44:12.947958+08:00",
+    "status": "downloaded",
+    "path": "research/design_extension/data/wuhan-pvgis-2023-horizontal.json",
+    "sha256": "729efddb5ecaf95ce9e07ccefd9a0a21d26bf1d589adaf577bdffd1566fc59b7",
+    "count": 8760,
+    "inputs": {
+      "location": {
+        "latitude": 30.59,
+        "longitude": 114.3,
+        "elevation": 22.0
+      },
+      "meteo_data": {
+        "radiation_db": "PVGIS-ERA5",
+        "meteo_db": "ERA5",
+        "year_min": 2023,
+        "year_max": 2023,
+        "use_horizon": true,
+        "horizon_db": null,
+        "horizon_data": "DEM-calculated"
+      },
+      "mounting_system": {
+        "fixed": {
+          "slope": {
+            "value": 0,
+            "optimal": false
+          },
+          "azimuth": {
+            "value": 0,
+            "optimal": false
+          },
+          "type": "free-standing"
+        }
+      },
+      "pv_module": {
+        "technology": null,
+        "peak_power": null,
+        "system_loss": null
+      }
+    }
+  },
+  {
+    "name": "south30",
+    "url": "https://re.jrc.ec.europa.eu/api/v5_3/seriescalc?lat=30.59&lon=114.3&startyear=2023&endyear=2023&raddatabase=PVGIS-ERA5&angle=30&aspect=0&components=1&pvcalculation=0&outputformat=json&usehorizon=1",
+    "requested_tilt_deg": 30,
+    "requested_aspect_deg": 0,
+    "recorded_at": "2026-10-27T19:44:12.948763+08:00",
+    "status": "downloaded",
+    "path": "research/design_extension/data/wuhan-pvgis-2023-south30.json",
+    "sha256": "81b8184575fbde1e5357eac5a4e77204ebd5a267b2e8bb16ff9c1b455dd940c8",
+    "count": 8760,
+    "inputs": {
+      "location": {
+        "latitude": 30.59,
+        "longitude": 114.3,
+        "elevation": 22.0
+      },
+      "meteo_data": {
+        "radiation_db": "PVGIS-ERA5",
+        "meteo_db": "ERA5",
+        "year_min": 2023,
+        "year_max": 2023,
+        "use_horizon": true,
+        "horizon_db": null,
+        "horizon_data": "DEM-calculated"
+      },
+      "mounting_system": {
+        "fixed": {
+          "slope": {
+            "value": 30,
+            "optimal": false
+          },
+          "azimuth": {
+            "value": 0,
+            "optimal": false
+          },
+          "type": "free-standing"
+        }
+      },
+      "pv_module": {
+        "technology": null,
+        "peak_power": null,
+        "system_loss": null
+      }
+    }
+  },
+  {
+    "name": "south60",
+    "url": "https://re.jrc.ec.europa.eu/api/v5_3/seriescalc?lat=30.59&lon=114.3&startyear=2023&endyear=2023&raddatabase=PVGIS-ERA5&angle=60&aspect=0&components=1&pvcalculation=0&outputformat=json&usehorizon=1",
+    "requested_tilt_deg": 60,
+    "requested_aspect_deg": 0,
+    "recorded_at": "2026-10-27T19:44:12.949664+08:00",
+    "status": "downloaded",
+    "path": "research/design_extension/data/wuhan-pvgis-2023-south60.json",
+    "sha256": "4ee8cc07dec46b5b27c30611b79747df67f82396dc495394e1f86bef2c075f20",
+    "count": 8760,
+    "inputs": {
+      "location": {
+        "latitude": 30.59,
+        "longitude": 114.3,
+        "elevation": 22.0
+      },
+      "meteo_data": {
+        "radiation_db": "PVGIS-ERA5",
+        "meteo_db": "ERA5",
+        "year_min": 2023,
+        "year_max": 2023,
+        "use_horizon": true,
+        "horizon_db": null,
+        "horizon_data": "DEM-calculated"
+      },
+      "mounting_system": {
+        "fixed": {
+          "slope": {
+            "value": 60,
+            "optimal": false
+          },
+          "azimuth": {
+            "value": 0,
+            "optimal": false
+          },
+          "type": "free-standing"
+        }
+      },
+      "pv_module": {
+        "technology": null,
+        "peak_power": null,
+        "system_loss": null
+      }
+    }
+  },
+  {
+    "name": "south90",
+    "url": "https://re.jrc.ec.europa.eu/api/v5_3/seriescalc?lat=30.59&lon=114.3&startyear=2023&endyear=2023&raddatabase=PVGIS-ERA5&angle=90&aspect=0&components=1&pvcalculation=0&outputformat=json&usehorizon=1",
+    "requested_tilt_deg": 90,
+    "requested_aspect_deg": 0,
+    "recorded_at": "2026-10-27T19:44:21.147230+08:00",
+    "status": "downloaded",
+    "path": "research/design_extension/data/wuhan-pvgis-2023-south90.json",
+    "sha256": "3dfe7e69e9a8f59bbbe3c32fb05c01b01c799b133639b9eabf4a2519ff4cb46d",
+    "count": 8760,
+    "inputs": {
+      "location": {
+        "latitude": 30.59,
+        "longitude": 114.3,
+        "elevation": 22.0
+      },
+      "meteo_data": {
+        "radiation_db": "PVGIS-ERA5",
+        "meteo_db": "ERA5",
+        "year_min": 2023,
+        "year_max": 2023,
+        "use_horizon": true,
+        "horizon_db": null,
+        "horizon_data": "DEM-calculated"
+      },
+      "mounting_system": {
+        "fixed": {
+          "slope": {
+            "value": 90,
+            "optimal": false
+          },
+          "azimuth": {
+            "value": 0,
+            "optimal": false
+          },
+          "type": "free-standing"
+        }
+      },
+      "pv_module": {
+        "technology": null,
+        "peak_power": null,
+        "system_loss": null
+      }
+    }
+  },
+  {
+    "name": "east90",
+    "url": "https://re.jrc.ec.europa.eu/api/v5_3/seriescalc?lat=30.59&lon=114.3&startyear=2023&endyear=2023&raddatabase=PVGIS-ERA5&angle=90&aspect=-90&components=1&pvcalculation=0&outputformat=json&usehorizon=1",
+    "requested_tilt_deg": 90,
+    "requested_aspect_deg": -90,
+    "recorded_at": "2026-10-27T19:44:21.695401+08:00",
+    "status": "downloaded",
+    "path": "research/design_extension/data/wuhan-pvgis-2023-east90.json",
+    "sha256": "c018b5cb660ebd71eb5a123970689e3b9206fd138cfd8acc29c4dd943920b131",
+    "count": 8760,
+    "inputs": {
+      "location": {
+        "latitude": 30.59,
+        "longitude": 114.3,
+        "elevation": 22.0
+      },
+      "meteo_data": {
+        "radiation_db": "PVGIS-ERA5",
+        "meteo_db": "ERA5",
+        "year_min": 2023,
+        "year_max": 2023,
+        "use_horizon": true,
+        "horizon_db": null,
+        "horizon_data": "DEM-calculated"
+      },
+      "mounting_system": {
+        "fixed": {
+          "slope": {
+            "value": 90,
+            "optimal": false
+          },
+          "azimuth": {
+            "value": -90,
+            "optimal": false
+          },
+          "type": "free-standing"
+        }
+      },
+      "pv_module": {
+        "technology": null,
+        "peak_power": null,
+        "system_loss": null
+      }
+    }
+  },
+  {
+    "name": "west90",
+    "url": "https://re.jrc.ec.europa.eu/api/v5_3/seriescalc?lat=30.59&lon=114.3&startyear=2023&endyear=2023&raddatabase=PVGIS-ERA5&angle=90&aspect=90&components=1&pvcalculation=0&outputformat=json&usehorizon=1",
+    "requested_tilt_deg": 90,
+    "requested_aspect_deg": 90,
+    "recorded_at": "2026-10-27T19:44:23.055620+08:00",
+    "status": "downloaded",
+    "path": "research/design_extension/data/wuhan-pvgis-2023-west90.json",
+    "sha256": "bebb077e76c7db7defbc40b95025d39a75564a91896a81ffa9f0dbf54cb90563",
+    "count": 8760,
+    "inputs": {
+      "location": {
+        "latitude": 30.59,
+        "longitude": 114.3,
+        "elevation": 22.0
+      },
+      "meteo_data": {
+        "radiation_db": "PVGIS-ERA5",
+        "meteo_db": "ERA5",
+        "year_min": 2023,
+        "year_max": 2023,
+        "use_horizon": true,
+        "horizon_db": null,
+        "horizon_data": "DEM-calculated"
+      },
+      "mounting_system": {
+        "fixed": {
+          "slope": {
+            "value": 90,
+            "optimal": false
+          },
+          "azimuth": {
+            "value": 90,
+            "optimal": false
+          },
+          "type": "free-standing"
+        }
+      },
+      "pv_module": {
+        "technology": null,
+        "peak_power": null,
+        "system_loss": null
+      }
+    }
+  }
+]

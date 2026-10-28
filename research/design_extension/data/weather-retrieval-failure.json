@@ -1,0 +1,7 @@
+{
+  "url": "https://power.larc.nasa.gov/api/temporal/hourly/point?parameters=T2M,RH2M,WS2M,ALLSKY_SFC_SW_DWN,PRECTOTCORR&community=RE&longitude=114.30&latitude=30.59&start=20240101&end=20241231&format=JSON&time-standard=UTC",
+  "error": "ZoneInfoNotFoundError('No time zone found with key Asia/Shanghai')",
+  "status": "resolved_metadata_failure",
+  "stage": "receipt_timezone",
+  "resolution": "Raw download succeeded; rebuilt metadata using explicit UTC+08:00, without redownload."
+}

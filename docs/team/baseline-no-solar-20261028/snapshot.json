@@ -1,0 +1,21 @@
+{
+  "purpose": "Frozen planning inputs before user-requested removal of solar power; historical, not current requirements",
+  "files": {
+    "docs/PROJECT.md": {
+      "snapshot": "docs/team/baseline-no-solar-20261028/PROJECT.md",
+      "sha256": "7510e3b1dce6f78793180fa6669f7655fed5c64a39de062f0a03831edd2fdb15"
+    },
+    "docs/ROADMAP.md": {
+      "snapshot": "docs/team/baseline-no-solar-20261028/ROADMAP.md",
+      "sha256": "36630f4e73561d4da581b45af4e980c14c0780179ea9ebaf43ce3f84acdb4225"
+    },
+    "docs/PREDICTION-RAIN-POWER-DESIGN.md": {
+      "snapshot": "docs/team/baseline-no-solar-20261028/PREDICTION-RAIN-POWER-DESIGN.md",
+      "sha256": "afa6415143e1580cb5b543df29021fc3dea0c540868587c3c8258d2d82edb08e"
+    },
+    "docs/HANGER-INTEGRATION-PLAN.md": {
+      "snapshot": "docs/team/baseline-no-solar-20261028/HANGER-INTEGRATION-PLAN.md",
+      "sha256": "72d49c7f0a7cfe1b75df7cb7a559e5a7ae8e904290f8e53f99a7de8679b6d88c"
+    }
+  }
+}
