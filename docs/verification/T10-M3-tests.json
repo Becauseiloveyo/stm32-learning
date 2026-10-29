@@ -1,0 +1,294 @@
+{
+  "schema_version": 1,
+  "task": "T10",
+  "milestone": "M3",
+  "label": "SYNTHETIC_UNCALIBRATED",
+  "collection_authorized": false,
+  "verified_at": "2026-10-29T18:20:17.071211+00:00",
+  "python": "3.14.6 (tags/v3.14.6:c63aec6, Jun 10 2026, 10:26:10) [MSC v.1944 64 bit (AMD64)]",
+  "passed": true,
+  "checks": [
+    {
+      "name": "worker_suite",
+      "passed": true,
+      "detail": {
+        "command": [
+          "C:\\Users\\wc\\AppData\\Local\\Programs\\Python\\Python314\\python.exe",
+          "-B",
+          "-X",
+          "utf8",
+          "research/garment_prediction/observation_m3/test_model.py"
+        ],
+        "test_count": 11,
+        "output": "test_analytic_gas_relaxation (__main__.Tests.test_analytic_gas_relaxation) ... ok\ntest_closed_total (__main__.Tests.test_closed_total) ... ok\ntest_coupled_equilibrium (__main__.Tests.test_coupled_equilibrium) ... ok\ntest_external_wall_budget (__main__.Tests.test_external_wall_budget) ... ok\ntest_gate (__main__.Tests.test_gate) ... ok\ntest_invalid_domain (__main__.Tests.test_invalid_domain) ... ok\ntest_nonunique (__main__.Tests.test_nonunique) ... ok\ntest_observable_window_regressions (__main__.Tests.test_observable_window_regressions) ... ok\ntest_steady_zero_exchange (__main__.Tests.test_steady_zero_exchange) ... ok\ntest_step_reference (__main__.Tests.test_step_reference) ... ok\ntest_zero_cover (__main__.Tests.test_zero_cover) ... ok\n\n----------------------------------------------------------------------\nRan 11 tests in 0.151s\n\nOK\n"
+      }
+    },
+    {
+      "name": "source_integrity",
+      "passed": true,
+      "detail": {
+        "inputs": 59,
+        "artifacts": 1,
+        "protected": {
+          "docs/team/baseline-t10-m3/snapshot.json": 17,
+          "docs/verification/T10-M1-tests.json": 15,
+          "docs/verification/T10-M2a-tests.json": 33,
+          "docs/verification/T10-M2b-tests.json": 46
+        }
+      }
+    },
+    {
+      "name": "open_covered_flux_partition",
+      "passed": true,
+      "detail": [
+        {
+          "x": 0.6,
+          "rh": 0.2,
+          "open_kg_s": 3.3204954620456204e-06,
+          "cover_kg_s": 1.796182717270067e-09,
+          "external_kg_s": -3.320157591866303e-06
+        },
+        {
+          "x": 0.02,
+          "rh": 0.8,
+          "open_kg_s": -2.5862606385822406e-06,
+          "cover_kg_s": -1.551437776115607e-09,
+          "external_kg_s": 2.586322768402923e-06
+        },
+        {
+          "x": 0.0,
+          "rh": 0.5,
+          "open_kg_s": -3.4467544829409655e-06,
+          "cover_kg_s": -1.148918160980322e-09,
+          "external_kg_s": 3.4469544829409656e-06
+        }
+      ]
+    },
+    {
+      "name": "analytic_air_and_sensor",
+      "passed": true,
+      "detail": [
+        {
+          "lambda_s": 0.0,
+          "exact_rh": 0.2102765421850739,
+          "computed_rh": 0.21027654218550024,
+          "error": 4.263256414560601e-13
+        },
+        {
+          "lambda_s": 0.004,
+          "exact_rh": 0.23987666798774615,
+          "computed_rh": 0.23987666798817653,
+          "error": 4.3037795549594193e-13
+        },
+        {
+          "lambda_s": 0.25,
+          "exact_rh": 0.508866177041197,
+          "computed_rh": 0.5088661770407307,
+          "error": -4.662936703425657e-13
+        },
+        {
+          "lambda_s": 0.5,
+          "exact_rh": 0.5099447833336813,
+          "computed_rh": 0.5099447833336005,
+          "error": -8.08242361927114e-14
+        }
+      ]
+    },
+    {
+      "name": "closed_mass_and_equilibrium",
+      "passed": true,
+      "detail": {
+        "parameters": {
+          "dry_kg": 1e-05,
+          "xb": 0.15,
+          "area_open_m2": 0.0,
+          "area_cover_m2": 0.0001,
+          "r_open_s_m": 100,
+          "r_cover_s_m": 100.0,
+          "volume_m3": 0.001,
+          "flow_m3_s": 0.0,
+          "wall_source_kg_s": 0.0,
+          "sensor_tau_s": 4,
+          "sensor_bias_rh": 0.0,
+          "temperature_c": 25,
+          "ambient_rh": 0.5
+        },
+        "duration_s": 6000.0,
+        "step_s": 0.25,
+        "total_water_kg": 7.595672643921288e-06,
+        "total_error_kg": -1.0757318430129614e-19,
+        "equilibrium_kg": 5.493328608445829e-07,
+        "computed_kg": 5.49332860844592e-07,
+        "error_kg": 9.105604182983729e-21
+      }
+    },
+    {
+      "name": "open_balance_and_convergence",
+      "passed": true,
+      "detail": {
+        "rows": [
+          {
+            "dt": 0.4,
+            "trapezoid_residual_kg": -4.975661267551945e-14,
+            "water_kg": 0.05980078042581472,
+            "rh": 0.8011147566170315
+          },
+          {
+            "dt": 0.2,
+            "trapezoid_residual_kg": -1.2442168606172088e-14,
+            "water_kg": 0.05980078042581471,
+            "rh": 0.8011147566270018
+          },
+          {
+            "dt": 0.1,
+            "trapezoid_residual_kg": -3.0968337703246585e-15,
+            "water_kg": 0.05980078042581472,
+            "rh": 0.8011147566276229
+          }
+        ],
+        "midpoint_rh": 0.8011147551727755,
+        "note": "Independent quadrature and same-equation numerical cross-check, not empirical accuracy."
+      }
+    },
+    {
+      "name": "out_of_domain_rejection",
+      "passed": true,
+      "detail": [
+        "nan_temperature",
+        "bool_flow",
+        "negative_volume",
+        "zero_tau",
+        "invalid_temperature",
+        "unmodelled_condensation",
+        "hidden_parameter"
+      ]
+    },
+    {
+      "name": "observable_gate",
+      "passed": true,
+      "detail": {
+        "rejections": {
+          "duplicate_measurements": [
+            "ambient_temp:nonmonotonic_sample_time",
+            "ambient_rh:nonmonotonic_sample_time",
+            "local_temp:nonmonotonic_sample_time",
+            "local_rh:nonmonotonic_sample_time"
+          ],
+          "constant_temperature_offset": [
+            "local_ambient_temperature_mismatch_or_uncertain"
+          ],
+          "local_temperature_jump": [
+            "local_temperature_changed_or_uncertain",
+            "local_ambient_temperature_mismatch_or_uncertain"
+          ],
+          "missing_local": [
+            "observation_invalid_or_contact_unknown"
+          ],
+          "missing_environment": [
+            "observation_invalid_or_contact_unknown",
+            "missing_environment"
+          ],
+          "contact_uncovered_history": [
+            "contact:history_uncovered"
+          ],
+          "charging_heat_uncovered_history": [
+            "charging_heat:history_uncovered"
+          ],
+          "changed_environment": [
+            "environment_changed_or_uncertain"
+          ],
+          "changed_installation": [
+            "installation_changed"
+          ],
+          "hidden_truth": "ValueError",
+          "future_history": "ValueError"
+        },
+        "initial_history": "Externally declared synthetic initial state, not automatic detection."
+      }
+    },
+    {
+      "name": "replay_and_nonuniqueness",
+      "passed": true,
+      "detail": {
+        "command": [
+          "C:\\Users\\wc\\AppData\\Local\\Programs\\Python\\Python314\\python.exe",
+          "-B",
+          "-X",
+          "utf8",
+          "research/garment_prediction/observation_m3/replay.py"
+        ],
+        "max_rh_difference_fraction": 8.648390893217783e-05,
+        "initial_water_difference_kg": 0.03,
+        "latent_net_energy_proxy_j": 498.0489354631905,
+        "note": "Net latent-energy scale only; no passive thermal closure or calibrated inversion."
+      }
+    }
+  ],
+  "reviewed_sha256": {
+    "docs/CENTRAL-CONTACT-REVIEW.md": "85bb83da815d5d352eda62d283299c61d0ff48d5ed056393f6f550798b860b22",
+    "docs/GARMENT-ETA.md": "5dd403b020155d28e630fe8b6a884f429964b49bc89c46a6ae153c17b0ca5b78",
+    "docs/GARMENT-OBSERVATION-PHYSICS.md": "7a0a1dc0c99ba02f19284c8382f969b60d16849ab70d30791341440e35856540",
+    "docs/GARMENT-OBSERVATION.md": "cc71c5d2cb467b196560bd9721516b39cbf67b85a74db8f73c9f723bf982c710",
+    "docs/GARMENT-PREDICTION.md": "1c49178c800235b4c93e7420d2b599ef0bfae37e5b33e746f3b6f2d22802faca",
+    "docs/MEASUREMENT-CONTRACT.md": "a5981178f8da2d90ba70d64decad10c61b547d3246f591c69778678560cb0157",
+    "docs/MODEL-VALIDITY.md": "8ec8ade61674dfe035ccde9cab7070987698d57b287d41824e16cd7647f89ed8",
+    "docs/PREDICTION-RAIN-POWER-DESIGN.md": "226c4ebe6ab314833b7cf26073ca1a2d34a54e131fe0da9cb3da909ff5a1cc4a",
+    "docs/PROBE-CONCEPTS.md": "115f10f49d53f538562e74300addc8a8808f9a889ab5b158883e34705751132a",
+    "docs/PROJECT.md": "4e6131524c73e7256a5a67ce9c1a3e15ceb6400df47eb73dd9fc930f89ce5bc0",
+    "docs/team/assignments/algorithm-t10-m2.md": "4702ba6f616a3f1e4621baa968794f3b8ef190a68406c0e57fb31b85139fcb4e",
+    "docs/team/assignments/algorithm-t10-m2b.md": "4cc939a87514ab1ee9c743714b1a350ad945578bc7727617bb4db5086d0bd1cd",
+    "docs/team/assignments/algorithm-t10-m3.md": "6d532d31769c4312aca843a7e4e5f4134bd8a12c77f0e234e0c259f729d6d23b",
+    "docs/team/baseline-t10-m1/NEXT-PHASE-PLAN.md": "9ed21dfe5d1dcfacca726617b68f60335cdf48a9b57e373ebda04e1a463dbe17",
+    "docs/team/baseline-t10-m1/PREDICTION-RAIN-POWER-DESIGN.md": "226c4ebe6ab314833b7cf26073ca1a2d34a54e131fe0da9cb3da909ff5a1cc4a",
+    "docs/team/baseline-t10-m1/T09-sources.md": "304be1f3b66c1665c865bab64efbe273394a14dd7683a60111bcfdbbfa49c74f",
+    "docs/team/baseline-t10-m1/snapshot.json": "8261dfdc9e7e026da0d70d4ceef30ce88dd72094433f286c6bec4e8ba54906d7",
+    "docs/team/baseline-t10-m1/t10-readiness.md": "c2330b81aa03924f000c8cfd3751d8e0f964cafc9c0c387ede62616202f869b0",
+    "docs/team/baseline-t10-m2/snapshot.json": "027fd13141b5b1fabbeee8120f55600f72eeb10e332c349fe4970970d153edc6",
+    "docs/team/baseline-t10-m2b/snapshot.json": "01d7e5754e75256c4d5e34f939a1f2a59a89671d54e74d9e6b885eec59d10437",
+    "docs/team/baseline-t10-m3/snapshot.json": "2bcc606ab6d4ee050f5d8245f0582484a4407ab6055873629803fabf4d014de3",
+    "docs/team/reports/algorithm-t10-m2.md": "81d1132a99686090beef80d19a0c8cd1048dead44098d73e8b3423f9bd02c4fa",
+    "docs/team/reports/algorithm-t10-m2b.md": "858ec1eead0f037727e1685dd08475b3115fc05dea394f9754ea0d8fce38f453",
+    "docs/team/reports/algorithm-t10-m3.md": "d1623330d4771070ee6c997a5c79ef4528e853c38d2fbbfa029a23605faf7ab3",
+    "docs/team/reports/algorithm-t10.md": "1171560420ba8a2d7a3b5daf082fd547d6decf3aa9b3c5afdcb1cac1c36a9e86",
+    "docs/verification/T10-M1-review.md": "be4a0001d750339c8fc2410941af3b7c020f36620b214a6f4bce15cf4e862c18",
+    "docs/verification/T10-M1-tests.json": "d5c468a1c455e33151eaf88513404ade3a0752c69fc26732f0f8fb7e7f886982",
+    "docs/verification/T10-M2a-review.md": "2cab5a74c48384ff72e14aaf62ce4e4d5374678f529e70888928d576d9f1745b",
+    "docs/verification/T10-M2a-tests.json": "aef57de42901ae78ba3198841fb03cfca86e140d5efe2f805b11bbd63722d93e",
+    "docs/verification/T10-M2b-review.md": "222cc095d3b3f349f4f2385d5b74a86d96bbda51bcc638f1172777e571ebe4a6",
+    "docs/verification/T10-M2b-tests.json": "7d297ed2079237b90e43b20a4fcacbfe850e71998ad88b672a8b2730ebae735e",
+    "research/garment_prediction/config.json": "28af85d23873571ce1caa80b7aef9d735d1e705a213040010cbd0af9d8fe583e",
+    "research/garment_prediction/estimation_m2b/config.json": "bf48185840ce3b80d7e5469dd9a4718cf3c74e983ba8d7f5e3b6beca147c3e5e",
+    "research/garment_prediction/estimation_m2b/eta.py": "7592725facdbebd3859f72fb91423b7f9e82d563eb7764497fff99a5507c160a",
+    "research/garment_prediction/estimation_m2b/replay.py": "7cd313c1eef7db265d079cc1301bb85bf4261700ae1b5e5faaf72e462d1c62fa",
+    "research/garment_prediction/estimation_m2b/results/manifest.json": "a71ee6451762297fd25a2f10cdd237cc5dec56a1ce68803ae38e546a21145d04",
+    "research/garment_prediction/estimation_m2b/results/scenarios.json": "b0f748ea96d3204ca0a7eb1effa1b7dac54b4c06872cda0c991b7fb1b0c4a49b",
+    "research/garment_prediction/estimation_m2b/test_eta.py": "d995dd5be02ad920555d36abebf601c0f13453881cff8e3e0b5045732235abcd",
+    "research/garment_prediction/model.py": "61aa50f8e24fbd470a54522144ecf60b4fe820be4f92506d5e37442ab1523830",
+    "research/garment_prediction/observation_m2/config.json": "390e5c8adb92cdef2934c5a4d836ebe7ca24c41508b9aeb417cdc4f9fb721ab9",
+    "research/garment_prediction/observation_m2/contract.py": "409aeaa6b156b48c02b2ea4b6c9b3a18ac96f14984e6b1ec89eb1f304bea6da9",
+    "research/garment_prediction/observation_m2/replay.py": "c2b55db7ef30cabf45e1528c4fd09ba9f79df1fb3e84e4fe1e3724fbb4cbac97",
+    "research/garment_prediction/observation_m2/results/manifest.json": "ad8fce4c2f671b398b46232e83c9a9db112f6994075c0e67972480b63e77566b",
+    "research/garment_prediction/observation_m2/results/witness.json": "1eee506737738abe9a495367eaa6a1e7b5c6b38469f8e1e67ddd6efa8dd969db",
+    "research/garment_prediction/observation_m2/test_contract.py": "5fef4ef6df634a09ca7480d6f33be038e4b8b3420fb8aae39827a916e939d1f4",
+    "research/garment_prediction/observation_m2/witness.py": "5138ccd92a36e4f7373bd3061f8a626a007a6c183964f3d341831b771074552d",
+    "research/garment_prediction/observation_m3/config.json": "aa637f39eb466cbee5b89257c82119550a0f6d7ecd2ade653075c1d3ae00e7c0",
+    "research/garment_prediction/observation_m3/consumer.py": "146954d954538a1a13ca4fa0c0e3a3443bec409b13e7ec39995e1273d7f09fdf",
+    "research/garment_prediction/observation_m3/physics.py": "4de2bf84da447c84155276c483a8f54d52b54689f9eba9348cbb01fcebc09482",
+    "research/garment_prediction/observation_m3/replay.py": "90a89a0a45ec59ade829eff2def35a2ccb0ce761276925e9c6e3b7e0349d1289",
+    "research/garment_prediction/observation_m3/results/manifest.json": "d47ddcd9d31423038240a7e9224ab6829c71d1abab21f06ffb136555e20b5107",
+    "research/garment_prediction/observation_m3/results/simulation.json": "e4a6fbc81ce26644eedda39986d0c58bd6435d77e7d00764cd51a98e4f98fd7e",
+    "research/garment_prediction/observation_m3/test_model.py": "8574b8d0be7b6598bb8c5249e27032b321c9ca97b3a36e84702573ae9001544d",
+    "research/garment_prediction/parameter_registry.json": "81b5b0ed9fa5ed6a6e7fef4370798e8aa1b2416d1e90da074a4da51c35696950",
+    "research/garment_prediction/replay.py": "3c75862f59c303477009c37ccfa3754f273bf603cd8a1c977e326b20d0bcb226",
+    "research/garment_prediction/results/example.json": "9dabf68d034f98dee44a9ad282c505ba2ee30a7309c2531fba63bdfc4dc8b166",
+    "research/garment_prediction/results/manifest.json": "be0e061b28b048ee4d14a7ee0075fc00cdb24e9cc4ad880428e767f632d95426",
+    "research/garment_prediction/test_model.py": "4b2eff1921843a8ae6720eea00f8477649631b937192b3e75927feed8ef95a14",
+    "theory/model.py": "a80f08265ab40087886dade605afa94cd6ebeba64d2cf239ea82e561eaef642b",
+    "theory/protocol.py": "122f41d26988e9c80175c96116cc750b9cba00c9ec569c38e32bef438a585cb5",
+    "tools/check_garment_eta.py": "9a4f9c68c259bf1371ef746d9081408867f3c18ff7864e4d2498e84bb09f8677",
+    "tools/check_garment_m1.py": "87c180e8079056f584fe3029f5fd69185fc26c2176242f3f00d37fbd5d832661",
+    "tools/check_garment_m2.py": "15f5315c1c53a3c44f88416ef852688e5c183c1d2c10e1fa21cdeeab948433f7",
+    "tools/check_garment_observation.py": "aae453298c77d564853c27b45f0cb03f3a7949ddb8afddbf343bc7803ebfb121"
+  },
+  "limits": "Fixed-temperature single-region synthetic mapping only. No hardware calibration, full energy closure, ensemble update, real probability or collection authorization."
+}

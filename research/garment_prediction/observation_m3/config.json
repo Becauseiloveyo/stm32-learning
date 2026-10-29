@@ -1,0 +1,52 @@
+{
+  "label": "SYNTHETIC_UNCALIBRATED",
+  "seed": null,
+  "source": "Hand-selected parameters to exercise mass balances; not a physical device or manufacturer specification. T09 sec 5 and PROBE-CONCEPTS sec 3 supply equation structure, not these numerical values.",
+  "parameters": {
+    "dry_kg": 0.1,
+    "xb": 0.15,
+    "area_open_m2": 0.03,
+    "area_cover_m2": 2e-05,
+    "r_open_s_m": 100,
+    "r_cover_s_m": 200,
+    "volume_m3": 5e-06,
+    "flow_m3_s": 2e-08,
+    "wall_source_kg_s": 0,
+    "sensor_tau_s": 4,
+    "sensor_bias_rh": 0.005,
+    "temperature_c": 25,
+    "ambient_rh": 0.5
+  },
+  "units": {
+    "dry_kg": "kg",
+    "xb": "kg/kg",
+    "area_open_m2": "m2",
+    "area_cover_m2": "m2",
+    "r_open_s_m": "s/m",
+    "r_cover_s_m": "s/m",
+    "volume_m3": "m3",
+    "flow_m3_s": "m3/s",
+    "wall_source_kg_s": "kg/s external boundary",
+    "sensor_tau_s": "s",
+    "sensor_bias_rh": "fraction",
+    "temperature_c": "degC fixed",
+    "ambient_rh": "fraction",
+    "x0": "kg/kg",
+    "rh0": "fraction",
+    "sensor_rh0": "fraction",
+    "duration_s": "s",
+    "dt": "s"
+  },
+  "x0": 0.6,
+  "rh0": 0.5,
+  "sensor_rh0": 0.5,
+  "duration_s": 60,
+  "dt": 0.1,
+  "gate_tolerances": {
+    "temp_delta_c": 0.5,
+    "rh_delta": 0.05,
+    "source": "hand-selected software exercise, uncalibrated",
+    "local_temp_delta_c": 0.5,
+    "temp_offset_c": 0.5
+  }
+}

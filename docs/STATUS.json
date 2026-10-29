@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "updated_on": "2026-10-29",
+  "updated_on": "2026-10-30",
   "phase": "theory_only_no_hardware_purchase",
   "active_task": "T10",
   "next_task": "T10",
@@ -135,7 +135,7 @@
       "depends_on": [
         "T09"
       ],
-      "milestone": "M2b scenario-only sampled time calculator accepted; M3 physical observation adapter next; full T10 not complete",
+      "milestone": "M3 restricted isothermal central mapping accepted; M4 finite-candidate consistency next; full garment observation integration remains open",
       "execution_mode": "Dedicated user-requested Terra project conversation; shared checkout, scoped ownership.",
       "milestones": {
         "M1": {
@@ -174,12 +174,26 @@
           ]
         },
         "M3": {
-          "status": "pending",
+          "status": "done",
           "depends_on": [
             "M2b"
           ],
           "assignment": "docs/team/assignments/algorithm-t10-m3.md",
-          "scope": "Minimal conservative central observation mapping; completes original observation-adapter gap."
+          "scope": "Fixed-temperature single-central-region synthetic mass mapping and necessary observable-condition gate only; not full thermal or whole-garment integration.",
+          "baseline": "docs/team/baseline-t10-m3/snapshot.json",
+          "evidence": [
+            "docs/verification/T10-M3-review.md",
+            "docs/verification/T10-M3-tests.json",
+            "research/garment_prediction/observation_m3/results/manifest.json"
+          ]
+        },
+        "M4": {
+          "status": "pending",
+          "depends_on": [
+            "M3"
+          ],
+          "assignment": "docs/team/assignments/algorithm-t10-m4.md",
+          "scope": "Conditional consistency of finite synthetic candidates; no calibrated probability or direct whole-garment ETA correction."
         }
       },
       "evidence": [
@@ -188,7 +202,9 @@
         "docs/verification/T10-M2a-review.md",
         "docs/verification/T10-M2a-tests.json",
         "docs/verification/T10-M2b-review.md",
-        "docs/verification/T10-M2b-tests.json"
+        "docs/verification/T10-M2b-tests.json",
+        "docs/verification/T10-M3-review.md",
+        "docs/verification/T10-M3-tests.json"
       ]
     },
     "T11": {
@@ -208,7 +224,7 @@
   "current_findings": [
     "2026-10-28 用户取消太阳能并要求计划书、GitHub 同步和 Terra 分工，登记为 R15–R17；R05/R12/R14 中光伏部分已被替代。",
     "现行建议为电池＋人工 USB 充电；容量、化学体系、充电接口和真实续航未冻结。衣物日照仍是干燥模型输入，不增加电池能量。",
-    "T10 M1、M2a 受限接口/条件反例与 M2b 条件情景时间已获协调验收；中央物理观测映射和有根据的集合更新仍缺，T10 保持 in_progress，下一包 M3。",
+    "T10 M1/M2a/M2b 与 M3 受限等温中央质量映射已验收；下一包 M4 为有限候选相容性。完整热湿观测连接、标定及有依据的整衣集合更新仍缺，T10 保持 in_progress。",
     "T12 已改为 T10 之后的衣架结构与电池预算；T11 接无光伏/人工充电、雨情、新通知和最小界面，最后 T08 总审查。",
     "现有 Python/C 能量接口仍含历史 Solar/solar_battery_wh 等语义；本轮只规划。T11 如改动必须同步契约和相应验证，不能用旧光伏通过记录证明新版续航。",
     "T01–T07 的工作区源码、参数和收据未改；T09 参数及生成物未改。Git 同步须保持其原始字节，避免自动换行转换造成指纹不一致。",
@@ -218,7 +234,8 @@
     "R20–R21：建议须由现实/项目/文献证据支持，用户确认目标接触位置为衣架底部横杆中央，未接触不开展衣物干燥记录。本轮核对资料并保留单中央位置研究；未增加多点或确定新传感器。",
     "M1 当前平滑闭合的正水量不发生有限时间耗尽；接受限定的非负性证明、零初值及数值越界拒绝，变更出流机制后需重审。M1 已验收文件保持只读，M2a 使用独立目录。",
     "M2a 只接收可得观测和有覆盖区间的外部接触/热证据；未接触或未知不产出有效记录。模型内中央过程相同但未测区水量相差约 88 g；这不是实物 RH 实验，也不推广为所有方案不可辨识。M2b 已完成条件情景时间，仍无观测校正。",
-    "M2b 在同一网格时刻检查两区共同目标；12 个合成组合中 8 个在时域内未检出，因此上界未知。解析对照和 20→5 s 加密通过；不能把网格检出当连续首次穿越或真实干燥时间。"
+    "M2b 在同一网格时刻检查两区共同目标；12 个合成组合中 8 个在时域内未检出，因此上界未知。解析对照和 20→5 s 加密通过；不能把网格检出当连续首次穿越或真实干燥时间。",
+    "M3 的初始水量 0.06/0.03 kg 合成例在 60 s 的 RH 比例最大差约 8.65e-5；仅在指定误差和模型下相容，不证明真实面料不可辨识。通过观测必要条件也不能证明未测织物等温。"
   ],
   "open_issues": [
     {
@@ -283,7 +300,7 @@
     },
     {
       "id": "U08",
-      "summary": "M1/M2a 与 M2b 条件情景时间已验收；中央物理观测映射、接触证据获取、材料/初值约束与有依据的集合更新仍待解决",
+      "summary": "M1/M2a/M2b 和受限 M3 已验收；有限候选相容性、中央与整衣动态一致连接、真实接触/材料/初值标定及整衣集合更新仍未完成",
       "resolve_in": [
         "T10",
         "H01"
@@ -292,7 +309,8 @@
       "central_contact_review": "两区域模型不要求两个物理测点；中央观测与未测区域关系尚无匹配实测数据，不能假定中央必然最慢。",
       "M1_contribution": "方程/参考焓/非负性及当前数值检查获接受；不关闭可辨识性或实物准确率问题。见 T10-M1-review 和 T10-M1-tests。",
       "M2a_contribution": "完成接触/热证据覆盖门控和条件性中央相同、未测区不同的反例；没有实物数据、真实映射或 ETA。",
-      "M2b_contribution": "实现给定合成先验与未来情景的共同采样目标时间，失败/未达成员保留未知上界；没有观测反演或真实准确率。"
+      "M2b_contribution": "实现给定合成先验与未来情景的共同采样目标时间，失败/未达成员保留未知上界；没有观测反演或真实准确率。",
+      "M3_contribution": "固定温度单中央区的水量映射、传感器响应和历史/温差/重复观测筛选已独立验收；不关闭完整能量账、未测区域或真实准确率缺口。"
     },
     {
       "id": "U09",
@@ -326,36 +344,37 @@
   ],
   "last_handoff": {
     "task": "T10",
-    "kind": "M2b_accepted_M3_ready",
-    "summary": "条件情景目标时间计算器完成并获协调验收；保留原 T10 中央物理观测适配缺口，M3 任务书已准备未派发。",
+    "kind": "M3_accepted_M4_prepared",
+    "summary": "M3 固定温度单中央质量映射经返修和独立验收；修复重复采样及明显局部温差误放行。完成 M4 候选相容性任务书，未执行后续实现。",
     "changed_files": [
       "docs/STATUS.json",
       "docs/DECISIONS.md",
       "docs/ROADMAP.md",
       "docs/TEAM.md",
-      "docs/team/assignments/algorithm-t10-m2b.md",
       "docs/team/assignments/algorithm-t10-m3.md",
-      "docs/team/baseline-t10-m2b/snapshot.json",
-      "docs/GARMENT-ETA.md",
-      "docs/team/reports/algorithm-t10-m2b.md",
-      "docs/verification/T10-M2b-review.md",
-      "docs/verification/T10-M2b-tests.json",
-      "tools/check_garment_eta.py",
-      "research/garment_prediction/estimation_m2b/config.json",
-      "research/garment_prediction/estimation_m2b/eta.py",
-      "research/garment_prediction/estimation_m2b/replay.py",
-      "research/garment_prediction/estimation_m2b/test_eta.py",
-      "research/garment_prediction/estimation_m2b/results/manifest.json",
-      "research/garment_prediction/estimation_m2b/results/scenarios.json"
+      "docs/team/assignments/algorithm-t10-m4.md",
+      "docs/team/baseline-t10-m3/snapshot.json",
+      "docs/GARMENT-OBSERVATION-PHYSICS.md",
+      "docs/team/reports/algorithm-t10-m3.md",
+      "docs/verification/T10-M3-review.md",
+      "docs/verification/T10-M3-tests.json",
+      "tools/check_garment_observation.py",
+      "research/garment_prediction/observation_m3/config.json",
+      "research/garment_prediction/observation_m3/consumer.py",
+      "research/garment_prediction/observation_m3/physics.py",
+      "research/garment_prediction/observation_m3/replay.py",
+      "research/garment_prediction/observation_m3/results/manifest.json",
+      "research/garment_prediction/observation_m3/results/simulation.json",
+      "research/garment_prediction/observation_m3/test_model.py"
     ],
     "verification": [
-      "python -B -X utf8 tools/check_garment_eta.py --write-receipt：8/8 组通过，包含工作对话 8 项 unittest、独立解析穿越/平衡/零端点/非重叠再湿/精确分段/失败保留/网格加密和输入隔离；组数与子检查不相加。",
-      "41 个来源＋1 个产物匹配；M1 的 15、M2a 的 33 个验收来源及本包 10 个冻结输入匹配，审查期间字节稳定。",
-      "默认 12 组合重算一致，20 s→5 s 分类均一致，4 个有限检出变化为 0/15/10/0 s；只覆盖所选合成情景。",
-      "project_status.py --check、M1/M2a/M2b --check-receipt 全部返回 0；36 个变更文档本地链接存在；未重跑旧模型/C/通知数值。",
-      "M2b 内容提交 2f150d20e3b22f1f4c363492260d2bfca91a0f0b 已推送；远端 SHA 一致，GitHub 连接器复读审查文档 blob 与本地一致。"
+      "python -B -X utf8 tools/check_garment_observation.py --write-receipt：9 组通过，其中 worker_suite 包含 11 项测试；64 个来源/产物/说明绑定。",
+      "59 个来源和 1 个产物及冻结输入通过；重放当前 M3 输出字节一致；旧包来源未改。",
+      "独立解析空气/响应、封闭水量/二分平衡、开放通量/求积收敛、域外拒绝、温差/时序/历史证据隔离检查通过。",
+      "project_status.py 恢复检查通过，仅核对旧证据；未重跑旧数值与 C 编译。",
+      "整合后四个 T10 只读收据检查及 project_status.py --check 通过；19 个变更文件存在，38 个本地文档链接有效，旧通过记录未重跑。"
     ],
-    "limitations": "scenario_only；无真实中央映射、观测校正、概率标定或实物准确率。首次采样检出可能漏掉步间短暂事件；两区不代表所有衣物结构，收衣授权恒 false。",
+    "limitations": "固定温度合成子域；无真实材料/气路/传感标定、完整热账、自动接触证据、集合更新或整衣观测修正 ETA。applicable 仅是必要条件，收衣授权 false。",
     "unresolved_issues": [
       "U01",
       "U02",
@@ -368,7 +387,7 @@
       "U10",
       "U11"
     ],
-    "resume_action": "下一次继续 T10 M3：先运行 project_status.py --check 及 check_garment_m1.py、check_garment_m2.py、check_garment_eta.py 的 --check-receipt（均用 python -B -X utf8）；核对专用 Terra 对话 idle，按 algorithm-t10-m3 任务书派发中央最小物理观测适配。只写 observation_m3 新目录及指定新说明/报告，已验收包只读。先统一开放/覆盖面积与水/热边界，再做合成读数与独立账检查；不增加硬件，不提前推进 T12/T11。GitHub 若仍 pending，正常重试并核对远端。"
+    "resume_action": "继续 T10 M4：先核对 STATUS、M4 任务书、M3 审查及四个受限包收据；建立 M4 冻结清单，将 M4 标 in_progress 后沿用专用 Terra 对话派发有限候选相容性工作。候选失败/未知不能当不相容；保留多解，不将 M3 局部水量直接传入 M1/M2b。整衣热湿连接未闭合前不结束 T10 或开始 T12/T11。"
   },
   "team_work": {
     "mode": "shared_checkout_with_file_ownership",
@@ -484,29 +503,31 @@
         ]
       },
       "algorithm": {
-        "scope": "T10 M2b conditional scenario time envelopes",
-        "assignment": "docs/team/assignments/algorithm-t10-m2b.md",
-        "report": "docs/team/reports/algorithm-t10-m2b.md",
+        "scope": "T10 M3 accepted within restricted synthetic scope; M4 prepared only",
+        "assignment": "docs/team/assignments/algorithm-t10-m3.md",
+        "report": "docs/team/reports/algorithm-t10-m3.md",
         "thread_id": "01a18179-0c80-73f3-aa5b-9ff1c0b4b4da",
         "host_id": "local",
         "model": "gpt-6.1-terra",
         "thinking": "xhigh",
-        "dispatch_state": "M2b_delivery_submitted",
-        "review_state": "accepted_M2b_scenario_only",
-        "baseline": "docs/team/baseline-t10-m2b/snapshot.json",
-        "coordinator_review": "docs/verification/T10-M2b-review.md",
+        "dispatch_state": "delivery_submitted",
+        "review_state": "accepted_M3_restricted",
+        "baseline": "docs/team/baseline-t10-m3/snapshot.json",
+        "coordinator_review": "docs/verification/T10-M3-review.md",
         "latest_progress_snapshot": {
-          "cursor": "da239c35-0a30-494a-8271-1300b566809c:26",
+          "checked_on": "2026-10-30",
+          "cursor": "da99da90-ee7a-46f0-b8a1-3d9cd5797a67:1",
           "thread_status": "idle",
           "turn_status": "completed",
-          "note": "M2b 交付并停止写入；协调者随后接受条件情景范围。下次派发前复查。"
+          "note": "M3 修订版交付并停止写入；协调者随后独立验收。M4 尚未派发。"
         },
-        "next_assignment": "docs/team/assignments/algorithm-t10-m3.md",
-        "next_dispatch_state": "not_dispatched",
-        "coordinator_receipt": "docs/verification/T10-M2b-tests.json",
+        "next_assignment": "docs/team/assignments/algorithm-t10-m4.md",
+        "next_dispatch_state": "prepared_not_dispatched",
+        "coordinator_receipt": "docs/verification/T10-M3-tests.json",
         "prior_reports": [
           "docs/team/reports/algorithm-t10.md",
-          "docs/team/reports/algorithm-t10-m2.md"
+          "docs/team/reports/algorithm-t10-m2.md",
+          "docs/team/reports/algorithm-t10-m2b.md"
         ]
       }
     },
@@ -746,8 +767,8 @@
     "repository": "Becauseiloveyo/stm32-learning",
     "branch": "master",
     "baseline_commit": "d2bdf65",
-    "status": "synced",
-    "scope": "Accepted M1, M2a and M2b research, coordinator receipts, and M3 task brief.",
+    "status": "pending",
+    "scope": "Accepted M3 restricted mapping, coordinator receipt and M4 task brief.",
     "prepared_content_verified": true,
     "evidence": "docs/NEXT-PHASE-PLAN.md 第 10 节；docs/STATUS.json last_handoff",
     "verified_on": "2026-10-29",
@@ -759,8 +780,8 @@
       "GitHub 连接器读取 master 的 T10-M2b-review.md，blob 7819d26c1acd7cfcfa9877f3d4e1c5af2f41f83a 与本地一致。"
     ],
     "receipt_note": "本条记录已独立核对的内容提交；同步回执单独提交，避免提交自引用。",
-    "last_attempt_on": "2026-10-29",
+    "last_attempt_on": "2026-10-30",
     "last_attempt_errors": [],
-    "resume_action": "本轮内容已同步；继续 M3 前正常核对工作区与对话状态，不重做已验收内容。"
+    "resume_action": "本轮 M3 内容尚未提交推送；验收及项目检查后正常提交、推送并核对远端。"
   }
 }
