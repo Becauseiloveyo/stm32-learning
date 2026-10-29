@@ -372,7 +372,8 @@
       "59 个来源和 1 个产物及冻结输入通过；重放当前 M3 输出字节一致；旧包来源未改。",
       "独立解析空气/响应、封闭水量/二分平衡、开放通量/求积收敛、域外拒绝、温差/时序/历史证据隔离检查通过。",
       "project_status.py 恢复检查通过，仅核对旧证据；未重跑旧数值与 C 编译。",
-      "整合后四个 T10 只读收据检查及 project_status.py --check 通过；19 个变更文件存在，38 个本地文档链接有效，旧通过记录未重跑。"
+      "整合后四个 T10 只读收据检查及 project_status.py --check 通过；19 个变更文件存在，38 个本地文档链接有效，旧通过记录未重跑。",
+      "M3 内容提交 94bde53868e5e8a5c5fb647808dea7b4e9c41a81 已推送；远端 HEAD 和 GitHub 连接器文件 blob 双重核对一致。同步回执单独提交。"
     ],
     "limitations": "固定温度合成子域；无真实材料/气路/传感标定、完整热账、自动接触证据、集合更新或整衣观测修正 ETA。applicable 仅是必要条件，收衣授权 false。",
     "unresolved_issues": [
@@ -767,21 +768,20 @@
     "repository": "Becauseiloveyo/stm32-learning",
     "branch": "master",
     "baseline_commit": "d2bdf65",
-    "status": "pending",
+    "status": "synced",
     "scope": "Accepted M3 restricted mapping, coordinator receipt and M4 task brief.",
     "prepared_content_verified": true,
-    "evidence": "docs/NEXT-PHASE-PLAN.md 第 10 节；docs/STATUS.json last_handoff",
-    "verified_on": "2026-10-29",
-    "verified_content_commit": "2f150d20e3b22f1f4c363492260d2bfca91a0f0b",
-    "remote_head_at_verification": "2f150d20e3b22f1f4c363492260d2bfca91a0f0b",
+    "evidence": "docs/verification/T10-M3-review.md; docs/STATUS.json last_handoff",
+    "verified_on": "2026-10-30",
+    "verified_content_commit": "94bde53868e5e8a5c5fb647808dea7b4e9c41a81",
+    "remote_head_at_verification": "94bde53868e5e8a5c5fb647808dea7b4e9c41a81",
     "verification": [
-      "git push origin master 成功补齐 M2a，再推送本轮 M2b 内容提交 2f150d20e3b22f1f4c363492260d2bfca91a0f0b。",
-      "git ls-remote origin refs/heads/master 与本地内容提交一致。",
-      "GitHub 连接器读取 master 的 T10-M2b-review.md，blob 7819d26c1acd7cfcfa9877f3d4e1c5af2f41f83a 与本地一致。"
+      "git push origin master 成功；git ls-remote 与内容提交 94bde53868e5e8a5c5fb647808dea7b4e9c41a81 一致。",
+      "GitHub 连接器复读 M3 审查文件，blob d439eef27239d850065eeebfd41f37a1a3e07e05 与本地一致。"
     ],
     "receipt_note": "本条记录已独立核对的内容提交；同步回执单独提交，避免提交自引用。",
     "last_attempt_on": "2026-10-30",
     "last_attempt_errors": [],
-    "resume_action": "本轮 M3 内容尚未提交推送；验收及项目检查后正常提交、推送并核对远端。"
+    "resume_action": "M3 内容已同步；下一步核对收据并按 M4 任务书派发，保留已验收来源。"
   }
 }
