@@ -352,7 +352,8 @@
       "python -B -X utf8 tools/check_garment_eta.py --write-receipt：8/8 组通过，包含工作对话 8 项 unittest、独立解析穿越/平衡/零端点/非重叠再湿/精确分段/失败保留/网格加密和输入隔离；组数与子检查不相加。",
       "41 个来源＋1 个产物匹配；M1 的 15、M2a 的 33 个验收来源及本包 10 个冻结输入匹配，审查期间字节稳定。",
       "默认 12 组合重算一致，20 s→5 s 分类均一致，4 个有限检出变化为 0/15/10/0 s；只覆盖所选合成情景。",
-      "project_status.py --check、M1/M2a/M2b --check-receipt 全部返回 0；36 个变更文档本地链接存在；未重跑旧模型/C/通知数值。"
+      "project_status.py --check、M1/M2a/M2b --check-receipt 全部返回 0；36 个变更文档本地链接存在；未重跑旧模型/C/通知数值。",
+      "M2b 内容提交 2f150d20e3b22f1f4c363492260d2bfca91a0f0b 已推送；远端 SHA 一致，GitHub 连接器复读审查文档 blob 与本地一致。"
     ],
     "limitations": "scenario_only；无真实中央映射、观测校正、概率标定或实物准确率。首次采样检出可能漏掉步间短暂事件；两区不代表所有衣物结构，收衣授权恒 false。",
     "unresolved_issues": [
@@ -745,24 +746,21 @@
     "repository": "Becauseiloveyo/stm32-learning",
     "branch": "master",
     "baseline_commit": "d2bdf65",
-    "status": "M2a_synced_M2b_pending_commit",
-    "scope": "M1/M2a and their prior handoff receipts synchronized; current M2b accepted work pending commit.",
+    "status": "synced",
+    "scope": "Accepted M1, M2a and M2b research, coordinator receipts, and M3 task brief.",
     "prepared_content_verified": true,
     "evidence": "docs/NEXT-PHASE-PLAN.md 第 10 节；docs/STATUS.json last_handoff",
     "verified_on": "2026-10-29",
-    "verified_content_commit": "32a72efaafc426425847e99c81b5ad5d54638d85",
-    "remote_head_at_verification": "32a72efaafc426425847e99c81b5ad5d54638d85",
+    "verified_content_commit": "2f150d20e3b22f1f4c363492260d2bfca91a0f0b",
+    "remote_head_at_verification": "2f150d20e3b22f1f4c363492260d2bfca91a0f0b",
     "verification": [
-      "本轮重试 git push origin master 成功：ebd731c..32a72ef，补齐 M2a 及其旧回执。"
+      "git push origin master 成功补齐 M2a，再推送本轮 M2b 内容提交 2f150d20e3b22f1f4c363492260d2bfca91a0f0b。",
+      "git ls-remote origin refs/heads/master 与本地内容提交一致。",
+      "GitHub 连接器读取 master 的 T10-M2b-review.md，blob 7819d26c1acd7cfcfa9877f3d4e1c5af2f41f83a 与本地一致。"
     ],
-    "receipt_note": "先前网络失败已恢复；当前 M2b 内容待提交推送。",
+    "receipt_note": "本条记录已独立核对的内容提交；同步回执单独提交，避免提交自引用。",
     "last_attempt_on": "2026-10-29",
-    "last_attempt_errors": [
-      "M2a push: RPC failed / curl 28 github.com:443 connection timeout; exit 1.",
-      "Remote ls-remote: connection timeout; GitHub connector M2a review path returned 404 while M1 review was readable.",
-      "M2a retry with HTTP/1.1 and bounded low-speed settings: github.com:443 connection timeout; exit 1.",
-      "M2b turn initial retry: less than 1 bytes/sec for 20 seconds; exit 1."
-    ],
-    "resume_action": "提交本轮 M2b 已验收内容后正常 push，并核对远端；不强推或覆盖旧证据。"
+    "last_attempt_errors": [],
+    "resume_action": "本轮内容已同步；继续 M3 前正常核对工作区与对话状态，不重做已验收内容。"
   }
 }
