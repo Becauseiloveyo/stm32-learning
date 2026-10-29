@@ -1,0 +1,15 @@
+{
+  "purpose": "M2b read-only accepted inputs; verify prior receipts as well. No concurrent edits to these input paths.",
+  "inputs_sha256": {
+    "docs/PROJECT.md": "4e6131524c73e7256a5a67ce9c1a3e15ceb6400df47eb73dd9fc930f89ce5bc0",
+    "docs/verification/T10-M1-review.md": "be4a0001d750339c8fc2410941af3b7c020f36620b214a6f4bce15cf4e862c18",
+    "docs/verification/T10-M1-tests.json": "d5c468a1c455e33151eaf88513404ade3a0752c69fc26732f0f8fb7e7f886982",
+    "docs/verification/T10-M2a-review.md": "2cab5a74c48384ff72e14aaf62ce4e4d5374678f529e70888928d576d9f1745b",
+    "docs/verification/T10-M2a-tests.json": "aef57de42901ae78ba3198841fb03cfca86e140d5efe2f805b11bbd63722d93e",
+    "docs/GARMENT-OBSERVATION.md": "cc71c5d2cb467b196560bd9721516b39cbf67b85a74db8f73c9f723bf982c710",
+    "research/garment_prediction/model.py": "61aa50f8e24fbd470a54522144ecf60b4fe820be4f92506d5e37442ab1523830",
+    "research/garment_prediction/config.json": "28af85d23873571ce1caa80b7aef9d735d1e705a213040010cbd0af9d8fe583e",
+    "research/garment_prediction/parameter_registry.json": "81b5b0ed9fa5ed6a6e7fef4370798e8aa1b2416d1e90da074a4da51c35696950",
+    "docs/PREDICTION-RAIN-POWER-DESIGN.md": "226c4ebe6ab314833b7cf26073ca1a2d34a54e131fe0da9cb3da909ff5a1cc4a"
+  }
+}

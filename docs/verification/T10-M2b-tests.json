@@ -1,0 +1,217 @@
+{
+  "schema_version": 1,
+  "task": "T10",
+  "milestone": "M2b scenario-only sampled target times",
+  "created_at_utc": "2026-10-29T02:30:56.058579+00:00",
+  "passed": true,
+  "label": "SYNTHETIC_UNCALIBRATED",
+  "collection_authorized": false,
+  "seed": null,
+  "command": "python -B -X utf8 tools/check_garment_eta.py --write-receipt",
+  "python": "3.14.6 (tags/v3.14.6:c63aec6, Jun 10 2026, 10:26:10) [MSC v.1944 64 bit (AMD64)]",
+  "reviewed_sha256": {
+    "docs/CENTRAL-CONTACT-REVIEW.md": "85bb83da815d5d352eda62d283299c61d0ff48d5ed056393f6f550798b860b22",
+    "docs/GARMENT-ETA.md": "5dd403b020155d28e630fe8b6a884f429964b49bc89c46a6ae153c17b0ca5b78",
+    "docs/GARMENT-OBSERVATION.md": "cc71c5d2cb467b196560bd9721516b39cbf67b85a74db8f73c9f723bf982c710",
+    "docs/GARMENT-PREDICTION.md": "1c49178c800235b4c93e7420d2b599ef0bfae37e5b33e746f3b6f2d22802faca",
+    "docs/MEASUREMENT-CONTRACT.md": "a5981178f8da2d90ba70d64decad10c61b547d3246f591c69778678560cb0157",
+    "docs/PREDICTION-RAIN-POWER-DESIGN.md": "226c4ebe6ab314833b7cf26073ca1a2d34a54e131fe0da9cb3da909ff5a1cc4a",
+    "docs/PROJECT.md": "4e6131524c73e7256a5a67ce9c1a3e15ceb6400df47eb73dd9fc930f89ce5bc0",
+    "docs/team/assignments/algorithm-t10-m2.md": "4702ba6f616a3f1e4621baa968794f3b8ef190a68406c0e57fb31b85139fcb4e",
+    "docs/team/assignments/algorithm-t10-m2b.md": "4cc939a87514ab1ee9c743714b1a350ad945578bc7727617bb4db5086d0bd1cd",
+    "docs/team/baseline-t10-m1/NEXT-PHASE-PLAN.md": "9ed21dfe5d1dcfacca726617b68f60335cdf48a9b57e373ebda04e1a463dbe17",
+    "docs/team/baseline-t10-m1/PREDICTION-RAIN-POWER-DESIGN.md": "226c4ebe6ab314833b7cf26073ca1a2d34a54e131fe0da9cb3da909ff5a1cc4a",
+    "docs/team/baseline-t10-m1/T09-sources.md": "304be1f3b66c1665c865bab64efbe273394a14dd7683a60111bcfdbbfa49c74f",
+    "docs/team/baseline-t10-m1/snapshot.json": "8261dfdc9e7e026da0d70d4ceef30ce88dd72094433f286c6bec4e8ba54906d7",
+    "docs/team/baseline-t10-m1/t10-readiness.md": "c2330b81aa03924f000c8cfd3751d8e0f964cafc9c0c387ede62616202f869b0",
+    "docs/team/baseline-t10-m2/snapshot.json": "027fd13141b5b1fabbeee8120f55600f72eeb10e332c349fe4970970d153edc6",
+    "docs/team/baseline-t10-m2b/snapshot.json": "01d7e5754e75256c4d5e34f939a1f2a59a89671d54e74d9e6b885eec59d10437",
+    "docs/team/reports/algorithm-t10-m2.md": "81d1132a99686090beef80d19a0c8cd1048dead44098d73e8b3423f9bd02c4fa",
+    "docs/team/reports/algorithm-t10-m2b.md": "858ec1eead0f037727e1685dd08475b3115fc05dea394f9754ea0d8fce38f453",
+    "docs/team/reports/algorithm-t10.md": "1171560420ba8a2d7a3b5daf082fd547d6decf3aa9b3c5afdcb1cac1c36a9e86",
+    "docs/verification/T10-M1-review.md": "be4a0001d750339c8fc2410941af3b7c020f36620b214a6f4bce15cf4e862c18",
+    "docs/verification/T10-M1-tests.json": "d5c468a1c455e33151eaf88513404ade3a0752c69fc26732f0f8fb7e7f886982",
+    "docs/verification/T10-M2a-review.md": "2cab5a74c48384ff72e14aaf62ce4e4d5374678f529e70888928d576d9f1745b",
+    "docs/verification/T10-M2a-tests.json": "aef57de42901ae78ba3198841fb03cfca86e140d5efe2f805b11bbd63722d93e",
+    "research/garment_prediction/config.json": "28af85d23873571ce1caa80b7aef9d735d1e705a213040010cbd0af9d8fe583e",
+    "research/garment_prediction/estimation_m2b/config.json": "bf48185840ce3b80d7e5469dd9a4718cf3c74e983ba8d7f5e3b6beca147c3e5e",
+    "research/garment_prediction/estimation_m2b/eta.py": "7592725facdbebd3859f72fb91423b7f9e82d563eb7764497fff99a5507c160a",
+    "research/garment_prediction/estimation_m2b/replay.py": "7cd313c1eef7db265d079cc1301bb85bf4261700ae1b5e5faaf72e462d1c62fa",
+    "research/garment_prediction/estimation_m2b/results/manifest.json": "a71ee6451762297fd25a2f10cdd237cc5dec56a1ce68803ae38e546a21145d04",
+    "research/garment_prediction/estimation_m2b/results/scenarios.json": "b0f748ea96d3204ca0a7eb1effa1b7dac54b4c06872cda0c991b7fb1b0c4a49b",
+    "research/garment_prediction/estimation_m2b/test_eta.py": "d995dd5be02ad920555d36abebf601c0f13453881cff8e3e0b5045732235abcd",
+    "research/garment_prediction/model.py": "61aa50f8e24fbd470a54522144ecf60b4fe820be4f92506d5e37442ab1523830",
+    "research/garment_prediction/observation_m2/config.json": "390e5c8adb92cdef2934c5a4d836ebe7ca24c41508b9aeb417cdc4f9fb721ab9",
+    "research/garment_prediction/observation_m2/contract.py": "409aeaa6b156b48c02b2ea4b6c9b3a18ac96f14984e6b1ec89eb1f304bea6da9",
+    "research/garment_prediction/observation_m2/replay.py": "c2b55db7ef30cabf45e1528c4fd09ba9f79df1fb3e84e4fe1e3724fbb4cbac97",
+    "research/garment_prediction/observation_m2/results/manifest.json": "ad8fce4c2f671b398b46232e83c9a9db112f6994075c0e67972480b63e77566b",
+    "research/garment_prediction/observation_m2/results/witness.json": "1eee506737738abe9a495367eaa6a1e7b5c6b38469f8e1e67ddd6efa8dd969db",
+    "research/garment_prediction/observation_m2/test_contract.py": "5fef4ef6df634a09ca7480d6f33be038e4b8b3420fb8aae39827a916e939d1f4",
+    "research/garment_prediction/observation_m2/witness.py": "5138ccd92a36e4f7373bd3061f8a626a007a6c183964f3d341831b771074552d",
+    "research/garment_prediction/parameter_registry.json": "81b5b0ed9fa5ed6a6e7fef4370798e8aa1b2416d1e90da074a4da51c35696950",
+    "research/garment_prediction/replay.py": "3c75862f59c303477009c37ccfa3754f273bf603cd8a1c977e326b20d0bcb226",
+    "research/garment_prediction/results/example.json": "9dabf68d034f98dee44a9ad282c505ba2ee30a7309c2531fba63bdfc4dc8b166",
+    "research/garment_prediction/results/manifest.json": "be0e061b28b048ee4d14a7ee0075fc00cdb24e9cc4ad880428e767f632d95426",
+    "research/garment_prediction/test_model.py": "4b2eff1921843a8ae6720eea00f8477649631b937192b3e75927feed8ef95a14",
+    "tools/check_garment_eta.py": "9a4f9c68c259bf1371ef746d9081408867f3c18ff7864e4d2498e84bb09f8677",
+    "tools/check_garment_m1.py": "87c180e8079056f584fe3029f5fd69185fc26c2176242f3f00d37fbd5d832661",
+    "tools/check_garment_m2.py": "15f5315c1c53a3c44f88416ef852688e5c183c1d2c10e1fa21cdeeab948433f7"
+  },
+  "checks": [
+    {
+      "name": "worker_suite",
+      "passed": true,
+      "detail": {
+        "command": [
+          "C:\\Users\\wc\\AppData\\Local\\Programs\\Python\\Python314\\python.exe",
+          "-B",
+          "-X",
+          "utf8",
+          "research/garment_prediction/estimation_m2b/test_eta.py"
+        ],
+        "test_count": 8,
+        "exit_code": 0,
+        "output": "test_analytic (__main__.Checks.test_analytic) ... ok\ntest_config_ensemble (__main__.Checks.test_config_ensemble) ... ok\ntest_failure_kept (__main__.Checks.test_failure_kept) ... ok\ntest_initial_and_unknown (__main__.Checks.test_initial_and_unknown) ... ok\ntest_invalid_and_no_leak (__main__.Checks.test_invalid_and_no_leak) ... ok\ntest_rain_drain_equilibrium (__main__.Checks.test_rain_drain_equilibrium) ... ok\ntest_rewet_after_reaching (__main__.Checks.test_rewet_after_reaching) ... ok\ntest_rewet_no_false_max (__main__.Checks.test_rewet_no_false_max) ... ok\n\n----------------------------------------------------------------------\nRan 8 tests in 1.013s\n\nOK\n"
+      }
+    },
+    {
+      "name": "source_artifact_and_frozen_integrity",
+      "passed": true,
+      "detail": {
+        "inputs": 41,
+        "artifacts": 1,
+        "protected": {
+          "docs/team/baseline-t10-m2b/snapshot.json": 10,
+          "docs/verification/T10-M1-tests.json": 15,
+          "docs/verification/T10-M2a-tests.json": 33
+        }
+      }
+    },
+    {
+      "name": "independent_analytic_crossings",
+      "passed": true,
+      "detail": {
+        "cases": [
+          {
+            "rain": false,
+            "step_s": 7.0,
+            "analytic_joint_s": 2772.588722239781,
+            "sampled_joint_s": 2779.0,
+            "error_s": 6.411277760219036
+          },
+          {
+            "rain": false,
+            "step_s": 1.0,
+            "analytic_joint_s": 2772.588722239781,
+            "sampled_joint_s": 2773.0,
+            "error_s": 0.4112777602190363
+          },
+          {
+            "rain": true,
+            "step_s": 7.0,
+            "analytic_joint_s": 3218.8758248682007,
+            "sampled_joint_s": 3220.0,
+            "error_s": 1.1241751317993476
+          },
+          {
+            "rain": true,
+            "step_s": 1.0,
+            "analytic_joint_s": 3218.8758248682007,
+            "sampled_joint_s": 3219.0,
+            "error_s": 0.12417513179934758
+          }
+        ],
+        "limit": "Sampling bound applies only to these monotone analytic examples."
+      }
+    },
+    {
+      "name": "equilibrium_and_positive_inventory_zero_target",
+      "passed": true,
+      "detail": {
+        "cases": 3,
+        "limit": "Finite test horizon; analytic result independently explains no crossing."
+      }
+    },
+    {
+      "name": "nonoverlapping_targets_and_rewet",
+      "passed": true,
+      "detail": {
+        "central_first_s": 40.54651081081642,
+        "central_rewet_s": 130.19946094791345,
+        "other_first_s": 386.6491167644813,
+        "simultaneous_crossing": "none in constructed case",
+        "initially_reached_then_rewet_detected": true
+      }
+    },
+    {
+      "name": "segment_split_and_failure_retention",
+      "passed": true,
+      "detail": {
+        "exact_split_first_s": 17.5,
+        "retained_cases": 6,
+        "statuses": [
+          "reached_sampled",
+          "outside_domain_or_invalid_member",
+          "outside_domain_or_invalid_member",
+          "outside_domain_or_invalid_member",
+          "numerical_step_failure",
+          "outside_domain_or_invalid_member"
+        ],
+        "failure_after_reaching_retained": true
+      }
+    },
+    {
+      "name": "replay_refinement_and_input_isolation",
+      "passed": true,
+      "detail": {
+        "combinations": 12,
+        "unresolved": 8,
+        "earliest_known_sample_s": 5780.0,
+        "upper_sample_s": null,
+        "refinement": [
+          {
+            "member": "low",
+            "scenario": "steady",
+            "coarse_s": 5780.0,
+            "fine_s": 5780.0,
+            "difference_s": 0.0
+          },
+          {
+            "member": "low",
+            "scenario": "airflow_change",
+            "coarse_s": 5880.0,
+            "fine_s": 5865.0,
+            "difference_s": 15.0
+          },
+          {
+            "member": "low",
+            "scenario": "rewet",
+            "coarse_s": 11780.0,
+            "fine_s": 11770.0,
+            "difference_s": 10.0
+          },
+          {
+            "member": "middle",
+            "scenario": "airflow_change",
+            "coarse_s": 13040.0,
+            "fine_s": 13040.0,
+            "difference_s": 0.0
+          }
+        ],
+        "hidden_fields_rejected": 4,
+        "limit": "Refinement evidence for these configurations only; no continuous-event guarantee."
+      }
+    },
+    {
+      "name": "sources_unchanged_during_review",
+      "passed": true,
+      "detail": null
+    }
+  ],
+  "limits": [
+    "No real garment accuracy, observation assimilation or probability calibration.",
+    "Analytic cases are degenerate synthetic limits with explicitly monotone branches.",
+    "General first sampled target does not bound first continuous crossing.",
+    "No physical tests, firmware deployment, weather forecast or hardware procurement."
+  ]
+}

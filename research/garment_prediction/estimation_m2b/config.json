@@ -1,0 +1,330 @@
+{
+  "label": "SYNTHETIC_UNCALIBRATED",
+  "seed": null,
+  "source": "M1 synthetic base; X0, slow xb/resistance, target and future scenarios manually chosen for sensitivity, not real textiles or weather forecast",
+  "units": "x0 and target kg/kg dry; temperature degC; time s; drives as M1 registry; zones as M1 registry",
+  "request": {
+    "members": [
+      {
+        "id": "low",
+        "zones": [
+          {
+            "dry_kg": 0.3,
+            "evap_m2": 0.45,
+            "proj_m2": 0.18,
+            "heat_m2": 0.45,
+            "rad_m2": 0.4,
+            "xb": 0.15,
+            "resistance_s_m": 140.0,
+            "drain_per_s": 1e-05,
+            "alpha": 0.6,
+            "emissivity": 0.9
+          },
+          {
+            "dry_kg": 0.1,
+            "evap_m2": 0.1,
+            "proj_m2": 0.035,
+            "heat_m2": 0.12,
+            "rad_m2": 0.1,
+            "xb": 0.22,
+            "resistance_s_m": 220.0,
+            "drain_per_s": 5e-06,
+            "alpha": 0.6,
+            "emissivity": 0.9
+          }
+        ],
+        "x0": [
+          0.3,
+          0.5
+        ],
+        "temperature_c": [
+          25,
+          25
+        ]
+      },
+      {
+        "id": "middle",
+        "zones": [
+          {
+            "dry_kg": 0.3,
+            "evap_m2": 0.45,
+            "proj_m2": 0.18,
+            "heat_m2": 0.45,
+            "rad_m2": 0.4,
+            "xb": 0.15,
+            "resistance_s_m": 140.0,
+            "drain_per_s": 1e-05,
+            "alpha": 0.6,
+            "emissivity": 0.9
+          },
+          {
+            "dry_kg": 0.1,
+            "evap_m2": 0.1,
+            "proj_m2": 0.035,
+            "heat_m2": 0.12,
+            "rad_m2": 0.1,
+            "xb": 0.22,
+            "resistance_s_m": 220.0,
+            "drain_per_s": 5e-06,
+            "alpha": 0.6,
+            "emissivity": 0.9
+          }
+        ],
+        "x0": [
+          0.6,
+          0.9
+        ],
+        "temperature_c": [
+          25,
+          25
+        ]
+      },
+      {
+        "id": "slow_variant",
+        "zones": [
+          {
+            "dry_kg": 0.3,
+            "evap_m2": 0.45,
+            "proj_m2": 0.18,
+            "heat_m2": 0.45,
+            "rad_m2": 0.4,
+            "xb": 0.15,
+            "resistance_s_m": 140.0,
+            "drain_per_s": 1e-05,
+            "alpha": 0.6,
+            "emissivity": 0.9
+          },
+          {
+            "dry_kg": 0.1,
+            "evap_m2": 0.1,
+            "proj_m2": 0.035,
+            "heat_m2": 0.12,
+            "rad_m2": 0.1,
+            "xb": 0.374,
+            "resistance_s_m": 374.0,
+            "drain_per_s": 5e-06,
+            "alpha": 0.6,
+            "emissivity": 0.9
+          }
+        ],
+        "x0": [
+          0.9,
+          1.2
+        ],
+        "temperature_c": [
+          25,
+          25
+        ]
+      }
+    ],
+    "scenarios": [
+      {
+        "id": "steady",
+        "segments": [
+          {
+            "end_s": 14400,
+            "drives": [
+              {
+                "air_c": 25,
+                "rh": 0.5,
+                "wind_m_s": 0.5,
+                "solar_w_m2": 200,
+                "surround_c": 25,
+                "rain_kg_s": 0,
+                "rain_c": 25
+              },
+              {
+                "air_c": 25,
+                "rh": 0.5,
+                "wind_m_s": 0.5,
+                "solar_w_m2": 200,
+                "surround_c": 25,
+                "rain_kg_s": 0,
+                "rain_c": 25
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "humid_shade",
+        "segments": [
+          {
+            "end_s": 3600,
+            "drives": [
+              {
+                "air_c": 25,
+                "rh": 0.5,
+                "wind_m_s": 0.5,
+                "solar_w_m2": 200,
+                "surround_c": 25,
+                "rain_kg_s": 0,
+                "rain_c": 25
+              },
+              {
+                "air_c": 25,
+                "rh": 0.5,
+                "wind_m_s": 0.5,
+                "solar_w_m2": 200,
+                "surround_c": 25,
+                "rain_kg_s": 0,
+                "rain_c": 25
+              }
+            ]
+          },
+          {
+            "end_s": 14400,
+            "drives": [
+              {
+                "air_c": 25,
+                "rh": 0.9,
+                "wind_m_s": 0.5,
+                "solar_w_m2": 0,
+                "surround_c": 25,
+                "rain_kg_s": 0,
+                "rain_c": 25
+              },
+              {
+                "air_c": 25,
+                "rh": 0.9,
+                "wind_m_s": 0.5,
+                "solar_w_m2": 0,
+                "surround_c": 25,
+                "rain_kg_s": 0,
+                "rain_c": 25
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "airflow_change",
+        "segments": [
+          {
+            "end_s": 3600,
+            "drives": [
+              {
+                "air_c": 25,
+                "rh": 0.5,
+                "wind_m_s": 0,
+                "solar_w_m2": 200,
+                "surround_c": 25,
+                "rain_kg_s": 0,
+                "rain_c": 25
+              },
+              {
+                "air_c": 25,
+                "rh": 0.5,
+                "wind_m_s": 0,
+                "solar_w_m2": 200,
+                "surround_c": 25,
+                "rain_kg_s": 0,
+                "rain_c": 25
+              }
+            ]
+          },
+          {
+            "end_s": 14400,
+            "drives": [
+              {
+                "air_c": 25,
+                "rh": 0.5,
+                "wind_m_s": 1.5,
+                "solar_w_m2": 200,
+                "surround_c": 25,
+                "rain_kg_s": 0,
+                "rain_c": 25
+              },
+              {
+                "air_c": 25,
+                "rh": 0.5,
+                "wind_m_s": 1.5,
+                "solar_w_m2": 200,
+                "surround_c": 25,
+                "rain_kg_s": 0,
+                "rain_c": 25
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "rewet",
+        "segments": [
+          {
+            "end_s": 3600,
+            "drives": [
+              {
+                "air_c": 25,
+                "rh": 0.5,
+                "wind_m_s": 0.5,
+                "solar_w_m2": 200,
+                "surround_c": 25,
+                "rain_kg_s": 0,
+                "rain_c": 25
+              },
+              {
+                "air_c": 25,
+                "rh": 0.5,
+                "wind_m_s": 0.5,
+                "solar_w_m2": 200,
+                "surround_c": 25,
+                "rain_kg_s": 0,
+                "rain_c": 25
+              }
+            ]
+          },
+          {
+            "end_s": 7200,
+            "drives": [
+              {
+                "air_c": 25,
+                "rh": 0.5,
+                "wind_m_s": 0.5,
+                "solar_w_m2": 0,
+                "surround_c": 25,
+                "rain_kg_s": 5e-06,
+                "rain_c": 25
+              },
+              {
+                "air_c": 25,
+                "rh": 0.5,
+                "wind_m_s": 0.5,
+                "solar_w_m2": 0,
+                "surround_c": 25,
+                "rain_kg_s": 5e-06,
+                "rain_c": 25
+              }
+            ]
+          },
+          {
+            "end_s": 14400,
+            "drives": [
+              {
+                "air_c": 25,
+                "rh": 0.5,
+                "wind_m_s": 0.5,
+                "solar_w_m2": 200,
+                "surround_c": 25,
+                "rain_kg_s": 0,
+                "rain_c": 25
+              },
+              {
+                "air_c": 25,
+                "rh": 0.5,
+                "wind_m_s": 0.5,
+                "solar_w_m2": 200,
+                "surround_c": 25,
+                "rain_kg_s": 0,
+                "rain_c": 25
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "target_x": 0.3,
+    "step_s": 20,
+    "computed_at_s": 0
+  }
+}

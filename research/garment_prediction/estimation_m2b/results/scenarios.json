@@ -1,0 +1,135 @@
+{
+  "mode": "scenario_only",
+  "observation_mapping": "unavailable",
+  "label": "SYNTHETIC_UNCALIBRATED",
+  "collection_authorized": false,
+  "computed_at_s": 0,
+  "target_x": 0.3,
+  "step_s": 20,
+  "cases": [
+    {
+      "member_id": "low",
+      "scenario_id": "steady",
+      "status": "reached_sampled",
+      "first_joint_sample_s": 5780.0,
+      "previous_sample_s": 5760.0,
+      "later_sample_above_target": false,
+      "error": null,
+      "horizon_s": 14400
+    },
+    {
+      "member_id": "low",
+      "scenario_id": "humid_shade",
+      "status": "not_reached_within_horizon",
+      "first_joint_sample_s": null,
+      "previous_sample_s": null,
+      "later_sample_above_target": false,
+      "error": null,
+      "horizon_s": 14400
+    },
+    {
+      "member_id": "low",
+      "scenario_id": "airflow_change",
+      "status": "reached_sampled",
+      "first_joint_sample_s": 5880.0,
+      "previous_sample_s": 5860.0,
+      "later_sample_above_target": false,
+      "error": null,
+      "horizon_s": 14400
+    },
+    {
+      "member_id": "low",
+      "scenario_id": "rewet",
+      "status": "reached_sampled",
+      "first_joint_sample_s": 11780.0,
+      "previous_sample_s": 11760.0,
+      "later_sample_above_target": false,
+      "error": null,
+      "horizon_s": 14400
+    },
+    {
+      "member_id": "middle",
+      "scenario_id": "steady",
+      "status": "not_reached_within_horizon",
+      "first_joint_sample_s": null,
+      "previous_sample_s": null,
+      "later_sample_above_target": false,
+      "error": null,
+      "horizon_s": 14400
+    },
+    {
+      "member_id": "middle",
+      "scenario_id": "humid_shade",
+      "status": "not_reached_within_horizon",
+      "first_joint_sample_s": null,
+      "previous_sample_s": null,
+      "later_sample_above_target": false,
+      "error": null,
+      "horizon_s": 14400
+    },
+    {
+      "member_id": "middle",
+      "scenario_id": "airflow_change",
+      "status": "reached_sampled",
+      "first_joint_sample_s": 13040.0,
+      "previous_sample_s": 13020.0,
+      "later_sample_above_target": false,
+      "error": null,
+      "horizon_s": 14400
+    },
+    {
+      "member_id": "middle",
+      "scenario_id": "rewet",
+      "status": "not_reached_within_horizon",
+      "first_joint_sample_s": null,
+      "previous_sample_s": null,
+      "later_sample_above_target": false,
+      "error": null,
+      "horizon_s": 14400
+    },
+    {
+      "member_id": "slow_variant",
+      "scenario_id": "steady",
+      "status": "not_reached_within_horizon",
+      "first_joint_sample_s": null,
+      "previous_sample_s": null,
+      "later_sample_above_target": false,
+      "error": null,
+      "horizon_s": 14400
+    },
+    {
+      "member_id": "slow_variant",
+      "scenario_id": "humid_shade",
+      "status": "not_reached_within_horizon",
+      "first_joint_sample_s": null,
+      "previous_sample_s": null,
+      "later_sample_above_target": false,
+      "error": null,
+      "horizon_s": 14400
+    },
+    {
+      "member_id": "slow_variant",
+      "scenario_id": "airflow_change",
+      "status": "not_reached_within_horizon",
+      "first_joint_sample_s": null,
+      "previous_sample_s": null,
+      "later_sample_above_target": false,
+      "error": null,
+      "horizon_s": 14400
+    },
+    {
+      "member_id": "slow_variant",
+      "scenario_id": "rewet",
+      "status": "not_reached_within_horizon",
+      "first_joint_sample_s": null,
+      "previous_sample_s": null,
+      "later_sample_above_target": false,
+      "error": null,
+      "horizon_s": 14400
+    }
+  ],
+  "earliest_known_sample_s": 5780.0,
+  "upper_sample_s": null,
+  "unresolved_count": 8,
+  "time_semantics": "first joint sampled point; earlier substep crossings may be missed; not a guaranteed continuous crossing bracket"
+}

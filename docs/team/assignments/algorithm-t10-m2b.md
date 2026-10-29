@@ -2,6 +2,8 @@
 
 2026-10-29 编制。延续现有算法 Terra 对话（gpt-6.1-terra / xhigh），不建重复对话。本任务书是下一包准备，是否派发只看 STATUS。
 
+冻结输入清单：`docs/team/baseline-t10-m2b/snapshot.json`；本包期间这些文件不并发修改，核对原始字节后只读使用。
+
 ## 先读与保护
 
 读 AGENTS、PROJECT、STATUS、TEAM、本任务书；运行既有 project_status.py、check_garment_m1.py --check-receipt、check_garment_m2.py --check-receipt。然后读两个协调验收记录、GARMENT-OBSERVATION 中“无法闭合”的边界、M1 model/config/registry、设计补充第 6 节。M1/M2a 通过意味着限定范围内的验收，不意味着已建立真实传感器反演。
