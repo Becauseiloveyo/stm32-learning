@@ -405,7 +405,8 @@
       "python -B -X utf8 tools/check_garment_coupled.py --write-receipt：8 组通过，其中含工作测试 13 项。",
       "独立太阳/对流/液水/响应解析和蒸发/吸湿热流、12.3 s 非整步分段/重启、收敛与出域验证通过。",
       "85 个输入、1 个产物及 21 个冻结输入匹配，旧包来源不变；同平台重放字节一致，新 M5 收据绑定 90 个文件。",
-      "整合后六包只读收据与 project_status.py --check 通过；42 个变更文档本地链接有效，未重跑旧模型/C。"
+      "整合后六包只读收据与 project_status.py --check 通过；42 个变更文档本地链接有效，未重跑旧模型/C。",
+      "M4/M5 内容已推送至 d624e5dc3e4a3a4d2755f0afc76b70918e4d24fb；远端 HEAD 及 GitHub 连接器审查文件 blob 与本地一致。同步回执单独提交。"
     ],
     "limitations": "空气温度为规定边界，传感器温度瞬时跟随和RH一阶响应为合成假设；没有完整干空气/壁热/吸附模型、真实参数/误差校准、自动接触证据或同一动态模型的整衣观测修正 ETA，收衣授权 false。",
     "unresolved_issues": [
@@ -420,7 +421,7 @@
       "U10",
       "U11"
     ],
-    "resume_action": "继续 T10 M6：读 M6 任务书、M5/M4 审查及六包只读收据；建立 M6 冻结清单并标 in_progress 后沿用专用 Terra 对话派发。历史观测筛选与未来情景须使用同一 M5 完整状态/边界，未知和失败保留，目标检查两区同时满足；之后按原 T10 验收逐项审查，不提前执行 T12/T11。GitHub 当前传输失败，先核对本地提交与远端，正常重试且不要重做已验收模型。"
+    "resume_action": "继续 T10 M6：读 M6 任务书、M5/M4 审查及六包只读收据；建立 M6 冻结清单并标 in_progress 后沿用专用 Terra 对话派发。历史观测筛选与未来情景须使用同一 M5 完整状态/边界，未知和失败保留，目标检查两区同时满足；之后按原 T10 验收逐项审查，不提前执行 T12/T11。M4/M5 已同步 GitHub，无需重做旧验收。"
   },
   "team_work": {
     "mode": "shared_checkout_with_file_ownership",
@@ -802,23 +803,20 @@
     "repository": "Becauseiloveyo/stm32-learning",
     "branch": "master",
     "baseline_commit": "d2bdf65",
-    "status": "pending",
+    "status": "synced",
     "scope": "Accepted M4 and M5 research, coordinator receipts and M6 task brief.",
     "prepared_content_verified": true,
-    "evidence": "docs/verification/T10-M3-review.md; docs/STATUS.json last_handoff",
-    "verified_on": "2026-10-30",
-    "verified_content_commit": "94bde53868e5e8a5c5fb647808dea7b4e9c41a81",
-    "remote_head_at_verification": "94bde53868e5e8a5c5fb647808dea7b4e9c41a81",
+    "evidence": "docs/verification/T10-M5-review.md; docs/STATUS.json last_handoff",
+    "verified_on": "2026-11-01",
+    "verified_content_commit": "d624e5dc3e4a3a4d2755f0afc76b70918e4d24fb",
+    "remote_head_at_verification": "d624e5dc3e4a3a4d2755f0afc76b70918e4d24fb",
     "verification": [
-      "git push origin master 成功；git ls-remote 与内容提交 94bde53868e5e8a5c5fb647808dea7b4e9c41a81 一致。",
-      "GitHub 连接器复读 M3 审查文件，blob d439eef27239d850065eeebfd41f37a1a3e07e05 与本地一致。"
+      "正常 git push origin master 成功补齐 M4/M5；git ls-remote 与内容提交 d624e5dc3e4a3a4d2755f0afc76b70918e4d24fb 一致。",
+      "GitHub 连接器复读 M5 审查文件，blob 4e7263f83e871b1ed3e412dcf657386d03ebcc4d 与本地一致。"
     ],
     "receipt_note": "本条记录已独立核对的内容提交；同步回执单独提交，避免提交自引用。",
     "last_attempt_on": "2026-11-01",
-    "last_attempt_errors": [
-      "M4 normal push: HTTP2 framing error",
-      "Two HTTP/1.1 push attempts: github.com:443 connect timeout"
-    ],
-    "resume_action": "本轮最终内容提交后重试正常推送；若仍失败，保留本地提交并如实报告待同步。"
+    "last_attempt_errors": [],
+    "resume_action": "M4/M5 内容已同步，下一步按 M6 任务书恢复，不重做旧验收。"
   }
 }
