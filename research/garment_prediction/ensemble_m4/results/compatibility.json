@@ -1,0 +1,126 @@
+{
+  "set_status": "conditional_compatible",
+  "as_of_s": 601,
+  "label": "SYNTHETIC_UNCALIBRATED",
+  "collection_authorized": false,
+  "scope": "finite_discrete_conditional",
+  "candidates": [
+    {
+      "id": "high_x",
+      "status": "compatible",
+      "reason": "at_least_one_discrete_variant_has_one_common_bias",
+      "matching_variants": 3,
+      "failed_variants": 0,
+      "variant_results": [
+        {
+          "index": 0,
+          "status": "compatible",
+          "common_bias_low": 0.0028108783218487436,
+          "common_bias_high": 0.008649701458754587,
+          "stage_domain_bias_low": 0,
+          "stage_domain_bias_high": 0.01,
+          "gap_rh": 0.0
+        },
+        {
+          "index": 1,
+          "status": "compatible",
+          "common_bias_low": 0.00199042284084401,
+          "common_bias_high": 0.008010028328788653,
+          "stage_domain_bias_low": 0,
+          "stage_domain_bias_high": 0.01,
+          "gap_rh": 0.0
+        },
+        {
+          "index": 2,
+          "status": "compatible",
+          "common_bias_low": 0.0013511442229333218,
+          "common_bias_high": 0.007189178335728451,
+          "stage_domain_bias_low": 0,
+          "stage_domain_bias_high": 0.01,
+          "gap_rh": 0.0
+        }
+      ]
+    },
+    {
+      "id": "low_x",
+      "status": "compatible",
+      "reason": "at_least_one_discrete_variant_has_one_common_bias",
+      "matching_variants": 3,
+      "failed_variants": 0,
+      "variant_results": [
+        {
+          "index": 0,
+          "status": "compatible",
+          "common_bias_low": 0.002812758403417949,
+          "common_bias_high": 0.008652082791645798,
+          "stage_domain_bias_low": 0,
+          "stage_domain_bias_high": 0.01,
+          "gap_rh": 0.0
+        },
+        {
+          "index": 1,
+          "status": "compatible",
+          "common_bias_low": 0.001992804173735109,
+          "common_bias_high": 0.008011908410357859,
+          "stage_domain_bias_low": 0,
+          "stage_domain_bias_high": 0.01,
+          "gap_rh": 0.0
+        },
+        {
+          "index": 2,
+          "status": "compatible",
+          "common_bias_low": 0.0013535255558244212,
+          "common_bias_high": 0.007191058417297546,
+          "stage_domain_bias_low": 0,
+          "stage_domain_bias_high": 0.01,
+          "gap_rh": 0.0
+        }
+      ]
+    },
+    {
+      "id": "low_activity",
+      "status": "incompatible",
+      "reason": "no_discrete_variant_has_a_common_bias",
+      "matching_variants": 0,
+      "failed_variants": 0,
+      "variant_results": [
+        {
+          "index": 0,
+          "status": "incompatible",
+          "common_bias_low": 0.10745190522177207,
+          "common_bias_high": 0.01,
+          "stage_domain_bias_low": 0,
+          "stage_domain_bias_high": 0.01,
+          "gap_rh": 0.09745190522177208
+        },
+        {
+          "index": 1,
+          "status": "incompatible",
+          "common_bias_low": 0.10681262660386155,
+          "common_bias_high": 0.01,
+          "stage_domain_bias_low": 0,
+          "stage_domain_bias_high": 0.01,
+          "gap_rh": 0.09681262660386156
+        },
+        {
+          "index": 2,
+          "status": "incompatible",
+          "common_bias_low": 0.1061733479859507,
+          "common_bias_high": 0.01,
+          "stage_domain_bias_low": 0,
+          "stage_domain_bias_high": 0.01,
+          "gap_rh": 0.0961733479859507
+        }
+      ]
+    }
+  ],
+  "whole_garment_state": "unknown",
+  "eta": "unavailable",
+  "gate": {
+    "applicable": true,
+    "reasons": [],
+    "collection_authorized": false,
+    "mode": "SYNTHETIC_UNCALIBRATED",
+    "scope": "necessary_observable_conditions_only"
+  }
+}

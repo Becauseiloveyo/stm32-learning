@@ -1,0 +1,21 @@
+{
+  "purpose": "Read-only accepted M4 inputs; verify exact source bytes before work. No copies needed because these files remain frozen.",
+  "inputs_sha256": {
+    "docs/PROJECT.md": "4e6131524c73e7256a5a67ce9c1a3e15ceb6400df47eb73dd9fc930f89ce5bc0",
+    "docs/GARMENT-OBSERVATION-PHYSICS.md": "7a0a1dc0c99ba02f19284c8382f969b60d16849ab70d30791341440e35856540",
+    "docs/GARMENT-ETA.md": "5dd403b020155d28e630fe8b6a884f429964b49bc89c46a6ae153c17b0ca5b78",
+    "docs/team/assignments/algorithm-t10-m4.md": "a797770fdb0066114b3238f506642aacf96258438c6e1bb45a18b42e7f9cf89c",
+    "docs/verification/T10-M1-review.md": "be4a0001d750339c8fc2410941af3b7c020f36620b214a6f4bce15cf4e862c18",
+    "docs/verification/T10-M1-tests.json": "d5c468a1c455e33151eaf88513404ade3a0752c69fc26732f0f8fb7e7f886982",
+    "docs/verification/T10-M2a-review.md": "2cab5a74c48384ff72e14aaf62ce4e4d5374678f529e70888928d576d9f1745b",
+    "docs/verification/T10-M2a-tests.json": "aef57de42901ae78ba3198841fb03cfca86e140d5efe2f805b11bbd63722d93e",
+    "docs/verification/T10-M2b-review.md": "222cc095d3b3f349f4f2385d5b74a86d96bbda51bcc638f1172777e571ebe4a6",
+    "docs/verification/T10-M2b-tests.json": "7d297ed2079237b90e43b20a4fcacbfe850e71998ad88b672a8b2730ebae735e",
+    "docs/verification/T10-M3-review.md": "9e224a8a4f1b3f5651a88098ec89989d5f3fd48d820f3e793b152ae15d045248",
+    "docs/verification/T10-M3-tests.json": "8b6e24a0c8c9dc43c02d0f235ce3d6bea0ee33ac361801b3c9cf836f6072782c",
+    "research/garment_prediction/observation_m3/physics.py": "4de2bf84da447c84155276c483a8f54d52b54689f9eba9348cbb01fcebc09482",
+    "research/garment_prediction/observation_m3/consumer.py": "146954d954538a1a13ca4fa0c0e3a3443bec409b13e7ec39995e1273d7f09fdf",
+    "research/garment_prediction/observation_m3/config.json": "aa637f39eb466cbee5b89257c82119550a0f6d7ecd2ade653075c1d3ae00e7c0",
+    "research/garment_prediction/observation_m2/contract.py": "409aeaa6b156b48c02b2ea4b6c9b3a18ac96f14984e6b1ec89eb1f304bea6da9"
+  }
+}

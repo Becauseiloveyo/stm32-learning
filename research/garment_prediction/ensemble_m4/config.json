@@ -1,0 +1,273 @@
+{
+  "label": "SYNTHETIC_UNCALIBRATED",
+  "seed": null,
+  "source": "M3 受限合成参数；候选、有限初态枚举、观测、偏差与误差界均人工选取，绝非真实实验或标定。",
+  "units": "temperatures degC; RH and bias fractions; time s; x0 kg/kg; other parameters M3 config",
+  "packets": [
+    {
+      "now_s": 600,
+      "installation_id": "synthetic-installation",
+      "contact": {
+        "state": "confirmed",
+        "source": "synthetic_external",
+        "coverage_start_s": 580,
+        "coverage_end_s": 595,
+        "issued_at_s": 595
+      },
+      "charging_heat": {
+        "state": "no_known_interference",
+        "source": "synthetic_external",
+        "coverage_start_s": 580,
+        "coverage_end_s": 595,
+        "issued_at_s": 595
+      },
+      "samples": {
+        "ambient_temp": {
+          "value": 25.0,
+          "unit": "degC",
+          "measured_at_s": 590,
+          "received_at_s": 592,
+          "uncertainty_abs": 0.2,
+          "source": "synthetic_input"
+        },
+        "ambient_rh": {
+          "value": 0.5,
+          "unit": "fraction",
+          "measured_at_s": 590,
+          "received_at_s": 592,
+          "uncertainty_abs": 0.02,
+          "source": "synthetic_input"
+        },
+        "local_temp": {
+          "value": 25,
+          "unit": "degC",
+          "measured_at_s": 590,
+          "received_at_s": 592,
+          "uncertainty_abs": 0.2,
+          "source": "synthetic_input"
+        },
+        "local_rh": {
+          "value": 0.560614,
+          "unit": "fraction",
+          "measured_at_s": 590,
+          "received_at_s": 592,
+          "uncertainty_abs": 0.001,
+          "source": "synthetic_input"
+        }
+      }
+    },
+    {
+      "now_s": 601,
+      "installation_id": "synthetic-installation",
+      "contact": {
+        "state": "confirmed",
+        "source": "synthetic_external",
+        "coverage_start_s": 580,
+        "coverage_end_s": 595,
+        "issued_at_s": 595
+      },
+      "charging_heat": {
+        "state": "no_known_interference",
+        "source": "synthetic_external",
+        "coverage_start_s": 580,
+        "coverage_end_s": 595,
+        "issued_at_s": 595
+      },
+      "samples": {
+        "ambient_temp": {
+          "value": 25.0,
+          "unit": "degC",
+          "measured_at_s": 591,
+          "received_at_s": 592,
+          "uncertainty_abs": 0.2,
+          "source": "synthetic_input"
+        },
+        "ambient_rh": {
+          "value": 0.5,
+          "unit": "fraction",
+          "measured_at_s": 591,
+          "received_at_s": 592,
+          "uncertainty_abs": 0.02,
+          "source": "synthetic_input"
+        },
+        "local_temp": {
+          "value": 25,
+          "unit": "degC",
+          "measured_at_s": 591,
+          "received_at_s": 592,
+          "uncertainty_abs": 0.2,
+          "source": "synthetic_input"
+        },
+        "local_rh": {
+          "value": 0.568123,
+          "unit": "fraction",
+          "measured_at_s": 591,
+          "received_at_s": 592,
+          "uncertainty_abs": 0.001,
+          "source": "synthetic_input"
+        }
+      }
+    }
+  ],
+  "policy": {
+    "max_sample_age_s": 120,
+    "max_delivery_delay_s": 20,
+    "max_contact_age_s": 120,
+    "max_uncertainty": {
+      "ambient_temp": 0.5,
+      "ambient_rh": 0.05,
+      "local_temp": 0.5,
+      "local_rh": 0.05
+    },
+    "max_sample_skew_s": 30
+  },
+  "history": {
+    "status": "externally_characterized",
+    "reference_time_s": 580,
+    "issued_at_s": 595,
+    "initial_state_rh": 0.5,
+    "uncertainty_abs": 0.02,
+    "source": "synthetic_external"
+  },
+  "gate": {
+    "temp_delta_c": 0.5,
+    "rh_delta": 0.05,
+    "local_temp_delta_c": 0.5,
+    "temp_offset_c": 0.5
+  },
+  "assumptions": {
+    "status": "asserted",
+    "source": "synthetic_external",
+    "issued_at_s": 595,
+    "structural_abs_rh": 0.002,
+    "numerical_abs_rh": 1e-05,
+    "boundary_guard_rh": 0.001,
+    "dt_s": 0.1
+  },
+  "candidates": [
+    {
+      "id": "high_x",
+      "declared_at_s": 575,
+      "parameters": {
+        "dry_kg": 0.1,
+        "xb": 0.15,
+        "area_open_m2": 0.03,
+        "area_cover_m2": 2e-05,
+        "r_open_s_m": 100,
+        "r_cover_s_m": 200,
+        "volume_m3": 5e-06,
+        "flow_m3_s": 2e-08,
+        "wall_source_kg_s": 0,
+        "sensor_tau_s": 4,
+        "sensor_bias_rh": 0,
+        "temperature_c": 25,
+        "ambient_rh": 0.5
+      },
+      "initial_variants": [
+        {
+          "x0": 0.6,
+          "rh0": 0.5,
+          "sensor_rh0": 0.49
+        },
+        {
+          "x0": 0.6,
+          "rh0": 0.5,
+          "sensor_rh0": 0.5
+        },
+        {
+          "x0": 0.6,
+          "rh0": 0.5,
+          "sensor_rh0": 0.51
+        }
+      ],
+      "discrete_support_complete": true,
+      "bias_interval_rh": [
+        0,
+        0.01
+      ]
+    },
+    {
+      "id": "low_x",
+      "declared_at_s": 575,
+      "parameters": {
+        "dry_kg": 0.1,
+        "xb": 0.075,
+        "area_open_m2": 0.03,
+        "area_cover_m2": 2e-05,
+        "r_open_s_m": 100,
+        "r_cover_s_m": 200,
+        "volume_m3": 5e-06,
+        "flow_m3_s": 2e-08,
+        "wall_source_kg_s": 0,
+        "sensor_tau_s": 4,
+        "sensor_bias_rh": 0,
+        "temperature_c": 25,
+        "ambient_rh": 0.5
+      },
+      "initial_variants": [
+        {
+          "x0": 0.3,
+          "rh0": 0.5,
+          "sensor_rh0": 0.49
+        },
+        {
+          "x0": 0.3,
+          "rh0": 0.5,
+          "sensor_rh0": 0.5
+        },
+        {
+          "x0": 0.3,
+          "rh0": 0.5,
+          "sensor_rh0": 0.51
+        }
+      ],
+      "discrete_support_complete": true,
+      "bias_interval_rh": [
+        0,
+        0.01
+      ]
+    },
+    {
+      "id": "low_activity",
+      "declared_at_s": 575,
+      "parameters": {
+        "dry_kg": 0.1,
+        "xb": 0.15,
+        "area_open_m2": 0.03,
+        "area_cover_m2": 2e-05,
+        "r_open_s_m": 100,
+        "r_cover_s_m": 200,
+        "volume_m3": 5e-06,
+        "flow_m3_s": 2e-08,
+        "wall_source_kg_s": 0,
+        "sensor_tau_s": 4,
+        "sensor_bias_rh": 0,
+        "temperature_c": 25,
+        "ambient_rh": 0.5
+      },
+      "initial_variants": [
+        {
+          "x0": 0.03,
+          "rh0": 0.5,
+          "sensor_rh0": 0.49
+        },
+        {
+          "x0": 0.03,
+          "rh0": 0.5,
+          "sensor_rh0": 0.5
+        },
+        {
+          "x0": 0.03,
+          "rh0": 0.5,
+          "sensor_rh0": 0.51
+        }
+      ],
+      "discrete_support_complete": true,
+      "bias_interval_rh": [
+        0,
+        0.01
+      ]
+    }
+  ],
+  "as_of_s": 601
+}
