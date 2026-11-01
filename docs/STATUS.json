@@ -444,7 +444,9 @@
       "独立实体碰撞、接触/深度/边界、能量解析、效率单次折算、事件不借未来、27组服务缺口与接口检查通过。",
       "11项冻结输入、18项清单输入、8个产物匹配，M6的105项来源保持不变；JSON/SVG/PNG重放字节一致，新收据绑定133个文件。",
       "协调者目视检查原左侧和修订案正侧PNG，图例/文字可读；图示不是机械图，不据此证明真实接触或可制造性。",
-      "整合后 project_status、T12/M6只读收据通过；28个文件存在、64个本地文档链接有效。"
+      "整合后 project_status、T12/M6只读收据通过；28个文件存在、64个本地文档链接有效。",
+      "28个文件暂存字节与工作区一致；暂存树导出后恢复检查及T12收据通过，保留绘图库生成SVG的原始格式。",
+      "内容提交 b99107710231dfa891080ad2e6348544a40f9e7f 已普通推送，远端HEAD和GitHub审查blob一致；同步回执另行提交，避免自引用。"
     ],
     "limitations": "全部几何、负载和电池参数为假设；修订布局单侧通过但对侧邻衣仍冲突，未冻结器件或结构。无真实续航/峰值/热/端口防护或手机送达证据，收衣授权false。",
     "unresolved_issues": [
@@ -860,20 +862,20 @@
     "repository": "Becauseiloveyo/stm32-learning",
     "branch": "master",
     "baseline_commit": "d2bdf65",
-    "status": "local_changes_pending",
-    "scope": "Accepted T12 research and T11 handoff pending sync.",
+    "status": "synced",
+    "scope": "Accepted T12 geometry and battery research, coordinator evidence and T11 handoff.",
     "prepared_content_verified": true,
-    "evidence": "docs/verification/T10-review.md; docs/verification/T10-M6-review.md; docs/STATUS.json last_handoff",
+    "evidence": "docs/verification/T12-review.md; docs/STATUS.json last_handoff",
     "verified_on": "2026-11-01",
-    "verified_content_commit": "aee8d215957cab937ec9ba2c58d6e8f6a283d376",
-    "remote_head_at_verification": "aee8d215957cab937ec9ba2c58d6e8f6a283d376",
+    "verified_content_commit": "b99107710231dfa891080ad2e6348544a40f9e7f",
+    "remote_head_at_verification": "b99107710231dfa891080ad2e6348544a40f9e7f",
     "verification": [
-      "正常 git push origin master 成功；git ls-remote 与内容提交 aee8d215957cab937ec9ba2c58d6e8f6a283d376 一致。",
-      "GitHub 连接器复读 T10 总审查，blob 9c85f88f73a5a4993491ebe70d6764e247f278c5 与本地一致。"
+      "正常推送成功，git ls-remote 与内容提交 b99107710231dfa891080ad2e6348544a40f9e7f 一致。",
+      "GitHub 连接器复读 T12 审查，blob 48719c5488e028a739441b49519527d07f55130c 与本地一致。"
     ],
     "receipt_note": "本条记录已独立核对的内容提交；同步回执单独提交，避免提交自引用。",
     "last_attempt_on": "2026-11-01",
     "last_attempt_errors": [],
-    "resume_action": "Verify/stage current T12 accepted files, fast-forward push and record remote receipt."
+    "resume_action": "T12 已同步；下一步按 docs/T11-HANDOFF.md 恢复离线联动，不重做旧验收。"
   }
 }
