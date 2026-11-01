@@ -1,0 +1,28 @@
+{
+  "purpose": "Read-only accepted inputs for M6; preserve old package bytes. Verify these and six prior receipts.",
+  "inputs_sha256": {
+    "docs/PROJECT.md": "4e6131524c73e7256a5a67ce9c1a3e15ceb6400df47eb73dd9fc930f89ce5bc0",
+    "docs/team/assignments/algorithm-t10-m6.md": "752759fa512be83e82ed3cadebba48ad2b7b6d80237ec5addcdb7cdf5b92ed87",
+    "docs/GARMENT-COUPLED.md": "d2bc56d109e2bc7a0a1e075a02576991a0fdb1cdb58453034dce78db709132a8",
+    "docs/GARMENT-ENSEMBLE.md": "6749a8a7479d4740cc22ee90a6c7530330050cc7375918e526a616a5109668ea",
+    "docs/GARMENT-OBSERVATION.md": "cc71c5d2cb467b196560bd9721516b39cbf67b85a74db8f73c9f723bf982c710",
+    "docs/GARMENT-ETA.md": "5dd403b020155d28e630fe8b6a884f429964b49bc89c46a6ae153c17b0ca5b78",
+    "research/garment_prediction/model.py": "61aa50f8e24fbd470a54522144ecf60b4fe820be4f92506d5e37442ab1523830",
+    "research/garment_prediction/parameter_registry.json": "81b5b0ed9fa5ed6a6e7fef4370798e8aa1b2416d1e90da074a4da51c35696950",
+    "research/garment_prediction/coupled_m5/coupled.py": "12ae75ef56f899ce267cedf42e45f7aea1b1b85a004ed1a567561b199765399c",
+    "research/garment_prediction/coupled_m5/config.json": "c2f1421a4231687940497b55e374222a64b5843e4cdf6820b4fb719ab012f0cf",
+    "research/garment_prediction/ensemble_m4/ensemble.py": "94e03d1e9d03cb735ffd54f767460deb6846ccc0c7d16147b1bbd1a61ea7ad2b",
+    "docs/verification/T10-M1-review.md": "be4a0001d750339c8fc2410941af3b7c020f36620b214a6f4bce15cf4e862c18",
+    "docs/verification/T10-M1-tests.json": "d5c468a1c455e33151eaf88513404ade3a0752c69fc26732f0f8fb7e7f886982",
+    "docs/verification/T10-M2a-review.md": "2cab5a74c48384ff72e14aaf62ce4e4d5374678f529e70888928d576d9f1745b",
+    "docs/verification/T10-M2a-tests.json": "aef57de42901ae78ba3198841fb03cfca86e140d5efe2f805b11bbd63722d93e",
+    "docs/verification/T10-M2b-review.md": "222cc095d3b3f349f4f2385d5b74a86d96bbda51bcc638f1172777e571ebe4a6",
+    "docs/verification/T10-M2b-tests.json": "7d297ed2079237b90e43b20a4fcacbfe850e71998ad88b672a8b2730ebae735e",
+    "docs/verification/T10-M3-review.md": "9e224a8a4f1b3f5651a88098ec89989d5f3fd48d820f3e793b152ae15d045248",
+    "docs/verification/T10-M3-tests.json": "8b6e24a0c8c9dc43c02d0f235ce3d6bea0ee33ac361801b3c9cf836f6072782c",
+    "docs/verification/T10-M4-review.md": "ab6024e107530ef39e184b56be3902b6682768800efc416cc04ef5c2f4698193",
+    "docs/verification/T10-M4-tests.json": "5d0d5e1a1001fd8ff4701461f3f2f793b5e72b1f54e837ae2843595ccff3e509",
+    "docs/verification/T10-M5-review.md": "e3e4fa3f2a551b8edfc04e9beb50aae5fcb1fb0a54338595e834c21960cf5e98",
+    "docs/verification/T10-M5-tests.json": "446dc2c0f5edec48528501d66b94bf9e4789b6e5c8ac4b2ae98834e80b192ee6"
+  }
+}

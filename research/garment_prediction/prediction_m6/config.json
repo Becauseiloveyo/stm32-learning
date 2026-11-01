@@ -1,0 +1,421 @@
+{
+  "label": "SYNTHETIC_UNCALIBRATED",
+  "seed": null,
+  "source": "M5 synthetic parameters; observation generated offline from a synthetic M5 case and bias +0.005 RH; candidates and scenarios manually chosen. Consumer only receives request below; not real measurements.",
+  "units": "M5 registry, s, kg, J, degC, RH fraction; target kg/kg dry",
+  "request": {
+    "version": "m6-v1",
+    "reference_s": 0,
+    "as_of_s": 20,
+    "history_segments": [
+      {
+        "end_s": 20,
+        "drive": {
+          "air_c": 25,
+          "rh": 0.5,
+          "wind_m_s": 0.5,
+          "solar_w_m2": 200,
+          "surround_c": 25,
+          "rain_kg_s": 0,
+          "rain_c": 25
+        },
+        "available_at_s": 0
+      }
+    ],
+    "observations": [
+      {
+        "now_s": 10,
+        "installation_id": "synthetic",
+        "contact": {
+          "state": "confirmed",
+          "source": "synthetic_external",
+          "coverage_start_s": 0,
+          "coverage_end_s": 10,
+          "issued_at_s": 10
+        },
+        "charging_heat": {
+          "state": "no_known_interference",
+          "source": "synthetic_external",
+          "coverage_start_s": 0,
+          "coverage_end_s": 10,
+          "issued_at_s": 10
+        },
+        "samples": {
+          "ambient_temp": {
+            "value": 25,
+            "unit": "degC",
+            "measured_at_s": 10,
+            "received_at_s": 10,
+            "uncertainty_abs": 0.2,
+            "source": "synthetic_input"
+          },
+          "ambient_rh": {
+            "value": 0.5,
+            "unit": "fraction",
+            "measured_at_s": 10,
+            "received_at_s": 10,
+            "uncertainty_abs": 0.001,
+            "source": "synthetic_input"
+          },
+          "local_temp": {
+            "value": 25,
+            "unit": "degC",
+            "measured_at_s": 10,
+            "received_at_s": 10,
+            "uncertainty_abs": 0.2,
+            "source": "synthetic_input"
+          },
+          "local_rh": {
+            "value": 0.5583706280565782,
+            "unit": "fraction",
+            "measured_at_s": 10,
+            "received_at_s": 10,
+            "uncertainty_abs": 0.001,
+            "source": "synthetic_input"
+          }
+        }
+      },
+      {
+        "now_s": 20,
+        "installation_id": "synthetic",
+        "contact": {
+          "state": "confirmed",
+          "source": "synthetic_external",
+          "coverage_start_s": 0,
+          "coverage_end_s": 20,
+          "issued_at_s": 20
+        },
+        "charging_heat": {
+          "state": "no_known_interference",
+          "source": "synthetic_external",
+          "coverage_start_s": 0,
+          "coverage_end_s": 20,
+          "issued_at_s": 20
+        },
+        "samples": {
+          "ambient_temp": {
+            "value": 25,
+            "unit": "degC",
+            "measured_at_s": 20,
+            "received_at_s": 20,
+            "uncertainty_abs": 0.2,
+            "source": "synthetic_input"
+          },
+          "ambient_rh": {
+            "value": 0.5,
+            "unit": "fraction",
+            "measured_at_s": 20,
+            "received_at_s": 20,
+            "uncertainty_abs": 0.001,
+            "source": "synthetic_input"
+          },
+          "local_temp": {
+            "value": 25,
+            "unit": "degC",
+            "measured_at_s": 20,
+            "received_at_s": 20,
+            "uncertainty_abs": 0.2,
+            "source": "synthetic_input"
+          },
+          "local_rh": {
+            "value": 0.6211127496770898,
+            "unit": "fraction",
+            "measured_at_s": 20,
+            "received_at_s": 20,
+            "uncertainty_abs": 0.001,
+            "source": "synthetic_input"
+          }
+        }
+      }
+    ],
+    "policy": {
+      "max_sample_age_s": 120,
+      "max_delivery_delay_s": 20,
+      "max_contact_age_s": 120,
+      "max_uncertainty": {
+        "ambient_temp": 0.5,
+        "ambient_rh": 0.05,
+        "local_temp": 0.5,
+        "local_rh": 0.05
+      },
+      "max_sample_skew_s": 30
+    },
+    "sensor_history": {
+      "status": "externally_characterized",
+      "reference_s": 0,
+      "issued_at_s": 0,
+      "initial_rh": 0.5,
+      "uncertainty_abs": 0.02,
+      "source": "synthetic_external"
+    },
+    "assumptions": {
+      "status": "asserted",
+      "source": "synthetic_external",
+      "issued_at_s": 0,
+      "structural_rh": 0.002,
+      "numeric_rh": 1e-05,
+      "guard_rh": 0.001,
+      "temperature_error_c": 0.2
+    },
+    "candidates": [
+      {
+        "id": "high_x",
+        "declared_at_s": 0,
+        "zones": [
+          {
+            "dry_kg": 0.3,
+            "evap_m2": 0.45,
+            "proj_m2": 0.18,
+            "heat_m2": 0.45,
+            "rad_m2": 0.4,
+            "xb": 0.15,
+            "resistance_s_m": 140.0,
+            "drain_per_s": 0,
+            "alpha": 0.6,
+            "emissivity": 0.9
+          },
+          {
+            "dry_kg": 0.1,
+            "evap_m2": 0.1,
+            "proj_m2": 0.035,
+            "heat_m2": 0.12,
+            "rad_m2": 0.1,
+            "xb": 0.22,
+            "resistance_s_m": 220.0,
+            "drain_per_s": 0,
+            "alpha": 0.6,
+            "emissivity": 0.9
+          }
+        ],
+        "coupling": {
+          "area_cover_m2": 2e-05,
+          "cover_resistance_s_m": 200,
+          "volume_m3": 5e-06,
+          "flow_m3_s": 2e-08,
+          "sensor_tau_s": 4,
+          "sensor_bias_rh": 0
+        },
+        "prior_drive": {
+          "air_c": 25,
+          "rh": 0.5,
+          "wind_m_s": 0.5,
+          "solar_w_m2": 200,
+          "surround_c": 25,
+          "rain_kg_s": 0,
+          "rain_c": 25
+        },
+        "variants": [
+          {
+            "id": "finite_state_0",
+            "initial_state": [
+              0.18,
+              29310.000000000004,
+              0.06,
+              9769.999999999998,
+              5.7445908049016103e-08,
+              0.5,
+              0,
+              0
+            ]
+          }
+        ],
+        "complete_discrete_support": true,
+        "bias_interval": [
+          -0.01,
+          0.01
+        ]
+      },
+      {
+        "id": "low_x",
+        "declared_at_s": 0,
+        "zones": [
+          {
+            "dry_kg": 0.3,
+            "evap_m2": 0.45,
+            "proj_m2": 0.18,
+            "heat_m2": 0.45,
+            "rad_m2": 0.4,
+            "xb": 0.075,
+            "resistance_s_m": 140.0,
+            "drain_per_s": 0,
+            "alpha": 0.6,
+            "emissivity": 0.9
+          },
+          {
+            "dry_kg": 0.1,
+            "evap_m2": 0.1,
+            "proj_m2": 0.035,
+            "heat_m2": 0.12,
+            "rad_m2": 0.1,
+            "xb": 0.22,
+            "resistance_s_m": 220.0,
+            "drain_per_s": 0,
+            "alpha": 0.6,
+            "emissivity": 0.9
+          }
+        ],
+        "coupling": {
+          "area_cover_m2": 2e-05,
+          "cover_resistance_s_m": 200,
+          "volume_m3": 5e-06,
+          "flow_m3_s": 2e-08,
+          "sensor_tau_s": 4,
+          "sensor_bias_rh": 0
+        },
+        "prior_drive": {
+          "air_c": 25,
+          "rh": 0.5,
+          "wind_m_s": 0.5,
+          "solar_w_m2": 200,
+          "surround_c": 25,
+          "rain_kg_s": 0,
+          "rain_c": 25
+        },
+        "variants": [
+          {
+            "id": "finite_state_0",
+            "initial_state": [
+              0.09,
+              19905.0,
+              0.12,
+              16039.999999999998,
+              5.7445908049016103e-08,
+              0.5,
+              0,
+              0
+            ]
+          }
+        ],
+        "complete_discrete_support": true,
+        "bias_interval": [
+          -0.01,
+          0.01
+        ]
+      },
+      {
+        "id": "low_activity",
+        "declared_at_s": 0,
+        "zones": [
+          {
+            "dry_kg": 0.3,
+            "evap_m2": 0.45,
+            "proj_m2": 0.18,
+            "heat_m2": 0.45,
+            "rad_m2": 0.4,
+            "xb": 0.15,
+            "resistance_s_m": 140.0,
+            "drain_per_s": 0,
+            "alpha": 0.6,
+            "emissivity": 0.9
+          },
+          {
+            "dry_kg": 0.1,
+            "evap_m2": 0.1,
+            "proj_m2": 0.035,
+            "heat_m2": 0.12,
+            "rad_m2": 0.1,
+            "xb": 0.22,
+            "resistance_s_m": 220.0,
+            "drain_per_s": 0,
+            "alpha": 0.6,
+            "emissivity": 0.9
+          }
+        ],
+        "coupling": {
+          "area_cover_m2": 2e-05,
+          "cover_resistance_s_m": 200,
+          "volume_m3": 5e-06,
+          "flow_m3_s": 2e-08,
+          "sensor_tau_s": 4,
+          "sensor_bias_rh": 0
+        },
+        "prior_drive": {
+          "air_c": 25,
+          "rh": 0.5,
+          "wind_m_s": 0.5,
+          "solar_w_m2": 200,
+          "surround_c": 25,
+          "rain_kg_s": 0,
+          "rain_c": 25
+        },
+        "variants": [
+          {
+            "id": "finite_state_0",
+            "initial_state": [
+              0.009,
+              11440.5,
+              0.06,
+              9769.999999999998,
+              5.7445908049016103e-08,
+              0.5,
+              0,
+              0
+            ]
+          }
+        ],
+        "complete_discrete_support": true,
+        "bias_interval": [
+          -0.01,
+          0.01
+        ]
+      }
+    ],
+    "futures": [
+      {
+        "id": "steady",
+        "source": "synthetic_scenario",
+        "horizon_s": 60,
+        "segments": [
+          {
+            "end_s": 60,
+            "drive": {
+              "air_c": 25,
+              "rh": 0.5,
+              "wind_m_s": 0.5,
+              "solar_w_m2": 200,
+              "surround_c": 25,
+              "rain_kg_s": 0,
+              "rain_c": 25
+            },
+            "available_at_s": 0
+          }
+        ]
+      },
+      {
+        "id": "shade",
+        "source": "synthetic_scenario",
+        "horizon_s": 60,
+        "segments": [
+          {
+            "end_s": 40,
+            "drive": {
+              "air_c": 25,
+              "rh": 0.5,
+              "wind_m_s": 0.5,
+              "solar_w_m2": 200,
+              "surround_c": 25,
+              "rain_kg_s": 0,
+              "rain_c": 25
+            },
+            "available_at_s": 0
+          },
+          {
+            "end_s": 60,
+            "drive": {
+              "air_c": 25,
+              "rh": 0.5,
+              "wind_m_s": 0,
+              "solar_w_m2": 0,
+              "surround_c": 25,
+              "rain_kg_s": 0,
+              "rain_c": 25
+            },
+            "available_at_s": 0
+          }
+        ]
+      }
+    ],
+    "target_x": 0.3,
+    "step_s": 1
+  }
+}

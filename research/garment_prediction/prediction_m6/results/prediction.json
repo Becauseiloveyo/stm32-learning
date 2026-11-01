@@ -1,0 +1,271 @@
+{
+  "request_version": "m6-v1",
+  "state_version": "m5-v1",
+  "reference_s": 0,
+  "target_x_kg_kg": 0.3,
+  "step_s": 1,
+  "future_conditions": [
+    {
+      "id": "steady",
+      "source": "synthetic_scenario",
+      "horizon_s": 60,
+      "segments": [
+        {
+          "end_s": 60,
+          "drive": {
+            "air_c": 25,
+            "rh": 0.5,
+            "wind_m_s": 0.5,
+            "solar_w_m2": 200,
+            "surround_c": 25,
+            "rain_kg_s": 0,
+            "rain_c": 25
+          },
+          "available_at_s": 0
+        }
+      ]
+    },
+    {
+      "id": "shade",
+      "source": "synthetic_scenario",
+      "horizon_s": 60,
+      "segments": [
+        {
+          "end_s": 40,
+          "drive": {
+            "air_c": 25,
+            "rh": 0.5,
+            "wind_m_s": 0.5,
+            "solar_w_m2": 200,
+            "surround_c": 25,
+            "rain_kg_s": 0,
+            "rain_c": 25
+          },
+          "available_at_s": 0
+        },
+        {
+          "end_s": 60,
+          "drive": {
+            "air_c": 25,
+            "rh": 0.5,
+            "wind_m_s": 0,
+            "solar_w_m2": 0,
+            "surround_c": 25,
+            "rain_kg_s": 0,
+            "rain_c": 25
+          },
+          "available_at_s": 0
+        }
+      ]
+    }
+  ],
+  "step_budget": 200000,
+  "estimated_max_steps": 318,
+  "label": "SYNTHETIC_UNCALIBRATED",
+  "collection_authorized": false,
+  "scope": "finite_conditional_m5",
+  "as_of_s": 20,
+  "rows": [
+    {
+      "id": "high_x",
+      "status": "compatible",
+      "reason": null,
+      "variants": [
+        {
+          "id": "finite_state_0",
+          "status": "compatible",
+          "bias_interval": [
+            0.0019899414059326285,
+            0.008009634404374565
+          ],
+          "history_end_state": [
+            0.17903233178367622,
+            27366.445982071487,
+            0.0598687875993974,
+            9528.144822770722,
+            7.326443895239028e-08,
+            0.6161128082711572,
+            -0.0010988647983954797,
+            -2185.371093793615
+          ],
+          "history_end_drive": {
+            "air_c": 25,
+            "rh": 0.5,
+            "wind_m_s": 0.5,
+            "solar_w_m2": 200,
+            "surround_c": 25,
+            "rain_kg_s": 0,
+            "rain_c": 25
+          },
+          "future": [
+            {
+              "id": "steady",
+              "status": "not_reached",
+              "first_sample_s": null,
+              "previous_sample_s": null,
+              "remaining_sample_s": null,
+              "later_sample_above_target": false,
+              "last_successful_time_s": 60,
+              "final_state": [
+                0.17751102257060353,
+                24919.786997351657,
+                0.059631043907935166,
+                9149.112758033822,
+                8.33452694488037e-08,
+                0.7221223328204824,
+                -0.0028579076220999165,
+                -5011.037862019913
+              ],
+              "final_drive": {
+                "air_c": 25,
+                "rh": 0.5,
+                "wind_m_s": 0.5,
+                "solar_w_m2": 200,
+                "surround_c": 25,
+                "rain_kg_s": 0,
+                "rain_c": 25
+              }
+            },
+            {
+              "id": "shade",
+              "status": "not_reached",
+              "first_sample_s": null,
+              "previous_sample_s": null,
+              "remaining_sample_s": null,
+              "later_sample_above_target": false,
+              "last_successful_time_s": 60,
+              "final_state": [
+                0.17774462211520262,
+                24998.3122836136,
+                0.05966942272766796,
+                9153.903801966142,
+                8.340544670078809e-08,
+                0.722510304739956,
+                -0.002585929197590791,
+                -4927.721386879474
+              ],
+              "final_drive": {
+                "air_c": 25,
+                "rh": 0.5,
+                "wind_m_s": 0,
+                "solar_w_m2": 0,
+                "surround_c": 25,
+                "rain_kg_s": 0,
+                "rain_c": 25
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "low_x",
+      "status": "compatible",
+      "reason": null,
+      "variants": [
+        {
+          "id": "finite_state_0",
+          "status": "compatible",
+          "bias_interval": [
+            0.006298269293182069,
+            0.008988901177193464
+          ],
+          "history_end_state": [
+            0.08907126720124572,
+            18095.966066369943,
+            0.11984854531272435,
+            15744.459460129876,
+            7.258092598874705e-08,
+            0.6118044803839078,
+            -0.0010801723510119599,
+            -2104.5380184820906
+          ],
+          "history_end_drive": {
+            "air_c": 25,
+            "rh": 0.5,
+            "wind_m_s": 0.5,
+            "solar_w_m2": 200,
+            "surround_c": 25,
+            "rain_kg_s": 0,
+            "rain_c": 25
+          },
+          "future": [
+            {
+              "id": "steady",
+              "status": "not_reached",
+              "first_sample_s": null,
+              "previous_sample_s": null,
+              "remaining_sample_s": null,
+              "later_sample_above_target": false,
+              "last_successful_time_s": 60,
+              "final_state": [
+                0.08771292805890836,
+                16223.454514725921,
+                0.11956617816798087,
+                15238.570853019288,
+                8.087946206965313e-08,
+                0.7017732359161213,
+                -0.002720870339556764,
+                -4482.918188936441
+              ],
+              "final_drive": {
+                "air_c": 25,
+                "rh": 0.5,
+                "wind_m_s": 0.5,
+                "solar_w_m2": 200,
+                "surround_c": 25,
+                "rain_kg_s": 0,
+                "rain_c": 25
+              }
+            },
+            {
+              "id": "shade",
+              "status": "not_reached",
+              "first_sample_s": null,
+              "previous_sample_s": null,
+              "remaining_sample_s": null,
+              "later_sample_above_target": false,
+              "last_successful_time_s": 60,
+              "final_state": [
+                0.08792064355764857,
+                16218.056843662469,
+                0.11961199701063405,
+                15263.95089607875,
+                8.0870982047363e-08,
+                0.7017500623846612,
+                -0.0024673360066433713,
+                -4462.935837365868
+              ],
+              "final_drive": {
+                "air_c": 25,
+                "rh": 0.5,
+                "wind_m_s": 0,
+                "solar_w_m2": 0,
+                "surround_c": 25,
+                "rain_kg_s": 0,
+                "rain_c": 25
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "low_activity",
+      "status": "incompatible",
+      "reason": null,
+      "variants": [
+        {
+          "id": "finite_state_0",
+          "status": "incompatible",
+          "bias_gap": 0.18505675927414394
+        }
+      ]
+    }
+  ],
+  "upper_sample_s": null,
+  "upper_remaining_s": null,
+  "unresolved": true,
+  "set_status": "unresolved",
+  "time_semantics": "grid detection only; continuous crossings may be missed"
+}
