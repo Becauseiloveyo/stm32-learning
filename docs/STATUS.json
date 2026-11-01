@@ -3,7 +3,7 @@
   "updated_on": "2026-11-01",
   "phase": "theory_only_no_hardware_purchase",
   "active_task": null,
-  "next_task": "T12",
+  "next_task": "T11",
   "tasks": {
     "T00": {
       "status": "done",
@@ -251,18 +251,30 @@
       "scope": "Computer-only synthetic two-zone forward physics, central observation mapping, finite conditional candidate screening and sampled target times; no real calibration, collection authorization or deployed hardware."
     },
     "T11": {
-      "status": "pending",
+      "status": "ready",
       "depends_on": [
         "T12"
-      ]
+      ],
+      "handoff": "docs/T11-HANDOFF.md"
     },
     "T12": {
-      "status": "ready",
+      "status": "done",
       "depends_on": [
         "T10"
       ],
       "scope_revision": "2026-10-28: original PV layout/harvesting scope withdrawn by user; now battery-powered hanger layout and manual-charge feasibility",
-      "handoff": "docs/T12-HANDOFF.md"
+      "handoff": "docs/T12-HANDOFF.md",
+      "assignment": "docs/team/assignments/layout-t12.md",
+      "baseline": "docs/team/baseline-t12/snapshot.json",
+      "completed_on": "2026-11-01",
+      "scope": "Synthetic AABB geometry/failure comparisons, average battery/event accounting and T11 input contract; no universal manufacturable layout or real electrical/waterproof validation.",
+      "evidence": [
+        "docs/HANGER-LAYOUT.md",
+        "docs/verification/T12-review.md",
+        "docs/verification/T12-tests.json",
+        "research/hanger_layout/results/manifest.json",
+        "research/hanger_layout/results/t11-interface.json"
+      ]
     }
   },
   "current_findings": [
@@ -310,7 +322,8 @@
       ],
       "T05_contribution": "已完成秒级平均能量守恒、完整动作预留、低储能／无光／弱网／恢复与双策略服务对照。实际收能、无线峰值、压降、热静置及低温老化容量仍须实测；T05 软件分析不关闭该实物问题。",
       "T09_contribution": "T09 已取得武汉公开辐照并计算面积/容量情景；真实遮挡、负载、无线峰值和电池能力仍未知。",
-      "no_solar_revision": "T05/T09 收能分析保留为历史；T12/T11 需新电池与人工充电情景，H01 才能核实实物性能。"
+      "no_solar_revision": "T05/T09 收能分析保留为历史；T12/T11 需新电池与人工充电情景，H01 才能核实实物性能。",
+      "T12_contribution": "无光伏电池侧账、事件充电、弃充/耗尽/准入及27组服务比较通过；参数均未实测，峰值、温升及电化学能力未知。"
     },
     {
       "id": "U05",
@@ -371,60 +384,69 @@
     },
     {
       "id": "U10",
-      "summary": "无面板后的主机/电池占位、衣架取放净空、参考/局部探头及雨头互扰尚未验证；原光伏受光问题退出当前范围",
+      "summary": "合成布局已比较并识别衣物/电池/探头与邻衣冲突；修订案只在单侧邻衣代理下通过，双侧密集悬挂、支撑/连线/真实接触与制造仍未知",
       "resolve_in": [
-        "T12",
+        "T08",
         "H01"
       ],
       "evidence": "docs/NEXT-PHASE-PLAN.md 第 6 节；旧面板讨论保留于 HANGER-INTEGRATION-PLAN 仅作历史",
-      "central_contact_review": "R21 明确横杆中央为目标位置；接触几何、稳定性及如何获得接触有效证据仍待 T12/T10 比较，不自动新增硬件。"
+      "central_contact_review": "R21 明确横杆中央为目标位置；接触几何、稳定性及如何获得接触有效证据仍待 T12/T10 比较，不自动新增硬件。",
+      "T12_contribution": "三案、七种失败变异及对侧邻衣情景可重放；不冻结外形或将外包络转换为M5有效覆盖。"
     },
     {
       "id": "U11",
-      "summary": "仅充电口的位置、封盖、插拔与受水验证方案未定；其他部位防水退出当前范围，不计为待解决防水任务",
+      "summary": "已比较充电口朝向/插拔净空并列出封盖、受水和反复插拔验证；实际口型、密封、公差与防护效果仍未验证，其他部位不纳入防水",
       "resolve_in": [
-        "T12",
+        "T08",
         "H01"
       ],
       "evidence": "docs/WATERPROOFING-DESIGN.md",
-      "scope_revision": "2026-10-28 最新用户澄清；撤回整机分区/膜/冷凝/防水恢复验收，原有观测质量和雨情问题分别保留。"
+      "scope_revision": "2026-10-28 最新用户澄清；撤回整机分区/膜/冷凝/防水恢复验收，原有观测质量和雨情问题分别保留。",
+      "T12_contribution": "仅端口的盖合/开盖/连接/拔出条件及未来验证已登记，无自动受水检测或IP通过证据。"
     }
   ],
   "last_handoff": {
-    "task": "T10",
-    "kind": "M6_and_T10_accepted_T12_prepared",
-    "summary": "历史观测、有限候选与未来条件时间在同一 M5 完整状态中接通；按原验收审查接受 T10 限定理论实现。T12 交接已准备，未开始。",
+    "task": "T12",
+    "kind": "T12_accepted_T11_prepared",
+    "summary": "完成三种合成布局、七种失败变异及负z邻衣检查，27组电池/工作量比较、人工充电及T11输入契约。原布局失败和修订案双侧问题保留；T11交接准备，未开始。",
     "changed_files": [
       "docs/DECISIONS.md",
       "docs/ROADMAP.md",
       "docs/STATUS.json",
-      "docs/GARMENT-PREDICTION-INTEGRATED.md",
-      "docs/T12-HANDOFF.md",
-      "docs/team/baseline-t10-m6/snapshot.json",
-      "docs/team/reports/algorithm-t10-m6.md",
-      "docs/verification/T10-M6-review.md",
-      "docs/verification/T10-M6-tests.json",
-      "docs/verification/T10-review.md",
-      "research/garment_prediction/prediction_m6/config.json",
-      "research/garment_prediction/prediction_m6/integrated.py",
-      "research/garment_prediction/prediction_m6/producer_fixture.json",
-      "research/garment_prediction/prediction_m6/replay.py",
-      "research/garment_prediction/prediction_m6/results/manifest.json",
-      "research/garment_prediction/prediction_m6/results/prediction.json",
-      "research/garment_prediction/prediction_m6/test_integrated.py",
-      "research/garment_prediction/prediction_m6/verify_producer.py",
-      "tools/check_garment_integrated.py"
+      "docs/TEAM.md",
+      "docs/HANGER-LAYOUT.md",
+      "docs/T11-HANDOFF.md",
+      "docs/references/T12-sources.md",
+      "docs/team/assignments/layout-t12.md",
+      "docs/team/baseline-t12/snapshot.json",
+      "docs/team/reports/layout-t12.md",
+      "docs/verification/T12-review.md",
+      "docs/verification/T12-tests.json",
+      "research/hanger_layout/config.json",
+      "research/hanger_layout/draw.py",
+      "research/hanger_layout/energy.py",
+      "research/hanger_layout/geometry.py",
+      "research/hanger_layout/replay.py",
+      "research/hanger_layout/results/analysis.json",
+      "research/hanger_layout/results/left_bar.png",
+      "research/hanger_layout/results/left_bar.svg",
+      "research/hanger_layout/results/manifest.json",
+      "research/hanger_layout/results/right_high.png",
+      "research/hanger_layout/results/right_high.svg",
+      "research/hanger_layout/results/right_high_adjusted.png",
+      "research/hanger_layout/results/right_high_adjusted.svg",
+      "research/hanger_layout/results/t11-interface.json",
+      "research/hanger_layout/test_layout.py",
+      "tools/check_hanger_layout.py"
     ],
     "verification": [
-      "python -B -X utf8 tools/check_garment_integrated.py --write-receipt：8 组通过，其中包含 16 项工作测试。",
-      "独立解析剩余 41.109812 s，对应采样剩余 41.2 s；偏差冲突、未测区约 0.05998 kg 水量差、非重叠目标、晚来证据和失败保留通过。",
-      "100 个输入、1 个产物及 23 个冻结输入匹配；旧六包原字节保留，M6 重放字节一致，新收据绑定 105 个文件。",
-      "完整动态状态跨温度/风/日照边界与直接 M5 推进一致；输出新增版本/条件字段后重新生成并验收。",
-      "整合后七包只读收据及 project_status --check 通过；19 个变更文件存在，59 个本地文档链接有效。",
-      "19 个文件暂存字节与工作区一致；暂存树导出后 project_status --check 和 M6 收据检查通过。",
-      "内容提交 aee8d215957cab937ec9ba2c58d6e8f6a283d376 已普通推送并核对远端 HEAD；GitHub 连接器总审查 blob 与本地一致。同步回执独立提交，避免自引用。"
+      "python -B -X utf8 tools/check_hanger_layout.py --write-receipt：8组通过，其中含9项工作测试。",
+      "独立实体碰撞、接触/深度/边界、能量解析、效率单次折算、事件不借未来、27组服务缺口与接口检查通过。",
+      "11项冻结输入、18项清单输入、8个产物匹配，M6的105项来源保持不变；JSON/SVG/PNG重放字节一致，新收据绑定133个文件。",
+      "协调者目视检查原左侧和修订案正侧PNG，图例/文字可读；图示不是机械图，不据此证明真实接触或可制造性。",
+      "整合后 project_status、T12/M6只读收据通过；28个文件存在、64个本地文档链接有效。"
     ],
-    "limitations": "仅有限合成候选、规定空气温度与采样目标时间。真实材料/接触/传感器/误差界、连续参数覆盖、STM32 性能和手机推送未验证；collection_authorized=false。",
+    "limitations": "全部几何、负载和电池参数为假设；修订布局单侧通过但对侧邻衣仍冲突，未冻结器件或结构。无真实续航/峰值/热/端口防护或手机送达证据，收衣授权false。",
     "unresolved_issues": [
       "U01",
       "U02",
@@ -437,7 +459,7 @@
       "U10",
       "U11"
     ],
-    "resume_action": "下一步执行 T12：读 docs/T12-HANDOFF.md、ROADMAP T12、PROJECT R14–R15/R19–R21、NEXT-PHASE-PLAN 第 3/6 节与充电口设计；核对 T10-M6 收据并冻结实际输入。先将 T12 设 in_progress/active_task，再在新 research/hanger_layout/ 做无太阳能几何/穿脱失败场景、电池侧能量及人工充电预算、仅充电口方案和 T11 输入契约。完整集合推演仍在电脑，不推断 STM32 功耗/容量。不采购、不部署、不改旧证据；T12 验收前不进入 T11。"
+    "resume_action": "下一步执行 T11：按 docs/T11-HANDOFF.md 读取 ROADMAP T11、T12/M6审查和机器接口、T05完整动作及T07通知契约；核对T12/M6收据，冻结实际输入并标T11 in_progress/active_task。先定义版本化预测/雨风险/本地润湿/能量/通知状态与有限工作包，再在新目录实现离线联动。显式加入事件通知成本、去重/优先级与过期/换衣/低电/断网边界，不借未来天气或充电、不把润湿等同确定雨。保持真实收衣授权false，不采购/部署或提前T08/H01。"
   },
   "team_work": {
     "mode": "shared_checkout_with_file_ownership",
@@ -580,6 +602,26 @@
           "docs/team/reports/algorithm-t10-m4.md",
           "docs/team/reports/algorithm-t10-m5.md"
         ]
+      },
+      "layout": {
+        "thread_id": "01a18179-0c80-73f3-aa5b-9ff1c0b4b4da",
+        "host_id": "local",
+        "model": "gpt-6.1-terra",
+        "thinking": "xhigh",
+        "assignment": "docs/team/assignments/layout-t12.md",
+        "report": "docs/team/reports/layout-t12.md",
+        "baseline": "docs/team/baseline-t12/snapshot.json",
+        "dispatch_state": "delivery_submitted",
+        "review_state": "accepted_T12_restricted",
+        "coordinator_review": "docs/verification/T12-review.md",
+        "coordinator_receipt": "docs/verification/T12-tests.json",
+        "latest_progress_snapshot": {
+          "checked_on": "2026-11-01",
+          "cursor": "e17584b2-6fcf-4637-98fe-5312c91555e7:15",
+          "thread_status": "idle",
+          "turn_status": "completed",
+          "note": "T12 delivery stopped and independently accepted; T11 not dispatched."
+        }
       }
     },
     "model_policy": {
@@ -818,8 +860,8 @@
     "repository": "Becauseiloveyo/stm32-learning",
     "branch": "master",
     "baseline_commit": "d2bdf65",
-    "status": "synced",
-    "scope": "Accepted M6, T10 overall theoretical review and T12 preparation.",
+    "status": "local_changes_pending",
+    "scope": "Accepted T12 research and T11 handoff pending sync.",
     "prepared_content_verified": true,
     "evidence": "docs/verification/T10-review.md; docs/verification/T10-M6-review.md; docs/STATUS.json last_handoff",
     "verified_on": "2026-11-01",
@@ -832,6 +874,6 @@
     "receipt_note": "本条记录已独立核对的内容提交；同步回执单独提交，避免提交自引用。",
     "last_attempt_on": "2026-11-01",
     "last_attempt_errors": [],
-    "resume_action": "M6 与 T10 总审查已同步；下一步按 T12-HANDOFF 开始结构与电池可行性，不重做旧模型验收。"
+    "resume_action": "Verify/stage current T12 accepted files, fast-forward push and record remote receipt."
   }
 }

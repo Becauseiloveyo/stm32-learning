@@ -1,0 +1,44 @@
+{
+  "label": "DESIGN_ASSUMPTIONS_NOT_MEASURED",
+  "seed": null,
+  "commands": [
+    "python -B -X utf8 research/hanger_layout/test_layout.py",
+    "python -B -X utf8 research/hanger_layout/replay.py"
+  ],
+  "dependencies": {
+    "python": "3.14.6",
+    "matplotlib": "3.11.1",
+    "Pillow": "12.3.0"
+  },
+  "inputs_sha256": {
+    "docs/GARMENT-PREDICTION-INTEGRATED.md": "6d72a13a5d9d5464e901f5a025b1d54e947d1963a2e1bea30173e2faa63ec2bc",
+    "docs/NEXT-PHASE-PLAN.md": "968392b89053a7fd1fa83c155a5a386194fafed64c537a94ee936530897ff516",
+    "docs/PROJECT.md": "4e6131524c73e7256a5a67ce9c1a3e15ceb6400df47eb73dd9fc930f89ce5bc0",
+    "docs/T12-HANDOFF.md": "b19c26f4960ea524a89f363b1255c4d37854fe65564a6a55c7554e561aa0d90f",
+    "docs/WATERPROOFING-DESIGN.md": "3da5adb62212b9cadd2ec9b156bca5cfe6b7964cc70e6c91651f8e397930d92a",
+    "docs/references/T12-sources.md": "2462e8a82bfdedd88aaa8eece54c26db63a0603b097dc75e6572640c0b4a65ee",
+    "docs/team/assignments/layout-t12.md": "eaf779394ed550383259f09eb02de8da80d2f9dd722dee36d627e6c5bbb61567",
+    "docs/team/baseline-t12/snapshot.json": "b0f90558e1f4cf5df37d1e68dd596c23d8a65ab9e6790fc8d1b0230803b6a0cd",
+    "docs/verification/T10-M6-review.md": "82b08d7b3877c8ba0f3d996cb358a82a2f140917a8bd3271504d05692c76c045",
+    "docs/verification/T10-M6-tests.json": "f2146a1c4c48dae4a4c1e621deeaf9d9471659601cb4fd8eb99f015e336608de",
+    "docs/verification/T10-review.md": "fdb839548c4641c38a4a388c3a66d6789518cd4aa3e63c6f0ac189f1d331b507",
+    "research/design_extension/assumptions.json": "61a5023e963d85b35e5c950e35f67c0231d68f5c863cf6a45f1a4500c5b8718e",
+    "research/hanger_layout/config.json": "72ebf09ee24d205b592d87c51243251f356ef1f2c8b17b64c4939960b243ceae",
+    "research/hanger_layout/draw.py": "410b61cd9a3b56c611e2abc1feb3ddf66251a109bf1a064c0d14fe27e72c1e8e",
+    "research/hanger_layout/energy.py": "4da4e6c26e999a3f05b402863dd2bd32b368e1ec4112be77db085ccd5bc2a415",
+    "research/hanger_layout/geometry.py": "beb484d7b5d085bbd475a05e5e61af5cdb16066c656280d9ee8d961c646c7a33",
+    "research/hanger_layout/replay.py": "900cdf1dfdb95be787dd5969412661e0dc8a377861b69e41a2a31daa905c4b75",
+    "research/hanger_layout/test_layout.py": "f811e00df859c5f32f200d8ba523a6bac5dc0cd383c44fec0d2177154678de89"
+  },
+  "artifacts_sha256": {
+    "research/hanger_layout/results/analysis.json": "2cae167317efee675e814d86d475688286ea49d46e69a5e89e5d9ff9c19919ba",
+    "research/hanger_layout/results/t11-interface.json": "b10e482b4329f12c668482fc2e8656c62fc8cd15c84f27d407f0d9e51de806e0",
+    "research/hanger_layout/results/left_bar.svg": "db78d394a4d42e0ef469eb014ed57db69f5b05e34d7b9cdbbf0d6a1e1d8f21f4",
+    "research/hanger_layout/results/left_bar.png": "14a3fc4ac14317823f0aaee453d6c5c3efac7c1f959e0dbc0ce3b73f294b8b28",
+    "research/hanger_layout/results/right_high.svg": "82b89aedaa2ae4a4b867e339c7fa6b55f051781c76b394fa151a9760157b24f9",
+    "research/hanger_layout/results/right_high.png": "c1b57d39f347e05730a7221887761e74f5c88faa6d48c4b561f5bfbb8012845b",
+    "research/hanger_layout/results/right_high_adjusted.svg": "9aa89c02fb4b6d774ebb6f00fdc625c9b72b2c93aad871d06d1aa3a6ba036050",
+    "research/hanger_layout/results/right_high_adjusted.png": "710b5f879a70d1f6b3384bfd8d29fddc842f06298cb97cd744f6f1a42e17d374"
+  },
+  "limits": "Synthetic geometry and power, render/float bytes can differ across platforms."
+}

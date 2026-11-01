@@ -1,0 +1,131 @@
+{
+  "version": "t11-power-1.0",
+  "label": "DESIGN_ASSUMPTIONS_NOT_MEASURED",
+  "source_config": "research/hanger_layout/config.json",
+  "units": {
+    "energy": "J",
+    "power": "W",
+    "time": "s",
+    "capacity": "Ah",
+    "voltage": "V"
+  },
+  "baseline": {
+    "power_w": 0.0002,
+    "side": "load",
+    "battery_power_w": 0.00023529411764705883
+  },
+  "actions": {
+    "normal": [
+      {
+        "id": "measure",
+        "period_s": 900,
+        "energy_load_j": 0.02
+      },
+      {
+        "id": "wifi",
+        "period_s": 21600,
+        "energy_load_j": 4.8
+      }
+    ],
+    "weak_network": [
+      {
+        "id": "measure",
+        "period_s": 900,
+        "energy_load_j": 0.02
+      },
+      {
+        "id": "wifi_retry",
+        "period_s": 7200,
+        "energy_load_j": 12.0
+      }
+    ],
+    "frequent_active": [
+      {
+        "id": "active_measure",
+        "period_s": 900,
+        "energy_load_j": 4.38
+      },
+      {
+        "id": "wifi",
+        "period_s": 21600,
+        "energy_load_j": 4.8
+      }
+    ]
+  },
+  "event_actions": {
+    "schema": {
+      "id": "string",
+      "time_s": "nonnegative seconds",
+      "energy_load_j": "J load-side"
+    },
+    "wifi_event_example": {
+      "energy_load_j": 4.8,
+      "side": "load",
+      "source": "synthetic 0.6 W for 8 s, incremental, not measured"
+    },
+    "rule": "explicit event times; no automatic event count; event cost may differ for retries"
+  },
+  "conversion": {
+    "load_to_battery_efficiency": 0.85,
+    "rule": "battery_j=load_j/efficiency exactly once"
+  },
+  "capacity": {
+    "voltage_v": 3.7,
+    "usable_fraction": 0.8,
+    "candidates_ah": [
+      0.25,
+      0.5,
+      1.0
+    ],
+    "formula": "usable_j=Ah*V*usable_fraction*3600",
+    "reserve_fraction": 0.05
+  },
+  "charging": {
+    "source": "manual_external_only",
+    "input_power_side": "external_input",
+    "interval": "[start_s,end_s)",
+    "battery_power_formula": "input_w*efficiency",
+    "events_example": [
+      {
+        "start_s": 3600,
+        "end_s": 5400,
+        "input_w": 1.0,
+        "efficiency": 0.75
+      }
+    ],
+    "surplus": "curtailed",
+    "future_energy_borrowing": false
+  },
+  "heat_interference": {
+    "while_charging": "possible_unknown",
+    "after_unplug_recovery_s": null,
+    "source": "no measured thermal recovery",
+    "automatic_detection": false
+  },
+  "port_wet_detection": {
+    "available": false,
+    "status": "unknown"
+  },
+  "port_state_contract": {
+    "closed": "no plug engaged; closure unverified",
+    "open": "cover opened; insertion geometry only",
+    "charging": "external connection declared, heat interference possible",
+    "unplugged": "charge stops at end; thermal recovery time unknown"
+  },
+  "unknowns": {
+    "peak_current_a": null,
+    "instantaneous_voltage_drop_v": null,
+    "charge_cc_cv": null,
+    "temperature_aging_capacity_curve": null,
+    "target_mcu_ram_bytes": null
+  },
+  "dispatch_rule": "At a timestamp integrate up to it, then process periodic actions followed by explicit event actions in input order; each consumes battery energy only if reserve remains.",
+  "failure_semantics": {
+    "insufficient_reserve": "action_not_performed",
+    "baseline_unserved": "service_gap",
+    "full_battery": "curtailed_charge",
+    "peak_current": "unknown_not_inferred"
+  },
+  "scope": "Timer workload excludes additional rain/dry event notifications unless explicitly supplied; STM32 acquisition/local status; M6 ensemble computed on PC; no PC compute energy attributed to MCU",
+  "collection_authorized": false
+}

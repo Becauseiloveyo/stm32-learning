@@ -1,0 +1,597 @@
+{
+  "label": "DESIGN_ASSUMPTIONS_NOT_MEASURED",
+  "seed": null,
+  "geometry_source": "All boxes/clearances are synthetic mm; external module is not a PCB; no measured garment/contact/ventilation/port geometry. Neighbor proxy represents another hanging garment along +z; interval z=35..65 mm, synthetic.",
+  "coordinate_system": "x horizontal, y up, z depth; boxes [xmin,ymin,zmin,xmax,ymax,zmax] mm; strict volume overlap, touching boundary is clear",
+  "layouts": {
+    "left_bar": {
+      "main": [
+        -110,
+        55,
+        -15,
+        -50,
+        80,
+        15
+      ],
+      "battery": [
+        -110,
+        30,
+        -15,
+        -50,
+        50,
+        15
+      ],
+      "hook_clearance": [
+        -15,
+        150,
+        -20,
+        15,
+        210,
+        20
+      ],
+      "neck_clearance": [
+        -35,
+        85,
+        -20,
+        35,
+        150,
+        20
+      ],
+      "neighbor_clearance": [
+        -175,
+        0,
+        35,
+        175,
+        150,
+        65
+      ],
+      "contact_zone": [
+        -8,
+        5,
+        -5,
+        8,
+        20,
+        5
+      ],
+      "garment": [
+        -160,
+        10,
+        -5,
+        160,
+        75,
+        5
+      ],
+      "reference_vent": [
+        60,
+        85,
+        15,
+        80,
+        105,
+        35
+      ],
+      "vent_obstacle": [
+        110,
+        85,
+        40,
+        130,
+        105,
+        60
+      ],
+      "rain_exposure": [
+        140,
+        130,
+        -5,
+        150,
+        220,
+        5
+      ],
+      "rain_obstacle": [
+        155,
+        130,
+        15,
+        165,
+        220,
+        25
+      ],
+      "port_insertion": [
+        -140,
+        55,
+        -10,
+        -110,
+        75,
+        10
+      ],
+      "port_obstacle": [
+        -175,
+        40,
+        20,
+        -150,
+        80,
+        40
+      ],
+      "hanger_bar": [
+        -175,
+        -5,
+        -5,
+        175,
+        5,
+        5
+      ],
+      "central_probe": [
+        -8,
+        5,
+        -5,
+        8,
+        15,
+        5
+      ],
+      "reference_head": [
+        60,
+        85,
+        5,
+        80,
+        105,
+        15
+      ],
+      "rain_head": [
+        140,
+        120,
+        -5,
+        150,
+        130,
+        5
+      ],
+      "charge_port": [
+        -110,
+        60,
+        -5,
+        -106,
+        70,
+        5
+      ]
+    },
+    "right_high": {
+      "main": [
+        50,
+        105,
+        -15,
+        110,
+        130,
+        15
+      ],
+      "battery": [
+        50,
+        75,
+        -15,
+        110,
+        95,
+        15
+      ],
+      "hook_clearance": [
+        -15,
+        150,
+        -20,
+        15,
+        210,
+        20
+      ],
+      "neck_clearance": [
+        -35,
+        85,
+        -20,
+        35,
+        150,
+        20
+      ],
+      "neighbor_clearance": [
+        -175,
+        0,
+        35,
+        175,
+        150,
+        65
+      ],
+      "contact_zone": [
+        -8,
+        5,
+        -5,
+        8,
+        20,
+        5
+      ],
+      "garment": [
+        -160,
+        10,
+        -5,
+        160,
+        75,
+        5
+      ],
+      "reference_vent": [
+        60,
+        85,
+        15,
+        80,
+        105,
+        35
+      ],
+      "vent_obstacle": [
+        110,
+        85,
+        40,
+        130,
+        105,
+        60
+      ],
+      "rain_exposure": [
+        140,
+        130,
+        -5,
+        150,
+        220,
+        5
+      ],
+      "rain_obstacle": [
+        155,
+        130,
+        15,
+        165,
+        220,
+        25
+      ],
+      "port_insertion": [
+        110,
+        105,
+        -10,
+        140,
+        125,
+        10
+      ],
+      "port_obstacle": [
+        150,
+        105,
+        20,
+        170,
+        125,
+        40
+      ],
+      "hanger_bar": [
+        -175,
+        -5,
+        -5,
+        175,
+        5,
+        5
+      ],
+      "central_probe": [
+        -8,
+        5,
+        -5,
+        8,
+        15,
+        5
+      ],
+      "reference_head": [
+        60,
+        85,
+        5,
+        80,
+        105,
+        15
+      ],
+      "rain_head": [
+        140,
+        120,
+        -5,
+        150,
+        130,
+        5
+      ],
+      "charge_port": [
+        106,
+        110,
+        -5,
+        110,
+        120,
+        5
+      ]
+    },
+    "right_high_adjusted": {
+      "main": [
+        50,
+        105,
+        -15,
+        110,
+        130,
+        15
+      ],
+      "battery": [
+        50,
+        45,
+        -45,
+        110,
+        65,
+        -20
+      ],
+      "hook_clearance": [
+        -15,
+        150,
+        -20,
+        15,
+        210,
+        20
+      ],
+      "neck_clearance": [
+        -35,
+        85,
+        -20,
+        35,
+        150,
+        20
+      ],
+      "neighbor_clearance": [
+        -175,
+        0,
+        35,
+        175,
+        150,
+        65
+      ],
+      "contact_zone": [
+        -8,
+        5,
+        -5,
+        8,
+        20,
+        5
+      ],
+      "garment": [
+        -160,
+        10,
+        -5,
+        160,
+        75,
+        5
+      ],
+      "reference_vent": [
+        60,
+        85,
+        15,
+        80,
+        105,
+        35
+      ],
+      "vent_obstacle": [
+        110,
+        85,
+        40,
+        130,
+        105,
+        60
+      ],
+      "rain_exposure": [
+        140,
+        130,
+        -5,
+        150,
+        220,
+        5
+      ],
+      "rain_obstacle": [
+        155,
+        130,
+        15,
+        165,
+        220,
+        25
+      ],
+      "port_insertion": [
+        110,
+        105,
+        -10,
+        140,
+        125,
+        10
+      ],
+      "port_obstacle": [
+        150,
+        105,
+        20,
+        170,
+        125,
+        40
+      ],
+      "hanger_bar": [
+        -175,
+        -5,
+        -5,
+        175,
+        5,
+        5
+      ],
+      "central_probe": [
+        -8,
+        5,
+        -5,
+        8,
+        15,
+        5
+      ],
+      "reference_head": [
+        60,
+        85,
+        5,
+        80,
+        105,
+        15
+      ],
+      "rain_head": [
+        140,
+        120,
+        -5,
+        150,
+        130,
+        5
+      ],
+      "charge_port": [
+        106,
+        110,
+        -5,
+        110,
+        120,
+        5
+      ]
+    }
+  },
+  "failure_mutations": {
+    "hook_block": {
+      "main": [
+        -10,
+        160,
+        -10,
+        10,
+        190,
+        10
+      ]
+    },
+    "neck_block": {
+      "main": [
+        -20,
+        100,
+        -10,
+        20,
+        130,
+        10
+      ]
+    },
+    "neighbor_block": {
+      "neighbor_clearance": [
+        -175,
+        0,
+        10,
+        175,
+        150,
+        40
+      ]
+    },
+    "no_central_contact": {
+      "garment": [
+        -160,
+        30,
+        -5,
+        160,
+        75,
+        5
+      ]
+    },
+    "vent_block": {
+      "vent_obstacle": [
+        65,
+        90,
+        20,
+        75,
+        100,
+        30
+      ]
+    },
+    "rain_shadow": {
+      "rain_obstacle": [
+        141,
+        150,
+        -4,
+        149,
+        180,
+        4
+      ]
+    },
+    "plug_block": {
+      "port_obstacle": [
+        -130,
+        58,
+        -5,
+        -115,
+        70,
+        5
+      ]
+    }
+  },
+  "power": {
+    "voltage_v": 3.7,
+    "usable_fraction": 0.8,
+    "initial_fraction": 1,
+    "reserve_fraction": 0.05,
+    "baseline_load_w": 0.0002,
+    "conversion_efficiency": 0.85,
+    "capacities_ah": [
+      0.25,
+      0.5,
+      1.0
+    ],
+    "days": [
+      7,
+      14,
+      30
+    ],
+    "workloads": {
+      "normal": [
+        {
+          "id": "measure",
+          "period_s": 900,
+          "energy_load_j": 0.02
+        },
+        {
+          "id": "wifi",
+          "period_s": 21600,
+          "energy_load_j": 4.8
+        }
+      ],
+      "weak_network": [
+        {
+          "id": "measure",
+          "period_s": 900,
+          "energy_load_j": 0.02
+        },
+        {
+          "id": "wifi_retry",
+          "period_s": 7200,
+          "energy_load_j": 12.0
+        }
+      ],
+      "frequent_active": [
+        {
+          "id": "active_measure",
+          "period_s": 900,
+          "energy_load_j": 4.38
+        },
+        {
+          "id": "wifi",
+          "period_s": 21600,
+          "energy_load_j": 4.8
+        }
+      ]
+    },
+    "charging_demo": [
+      {
+        "start_s": 3600,
+        "end_s": 5400,
+        "input_w": 1.0,
+        "efficiency": 0.75
+      }
+    ]
+  },
+  "targeted_failure_cases": {
+    "neighbor_negative_adjusted": {
+      "layout": "right_high_adjusted",
+      "mutation": {
+        "neighbor_clearance": [
+          -175,
+          0,
+          -65,
+          175,
+          150,
+          -35
+        ]
+      }
+    }
+  }
+}

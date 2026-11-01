@@ -1,0 +1,16 @@
+{
+  "purpose": "Frozen T12 inputs; existing accepted package bytes must stay unchanged.",
+  "inputs_sha256": {
+    "docs/PROJECT.md": "4e6131524c73e7256a5a67ce9c1a3e15ceb6400df47eb73dd9fc930f89ce5bc0",
+    "docs/T12-HANDOFF.md": "b19c26f4960ea524a89f363b1255c4d37854fe65564a6a55c7554e561aa0d90f",
+    "docs/WATERPROOFING-DESIGN.md": "3da5adb62212b9cadd2ec9b156bca5cfe6b7964cc70e6c91651f8e397930d92a",
+    "docs/NEXT-PHASE-PLAN.md": "968392b89053a7fd1fa83c155a5a386194fafed64c537a94ee936530897ff516",
+    "docs/references/T12-sources.md": "2462e8a82bfdedd88aaa8eece54c26db63a0603b097dc75e6572640c0b4a65ee",
+    "docs/team/assignments/layout-t12.md": "eaf779394ed550383259f09eb02de8da80d2f9dd722dee36d627e6c5bbb61567",
+    "docs/GARMENT-PREDICTION-INTEGRATED.md": "6d72a13a5d9d5464e901f5a025b1d54e947d1963a2e1bea30173e2faa63ec2bc",
+    "docs/verification/T10-review.md": "fdb839548c4641c38a4a388c3a66d6789518cd4aa3e63c6f0ac189f1d331b507",
+    "docs/verification/T10-M6-review.md": "82b08d7b3877c8ba0f3d996cb358a82a2f140917a8bd3271504d05692c76c045",
+    "docs/verification/T10-M6-tests.json": "f2146a1c4c48dae4a4c1e621deeaf9d9471659601cb4fd8eb99f015e336608de",
+    "research/design_extension/assumptions.json": "61a5023e963d85b35e5c950e35f67c0231d68f5c863cf6a45f1a4500c5b8718e"
+  }
+}

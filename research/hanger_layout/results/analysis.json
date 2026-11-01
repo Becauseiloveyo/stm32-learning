@@ -1,0 +1,1625 @@
+{
+  "label": "DESIGN_ASSUMPTIONS_NOT_MEASURED",
+  "seed": null,
+  "layout_checks": {
+    "left_bar": {
+      "no_unintended_intersections": false,
+      "unintended_intersections": [
+        [
+          "main",
+          "garment"
+        ],
+        [
+          "battery",
+          "garment"
+        ],
+        [
+          "charge_port",
+          "garment"
+        ]
+      ],
+      "hook_clear": true,
+      "neck_clear": true,
+      "neighbor_clear": true,
+      "central_contact_proxy": true,
+      "reference_vent_clear": true,
+      "rain_exposure_clear": true,
+      "port_insertion_clear": false
+    },
+    "right_high": {
+      "no_unintended_intersections": false,
+      "unintended_intersections": [
+        [
+          "battery",
+          "reference_head"
+        ]
+      ],
+      "hook_clear": true,
+      "neck_clear": true,
+      "neighbor_clear": true,
+      "central_contact_proxy": true,
+      "reference_vent_clear": true,
+      "rain_exposure_clear": true,
+      "port_insertion_clear": true
+    },
+    "right_high_adjusted": {
+      "no_unintended_intersections": true,
+      "unintended_intersections": [],
+      "hook_clear": true,
+      "neck_clear": true,
+      "neighbor_clear": true,
+      "central_contact_proxy": true,
+      "reference_vent_clear": true,
+      "rain_exposure_clear": true,
+      "port_insertion_clear": true
+    }
+  },
+  "failure_cases": {
+    "hook_block": {
+      "no_unintended_intersections": false,
+      "unintended_intersections": [
+        [
+          "battery",
+          "garment"
+        ],
+        [
+          "charge_port",
+          "garment"
+        ]
+      ],
+      "hook_clear": false,
+      "neck_clear": true,
+      "neighbor_clear": true,
+      "central_contact_proxy": true,
+      "reference_vent_clear": true,
+      "rain_exposure_clear": true,
+      "port_insertion_clear": false
+    },
+    "neck_block": {
+      "no_unintended_intersections": false,
+      "unintended_intersections": [
+        [
+          "battery",
+          "garment"
+        ],
+        [
+          "charge_port",
+          "garment"
+        ]
+      ],
+      "hook_clear": true,
+      "neck_clear": false,
+      "neighbor_clear": true,
+      "central_contact_proxy": true,
+      "reference_vent_clear": true,
+      "rain_exposure_clear": true,
+      "port_insertion_clear": false
+    },
+    "neighbor_block": {
+      "no_unintended_intersections": false,
+      "unintended_intersections": [
+        [
+          "main",
+          "garment"
+        ],
+        [
+          "battery",
+          "garment"
+        ],
+        [
+          "charge_port",
+          "garment"
+        ]
+      ],
+      "hook_clear": true,
+      "neck_clear": true,
+      "neighbor_clear": false,
+      "central_contact_proxy": true,
+      "reference_vent_clear": true,
+      "rain_exposure_clear": true,
+      "port_insertion_clear": false
+    },
+    "no_central_contact": {
+      "no_unintended_intersections": false,
+      "unintended_intersections": [
+        [
+          "main",
+          "garment"
+        ],
+        [
+          "battery",
+          "garment"
+        ],
+        [
+          "charge_port",
+          "garment"
+        ]
+      ],
+      "hook_clear": true,
+      "neck_clear": true,
+      "neighbor_clear": true,
+      "central_contact_proxy": false,
+      "reference_vent_clear": true,
+      "rain_exposure_clear": true,
+      "port_insertion_clear": false
+    },
+    "vent_block": {
+      "no_unintended_intersections": false,
+      "unintended_intersections": [
+        [
+          "main",
+          "garment"
+        ],
+        [
+          "battery",
+          "garment"
+        ],
+        [
+          "charge_port",
+          "garment"
+        ]
+      ],
+      "hook_clear": true,
+      "neck_clear": true,
+      "neighbor_clear": true,
+      "central_contact_proxy": true,
+      "reference_vent_clear": false,
+      "rain_exposure_clear": true,
+      "port_insertion_clear": false
+    },
+    "rain_shadow": {
+      "no_unintended_intersections": false,
+      "unintended_intersections": [
+        [
+          "main",
+          "garment"
+        ],
+        [
+          "battery",
+          "garment"
+        ],
+        [
+          "charge_port",
+          "garment"
+        ]
+      ],
+      "hook_clear": true,
+      "neck_clear": true,
+      "neighbor_clear": true,
+      "central_contact_proxy": true,
+      "reference_vent_clear": true,
+      "rain_exposure_clear": false,
+      "port_insertion_clear": false
+    },
+    "plug_block": {
+      "no_unintended_intersections": false,
+      "unintended_intersections": [
+        [
+          "main",
+          "garment"
+        ],
+        [
+          "battery",
+          "garment"
+        ],
+        [
+          "charge_port",
+          "garment"
+        ]
+      ],
+      "hook_clear": true,
+      "neck_clear": true,
+      "neighbor_clear": true,
+      "central_contact_proxy": true,
+      "reference_vent_clear": true,
+      "rain_exposure_clear": true,
+      "port_insertion_clear": false
+    },
+    "neighbor_negative_adjusted": {
+      "no_unintended_intersections": true,
+      "unintended_intersections": [],
+      "hook_clear": true,
+      "neck_clear": true,
+      "neighbor_clear": false,
+      "central_contact_proxy": true,
+      "reference_vent_clear": true,
+      "rain_exposure_clear": true,
+      "port_insertion_clear": true
+    }
+  },
+  "budget_matrix": [
+    {
+      "capacity_ah": 0.25,
+      "workload": "normal",
+      "days": 7,
+      "requested_j_per_day": 45.17647058823529,
+      "nominal_budget_margin_j": 2347.7647058823536,
+      "actual": {
+        "capacity_j": 2664.0000000000005,
+        "initial_j": 2664.0000000000005,
+        "final_j": 2347.764705882501,
+        "reserve_j": 133.20000000000002,
+        "charge_after_efficiency_j": 0.0,
+        "curtailed_j": 0.0,
+        "baseline_required_j": 142.3058823529433,
+        "baseline_delivered_j": 142.3058823529433,
+        "baseline_unserved_j": 0.0,
+        "actions_used_j": 173.92941176470873,
+        "performed": {
+          "measure": 672,
+          "wifi": 28
+        },
+        "skipped": {
+          "measure": 0,
+          "wifi": 0
+        },
+        "minimum_j": 2347.764705882501,
+        "first_skipped_s": {
+          "measure": null,
+          "wifi": null
+        },
+        "first_baseline_unserved_s": null,
+        "trace": null,
+        "energy_residual_j": 1.5234036254696548e-10,
+        "label": "DESIGN_ASSUMPTIONS_NOT_MEASURED",
+        "collection_authorized": false
+      }
+    },
+    {
+      "capacity_ah": 0.25,
+      "workload": "normal",
+      "days": 14,
+      "requested_j_per_day": 45.17647058823529,
+      "nominal_budget_margin_j": 2031.5294117647063,
+      "actual": {
+        "capacity_j": 2664.0000000000005,
+        "initial_j": 2664.0000000000005,
+        "final_j": 2031.5294117649955,
+        "reserve_j": 133.20000000000002,
+        "charge_after_efficiency_j": 0.0,
+        "curtailed_j": 0.0,
+        "baseline_required_j": 284.6117647058849,
+        "baseline_delivered_j": 284.6117647058849,
+        "baseline_unserved_j": 0.0,
+        "actions_used_j": 347.8588235294096,
+        "performed": {
+          "measure": 1344,
+          "wifi": 56
+        },
+        "skipped": {
+          "measure": 0,
+          "wifi": 0
+        },
+        "minimum_j": 2031.5294117649955,
+        "first_skipped_s": {
+          "measure": null,
+          "wifi": null
+        },
+        "first_baseline_unserved_s": null,
+        "trace": null,
+        "energy_residual_j": 2.8967406251467764e-10,
+        "label": "DESIGN_ASSUMPTIONS_NOT_MEASURED",
+        "collection_authorized": false
+      }
+    },
+    {
+      "capacity_ah": 0.25,
+      "workload": "normal",
+      "days": 30,
+      "requested_j_per_day": 45.17647058823529,
+      "nominal_budget_margin_j": 1308.7058823529417,
+      "actual": {
+        "capacity_j": 2664.0000000000005,
+        "initial_j": 2664.0000000000005,
+        "final_j": 1308.7058823532043,
+        "reserve_j": 133.20000000000002,
+        "charge_after_efficiency_j": 0.0,
+        "curtailed_j": 0.0,
+        "baseline_required_j": 609.8823529411715,
+        "baseline_delivered_j": 609.8823529411715,
+        "baseline_unserved_j": 0.0,
+        "actions_used_j": 745.411764705846,
+        "performed": {
+          "measure": 2880,
+          "wifi": 120
+        },
+        "skipped": {
+          "measure": 0,
+          "wifi": 0
+        },
+        "minimum_j": 1308.7058823532043,
+        "first_skipped_s": {
+          "measure": null,
+          "wifi": null
+        },
+        "first_baseline_unserved_s": null,
+        "trace": null,
+        "energy_residual_j": 2.2146195988170803e-10,
+        "label": "DESIGN_ASSUMPTIONS_NOT_MEASURED",
+        "collection_authorized": false
+      }
+    },
+    {
+      "capacity_ah": 0.25,
+      "workload": "weak_network",
+      "days": 7,
+      "requested_j_per_day": 192.0,
+      "nominal_budget_margin_j": 1320.0000000000005,
+      "actual": {
+        "capacity_j": 2664.0000000000005,
+        "initial_j": 2664.0000000000005,
+        "final_j": 1320.0000000000714,
+        "reserve_j": 133.20000000000002,
+        "charge_after_efficiency_j": 0.0,
+        "curtailed_j": 0.0,
+        "baseline_required_j": 142.3058823529433,
+        "baseline_delivered_j": 142.3058823529433,
+        "baseline_unserved_j": 0.0,
+        "actions_used_j": 1201.6941176470473,
+        "performed": {
+          "measure": 672,
+          "wifi_retry": 84
+        },
+        "skipped": {
+          "measure": 0,
+          "wifi_retry": 0
+        },
+        "minimum_j": 1320.0000000000714,
+        "first_skipped_s": {
+          "measure": null,
+          "wifi_retry": null
+        },
+        "first_baseline_unserved_s": null,
+        "trace": null,
+        "energy_residual_j": 6.139089236967266e-11,
+        "label": "DESIGN_ASSUMPTIONS_NOT_MEASURED",
+        "collection_authorized": false
+      }
+    },
+    {
+      "capacity_ah": 0.25,
+      "workload": "weak_network",
+      "days": 14,
+      "requested_j_per_day": 192.0,
+      "nominal_budget_margin_j": -23.999999999999545,
+      "actual": {
+        "capacity_j": 2664.0000000000005,
+        "initial_j": 2664.0000000000005,
+        "final_j": 118.80000000007172,
+        "reserve_j": 133.20000000000002,
+        "charge_after_efficiency_j": 0.0,
+        "curtailed_j": 0.0,
+        "baseline_required_j": 284.6117647058849,
+        "baseline_delivered_j": 284.6117647058849,
+        "baseline_unserved_j": 0.0,
+        "actions_used_j": 2260.5882352940853,
+        "performed": {
+          "measure": 1275,
+          "wifi_retry": 158
+        },
+        "skipped": {
+          "measure": 69,
+          "wifi_retry": 10
+        },
+        "minimum_j": 118.80000000007172,
+        "first_skipped_s": {
+          "measure": 1148400,
+          "wifi_retry": 1144800
+        },
+        "first_baseline_unserved_s": null,
+        "trace": null,
+        "energy_residual_j": 4.1524117477820255e-11,
+        "label": "DESIGN_ASSUMPTIONS_NOT_MEASURED",
+        "collection_authorized": false
+      }
+    },
+    {
+      "capacity_ah": 0.25,
+      "workload": "weak_network",
+      "days": 30,
+      "requested_j_per_day": 192.0,
+      "nominal_budget_margin_j": -3095.9999999999995,
+      "actual": {
+        "capacity_j": 2664.0000000000005,
+        "initial_j": 2664.0000000000005,
+        "final_j": 0.0,
+        "reserve_j": 133.20000000000002,
+        "charge_after_efficiency_j": 0.0,
+        "curtailed_j": 0.0,
+        "baseline_required_j": 609.8823529411715,
+        "baseline_delivered_j": 403.4117647059428,
+        "baseline_unserved_j": 206.47058823522866,
+        "actions_used_j": 2260.5882352940853,
+        "performed": {
+          "measure": 1275,
+          "wifi_retry": 158
+        },
+        "skipped": {
+          "measure": 1605,
+          "wifi_retry": 202
+        },
+        "minimum_j": 0.0,
+        "first_skipped_s": {
+          "measure": 1148400,
+          "wifi_retry": 1144800
+        },
+        "first_baseline_unserved_s": 1714500.0000002987,
+        "trace": null,
+        "energy_residual_j": 2.773958840407431e-11,
+        "label": "DESIGN_ASSUMPTIONS_NOT_MEASURED",
+        "collection_authorized": false
+      }
+    },
+    {
+      "capacity_ah": 0.25,
+      "workload": "frequent_active",
+      "days": 7,
+      "requested_j_per_day": 537.6000000000001,
+      "nominal_budget_margin_j": -1099.2000000000003,
+      "actual": {
+        "capacity_j": 2664.0000000000005,
+        "initial_j": 2664.0000000000005,
+        "final_j": 90.91764705883776,
+        "reserve_j": 133.20000000000002,
+        "charge_after_efficiency_j": 0.0,
+        "curtailed_j": 0.0,
+        "baseline_required_j": 142.3058823529433,
+        "baseline_delivered_j": 142.3058823529433,
+        "baseline_unserved_j": 0.0,
+        "actions_used_j": 2430.776470588239,
+        "performed": {
+          "active_measure": 452,
+          "wifi": 18
+        },
+        "skipped": {
+          "active_measure": 220,
+          "wifi": 10
+        },
+        "minimum_j": 90.91764705883776,
+        "first_skipped_s": {
+          "active_measure": 407700,
+          "wifi": 410400
+        },
+        "first_baseline_unserved_s": null,
+        "trace": null,
+        "energy_residual_j": 1.9610979506978765e-11,
+        "label": "DESIGN_ASSUMPTIONS_NOT_MEASURED",
+        "collection_authorized": false
+      }
+    },
+    {
+      "capacity_ah": 0.25,
+      "workload": "frequent_active",
+      "days": 14,
+      "requested_j_per_day": 537.6000000000001,
+      "nominal_budget_margin_j": -4862.4000000000015,
+      "actual": {
+        "capacity_j": 2664.0000000000005,
+        "initial_j": 2664.0000000000005,
+        "final_j": 0.0,
+        "reserve_j": 133.20000000000002,
+        "charge_after_efficiency_j": 0.0,
+        "curtailed_j": 0.0,
+        "baseline_required_j": 284.6117647058849,
+        "baseline_delivered_j": 233.22352941178318,
+        "baseline_unserved_j": 51.38823529410175,
+        "actions_used_j": 2430.776470588239,
+        "performed": {
+          "active_measure": 452,
+          "wifi": 18
+        },
+        "skipped": {
+          "active_measure": 892,
+          "wifi": 38
+        },
+        "minimum_j": 0.0,
+        "first_skipped_s": {
+          "active_measure": 407700,
+          "wifi": 410400
+        },
+        "first_baseline_unserved_s": 991200.0000000579,
+        "trace": null,
+        "energy_residual_j": 2.1827872842550278e-11,
+        "label": "DESIGN_ASSUMPTIONS_NOT_MEASURED",
+        "collection_authorized": false
+      }
+    },
+    {
+      "capacity_ah": 0.25,
+      "workload": "frequent_active",
+      "days": 30,
+      "requested_j_per_day": 537.6000000000001,
+      "nominal_budget_margin_j": -13464.000000000004,
+      "actual": {
+        "capacity_j": 2664.0000000000005,
+        "initial_j": 2664.0000000000005,
+        "final_j": 0.0,
+        "reserve_j": 133.20000000000002,
+        "charge_after_efficiency_j": 0.0,
+        "curtailed_j": 0.0,
+        "baseline_required_j": 609.8823529411715,
+        "baseline_delivered_j": 233.22352941178318,
+        "baseline_unserved_j": 376.6588235293883,
+        "actions_used_j": 2430.776470588239,
+        "performed": {
+          "active_measure": 452,
+          "wifi": 18
+        },
+        "skipped": {
+          "active_measure": 2428,
+          "wifi": 102
+        },
+        "minimum_j": 0.0,
+        "first_skipped_s": {
+          "active_measure": 407700,
+          "wifi": 410400
+        },
+        "first_baseline_unserved_s": 991200.0000000579,
+        "trace": null,
+        "energy_residual_j": 2.1827872842550278e-11,
+        "label": "DESIGN_ASSUMPTIONS_NOT_MEASURED",
+        "collection_authorized": false
+      }
+    },
+    {
+      "capacity_ah": 0.5,
+      "workload": "normal",
+      "days": 7,
+      "requested_j_per_day": 45.17647058823529,
+      "nominal_budget_margin_j": 5011.764705882354,
+      "actual": {
+        "capacity_j": 5328.000000000001,
+        "initial_j": 5328.000000000001,
+        "final_j": 5011.764705882489,
+        "reserve_j": 266.40000000000003,
+        "charge_after_efficiency_j": 0.0,
+        "curtailed_j": 0.0,
+        "baseline_required_j": 142.3058823529433,
+        "baseline_delivered_j": 142.3058823529433,
+        "baseline_unserved_j": 0.0,
+        "actions_used_j": 173.92941176470873,
+        "performed": {
+          "measure": 672,
+          "wifi": 28
+        },
+        "skipped": {
+          "measure": 0,
+          "wifi": 0
+        },
+        "minimum_j": 5011.764705882489,
+        "first_skipped_s": {
+          "measure": null,
+          "wifi": null
+        },
+        "first_baseline_unserved_s": null,
+        "trace": null,
+        "energy_residual_j": 1.4006218407303095e-10,
+        "label": "DESIGN_ASSUMPTIONS_NOT_MEASURED",
+        "collection_authorized": false
+      }
+    },
+    {
+      "capacity_ah": 0.5,
+      "workload": "normal",
+      "days": 14,
+      "requested_j_per_day": 45.17647058823529,
+      "nominal_budget_margin_j": 4695.529411764707,
+      "actual": {
+        "capacity_j": 5328.000000000001,
+        "initial_j": 5328.000000000001,
+        "final_j": 4695.529411764976,
+        "reserve_j": 266.40000000000003,
+        "charge_after_efficiency_j": 0.0,
+        "curtailed_j": 0.0,
+        "baseline_required_j": 284.6117647058849,
+        "baseline_delivered_j": 284.6117647058849,
+        "baseline_unserved_j": 0.0,
+        "actions_used_j": 347.8588235294096,
+        "performed": {
+          "measure": 1344,
+          "wifi": 56
+        },
+        "skipped": {
+          "measure": 0,
+          "wifi": 0
+        },
+        "minimum_j": 4695.529411764976,
+        "first_skipped_s": {
+          "measure": null,
+          "wifi": null
+        },
+        "first_baseline_unserved_s": null,
+        "trace": null,
+        "energy_residual_j": 2.701199264265597e-10,
+        "label": "DESIGN_ASSUMPTIONS_NOT_MEASURED",
+        "collection_authorized": false
+      }
+    },
+    {
+      "capacity_ah": 0.5,
+      "workload": "normal",
+      "days": 30,
+      "requested_j_per_day": 45.17647058823529,
+      "nominal_budget_margin_j": 3972.7058823529424,
+      "actual": {
+        "capacity_j": 5328.000000000001,
+        "initial_j": 5328.000000000001,
+        "final_j": 3972.705882353525,
+        "reserve_j": 266.40000000000003,
+        "charge_after_efficiency_j": 0.0,
+        "curtailed_j": 0.0,
+        "baseline_required_j": 609.8823529411715,
+        "baseline_delivered_j": 609.8823529411715,
+        "baseline_unserved_j": 0.0,
+        "actions_used_j": 745.411764705846,
+        "performed": {
+          "measure": 2880,
+          "wifi": 120
+        },
+        "skipped": {
+          "measure": 0,
+          "wifi": 0
+        },
+        "minimum_j": 3972.705882353525,
+        "first_skipped_s": {
+          "measure": null,
+          "wifi": null
+        },
+        "first_baseline_unserved_s": null,
+        "trace": null,
+        "energy_residual_j": 5.411493475548923e-10,
+        "label": "DESIGN_ASSUMPTIONS_NOT_MEASURED",
+        "collection_authorized": false
+      }
+    },
+    {
+      "capacity_ah": 0.5,
+      "workload": "weak_network",
+      "days": 7,
+      "requested_j_per_day": 192.0,
+      "nominal_budget_margin_j": 3984.000000000001,
+      "actual": {
+        "capacity_j": 5328.000000000001,
+        "initial_j": 5328.000000000001,
+        "final_j": 3984.0000000001537,
+        "reserve_j": 266.40000000000003,
+        "charge_after_efficiency_j": 0.0,
+        "curtailed_j": 0.0,
+        "baseline_required_j": 142.3058823529433,
+        "baseline_delivered_j": 142.3058823529433,
+        "baseline_unserved_j": 0.0,
+        "actions_used_j": 1201.6941176470473,
+        "performed": {
+          "measure": 672,
+          "wifi_retry": 84
+        },
+        "skipped": {
+          "measure": 0,
+          "wifi_retry": 0
+        },
+        "minimum_j": 3984.0000000001537,
+        "first_skipped_s": {
+          "measure": null,
+          "wifi_retry": null
+        },
+        "first_baseline_unserved_s": null,
+        "trace": null,
+        "energy_residual_j": 1.4370016288012266e-10,
+        "label": "DESIGN_ASSUMPTIONS_NOT_MEASURED",
+        "collection_authorized": false
+      }
+    },
+    {
+      "capacity_ah": 0.5,
+      "workload": "weak_network",
+      "days": 14,
+      "requested_j_per_day": 192.0,
+      "nominal_budget_margin_j": 2640.000000000001,
+      "actual": {
+        "capacity_j": 5328.000000000001,
+        "initial_j": 5328.000000000001,
+        "final_j": 2640.0000000003065,
+        "reserve_j": 266.40000000000003,
+        "charge_after_efficiency_j": 0.0,
+        "curtailed_j": 0.0,
+        "baseline_required_j": 284.6117647058849,
+        "baseline_delivered_j": 284.6117647058849,
+        "baseline_unserved_j": 0.0,
+        "actions_used_j": 2403.3882352940827,
+        "performed": {
+          "measure": 1344,
+          "wifi_retry": 168
+        },
+        "skipped": {
+          "measure": 0,
+          "wifi_retry": 0
+        },
+        "minimum_j": 2640.0000000003065,
+        "first_skipped_s": {
+          "measure": null,
+          "wifi_retry": null
+        },
+        "first_baseline_unserved_s": null,
+        "trace": null,
+        "energy_residual_j": 2.7284841053187847e-10,
+        "label": "DESIGN_ASSUMPTIONS_NOT_MEASURED",
+        "collection_authorized": false
+      }
+    },
+    {
+      "capacity_ah": 0.5,
+      "workload": "weak_network",
+      "days": 30,
+      "requested_j_per_day": 192.0,
+      "nominal_budget_margin_j": -431.9999999999991,
+      "actual": {
+        "capacity_j": 5328.000000000001,
+        "initial_j": 5328.000000000001,
+        "final_j": 196.91764705919914,
+        "reserve_j": 266.40000000000003,
+        "charge_after_efficiency_j": 0.0,
+        "curtailed_j": 0.0,
+        "baseline_required_j": 609.8823529411715,
+        "baseline_delivered_j": 609.8823529411715,
+        "baseline_unserved_j": 0.0,
+        "actions_used_j": 4521.199999999923,
+        "performed": {
+          "measure": 2551,
+          "wifi_retry": 316
+        },
+        "skipped": {
+          "measure": 329,
+          "wifi_retry": 44
+        },
+        "minimum_j": 196.91764705919914,
+        "first_skipped_s": {
+          "measure": 2296800,
+          "wifi_retry": 2282400
+        },
+        "first_baseline_unserved_s": null,
+        "trace": null,
+        "energy_residual_j": 2.927720288425917e-10,
+        "label": "DESIGN_ASSUMPTIONS_NOT_MEASURED",
+        "collection_authorized": false
+      }
+    },
+    {
+      "capacity_ah": 0.5,
+      "workload": "frequent_active",
+      "days": 7,
+      "requested_j_per_day": 537.6000000000001,
+      "nominal_budget_margin_j": 1564.8000000000002,
+      "actual": {
+        "capacity_j": 5328.000000000001,
+        "initial_j": 5328.000000000001,
+        "final_j": 1564.8000000001837,
+        "reserve_j": 266.40000000000003,
+        "charge_after_efficiency_j": 0.0,
+        "curtailed_j": 0.0,
+        "baseline_required_j": 142.3058823529433,
+        "baseline_delivered_j": 142.3058823529433,
+        "baseline_unserved_j": 0.0,
+        "actions_used_j": 3620.8941176470307,
+        "performed": {
+          "active_measure": 672,
+          "wifi": 28
+        },
+        "skipped": {
+          "active_measure": 0,
+          "wifi": 0
+        },
+        "minimum_j": 1564.8000000001837,
+        "first_skipped_s": {
+          "active_measure": null,
+          "wifi": null
+        },
+        "first_baseline_unserved_s": null,
+        "trace": null,
+        "energy_residual_j": 1.5711520973127335e-10,
+        "label": "DESIGN_ASSUMPTIONS_NOT_MEASURED",
+        "collection_authorized": false
+      }
+    },
+    {
+      "capacity_ah": 0.5,
+      "workload": "frequent_active",
+      "days": 14,
+      "requested_j_per_day": 537.6000000000001,
+      "nominal_budget_margin_j": -2198.4000000000005,
+      "actual": {
+        "capacity_j": 5328.000000000001,
+        "initial_j": 5328.000000000001,
+        "final_j": 176.1882352942894,
+        "reserve_j": 266.40000000000003,
+        "charge_after_efficiency_j": 0.0,
+        "curtailed_j": 0.0,
+        "baseline_required_j": 284.6117647058849,
+        "baseline_delivered_j": 284.6117647058849,
+        "baseline_unserved_j": 0.0,
+        "actions_used_j": 4867.199999999942,
+        "performed": {
+          "active_measure": 904,
+          "wifi": 37
+        },
+        "skipped": {
+          "active_measure": 440,
+          "wifi": 19
+        },
+        "minimum_j": 176.1882352942894,
+        "first_skipped_s": {
+          "active_measure": 814500,
+          "wifi": 820800
+        },
+        "first_baseline_unserved_s": null,
+        "trace": null,
+        "energy_residual_j": 1.1462475413281936e-10,
+        "label": "DESIGN_ASSUMPTIONS_NOT_MEASURED",
+        "collection_authorized": false
+      }
+    },
+    {
+      "capacity_ah": 0.5,
+      "workload": "frequent_active",
+      "days": 30,
+      "requested_j_per_day": 537.6000000000001,
+      "nominal_budget_margin_j": -10800.000000000004,
+      "actual": {
+        "capacity_j": 5328.000000000001,
+        "initial_j": 5328.000000000001,
+        "final_j": 0.0,
+        "reserve_j": 266.40000000000003,
+        "charge_after_efficiency_j": 0.0,
+        "curtailed_j": 0.0,
+        "baseline_required_j": 609.8823529411715,
+        "baseline_delivered_j": 460.8000000001528,
+        "baseline_unserved_j": 149.08235294101866,
+        "actions_used_j": 4867.199999999942,
+        "performed": {
+          "active_measure": 904,
+          "wifi": 37
+        },
+        "skipped": {
+          "active_measure": 1976,
+          "wifi": 83
+        },
+        "minimum_j": 0.0,
+        "first_skipped_s": {
+          "active_measure": 814500,
+          "wifi": 820800
+        },
+        "first_baseline_unserved_s": 1958400.0000007164,
+        "trace": null,
+        "energy_residual_j": 9.367795428261161e-11,
+        "label": "DESIGN_ASSUMPTIONS_NOT_MEASURED",
+        "collection_authorized": false
+      }
+    },
+    {
+      "capacity_ah": 1.0,
+      "workload": "normal",
+      "days": 7,
+      "requested_j_per_day": 45.17647058823529,
+      "nominal_budget_margin_j": 10339.764705882355,
+      "actual": {
+        "capacity_j": 10656.000000000002,
+        "initial_j": 10656.000000000002,
+        "final_j": 10339.76470588249,
+        "reserve_j": 532.8000000000001,
+        "charge_after_efficiency_j": 0.0,
+        "curtailed_j": 0.0,
+        "baseline_required_j": 142.3058823529433,
+        "baseline_delivered_j": 142.3058823529433,
+        "baseline_unserved_j": 0.0,
+        "actions_used_j": 173.92941176470873,
+        "performed": {
+          "measure": 672,
+          "wifi": 28
+        },
+        "skipped": {
+          "measure": 0,
+          "wifi": 0
+        },
+        "minimum_j": 10339.76470588249,
+        "first_skipped_s": {
+          "measure": null,
+          "wifi": null
+        },
+        "first_baseline_unserved_s": null,
+        "trace": null,
+        "energy_residual_j": 1.4006218407303095e-10,
+        "label": "DESIGN_ASSUMPTIONS_NOT_MEASURED",
+        "collection_authorized": false
+      }
+    },
+    {
+      "capacity_ah": 1.0,
+      "workload": "normal",
+      "days": 14,
+      "requested_j_per_day": 45.17647058823529,
+      "nominal_budget_margin_j": 10023.529411764708,
+      "actual": {
+        "capacity_j": 10656.000000000002,
+        "initial_j": 10656.000000000002,
+        "final_j": 10023.529411764977,
+        "reserve_j": 532.8000000000001,
+        "charge_after_efficiency_j": 0.0,
+        "curtailed_j": 0.0,
+        "baseline_required_j": 284.6117647058849,
+        "baseline_delivered_j": 284.6117647058849,
+        "baseline_unserved_j": 0.0,
+        "actions_used_j": 347.8588235294096,
+        "performed": {
+          "measure": 1344,
+          "wifi": 56
+        },
+        "skipped": {
+          "measure": 0,
+          "wifi": 0
+        },
+        "minimum_j": 10023.529411764977,
+        "first_skipped_s": {
+          "measure": null,
+          "wifi": null
+        },
+        "first_baseline_unserved_s": null,
+        "trace": null,
+        "energy_residual_j": 2.710294211283326e-10,
+        "label": "DESIGN_ASSUMPTIONS_NOT_MEASURED",
+        "collection_authorized": false
+      }
+    },
+    {
+      "capacity_ah": 1.0,
+      "workload": "normal",
+      "days": 30,
+      "requested_j_per_day": 45.17647058823529,
+      "nominal_budget_margin_j": 9300.705882352942,
+      "actual": {
+        "capacity_j": 10656.000000000002,
+        "initial_j": 10656.000000000002,
+        "final_j": 9300.70588235352,
+        "reserve_j": 532.8000000000001,
+        "charge_after_efficiency_j": 0.0,
+        "curtailed_j": 0.0,
+        "baseline_required_j": 609.8823529411715,
+        "baseline_delivered_j": 609.8823529411715,
+        "baseline_unserved_j": 0.0,
+        "actions_used_j": 745.411764705846,
+        "performed": {
+          "measure": 2880,
+          "wifi": 120
+        },
+        "skipped": {
+          "measure": 0,
+          "wifi": 0
+        },
+        "minimum_j": 9300.70588235352,
+        "first_skipped_s": {
+          "measure": null,
+          "wifi": null
+        },
+        "first_baseline_unserved_s": null,
+        "trace": null,
+        "energy_residual_j": 5.366018740460277e-10,
+        "label": "DESIGN_ASSUMPTIONS_NOT_MEASURED",
+        "collection_authorized": false
+      }
+    },
+    {
+      "capacity_ah": 1.0,
+      "workload": "weak_network",
+      "days": 7,
+      "requested_j_per_day": 192.0,
+      "nominal_budget_margin_j": 9312.000000000002,
+      "actual": {
+        "capacity_j": 10656.000000000002,
+        "initial_j": 10656.000000000002,
+        "final_j": 9312.000000000155,
+        "reserve_j": 532.8000000000001,
+        "charge_after_efficiency_j": 0.0,
+        "curtailed_j": 0.0,
+        "baseline_required_j": 142.3058823529433,
+        "baseline_delivered_j": 142.3058823529433,
+        "baseline_unserved_j": 0.0,
+        "actions_used_j": 1201.6941176470473,
+        "performed": {
+          "measure": 672,
+          "wifi_retry": 84
+        },
+        "skipped": {
+          "measure": 0,
+          "wifi_retry": 0
+        },
+        "minimum_j": 9312.000000000155,
+        "first_skipped_s": {
+          "measure": null,
+          "wifi_retry": null
+        },
+        "first_baseline_unserved_s": null,
+        "trace": null,
+        "energy_residual_j": 1.4370016288012266e-10,
+        "label": "DESIGN_ASSUMPTIONS_NOT_MEASURED",
+        "collection_authorized": false
+      }
+    },
+    {
+      "capacity_ah": 1.0,
+      "workload": "weak_network",
+      "days": 14,
+      "requested_j_per_day": 192.0,
+      "nominal_budget_margin_j": 7968.000000000002,
+      "actual": {
+        "capacity_j": 10656.000000000002,
+        "initial_j": 10656.000000000002,
+        "final_j": 7968.000000000307,
+        "reserve_j": 532.8000000000001,
+        "charge_after_efficiency_j": 0.0,
+        "curtailed_j": 0.0,
+        "baseline_required_j": 284.6117647058849,
+        "baseline_delivered_j": 284.6117647058849,
+        "baseline_unserved_j": 0.0,
+        "actions_used_j": 2403.3882352940827,
+        "performed": {
+          "measure": 1344,
+          "wifi_retry": 168
+        },
+        "skipped": {
+          "measure": 0,
+          "wifi_retry": 0
+        },
+        "minimum_j": 7968.000000000307,
+        "first_skipped_s": {
+          "measure": null,
+          "wifi_retry": null
+        },
+        "first_baseline_unserved_s": null,
+        "trace": null,
+        "energy_residual_j": 2.737579052336514e-10,
+        "label": "DESIGN_ASSUMPTIONS_NOT_MEASURED",
+        "collection_authorized": false
+      }
+    },
+    {
+      "capacity_ah": 1.0,
+      "workload": "weak_network",
+      "days": 30,
+      "requested_j_per_day": 192.0,
+      "nominal_budget_margin_j": 4896.000000000002,
+      "actual": {
+        "capacity_j": 10656.000000000002,
+        "initial_j": 10656.000000000002,
+        "final_j": 4896.000000000657,
+        "reserve_j": 532.8000000000001,
+        "charge_after_efficiency_j": 0.0,
+        "curtailed_j": 0.0,
+        "baseline_required_j": 609.8823529411715,
+        "baseline_delivered_j": 609.8823529411715,
+        "baseline_unserved_j": 0.0,
+        "actions_used_j": 5150.117647058735,
+        "performed": {
+          "measure": 2880,
+          "wifi_retry": 360
+        },
+        "skipped": {
+          "measure": 0,
+          "wifi_retry": 0
+        },
+        "minimum_j": 4896.000000000657,
+        "first_skipped_s": {
+          "measure": null,
+          "wifi_retry": null
+        },
+        "first_baseline_unserved_s": null,
+        "trace": null,
+        "energy_residual_j": 5.611582309938967e-10,
+        "label": "DESIGN_ASSUMPTIONS_NOT_MEASURED",
+        "collection_authorized": false
+      }
+    },
+    {
+      "capacity_ah": 1.0,
+      "workload": "frequent_active",
+      "days": 7,
+      "requested_j_per_day": 537.6000000000001,
+      "nominal_budget_margin_j": 6892.800000000001,
+      "actual": {
+        "capacity_j": 10656.000000000002,
+        "initial_j": 10656.000000000002,
+        "final_j": 6892.799999999816,
+        "reserve_j": 532.8000000000001,
+        "charge_after_efficiency_j": 0.0,
+        "curtailed_j": 0.0,
+        "baseline_required_j": 142.3058823529433,
+        "baseline_delivered_j": 142.3058823529433,
+        "baseline_unserved_j": 0.0,
+        "actions_used_j": 3620.8941176470307,
+        "performed": {
+          "active_measure": 672,
+          "wifi": 28
+        },
+        "skipped": {
+          "active_measure": 0,
+          "wifi": 0
+        },
+        "minimum_j": 6892.799999999816,
+        "first_skipped_s": {
+          "active_measure": null,
+          "wifi": null
+        },
+        "first_baseline_unserved_s": null,
+        "trace": null,
+        "energy_residual_j": -2.128217602148652e-10,
+        "label": "DESIGN_ASSUMPTIONS_NOT_MEASURED",
+        "collection_authorized": false
+      }
+    },
+    {
+      "capacity_ah": 1.0,
+      "workload": "frequent_active",
+      "days": 14,
+      "requested_j_per_day": 537.6000000000001,
+      "nominal_budget_margin_j": 3129.6000000000004,
+      "actual": {
+        "capacity_j": 10656.000000000002,
+        "initial_j": 10656.000000000002,
+        "final_j": 3129.600000000033,
+        "reserve_j": 532.8000000000001,
+        "charge_after_efficiency_j": 0.0,
+        "curtailed_j": 0.0,
+        "baseline_required_j": 284.6117647058849,
+        "baseline_delivered_j": 284.6117647058849,
+        "baseline_unserved_j": 0.0,
+        "actions_used_j": 7241.788235294004,
+        "performed": {
+          "active_measure": 1344,
+          "wifi": 56
+        },
+        "skipped": {
+          "active_measure": 0,
+          "wifi": 0
+        },
+        "minimum_j": 3129.600000000033,
+        "first_skipped_s": {
+          "active_measure": null,
+          "wifi": null
+        },
+        "first_baseline_unserved_s": null,
+        "trace": null,
+        "energy_residual_j": -7.912603905424476e-11,
+        "label": "DESIGN_ASSUMPTIONS_NOT_MEASURED",
+        "collection_authorized": false
+      }
+    },
+    {
+      "capacity_ah": 1.0,
+      "workload": "frequent_active",
+      "days": 30,
+      "requested_j_per_day": 537.6000000000001,
+      "nominal_budget_margin_j": -5472.000000000002,
+      "actual": {
+        "capacity_j": 10656.000000000002,
+        "initial_j": 10656.000000000002,
+        "final_j": 306.07058823538665,
+        "reserve_j": 532.8000000000001,
+        "charge_after_efficiency_j": 0.0,
+        "curtailed_j": 0.0,
+        "baseline_required_j": 609.8823529411715,
+        "baseline_delivered_j": 609.8823529411715,
+        "baseline_unserved_j": 0.0,
+        "actions_used_j": 9740.047058823618,
+        "performed": {
+          "active_measure": 1808,
+          "wifi": 75
+        },
+        "skipped": {
+          "active_measure": 1072,
+          "wifi": 45
+        },
+        "minimum_j": 306.07058823538665,
+        "first_skipped_s": {
+          "active_measure": 1628100,
+          "wifi": 1641600
+        },
+        "first_baseline_unserved_s": null,
+        "trace": null,
+        "energy_residual_j": 1.744524524838198e-10,
+        "label": "DESIGN_ASSUMPTIONS_NOT_MEASURED",
+        "collection_authorized": false
+      }
+    }
+  ],
+  "charging_start_full": {
+    "capacity_j": 2664.0000000000005,
+    "initial_j": 2664.0000000000005,
+    "final_j": 2663.505882352942,
+    "reserve_j": 133.20000000000002,
+    "charge_after_efficiency_j": 1350.0,
+    "curtailed_j": 1348.6117647058836,
+    "baseline_required_j": 1.6941176470588233,
+    "baseline_delivered_j": 1.6941176470588233,
+    "baseline_unserved_j": 0.0,
+    "actions_used_j": 0.18823529411764706,
+    "performed": {
+      "measure": 8,
+      "wifi": 0
+    },
+    "skipped": {
+      "measure": 0,
+      "wifi": 0
+    },
+    "minimum_j": 2663.058823529413,
+    "first_skipped_s": {
+      "measure": null,
+      "wifi": null
+    },
+    "first_baseline_unserved_s": null,
+    "trace": [
+      {
+        "interval_start_s": 0.0,
+        "time_s": 0.0,
+        "energy_before_j": 2664.0000000000005,
+        "charge_generated_j": 0.0,
+        "baseline_required_j": 0.0,
+        "baseline_unserved_j": 0.0,
+        "curtailed_j": 0.0,
+        "full_at_s": null,
+        "depleted_at_s": null,
+        "actions": [],
+        "energy_after_j": 2664.0000000000005
+      },
+      {
+        "interval_start_s": 0.0,
+        "time_s": 900,
+        "energy_before_j": 2664.0000000000005,
+        "charge_generated_j": 0.0,
+        "baseline_required_j": 0.21176470588235294,
+        "baseline_unserved_j": 0.0,
+        "curtailed_j": 0.0,
+        "full_at_s": null,
+        "depleted_at_s": null,
+        "actions": [
+          {
+            "id": "measure",
+            "status": "performed",
+            "battery_cost_j": 0.023529411764705882
+          }
+        ],
+        "energy_after_j": 2663.7647058823536
+      },
+      {
+        "interval_start_s": 900,
+        "time_s": 1800,
+        "energy_before_j": 2663.7647058823536,
+        "charge_generated_j": 0,
+        "baseline_required_j": 0.21176470588235294,
+        "baseline_unserved_j": 0.0,
+        "curtailed_j": 0.0,
+        "full_at_s": null,
+        "depleted_at_s": null,
+        "actions": [
+          {
+            "id": "measure",
+            "status": "performed",
+            "battery_cost_j": 0.023529411764705882
+          }
+        ],
+        "energy_after_j": 2663.5294117647068
+      },
+      {
+        "interval_start_s": 1800,
+        "time_s": 2700,
+        "energy_before_j": 2663.5294117647068,
+        "charge_generated_j": 0,
+        "baseline_required_j": 0.21176470588235294,
+        "baseline_unserved_j": 0.0,
+        "curtailed_j": 0.0,
+        "full_at_s": null,
+        "depleted_at_s": null,
+        "actions": [
+          {
+            "id": "measure",
+            "status": "performed",
+            "battery_cost_j": 0.023529411764705882
+          }
+        ],
+        "energy_after_j": 2663.29411764706
+      },
+      {
+        "interval_start_s": 2700,
+        "time_s": 3600,
+        "energy_before_j": 2663.29411764706,
+        "charge_generated_j": 0,
+        "baseline_required_j": 0.21176470588235294,
+        "baseline_unserved_j": 0.0,
+        "curtailed_j": 0.0,
+        "full_at_s": null,
+        "depleted_at_s": null,
+        "actions": [
+          {
+            "id": "measure",
+            "status": "performed",
+            "battery_cost_j": 0.023529411764705882
+          }
+        ],
+        "energy_after_j": 2663.058823529413
+      },
+      {
+        "interval_start_s": 3600,
+        "time_s": 4500,
+        "energy_before_j": 2663.058823529413,
+        "charge_generated_j": 675.0,
+        "baseline_required_j": 0.21176470588235294,
+        "baseline_unserved_j": 0.0,
+        "curtailed_j": 673.8470588235305,
+        "full_at_s": 3601.2552957790667,
+        "depleted_at_s": null,
+        "actions": [
+          {
+            "id": "measure",
+            "status": "performed",
+            "battery_cost_j": 0.023529411764705882
+          }
+        ],
+        "energy_after_j": 2663.9764705882358
+      },
+      {
+        "interval_start_s": 4500,
+        "time_s": 5400,
+        "energy_before_j": 2663.9764705882358,
+        "charge_generated_j": 675.0,
+        "baseline_required_j": 0.21176470588235294,
+        "baseline_unserved_j": 0.0,
+        "curtailed_j": 674.7647058823532,
+        "full_at_s": 4500.031382394477,
+        "depleted_at_s": null,
+        "actions": [
+          {
+            "id": "measure",
+            "status": "performed",
+            "battery_cost_j": 0.023529411764705882
+          }
+        ],
+        "energy_after_j": 2663.9764705882358
+      },
+      {
+        "interval_start_s": 5400,
+        "time_s": 6300,
+        "energy_before_j": 2663.9764705882358,
+        "charge_generated_j": 0,
+        "baseline_required_j": 0.21176470588235294,
+        "baseline_unserved_j": 0.0,
+        "curtailed_j": 0.0,
+        "full_at_s": null,
+        "depleted_at_s": null,
+        "actions": [
+          {
+            "id": "measure",
+            "status": "performed",
+            "battery_cost_j": 0.023529411764705882
+          }
+        ],
+        "energy_after_j": 2663.741176470589
+      },
+      {
+        "interval_start_s": 6300,
+        "time_s": 7200,
+        "energy_before_j": 2663.741176470589,
+        "charge_generated_j": 0,
+        "baseline_required_j": 0.21176470588235294,
+        "baseline_unserved_j": 0.0,
+        "curtailed_j": 0.0,
+        "full_at_s": null,
+        "depleted_at_s": null,
+        "actions": [
+          {
+            "id": "measure",
+            "status": "performed",
+            "battery_cost_j": 0.023529411764705882
+          }
+        ],
+        "energy_after_j": 2663.505882352942
+      }
+    ],
+    "energy_residual_j": 1.3642420526593924e-12,
+    "label": "DESIGN_ASSUMPTIONS_NOT_MEASURED",
+    "collection_authorized": false
+  },
+  "charging_start_empty": {
+    "capacity_j": 2664.0000000000005,
+    "initial_j": 0.0,
+    "final_j": 1349.0588235294117,
+    "reserve_j": 133.20000000000002,
+    "charge_after_efficiency_j": 1350.0,
+    "curtailed_j": 0.0,
+    "baseline_required_j": 1.6941176470588233,
+    "baseline_delivered_j": 0.8470588235294118,
+    "baseline_unserved_j": 0.8470588235294115,
+    "actions_used_j": 0.09411764705882353,
+    "performed": {
+      "measure": 4,
+      "wifi": 0
+    },
+    "skipped": {
+      "measure": 4,
+      "wifi": 0
+    },
+    "minimum_j": 0.0,
+    "first_skipped_s": {
+      "measure": 900,
+      "wifi": null
+    },
+    "first_baseline_unserved_s": 0.0,
+    "trace": [
+      {
+        "interval_start_s": 0.0,
+        "time_s": 0.0,
+        "energy_before_j": 0.0,
+        "charge_generated_j": 0.0,
+        "baseline_required_j": 0.0,
+        "baseline_unserved_j": 0.0,
+        "curtailed_j": 0.0,
+        "full_at_s": null,
+        "depleted_at_s": null,
+        "actions": [],
+        "energy_after_j": 0.0
+      },
+      {
+        "interval_start_s": 0.0,
+        "time_s": 900,
+        "energy_before_j": 0.0,
+        "charge_generated_j": 0.0,
+        "baseline_required_j": 0.21176470588235294,
+        "baseline_unserved_j": 0.21176470588235294,
+        "curtailed_j": 0.0,
+        "full_at_s": null,
+        "depleted_at_s": 0.0,
+        "actions": [
+          {
+            "id": "measure",
+            "status": "insufficient_reserve",
+            "battery_cost_j": 0.023529411764705882
+          }
+        ],
+        "energy_after_j": 0.0
+      },
+      {
+        "interval_start_s": 900,
+        "time_s": 1800,
+        "energy_before_j": 0.0,
+        "charge_generated_j": 0,
+        "baseline_required_j": 0.21176470588235294,
+        "baseline_unserved_j": 0.21176470588235294,
+        "curtailed_j": 0.0,
+        "full_at_s": null,
+        "depleted_at_s": 900.0,
+        "actions": [
+          {
+            "id": "measure",
+            "status": "insufficient_reserve",
+            "battery_cost_j": 0.023529411764705882
+          }
+        ],
+        "energy_after_j": 0.0
+      },
+      {
+        "interval_start_s": 1800,
+        "time_s": 2700,
+        "energy_before_j": 0.0,
+        "charge_generated_j": 0,
+        "baseline_required_j": 0.21176470588235294,
+        "baseline_unserved_j": 0.21176470588235294,
+        "curtailed_j": 0.0,
+        "full_at_s": null,
+        "depleted_at_s": 1800.0,
+        "actions": [
+          {
+            "id": "measure",
+            "status": "insufficient_reserve",
+            "battery_cost_j": 0.023529411764705882
+          }
+        ],
+        "energy_after_j": 0.0
+      },
+      {
+        "interval_start_s": 2700,
+        "time_s": 3600,
+        "energy_before_j": 0.0,
+        "charge_generated_j": 0,
+        "baseline_required_j": 0.21176470588235294,
+        "baseline_unserved_j": 0.21176470588235294,
+        "curtailed_j": 0.0,
+        "full_at_s": null,
+        "depleted_at_s": 2700.0,
+        "actions": [
+          {
+            "id": "measure",
+            "status": "insufficient_reserve",
+            "battery_cost_j": 0.023529411764705882
+          }
+        ],
+        "energy_after_j": 0.0
+      },
+      {
+        "interval_start_s": 3600,
+        "time_s": 4500,
+        "energy_before_j": 0.0,
+        "charge_generated_j": 675.0,
+        "baseline_required_j": 0.21176470588235294,
+        "baseline_unserved_j": 0.0,
+        "curtailed_j": 0.0,
+        "full_at_s": null,
+        "depleted_at_s": null,
+        "actions": [
+          {
+            "id": "measure",
+            "status": "performed",
+            "battery_cost_j": 0.023529411764705882
+          }
+        ],
+        "energy_after_j": 674.7647058823529
+      },
+      {
+        "interval_start_s": 4500,
+        "time_s": 5400,
+        "energy_before_j": 674.7647058823529,
+        "charge_generated_j": 675.0,
+        "baseline_required_j": 0.21176470588235294,
+        "baseline_unserved_j": 0.0,
+        "curtailed_j": 0.0,
+        "full_at_s": null,
+        "depleted_at_s": null,
+        "actions": [
+          {
+            "id": "measure",
+            "status": "performed",
+            "battery_cost_j": 0.023529411764705882
+          }
+        ],
+        "energy_after_j": 1349.5294117647059
+      },
+      {
+        "interval_start_s": 5400,
+        "time_s": 6300,
+        "energy_before_j": 1349.5294117647059,
+        "charge_generated_j": 0,
+        "baseline_required_j": 0.21176470588235294,
+        "baseline_unserved_j": 0.0,
+        "curtailed_j": 0.0,
+        "full_at_s": null,
+        "depleted_at_s": null,
+        "actions": [
+          {
+            "id": "measure",
+            "status": "performed",
+            "battery_cost_j": 0.023529411764705882
+          }
+        ],
+        "energy_after_j": 1349.2941176470588
+      },
+      {
+        "interval_start_s": 6300,
+        "time_s": 7200,
+        "energy_before_j": 1349.2941176470588,
+        "charge_generated_j": 0,
+        "baseline_required_j": 0.21176470588235294,
+        "baseline_unserved_j": 0.0,
+        "curtailed_j": 0.0,
+        "full_at_s": null,
+        "depleted_at_s": null,
+        "actions": [
+          {
+            "id": "measure",
+            "status": "performed",
+            "battery_cost_j": 0.023529411764705882
+          }
+        ],
+        "energy_after_j": 1349.0588235294117
+      }
+    ],
+    "energy_residual_j": -2.2737367544323206e-13,
+    "label": "DESIGN_ASSUMPTIONS_NOT_MEASURED",
+    "collection_authorized": false
+  },
+  "zero_pv_input_j": 0,
+  "collection_authorized": false
+}
