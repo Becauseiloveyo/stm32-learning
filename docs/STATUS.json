@@ -420,7 +420,9 @@
       "独立解析剩余 41.109812 s，对应采样剩余 41.2 s；偏差冲突、未测区约 0.05998 kg 水量差、非重叠目标、晚来证据和失败保留通过。",
       "100 个输入、1 个产物及 23 个冻结输入匹配；旧六包原字节保留，M6 重放字节一致，新收据绑定 105 个文件。",
       "完整动态状态跨温度/风/日照边界与直接 M5 推进一致；输出新增版本/条件字段后重新生成并验收。",
-      "整合后七包只读收据及 project_status --check 通过；19 个变更文件存在，59 个本地文档链接有效。"
+      "整合后七包只读收据及 project_status --check 通过；19 个变更文件存在，59 个本地文档链接有效。",
+      "19 个文件暂存字节与工作区一致；暂存树导出后 project_status --check 和 M6 收据检查通过。",
+      "内容提交 aee8d215957cab937ec9ba2c58d6e8f6a283d376 已普通推送并核对远端 HEAD；GitHub 连接器总审查 blob 与本地一致。同步回执独立提交，避免自引用。"
     ],
     "limitations": "仅有限合成候选、规定空气温度与采样目标时间。真实材料/接触/传感器/误差界、连续参数覆盖、STM32 性能和手机推送未验证；collection_authorized=false。",
     "unresolved_issues": [
@@ -816,20 +818,20 @@
     "repository": "Becauseiloveyo/stm32-learning",
     "branch": "master",
     "baseline_commit": "d2bdf65",
-    "status": "local_changes_pending",
-    "scope": "Accepted M6, T10 overall review and T12 preparation awaiting GitHub sync.",
+    "status": "synced",
+    "scope": "Accepted M6, T10 overall theoretical review and T12 preparation.",
     "prepared_content_verified": true,
-    "evidence": "docs/verification/T10-M5-review.md; docs/STATUS.json last_handoff",
+    "evidence": "docs/verification/T10-review.md; docs/verification/T10-M6-review.md; docs/STATUS.json last_handoff",
     "verified_on": "2026-11-01",
-    "verified_content_commit": "d624e5dc3e4a3a4d2755f0afc76b70918e4d24fb",
-    "remote_head_at_verification": "d624e5dc3e4a3a4d2755f0afc76b70918e4d24fb",
+    "verified_content_commit": "aee8d215957cab937ec9ba2c58d6e8f6a283d376",
+    "remote_head_at_verification": "aee8d215957cab937ec9ba2c58d6e8f6a283d376",
     "verification": [
-      "正常 git push origin master 成功补齐 M4/M5；git ls-remote 与内容提交 d624e5dc3e4a3a4d2755f0afc76b70918e4d24fb 一致。",
-      "GitHub 连接器复读 M5 审查文件，blob 4e7263f83e871b1ed3e412dcf657386d03ebcc4d 与本地一致。"
+      "正常 git push origin master 成功；git ls-remote 与内容提交 aee8d215957cab937ec9ba2c58d6e8f6a283d376 一致。",
+      "GitHub 连接器复读 T10 总审查，blob 9c85f88f73a5a4993491ebe70d6764e247f278c5 与本地一致。"
     ],
     "receipt_note": "本条记录已独立核对的内容提交；同步回执单独提交，避免提交自引用。",
     "last_attempt_on": "2026-11-01",
     "last_attempt_errors": [],
-    "resume_action": "Review and fast-forward push accepted M6 content; verify remote commit and review blob, then record receipt."
+    "resume_action": "M6 与 T10 总审查已同步；下一步按 T12-HANDOFF 开始结构与电池可行性，不重做旧模型验收。"
   }
 }
