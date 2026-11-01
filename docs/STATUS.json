@@ -135,7 +135,7 @@
       "depends_on": [
         "T09"
       ],
-      "milestone": "M4 finite conditional candidate consistency accepted; M5 unified dynamic forward model next",
+      "milestone": "M5 unified dynamic forward state accepted within prescribed-air boundary; M6 observation-to-conditional-time integration next",
       "execution_mode": "Dedicated user-requested Terra project conversation; shared checkout, scoped ownership.",
       "milestones": {
         "M1": {
@@ -202,12 +202,26 @@
           ]
         },
         "M5": {
-          "status": "pending",
+          "status": "done",
           "depends_on": [
             "M4"
           ],
           "assignment": "docs/team/assignments/algorithm-t10-m5.md",
-          "scope": "Unify dynamic garment water/temperature and covered central air/response states before coupling observation updates to target times."
+          "scope": "Two dynamic garment zones and central vapor/RH response with prescribed air temperature and explicit external energy terms; synthetic only.",
+          "baseline": "docs/team/baseline-t10-m5/snapshot.json",
+          "evidence": [
+            "docs/verification/T10-M5-review.md",
+            "docs/verification/T10-M5-tests.json",
+            "research/garment_prediction/coupled_m5/results/manifest.json"
+          ]
+        },
+        "M6": {
+          "status": "pending",
+          "depends_on": [
+            "M5"
+          ],
+          "assignment": "docs/team/assignments/algorithm-t10-m6.md",
+          "scope": "Observable history, finite candidate compatibility and future sampled target times using the same M5 versioned state."
         }
       },
       "evidence": [
@@ -220,7 +234,9 @@
         "docs/verification/T10-M3-review.md",
         "docs/verification/T10-M3-tests.json",
         "docs/verification/T10-M4-review.md",
-        "docs/verification/T10-M4-tests.json"
+        "docs/verification/T10-M4-tests.json",
+        "docs/verification/T10-M5-review.md",
+        "docs/verification/T10-M5-tests.json"
       ]
     },
     "T11": {
@@ -240,7 +256,7 @@
   "current_findings": [
     "2026-10-28 用户取消太阳能并要求计划书、GitHub 同步和 Terra 分工，登记为 R15–R17；R05/R12/R14 中光伏部分已被替代。",
     "现行建议为电池＋人工 USB 充电；容量、化学体系、充电接口和真实续航未冻结。衣物日照仍是干燥模型输入，不增加电池能量。",
-    "T10 M1/M2a/M2b/M3 与 M4 有限候选相容性已按受限范围验收；下一包 M5 统一动态温度/覆盖气路/整衣状态。真实参数与误差标定、未测区域和整衣观测修正 ETA 尚缺，T10 仍 in_progress。",
+    "T10 M1/M2a/M2b/M3/M4/M5 六包均按受限范围验收；M5 统一动态衣物和中央气路，局部空气温度仍为给定边界。下一包 M6 连接同一状态内的观测筛选和条件时间；T10 总体验收尚未完成。",
     "T12 已改为 T10 之后的衣架结构与电池预算；T11 接无光伏/人工充电、雨情、新通知和最小界面，最后 T08 总审查。",
     "现有 Python/C 能量接口仍含历史 Solar/solar_battery_wh 等语义；本轮只规划。T11 如改动必须同步契约和相应验证，不能用旧光伏通过记录证明新版续航。",
     "T01–T07 的工作区源码、参数和收据未改；T09 参数及生成物未改。Git 同步须保持其原始字节，避免自动换行转换造成指纹不一致。",
@@ -252,7 +268,8 @@
     "M2a 只接收可得观测和有覆盖区间的外部接触/热证据；未接触或未知不产出有效记录。模型内中央过程相同但未测区水量相差约 88 g；这不是实物 RH 实验，也不推广为所有方案不可辨识。M2b 已完成条件情景时间，仍无观测校正。",
     "M2b 在同一网格时刻检查两区共同目标；12 个合成组合中 8 个在时域内未检出，因此上界未知。解析对照和 20→5 s 加密通过；不能把网格检出当连续首次穿越或真实干燥时间。",
     "M3 的初始水量 0.06/0.03 kg 合成例在 60 s 的 RH 比例最大差约 8.65e-5；仅在指定误差和模型下相容，不证明真实面料不可辨识。通过观测必要条件也不能证明未测织物等温。",
-    "M4 对同一候选整个窗口使用共同偏差，合成高/低水量候选均相容、第三组不相容；未知或失败保留，不输出水量界或概率。声明误差界不是实测或严格数值证明。"
+    "M4 对同一候选整个窗口使用共同偏差，合成高/低水量候选均相容、第三组不相容；未知或失败保留，不输出水量界或概率。声明误差界不是实测或严格数值证明。",
+    "M5 将覆盖交换、水汽比内能、液水输入/排液和温度边界跳变分别记账；RH 响应连续。外部热库、中央映射、覆盖热影响及仪器参数仍未标定。"
   ],
   "open_issues": [
     {
@@ -317,7 +334,7 @@
     },
     {
       "id": "U08",
-      "summary": "五个受限模型/观测工作包已验收；中央与整衣动态温度/覆盖热账连接、真实材料/气路/接触与误差标定、未测区域及整衣观测修正 ETA 仍待完成",
+      "summary": "M5 已统一给定空气边界下的动态前向状态；同一模型的观测筛选到整衣条件时间连接、真实材料/气路/接触/误差标定及未测区域仍有缺口",
       "resolve_in": [
         "T10",
         "H01"
@@ -328,7 +345,8 @@
       "M2a_contribution": "完成接触/热证据覆盖门控和条件性中央相同、未测区不同的反例；没有实物数据、真实映射或 ETA。",
       "M2b_contribution": "实现给定合成先验与未来情景的共同采样目标时间，失败/未达成员保留未知上界；没有观测反演或真实准确率。",
       "M3_contribution": "固定温度单中央区的水量映射、传感器响应和历史/温差/重复观测筛选已独立验收；不关闭完整能量账、未测区域或真实准确率缺口。",
-      "M4_contribution": "有限离散初态和持续偏差下的条件相容性通过独立检查，未知/失败保留；没有连续完备性、实物标定或整衣时间更新。"
+      "M4_contribution": "有限离散初态和持续偏差下的条件相容性通过独立检查，未知/失败保留；没有连续完备性、实物标定或整衣时间更新。",
+      "M5_contribution": "开放/覆盖交换、衣物动态温度、气腔质量/RH响应和分段外部账通过独立检查；不是完整湿空气热系统或实际判干证据。"
     },
     {
       "id": "U09",
@@ -362,35 +380,34 @@
   ],
   "last_handoff": {
     "task": "T10",
-    "kind": "M4_accepted_M5_prepared",
-    "summary": "实现并验收有限候选相容性：共享偏差跨窗口取交集，未知/失败保留，合成多解不强制唯一化；补齐局部温度和偏差数值域检查。M5 统一动态前向模型任务书已准备，尚未执行。",
+    "kind": "M5_accepted_M6_prepared",
+    "summary": "M5 统一动态前向模型交付并独立验收，补齐液水/排液、物理热流分项与边界跳变；M6 同一状态的观测到条件时间任务书已准备，未执行。",
     "changed_files": [
       "docs/STATUS.json",
       "docs/DECISIONS.md",
       "docs/ROADMAP.md",
       "docs/TEAM.md",
-      "docs/team/assignments/algorithm-t10-m5.md",
-      "docs/team/baseline-t10-m4/snapshot.json",
-      "docs/GARMENT-ENSEMBLE.md",
-      "docs/team/reports/algorithm-t10-m4.md",
-      "docs/verification/T10-M4-review.md",
-      "docs/verification/T10-M4-tests.json",
-      "tools/check_garment_ensemble.py",
-      "research/garment_prediction/ensemble_m4/config.json",
-      "research/garment_prediction/ensemble_m4/ensemble.py",
-      "research/garment_prediction/ensemble_m4/replay.py",
-      "research/garment_prediction/ensemble_m4/results/compatibility.json",
-      "research/garment_prediction/ensemble_m4/results/manifest.json",
-      "research/garment_prediction/ensemble_m4/test_ensemble.py"
+      "docs/team/assignments/algorithm-t10-m6.md",
+      "docs/team/baseline-t10-m5/snapshot.json",
+      "docs/GARMENT-COUPLED.md",
+      "docs/team/reports/algorithm-t10-m5.md",
+      "docs/verification/T10-M5-review.md",
+      "docs/verification/T10-M5-tests.json",
+      "tools/check_garment_coupled.py",
+      "research/garment_prediction/coupled_m5/config.json",
+      "research/garment_prediction/coupled_m5/coupled.py",
+      "research/garment_prediction/coupled_m5/replay.py",
+      "research/garment_prediction/coupled_m5/results/example.json",
+      "research/garment_prediction/coupled_m5/results/manifest.json",
+      "research/garment_prediction/coupled_m5/test_coupled.py"
     ],
     "verification": [
-      "python -B -X utf8 tools/check_garment_ensemble.py --write-receipt：7 组全部通过，其中含工作对话 10 项测试。",
-      "独立无交换/一阶过渡解析、非整步采样时刻和偏差交集对照通过；过渡偏差端点误差小于 6e-11 RH 比例。",
-      "来源核对 72 个输入、1 个产物及 16 个冻结输入；旧验收来源保持一致，重放结果字节一致；M4 收据绑定 77 个文件。",
-      "协调者核对 Jaulin/Walter 1993 原文第 1 节；仅采用条件相容性思想，未宣称 SIVIA 或连续参数完备包络。",
-      "2026-11-01 恢复核对五包收据与项目入口均通过；40 个变更文档本地链接有效；不重跑旧模型。"
+      "python -B -X utf8 tools/check_garment_coupled.py --write-receipt：8 组通过，其中含工作测试 13 项。",
+      "独立太阳/对流/液水/响应解析和蒸发/吸湿热流、12.3 s 非整步分段/重启、收敛与出域验证通过。",
+      "85 个输入、1 个产物及 21 个冻结输入匹配，旧包来源不变；同平台重放字节一致，新 M5 收据绑定 90 个文件。",
+      "整合后六包只读收据与 project_status.py --check 通过；42 个变更文档本地链接有效，未重跑旧模型/C。"
     ],
-    "limitations": "只有有限离散合成支持和外部声明的模型/误差界；无真实概率、确定水量界、物理标定、完整动态连接或整衣 ETA 更新，收衣授权恒 false。",
+    "limitations": "空气温度为规定边界，传感器温度瞬时跟随和RH一阶响应为合成假设；没有完整干空气/壁热/吸附模型、真实参数/误差校准、自动接触证据或同一动态模型的整衣观测修正 ETA，收衣授权 false。",
     "unresolved_issues": [
       "U01",
       "U02",
@@ -403,7 +420,7 @@
       "U10",
       "U11"
     ],
-    "resume_action": "继续 T10 M5：读 M5 任务书与 M4/M3 验收、五包来源收据；建立 M5 冻结输入，将 M5 标 in_progress 后派发既有 Terra 对话。先统一库存、开放/覆盖面积、动态温度及观测响应物理意义，独立验收前不将新状态接入 M4/M2b，也不开始 T12/T11。"
+    "resume_action": "继续 T10 M6：读 M6 任务书、M5/M4 审查及六包只读收据；建立 M6 冻结清单并标 in_progress 后沿用专用 Terra 对话派发。历史观测筛选与未来情景须使用同一 M5 完整状态/边界，未知和失败保留，目标检查两区同时满足；之后按原 T10 验收逐项审查，不提前执行 T12/T11。GitHub 当前传输失败，先核对本地提交与远端，正常重试且不要重做已验收模型。"
   },
   "team_work": {
     "mode": "shared_checkout_with_file_ownership",
@@ -519,32 +536,33 @@
         ]
       },
       "algorithm": {
-        "scope": "T10 M4 accepted within finite conditional scope; M5 prepared only",
-        "assignment": "docs/team/assignments/algorithm-t10-m4.md",
-        "report": "docs/team/reports/algorithm-t10-m4.md",
+        "scope": "T10 M5 accepted within prescribed-air synthetic scope; M6 prepared only",
+        "assignment": "docs/team/assignments/algorithm-t10-m5.md",
+        "report": "docs/team/reports/algorithm-t10-m5.md",
         "thread_id": "01a18179-0c80-73f3-aa5b-9ff1c0b4b4da",
         "host_id": "local",
         "model": "gpt-6.1-terra",
         "thinking": "xhigh",
         "dispatch_state": "delivery_submitted",
-        "review_state": "accepted_M4_restricted",
-        "baseline": "docs/team/baseline-t10-m4/snapshot.json",
-        "coordinator_review": "docs/verification/T10-M4-review.md",
+        "review_state": "accepted_M5_restricted",
+        "baseline": "docs/team/baseline-t10-m5/snapshot.json",
+        "coordinator_review": "docs/verification/T10-M5-review.md",
         "latest_progress_snapshot": {
-          "checked_on": "2026-10-30",
-          "cursor": "3c214fed-54e1-414f-9cba-a704f0b04410:11",
+          "checked_on": "2026-11-01",
+          "cursor": "37b4ea00-eb0b-429b-8b43-dfd96d4a89dc:14",
           "thread_status": "idle",
           "turn_status": "completed",
-          "note": "M4 已交付停止写入，随后协调者独立验收；M5 尚未派发。"
+          "note": "M5 已停止写入并接受协调审查；M6 未派发。"
         },
-        "next_assignment": "docs/team/assignments/algorithm-t10-m5.md",
+        "next_assignment": "docs/team/assignments/algorithm-t10-m6.md",
         "next_dispatch_state": "prepared_not_dispatched",
-        "coordinator_receipt": "docs/verification/T10-M4-tests.json",
+        "coordinator_receipt": "docs/verification/T10-M5-tests.json",
         "prior_reports": [
           "docs/team/reports/algorithm-t10.md",
           "docs/team/reports/algorithm-t10-m2.md",
           "docs/team/reports/algorithm-t10-m2b.md",
-          "docs/team/reports/algorithm-t10-m3.md"
+          "docs/team/reports/algorithm-t10-m3.md",
+          "docs/team/reports/algorithm-t10-m4.md"
         ]
       }
     },
@@ -785,7 +803,7 @@
     "branch": "master",
     "baseline_commit": "d2bdf65",
     "status": "pending",
-    "scope": "Accepted M4 finite conditional candidate consistency, coordinator evidence and M5 task brief.",
+    "scope": "Accepted M4 and M5 research, coordinator receipts and M6 task brief.",
     "prepared_content_verified": true,
     "evidence": "docs/verification/T10-M3-review.md; docs/STATUS.json last_handoff",
     "verified_on": "2026-10-30",
@@ -796,8 +814,11 @@
       "GitHub 连接器复读 M3 审查文件，blob d439eef27239d850065eeebfd41f37a1a3e07e05 与本地一致。"
     ],
     "receipt_note": "本条记录已独立核对的内容提交；同步回执单独提交，避免提交自引用。",
-    "last_attempt_on": "2026-10-30",
-    "last_attempt_errors": [],
-    "resume_action": "本轮 M4 内容待正常提交推送并核对远端。"
+    "last_attempt_on": "2026-11-01",
+    "last_attempt_errors": [
+      "M4 normal push: HTTP2 framing error",
+      "Two HTTP/1.1 push attempts: github.com:443 connect timeout"
+    ],
+    "resume_action": "本轮最终内容提交后重试正常推送；若仍失败，保留本地提交并如实报告待同步。"
   }
 }

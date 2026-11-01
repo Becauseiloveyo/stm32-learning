@@ -1,0 +1,90 @@
+{
+  "label": "SYNTHETIC_UNCALIBRATED",
+  "seed": null,
+  "source": "M1 synthetic geometry and gas closure from M3; all remain uncalibrated. Rain and drainage are set to zero only in this synthetic example. Initial and switched conditions are hand-selected synthetic assumptions; no real weather or experiment.",
+  "ordinary": {
+    "dry_kg": 0.3,
+    "evap_m2": 0.45,
+    "proj_m2": 0.18,
+    "heat_m2": 0.45,
+    "rad_m2": 0.4,
+    "xb": 0.15,
+    "resistance_s_m": 140.0,
+    "drain_per_s": 0,
+    "alpha": 0.6,
+    "emissivity": 0.9
+  },
+  "slow": {
+    "dry_kg": 0.1,
+    "evap_m2": 0.1,
+    "proj_m2": 0.035,
+    "heat_m2": 0.12,
+    "rad_m2": 0.1,
+    "xb": 0.22,
+    "resistance_s_m": 220.0,
+    "drain_per_s": 0,
+    "alpha": 0.6,
+    "emissivity": 0.9
+  },
+  "drive": {
+    "air_c": 25,
+    "rh": 0.5,
+    "wind_m_s": 0.5,
+    "solar_w_m2": 200,
+    "surround_c": 25,
+    "rain_kg_s": 0,
+    "rain_c": 25
+  },
+  "initial_x_kg_kg": 0.6,
+  "initial_temperature_c": 25,
+  "duration_s": 60,
+  "step_s": 0.1,
+  "coupling": {
+    "area_cover_m2": 2e-05,
+    "cover_resistance_s_m": 200,
+    "volume_m3": 5e-06,
+    "flow_m3_s": 2e-08,
+    "sensor_tau_s": 4,
+    "sensor_bias_rh": 0.005
+  },
+  "units": "M1 zone and Drive units from parameter_registry; coupling cover area m2, resistance s/m, volume m3, flow m3/s, sensor tau s, bias RH fraction; water and vapor kg, U J, temperature degC, time s",
+  "initial_state": {
+    "x_kg_kg": [
+      0.6,
+      0.6
+    ],
+    "garment_c": [
+      25,
+      25
+    ],
+    "gas_rh": 0.5,
+    "sensor_rh_state": 0.5,
+    "reference_time_s": 0
+  },
+  "segments": [
+    {
+      "end_s": 30,
+      "drive": {
+        "air_c": 25,
+        "rh": 0.5,
+        "wind_m_s": 0.5,
+        "solar_w_m2": 200,
+        "surround_c": 25,
+        "rain_kg_s": 0,
+        "rain_c": 25
+      }
+    },
+    {
+      "end_s": 60,
+      "drive": {
+        "air_c": 27,
+        "rh": 0.4,
+        "wind_m_s": 1.2,
+        "solar_w_m2": 50,
+        "surround_c": 25,
+        "rain_kg_s": 0,
+        "rain_c": 25
+      }
+    }
+  ]
+}

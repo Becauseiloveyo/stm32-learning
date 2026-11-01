@@ -1,0 +1,116 @@
+{
+  "initial_drive": {
+    "air_c": 25,
+    "rh": 0.5,
+    "wind_m_s": 0.5,
+    "solar_w_m2": 200,
+    "surround_c": 25,
+    "rain_kg_s": 0,
+    "rain_c": 25
+  },
+  "second_drive": {
+    "air_c": 27,
+    "rh": 0.4,
+    "wind_m_s": 1.2,
+    "solar_w_m2": 50,
+    "surround_c": 25,
+    "rain_kg_s": 0,
+    "rain_c": 25
+  },
+  "state_order": [
+    "water0_kg",
+    "U0_J",
+    "water1_kg",
+    "U1_J",
+    "gas_water_kg",
+    "sensor_RH_fraction",
+    "external_water_integral_kg",
+    "external_energy_integral_J"
+  ],
+  "result": {
+    "state_version": "m5-v1",
+    "mode": "dynamic",
+    "initial_drive": {
+      "air_c": 25,
+      "rh": 0.5,
+      "wind_m_s": 0.5,
+      "solar_w_m2": 200,
+      "surround_c": 25,
+      "rain_kg_s": 0,
+      "rain_c": 25
+    },
+    "final_drive": {
+      "air_c": 27,
+      "rh": 0.4,
+      "wind_m_s": 1.2,
+      "solar_w_m2": 50,
+      "surround_c": 25,
+      "rain_kg_s": 0,
+      "rain_c": 25
+    },
+    "initial_state": [
+      0.18,
+      29310.000000000004,
+      0.06,
+      9769.999999999998,
+      5.7445908049016103e-08,
+      0.5,
+      0.0,
+      0.0
+    ],
+    "final_state": [
+      0.17691030052638984,
+      23328.71109389283,
+      0.05952528842681289,
+      8869.738947922953,
+      8.095311709392428e-08,
+      0.6303868679897289,
+      -0.0035643875395880214,
+      -6881.4931126496
+    ],
+    "segments": [
+      {
+        "end_s": 30,
+        "boundary_jump_j": 0.0,
+        "water_residual_kg": 2.1903944933884811e-10,
+        "energy_residual_j": 0.0007301454825210385,
+        "reservoir_energy_j": -0.0027417398090452566,
+        "boundary_integrals": {
+          "solar_J": 773.9999999999991,
+          "convection_J": 120.07260003820359,
+          "radiation_J": 83.48246028883759,
+          "open_vapor_J": -4029.2416949415733,
+          "vent_vapor_J": -0.003654915509215863,
+          "liquid_J": 0.0,
+          "gas_reservoir_J": -0.0027417398090452566,
+          "clamp_reservoir_J": 0.0,
+          "open_mass_kg": -0.0015836293995159711,
+          "vent_mass_kg": -1.4354110983665634e-09,
+          "liquid_mass_kg": 0.0
+        }
+      },
+      {
+        "end_s": 60,
+        "boundary_jump_j": 0.00021568474180082737,
+        "water_residual_kg": 4.460323035394842e-10,
+        "energy_residual_j": 0.0014388570161827374,
+        "reservoir_energy_j": -0.0003885569973839101,
+        "boundary_integrals": {
+          "solar_J": 193.49999999999977,
+          "convection_J": 749.1771617740096,
+          "radiation_J": 258.9259404445332,
+          "open_vapor_J": -5031.396361457408,
+          "vent_vapor_J": -0.008818271131286352,
+          "liquid_J": 0.0,
+          "gas_reservoir_J": -0.0003885569973839101,
+          "clamp_reservoir_J": 0.0,
+          "open_mass_kg": -0.0019807539115195417,
+          "vent_mass_kg": -3.4582133497858215e-09,
+          "liquid_mass_kg": 0.0
+        }
+      }
+    ],
+    "label": "SYNTHETIC_UNCALIBRATED",
+    "collection_authorized": false
+  }
+}

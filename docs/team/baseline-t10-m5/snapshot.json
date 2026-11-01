@@ -1,0 +1,26 @@
+{
+  "purpose": "Read-only accepted inputs for M5; no concurrent edits to these paths. Verify hashes and prior receipts.",
+  "inputs_sha256": {
+    "docs/PROJECT.md": "4e6131524c73e7256a5a67ce9c1a3e15ceb6400df47eb73dd9fc930f89ce5bc0",
+    "docs/team/assignments/algorithm-t10-m5.md": "2c6f940a2317bdcc08b34ffe66c08b34a69a9f690b192ea655ad3ee0ecccbd83",
+    "docs/GARMENT-ENSEMBLE.md": "6749a8a7479d4740cc22ee90a6c7530330050cc7375918e526a616a5109668ea",
+    "docs/GARMENT-OBSERVATION-PHYSICS.md": "7a0a1dc0c99ba02f19284c8382f969b60d16849ab70d30791341440e35856540",
+    "docs/GARMENT-PREDICTION.md": "1c49178c800235b4c93e7420d2b599ef0bfae37e5b33e746f3b6f2d22802faca",
+    "docs/GARMENT-ETA.md": "5dd403b020155d28e630fe8b6a884f429964b49bc89c46a6ae153c17b0ca5b78",
+    "docs/verification/T10-M1-review.md": "be4a0001d750339c8fc2410941af3b7c020f36620b214a6f4bce15cf4e862c18",
+    "docs/verification/T10-M1-tests.json": "d5c468a1c455e33151eaf88513404ade3a0752c69fc26732f0f8fb7e7f886982",
+    "docs/verification/T10-M2a-review.md": "2cab5a74c48384ff72e14aaf62ce4e4d5374678f529e70888928d576d9f1745b",
+    "docs/verification/T10-M2a-tests.json": "aef57de42901ae78ba3198841fb03cfca86e140d5efe2f805b11bbd63722d93e",
+    "docs/verification/T10-M2b-review.md": "222cc095d3b3f349f4f2385d5b74a86d96bbda51bcc638f1172777e571ebe4a6",
+    "docs/verification/T10-M2b-tests.json": "7d297ed2079237b90e43b20a4fcacbfe850e71998ad88b672a8b2730ebae735e",
+    "docs/verification/T10-M3-review.md": "9e224a8a4f1b3f5651a88098ec89989d5f3fd48d820f3e793b152ae15d045248",
+    "docs/verification/T10-M3-tests.json": "8b6e24a0c8c9dc43c02d0f235ce3d6bea0ee33ac361801b3c9cf836f6072782c",
+    "docs/verification/T10-M4-review.md": "ab6024e107530ef39e184b56be3902b6682768800efc416cc04ef5c2f4698193",
+    "docs/verification/T10-M4-tests.json": "5d0d5e1a1001fd8ff4701461f3f2f793b5e72b1f54e837ae2843595ccff3e509",
+    "research/garment_prediction/model.py": "61aa50f8e24fbd470a54522144ecf60b4fe820be4f92506d5e37442ab1523830",
+    "research/garment_prediction/parameter_registry.json": "81b5b0ed9fa5ed6a6e7fef4370798e8aa1b2416d1e90da074a4da51c35696950",
+    "research/garment_prediction/observation_m3/physics.py": "4de2bf84da447c84155276c483a8f54d52b54689f9eba9348cbb01fcebc09482",
+    "research/garment_prediction/observation_m3/config.json": "aa637f39eb466cbee5b89257c82119550a0f6d7ecd2ade653075c1d3ae00e7c0",
+    "research/garment_prediction/ensemble_m4/ensemble.py": "94e03d1e9d03cb735ffd54f767460deb6846ccc0c7d16147b1bbd1a61ea7ad2b"
+  }
+}
