@@ -1,0 +1,13 @@
+{
+  "version": "t11-p1-v1",
+  "label": "SYNTHETIC_UNCALIBRATED",
+  "seed": null,
+  "source": "docs/references/T11-P1-sources.md; software demonstration policy, not sensor calibration",
+  "parameters": {
+    "max_time_s": {"value": 1000000000, "unit": "s", "valid_range": [0, 1000000000], "source": "synthetic clock bound"},
+    "max_evidence_ttl_s": {"value": 120, "unit": "s", "valid_range": [0, 120], "source": "synthetic software policy"},
+    "wet_stuck_s": {"value": 300, "unit": "s", "valid_range": [0, 1000000000], "source": "synthetic software policy"},
+    "max_identifier_length": {"value": 80, "unit": "characters", "valid_range": [1, 80], "source": "synthetic software bound"},
+    "max_sequence": {"value": 9007199254740992, "unit": "count", "valid_range": [1, 9007199254740992], "source": "synthetic single writer"}
+  }
+}

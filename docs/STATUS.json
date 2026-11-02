@@ -1,8 +1,8 @@
 {
   "schema_version": 1,
-  "updated_on": "2026-11-01",
+  "updated_on": "2026-11-03",
   "phase": "theory_only_no_hardware_purchase",
-  "active_task": null,
+  "active_task": "T11",
   "next_task": "T11",
   "tasks": {
     "T00": {
@@ -251,11 +251,33 @@
       "scope": "Computer-only synthetic two-zone forward physics, central observation mapping, finite conditional candidate screening and sampled target times; no real calibration, collection authorization or deployed hardware."
     },
     "T11": {
-      "status": "ready",
+      "status": "in_progress",
       "depends_on": [
         "T12"
       ],
-      "handoff": "docs/T11-HANDOFF.md"
+      "handoff": "docs/T11-HANDOFF.md",
+      "milestone": "P1 accepted; next bounded package P2 timed energy and persistent notification integration",
+      "milestones": {
+        "P1": {
+          "status": "done",
+          "assignment": "docs/team/assignments/integration-t11-p1.md",
+          "frozen": "docs/team/baseline-t11-p1/snapshot.json",
+          "evidence": [
+            "docs/verification/T11-P1-review.md",
+            "docs/verification/T11-P1-tests.json",
+            "research/integration_t11/p1/results/manifest.json"
+          ],
+          "scope": "Trusted single-writer synthetic event lifecycle with actual PC M6; no persistent delivery or hardware claim."
+        },
+        "P2": {
+          "status": "ready",
+          "handoff": "docs/T11-P2-HANDOFF.md"
+        },
+        "P3": {
+          "status": "pending"
+        }
+      },
+      "plan": "docs/T11-INTEGRATION-PLAN.md"
     },
     "T12": {
       "status": "done",
@@ -406,49 +428,42 @@
     }
   ],
   "last_handoff": {
-    "task": "T12",
-    "kind": "T12_accepted_T11_prepared",
-    "summary": "完成三种合成布局、七种失败变异及负z邻衣检查，27组电池/工作量比较、人工充电及T11输入契约。原布局失败和修订案双侧问题保留；T11交接准备，未开始。",
+    "task": "T11",
+    "kind": "P1_accepted_P2_prepared",
+    "summary": "完成版本化事件、独立预报/本地受水状态、真实M6适配与预测失效生命周期；P1限定验收通过，T11整体仍进行中。",
     "changed_files": [
       "docs/DECISIONS.md",
       "docs/ROADMAP.md",
       "docs/STATUS.json",
+      "docs/T11-EVENT-CONTRACT.md",
+      "docs/T11-INTEGRATION-PLAN.md",
+      "docs/T11-P2-HANDOFF.md",
       "docs/TEAM.md",
-      "docs/HANGER-LAYOUT.md",
-      "docs/T11-HANDOFF.md",
-      "docs/references/T12-sources.md",
-      "docs/team/assignments/layout-t12.md",
-      "docs/team/baseline-t12/snapshot.json",
-      "docs/team/reports/layout-t12.md",
-      "docs/verification/T12-review.md",
-      "docs/verification/T12-tests.json",
-      "research/hanger_layout/config.json",
-      "research/hanger_layout/draw.py",
-      "research/hanger_layout/energy.py",
-      "research/hanger_layout/geometry.py",
-      "research/hanger_layout/replay.py",
-      "research/hanger_layout/results/analysis.json",
-      "research/hanger_layout/results/left_bar.png",
-      "research/hanger_layout/results/left_bar.svg",
-      "research/hanger_layout/results/manifest.json",
-      "research/hanger_layout/results/right_high.png",
-      "research/hanger_layout/results/right_high.svg",
-      "research/hanger_layout/results/right_high_adjusted.png",
-      "research/hanger_layout/results/right_high_adjusted.svg",
-      "research/hanger_layout/results/t11-interface.json",
-      "research/hanger_layout/test_layout.py",
-      "tools/check_hanger_layout.py"
+      "docs/references/T11-P1-sources.md",
+      "docs/team/assignments/integration-t11-p1.md",
+      "docs/team/baseline-t11-p1/snapshot.json",
+      "docs/team/reports/integration-t11-p1.md",
+      "docs/verification/T11-P1-review.md",
+      "docs/verification/T11-P1-tests.json",
+      "research/integration_t11/p1/config.json",
+      "research/integration_t11/p1/controller.py",
+      "research/integration_t11/p1/fixtures.py",
+      "research/integration_t11/p1/replay.py",
+      "research/integration_t11/p1/results/events.json",
+      "research/integration_t11/p1/results/manifest.json",
+      "research/integration_t11/p1/results/snapshots.json",
+      "research/integration_t11/p1/test_controller.py",
+      "tools/check_integration_events.py"
     ],
     "verification": [
-      "python -B -X utf8 tools/check_hanger_layout.py --write-receipt：8组通过，其中含9项工作测试。",
-      "独立实体碰撞、接触/深度/边界、能量解析、效率单次折算、事件不借未来、27组服务缺口与接口检查通过。",
-      "11项冻结输入、18项清单输入、8个产物匹配，M6的105项来源保持不变；JSON/SVG/PNG重放字节一致，新收据绑定133个文件。",
-      "协调者目视检查原左侧和修订案正侧PNG，图例/文字可读；图示不是机械图，不据此证明真实接触或可制造性。",
-      "整合后 project_status、T12/M6只读收据通过；28个文件存在、64个本地文档链接有效。",
-      "28个文件暂存字节与工作区一致；暂存树导出后恢复检查及T12收据通过，保留绘图库生成SVG的原始格式。",
-      "内容提交 b99107710231dfa891080ad2e6348544a40f9e7f 已普通推送，远端HEAD和GitHub审查blob一致；同步回执另行提交，避免自引用。"
+      "python -B -X utf8 tools/check_integration_events.py --write-receipt：9组通过，其中包含18项工作测试。",
+      "独立指数排液/RH参考给出41.109812秒连续剩余值；0.2秒网格为41.2秒，两个时间偏移适配一致。",
+      "接触/热/湿/故障、三个身份轴、合法缺测替代、重发过期、预报提前提示、缺测不升级持续湿、完整域键及计数上限通过。",
+      "160个冻结输入、13个实际清单输入和2个结果匹配；9个保存事件JSON重放一致，生成字节相同，收据绑定172个文件。",
+      "整合后project_status与P1来源收据通过；22个变更文件、65个本地链接及凭据模式检查通过。",
+      "22个暂存文件字节与工作区一致；暂存树导出副本的project_status及P1收据核对通过。源码空白检查通过。"
     ],
-    "limitations": "全部几何、负载和电池参数为假设；修订布局单侧通过但对侧邻衣仍冲突，未冻结器件或结构。无真实续航/峰值/热/端口防护或手机送达证据，收衣授权false。",
+    "limitations": "全部为合成软件证据。迟到新事件保守拒绝；只保留最新撤销及内存高水位，未接入持久队列/无线能量或真实手机。接触/热/遮挡仍是上游声明；无真实判干或下雨识别准确率，收衣授权false。",
     "unresolved_issues": [
       "U01",
       "U02",
@@ -461,7 +476,7 @@
       "U10",
       "U11"
     ],
-    "resume_action": "下一步执行 T11：按 docs/T11-HANDOFF.md 读取 ROADMAP T11、T12/M6审查和机器接口、T05完整动作及T07通知契约；核对T12/M6收据，冻结实际输入并标T11 in_progress/active_task。先定义版本化预测/雨风险/本地润湿/能量/通知状态与有限工作包，再在新目录实现离线联动。显式加入事件通知成本、去重/优先级与过期/换衣/低电/断网边界，不借未来天气或充电、不把润湿等同确定雨。保持真实收衣授权false，不采购/部署或提前T08/H01。"
+    "resume_action": "继续 T11 P2：读 PROJECT/STATUS、ROADMAP T11、T11-INTEGRATION-PLAN、T11-P2-HANDOFF、事件契约与P1审查，先核对P1收据。保持已验收包原字节，在新目录定义T05完整动作/T12人工充电与T07持久语义的版本化适配；明确真实复用与仅语义复用，冻结实际输入并分配新所有权后实现。测试准入/取消/能量单次计费、不借未来电量、优先级/断网/多撤销/满队列/ACK/重启，不把P1意图当已发送。P2未接受不执行P3，T11未总验收不转T08/H01。"
   },
   "team_work": {
     "mode": "shared_checkout_with_file_ownership",
@@ -624,6 +639,25 @@
           "turn_status": "completed",
           "note": "T12 delivery stopped and independently accepted; T11 not dispatched."
         }
+      },
+      "integration": {
+        "scope": "T11 P1 accepted; no P2 assignment",
+        "assignment": "docs/team/assignments/integration-t11-p1.md",
+        "report": "docs/team/reports/integration-t11-p1.md",
+        "thread_id": "01a18179-0c80-73f3-aa5b-9ff1c0b4b4da",
+        "host_id": "local",
+        "model": "gpt-6.1-terra",
+        "thinking": "xhigh implementation; high final bounded follow-up",
+        "dispatch_state": "delivery_submitted",
+        "review_state": "accepted_P1_restricted",
+        "baseline": "docs/team/baseline-t11-p1/snapshot.json",
+        "latest_progress_snapshot": {
+          "thread_status": "idle",
+          "turn_status": "completed",
+          "wait_cursor": "c4899739-ec19-4182-b187-678310c822de:11",
+          "note": "Worker stopped; coordinator corrected one stale comment, regenerated new package and independently accepted P1. Reassign scope before P2."
+        },
+        "coordinator_review": "docs/verification/T11-P1-review.md"
       }
     },
     "model_policy": {
@@ -862,10 +896,10 @@
     "repository": "Becauseiloveyo/stm32-learning",
     "branch": "master",
     "baseline_commit": "d2bdf65",
-    "status": "synced",
-    "scope": "Accepted T12 geometry and battery research, coordinator evidence and T11 handoff.",
+    "status": "prepared",
+    "scope": "Accepted T11 P1 event/prediction lifecycle and P2 handoff; T11 remains in_progress.",
     "prepared_content_verified": true,
-    "evidence": "docs/verification/T12-review.md; docs/STATUS.json last_handoff",
+    "evidence": "docs/verification/T11-P1-review.md; docs/STATUS.json last_handoff",
     "verified_on": "2026-11-01",
     "verified_content_commit": "b99107710231dfa891080ad2e6348544a40f9e7f",
     "remote_head_at_verification": "b99107710231dfa891080ad2e6348544a40f9e7f",
@@ -876,6 +910,6 @@
     "receipt_note": "本条记录已独立核对的内容提交；同步回执单独提交，避免提交自引用。",
     "last_attempt_on": "2026-11-01",
     "last_attempt_errors": [],
-    "resume_action": "T12 已同步；下一步按 docs/T11-HANDOFF.md 恢复离线联动，不重做旧验收。"
+    "resume_action": "Verify staged contents and push accepted P1, then record verified content commit separately."
   }
 }

@@ -1,0 +1,23 @@
+{
+  "version": "t11-p1-v1",
+  "label": "SYNTHETIC_UNCALIBRATED",
+  "seed": null,
+  "command": "python -B -X utf8 -m research.integration_t11.p1.replay",
+  "sha256": {
+    "docs/team/baseline-t11-p1/snapshot.json": "f13b18a85afb601468e8765854558b5a27968b1f87f0d578d706910bade62ac3",
+    "docs/references/T11-P1-sources.md": "a6cdcbd09731baba5058d22ef818322a7c2b097ca6b63b0ef57cf44ae7ea4797",
+    "research/garment_prediction/prediction_m6/config.json": "3c48aa797e3a5bb1d5c089d6ec4eac52f7861f525e9951454de425a7ce305e3c",
+    "research/garment_prediction/prediction_m6/integrated.py": "e18f932a7e514ac2f07f40f4b3e6e43dc75079013f4452da9dba76d101a60f7d",
+    "research/garment_prediction/coupled_m5/coupled.py": "12ae75ef56f899ce267cedf42e45f7aea1b1b85a004ed1a567561b199765399c",
+    "research/garment_prediction/model.py": "61aa50f8e24fbd470a54522144ecf60b4fe820be4f92506d5e37442ab1523830",
+    "research/garment_prediction/observation_m2/contract.py": "409aeaa6b156b48c02b2ea4b6c9b3a18ac96f14984e6b1ec89eb1f304bea6da9",
+    "research/integration_t11/p1/controller.py": "7d963fccd8cac171b698169f2543d0e403e3268c38eecc8cd7ea98ad746287a6",
+    "research/integration_t11/p1/config.json": "b6ce33a02a226189bb937074f81bea47ba4358c0b9ccb4cb0cce468cd38f1c73",
+    "research/integration_t11/p1/fixtures.py": "453dc83558e144a3987499907d410ba78e8fb83053e600dc28c81890b8c0c667",
+    "research/integration_t11/p1/replay.py": "8b555d39b38c5a81ed0500add1ebfe1e6535517ac11b65fd5af3a8c265bc1082",
+    "research/integration_t11/p1/test_controller.py": "b5567f6a8856a2b2c21950565e5ff4469e4a051cf680a694fe57fbcae5ec14f8",
+    "docs/T11-EVENT-CONTRACT.md": "fde3aca450acffce384050337a33f830e1756e37f08d84ee006675bf007dc61e",
+    "research/integration_t11/p1/results/events.json": "6ccf2e400a59a87ab5c32638afc63b012293e792b7e8d33598a401c490d00222",
+    "research/integration_t11/p1/results/snapshots.json": "ec7c93b9fa93db96597cbc6f6cb12b72f54f16f8fd3f41995980a001fe22a29c"
+  }
+}

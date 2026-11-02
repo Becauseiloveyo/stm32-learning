@@ -1,0 +1,451 @@
+{
+  "label": "SYNTHETIC_UNCALIBRATED",
+  "seed": null,
+  "source": "software scenario using M6 synthetic fixture; no observed garment",
+  "events": [
+    {
+      "event": {
+        "version": "t11-p1-v1",
+        "id": "ev:e9ce17e8c8bf57c40d462be02b06bf4865506322857bfb31a456fd1a50449655:1",
+        "seq": 1,
+        "domain": {
+          "device": "device",
+          "boot": "boot",
+          "batch": "batch",
+          "installation": "synthetic"
+        },
+        "occurred_s": 0,
+        "received_s": 0,
+        "kind": "contact",
+        "payload": {
+          "state": "confirmed",
+          "source": "synthetic_external",
+          "expires_s": 120
+        }
+      },
+      "decision_s": 0
+    },
+    {
+      "event": {
+        "version": "t11-p1-v1",
+        "id": "ev:e9ce17e8c8bf57c40d462be02b06bf4865506322857bfb31a456fd1a50449655:2",
+        "seq": 2,
+        "domain": {
+          "device": "device",
+          "boot": "boot",
+          "batch": "batch",
+          "installation": "synthetic"
+        },
+        "occurred_s": 0,
+        "received_s": 0,
+        "kind": "heat",
+        "payload": {
+          "state": "clear",
+          "source": "synthetic_external",
+          "expires_s": 120
+        }
+      },
+      "decision_s": 0
+    },
+    {
+      "event": {
+        "version": "t11-p1-v1",
+        "id": "ev:e9ce17e8c8bf57c40d462be02b06bf4865506322857bfb31a456fd1a50449655:3",
+        "seq": 3,
+        "domain": {
+          "device": "device",
+          "boot": "boot",
+          "batch": "batch",
+          "installation": "synthetic"
+        },
+        "occurred_s": 0,
+        "received_s": 0,
+        "kind": "local",
+        "payload": {
+          "state": "dry",
+          "source": "synthetic_external",
+          "expires_s": 120,
+          "exposure": "exposed"
+        }
+      },
+      "decision_s": 0
+    },
+    {
+      "event": {
+        "version": "t11-p1-v1",
+        "id": "ev:e9ce17e8c8bf57c40d462be02b06bf4865506322857bfb31a456fd1a50449655:4",
+        "seq": 4,
+        "domain": {
+          "device": "device",
+          "boot": "boot",
+          "batch": "batch",
+          "installation": "synthetic"
+        },
+        "occurred_s": 2,
+        "received_s": 2,
+        "kind": "forecast",
+        "payload": {
+          "issued_s": 1,
+          "available_s": 2,
+          "valid_from_s": 40,
+          "valid_until_s": 90,
+          "expires_s": 110,
+          "risk": "risk",
+          "source": "synthetic_forecast"
+        }
+      },
+      "decision_s": 2
+    },
+    {
+      "event": {
+        "version": "t11-p1-v1",
+        "id": "ev:e9ce17e8c8bf57c40d462be02b06bf4865506322857bfb31a456fd1a50449655:5",
+        "seq": 5,
+        "domain": {
+          "device": "device",
+          "boot": "boot",
+          "batch": "batch",
+          "installation": "synthetic"
+        },
+        "occurred_s": 20,
+        "received_s": 20,
+        "kind": "prediction",
+        "payload": {
+          "origin_s": 0,
+          "expires_s": 100,
+          "request": {
+            "version": "m6-v1",
+            "reference_s": 0,
+            "as_of_s": 20,
+            "history_segments": [
+              {
+                "end_s": 20,
+                "drive": {
+                  "air_c": 25,
+                  "rh": 0.5,
+                  "wind_m_s": 0.5,
+                  "solar_w_m2": 0,
+                  "surround_c": 25,
+                  "rain_kg_s": 0,
+                  "rain_c": 25
+                },
+                "available_at_s": 0
+              }
+            ],
+            "observations": [
+              {
+                "now_s": 10,
+                "installation_id": "synthetic",
+                "contact": {
+                  "state": "confirmed",
+                  "source": "synthetic_external",
+                  "coverage_start_s": 0,
+                  "coverage_end_s": 10,
+                  "issued_at_s": 10
+                },
+                "charging_heat": {
+                  "state": "no_known_interference",
+                  "source": "synthetic_external",
+                  "coverage_start_s": 0,
+                  "coverage_end_s": 10,
+                  "issued_at_s": 10
+                },
+                "samples": {
+                  "ambient_temp": {
+                    "value": 25,
+                    "unit": "degC",
+                    "measured_at_s": 10,
+                    "received_at_s": 10,
+                    "uncertainty_abs": 0.2,
+                    "source": "synthetic_input"
+                  },
+                  "ambient_rh": {
+                    "value": 0.5,
+                    "unit": "fraction",
+                    "measured_at_s": 10,
+                    "received_at_s": 10,
+                    "uncertainty_abs": 0.001,
+                    "source": "synthetic_input"
+                  },
+                  "local_temp": {
+                    "value": 25,
+                    "unit": "degC",
+                    "measured_at_s": 10,
+                    "received_at_s": 10,
+                    "uncertainty_abs": 0.2,
+                    "source": "synthetic_input"
+                  },
+                  "local_rh": {
+                    "value": 0.5,
+                    "unit": "fraction",
+                    "measured_at_s": 10,
+                    "received_at_s": 10,
+                    "uncertainty_abs": 0.001,
+                    "source": "synthetic_input"
+                  }
+                }
+              },
+              {
+                "now_s": 20,
+                "installation_id": "synthetic",
+                "contact": {
+                  "state": "confirmed",
+                  "source": "synthetic_external",
+                  "coverage_start_s": 0,
+                  "coverage_end_s": 20,
+                  "issued_at_s": 20
+                },
+                "charging_heat": {
+                  "state": "no_known_interference",
+                  "source": "synthetic_external",
+                  "coverage_start_s": 0,
+                  "coverage_end_s": 20,
+                  "issued_at_s": 20
+                },
+                "samples": {
+                  "ambient_temp": {
+                    "value": 25,
+                    "unit": "degC",
+                    "measured_at_s": 20,
+                    "received_at_s": 20,
+                    "uncertainty_abs": 0.2,
+                    "source": "synthetic_input"
+                  },
+                  "ambient_rh": {
+                    "value": 0.5,
+                    "unit": "fraction",
+                    "measured_at_s": 20,
+                    "received_at_s": 20,
+                    "uncertainty_abs": 0.001,
+                    "source": "synthetic_input"
+                  },
+                  "local_temp": {
+                    "value": 25,
+                    "unit": "degC",
+                    "measured_at_s": 20,
+                    "received_at_s": 20,
+                    "uncertainty_abs": 0.2,
+                    "source": "synthetic_input"
+                  },
+                  "local_rh": {
+                    "value": 0.5,
+                    "unit": "fraction",
+                    "measured_at_s": 20,
+                    "received_at_s": 20,
+                    "uncertainty_abs": 0.001,
+                    "source": "synthetic_input"
+                  }
+                }
+              }
+            ],
+            "policy": {
+              "max_sample_age_s": 120,
+              "max_delivery_delay_s": 20,
+              "max_contact_age_s": 120,
+              "max_uncertainty": {
+                "ambient_temp": 0.5,
+                "ambient_rh": 0.05,
+                "local_temp": 0.5,
+                "local_rh": 0.05
+              },
+              "max_sample_skew_s": 30
+            },
+            "sensor_history": {
+              "status": "externally_characterized",
+              "reference_s": 0,
+              "issued_at_s": 0,
+              "initial_rh": 0.5,
+              "uncertainty_abs": 0.02,
+              "source": "synthetic_external"
+            },
+            "assumptions": {
+              "status": "asserted",
+              "source": "synthetic_external",
+              "issued_at_s": 0,
+              "structural_rh": 0.002,
+              "numeric_rh": 1e-05,
+              "guard_rh": 0.001,
+              "temperature_error_c": 0.2
+            },
+            "candidates": [
+              {
+                "id": "high_x",
+                "declared_at_s": 0,
+                "zones": [
+                  {
+                    "dry_kg": 0.3,
+                    "evap_m2": 0,
+                    "proj_m2": 0,
+                    "heat_m2": 0,
+                    "rad_m2": 0,
+                    "xb": 0.15,
+                    "resistance_s_m": 140.0,
+                    "drain_per_s": 0.001,
+                    "alpha": 0.6,
+                    "emissivity": 0.9
+                  },
+                  {
+                    "dry_kg": 0.1,
+                    "evap_m2": 0,
+                    "proj_m2": 0,
+                    "heat_m2": 0,
+                    "rad_m2": 0,
+                    "xb": 0.22,
+                    "resistance_s_m": 220.0,
+                    "drain_per_s": 0.001,
+                    "alpha": 0.6,
+                    "emissivity": 0.9
+                  }
+                ],
+                "coupling": {
+                  "area_cover_m2": 0,
+                  "cover_resistance_s_m": 200,
+                  "volume_m3": 5e-06,
+                  "flow_m3_s": 0,
+                  "sensor_tau_s": 4,
+                  "sensor_bias_rh": 0
+                },
+                "prior_drive": {
+                  "air_c": 25,
+                  "rh": 0.5,
+                  "wind_m_s": 0.5,
+                  "solar_w_m2": 0,
+                  "surround_c": 25,
+                  "rain_kg_s": 0,
+                  "rain_c": 25
+                },
+                "variants": [
+                  {
+                    "id": "finite_state_0",
+                    "initial_state": [
+                      0.3,
+                      41850.0,
+                      0.08000000000000002,
+                      11860.000000000002,
+                      5.7445908049016103e-08,
+                      0.5,
+                      0,
+                      0
+                    ]
+                  }
+                ],
+                "complete_discrete_support": true,
+                "bias_interval": [
+                  -0.01,
+                  0.01
+                ]
+              }
+            ],
+            "futures": [
+              {
+                "id": "steady",
+                "source": "synthetic_scenario",
+                "horizon_s": 2500,
+                "segments": [
+                  {
+                    "end_s": 2500,
+                    "drive": {
+                      "air_c": 25,
+                      "rh": 0.5,
+                      "wind_m_s": 0.5,
+                      "solar_w_m2": 0,
+                      "surround_c": 25,
+                      "rain_kg_s": 0,
+                      "rain_c": 25
+                    },
+                    "available_at_s": 0
+                  }
+                ]
+              }
+            ],
+            "target_x": 0.3,
+            "step_s": 10
+          }
+        }
+      },
+      "decision_s": 20
+    },
+    {
+      "event": {
+        "version": "t11-p1-v1",
+        "id": "ev:e9ce17e8c8bf57c40d462be02b06bf4865506322857bfb31a456fd1a50449655:6",
+        "seq": 6,
+        "domain": {
+          "device": "device",
+          "boot": "boot",
+          "batch": "batch",
+          "installation": "synthetic"
+        },
+        "occurred_s": 21,
+        "received_s": 21,
+        "kind": "local",
+        "payload": {
+          "state": "wet",
+          "source": "synthetic_external",
+          "expires_s": 120,
+          "exposure": "exposed"
+        }
+      },
+      "decision_s": 21
+    },
+    {
+      "event": {
+        "version": "t11-p1-v1",
+        "id": "ev:e9ce17e8c8bf57c40d462be02b06bf4865506322857bfb31a456fd1a50449655:7",
+        "seq": 7,
+        "domain": {
+          "device": "device",
+          "boot": "boot",
+          "batch": "batch",
+          "installation": "synthetic"
+        },
+        "occurred_s": 22,
+        "received_s": 22,
+        "kind": "local",
+        "payload": {
+          "state": "dry",
+          "source": "synthetic_external",
+          "expires_s": 120,
+          "exposure": "exposed"
+        }
+      },
+      "decision_s": 22
+    },
+    {
+      "event": {
+        "version": "t11-p1-v1",
+        "id": "ev:e9ce17e8c8bf57c40d462be02b06bf4865506322857bfb31a456fd1a50449655:8",
+        "seq": 8,
+        "domain": {
+          "device": "device",
+          "boot": "boot",
+          "batch": "batch",
+          "installation": "synthetic"
+        },
+        "occurred_s": 40,
+        "received_s": 40,
+        "kind": "tick",
+        "payload": {}
+      },
+      "decision_s": 40
+    },
+    {
+      "event": {
+        "version": "t11-p1-v1",
+        "id": "ev:e9ce17e8c8bf57c40d462be02b06bf4865506322857bfb31a456fd1a50449655:9",
+        "seq": 9,
+        "domain": {
+          "device": "device",
+          "boot": "boot",
+          "batch": "batch",
+          "installation": "synthetic"
+        },
+        "occurred_s": 100,
+        "received_s": 100,
+        "kind": "tick",
+        "payload": {}
+      },
+      "decision_s": 100
+    }
+  ]
+}

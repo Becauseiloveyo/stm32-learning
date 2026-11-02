@@ -4,6 +4,10 @@
 
 ## 工作方式
 
+### T11 P1 事件与预测生命周期（2026-11-02）
+
+复用已有 Terra 对话，按 `assignments/integration-t11-p1.md` 和 `T11-INTEGRATION-PLAN` 仅执行 P1。唯一写入 `research/integration_t11/p1/**`、`docs/T11-EVENT-CONTRACT.md`、`reports/integration-t11-p1.md`；替代该次旧算法/布局权限。输入冻结在 `baseline-t11-p1/snapshot.json`。协调者负责全局、来源、独立验收与 GitHub；交付后停止，不自行进入 P2/P3。
+
 ### T12 复用 Terra 对话的限定任务（2026-11-01）
 
 用户继续项目开发后，协调者可按 `assignments/layout-t12.md` 复用已有 Terra 对话执行结构/电池理论包。唯一写入新 `research/hanger_layout/**`、HANGER-LAYOUT 和角色报告；替代该次旧算法写入权限。旧 T10 输入和全部验收来源保持只读，协调者维护来源登记、冻结清单、全局和独立验收。交付后停止，不自动进入 T11。实际派发/进展仍只读 STATUS。

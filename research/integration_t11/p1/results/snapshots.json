@@ -1,0 +1,744 @@
+{
+  "label": "SYNTHETIC_UNCALIBRATED",
+  "seed": null,
+  "snapshots": [
+    {
+      "version": "t11-p1-v1",
+      "label": "SYNTHETIC_UNCALIBRATED",
+      "now_s": 0,
+      "domain": {
+        "device": "device",
+        "boot": "boot",
+        "batch": "batch",
+        "installation": "synthetic"
+      },
+      "sequence": 1,
+      "prediction": {
+        "state": "unavailable",
+        "value": null,
+        "invalidation_reason": "initial_no_prediction"
+      },
+      "forecast": {
+        "state": "unavailable",
+        "evidence": null
+      },
+      "local_wetting": {
+        "state": "unavailable",
+        "evidence": null,
+        "ever_wet": false,
+        "stuck_wet": null,
+        "wet_since_s": null
+      },
+      "observation": {
+        "contact": {
+          "state": "confirmed",
+          "source": "synthetic_external",
+          "occurred_s": 0,
+          "received_s": 0,
+          "expires_s": 120
+        },
+        "charging_heat": null,
+        "fault": false,
+        "eligible": false
+      },
+      "collection_authorized": false,
+      "intents": []
+    },
+    {
+      "version": "t11-p1-v1",
+      "label": "SYNTHETIC_UNCALIBRATED",
+      "now_s": 0,
+      "domain": {
+        "device": "device",
+        "boot": "boot",
+        "batch": "batch",
+        "installation": "synthetic"
+      },
+      "sequence": 2,
+      "prediction": {
+        "state": "unavailable",
+        "value": null,
+        "invalidation_reason": "initial_no_prediction"
+      },
+      "forecast": {
+        "state": "unavailable",
+        "evidence": null
+      },
+      "local_wetting": {
+        "state": "unavailable",
+        "evidence": null,
+        "ever_wet": false,
+        "stuck_wet": null,
+        "wet_since_s": null
+      },
+      "observation": {
+        "contact": {
+          "state": "confirmed",
+          "source": "synthetic_external",
+          "occurred_s": 0,
+          "received_s": 0,
+          "expires_s": 120
+        },
+        "charging_heat": {
+          "state": "clear",
+          "source": "synthetic_external",
+          "occurred_s": 0,
+          "received_s": 0,
+          "expires_s": 120
+        },
+        "fault": false,
+        "eligible": false
+      },
+      "collection_authorized": false,
+      "intents": []
+    },
+    {
+      "version": "t11-p1-v1",
+      "label": "SYNTHETIC_UNCALIBRATED",
+      "now_s": 0,
+      "domain": {
+        "device": "device",
+        "boot": "boot",
+        "batch": "batch",
+        "installation": "synthetic"
+      },
+      "sequence": 3,
+      "prediction": {
+        "state": "unavailable",
+        "value": null,
+        "invalidation_reason": "initial_no_prediction"
+      },
+      "forecast": {
+        "state": "unavailable",
+        "evidence": null
+      },
+      "local_wetting": {
+        "state": "dry",
+        "evidence": {
+          "state": "dry",
+          "source": "synthetic_external",
+          "occurred_s": 0,
+          "received_s": 0,
+          "expires_s": 120,
+          "exposure": "exposed"
+        },
+        "ever_wet": false,
+        "stuck_wet": false,
+        "wet_since_s": null
+      },
+      "observation": {
+        "contact": {
+          "state": "confirmed",
+          "source": "synthetic_external",
+          "occurred_s": 0,
+          "received_s": 0,
+          "expires_s": 120
+        },
+        "charging_heat": {
+          "state": "clear",
+          "source": "synthetic_external",
+          "occurred_s": 0,
+          "received_s": 0,
+          "expires_s": 120
+        },
+        "fault": false,
+        "eligible": true
+      },
+      "collection_authorized": false,
+      "intents": []
+    },
+    {
+      "version": "t11-p1-v1",
+      "label": "SYNTHETIC_UNCALIBRATED",
+      "now_s": 2,
+      "domain": {
+        "device": "device",
+        "boot": "boot",
+        "batch": "batch",
+        "installation": "synthetic"
+      },
+      "sequence": 4,
+      "prediction": {
+        "state": "unavailable",
+        "value": null,
+        "invalidation_reason": "initial_no_prediction"
+      },
+      "forecast": {
+        "state": "upcoming_risk",
+        "evidence": {
+          "issued_s": 1,
+          "available_s": 2,
+          "valid_from_s": 40,
+          "valid_until_s": 90,
+          "expires_s": 110,
+          "risk": "risk",
+          "source": "synthetic_forecast",
+          "received_s": 2,
+          "occurred_s": 2,
+          "event_id": "ev:e9ce17e8c8bf57c40d462be02b06bf4865506322857bfb31a456fd1a50449655:4"
+        }
+      },
+      "local_wetting": {
+        "state": "dry",
+        "evidence": {
+          "state": "dry",
+          "source": "synthetic_external",
+          "occurred_s": 0,
+          "received_s": 0,
+          "expires_s": 120,
+          "exposure": "exposed"
+        },
+        "ever_wet": false,
+        "stuck_wet": false,
+        "wet_since_s": null
+      },
+      "observation": {
+        "contact": {
+          "state": "confirmed",
+          "source": "synthetic_external",
+          "occurred_s": 0,
+          "received_s": 0,
+          "expires_s": 120
+        },
+        "charging_heat": {
+          "state": "clear",
+          "source": "synthetic_external",
+          "occurred_s": 0,
+          "received_s": 0,
+          "expires_s": 120
+        },
+        "fault": false,
+        "eligible": true
+      },
+      "collection_authorized": false,
+      "intents": [
+        {
+          "kind": "forecast_risk",
+          "priority": 2,
+          "key": "forecast:ev:e9ce17e8c8bf57c40d462be02b06bf4865506322857bfb31a456fd1a50449655:4",
+          "evidence_s": 1,
+          "expires_s": 90,
+          "invalidation_reason": null
+        }
+      ]
+    },
+    {
+      "version": "t11-p1-v1",
+      "label": "SYNTHETIC_UNCALIBRATED",
+      "now_s": 20,
+      "domain": {
+        "device": "device",
+        "boot": "boot",
+        "batch": "batch",
+        "installation": "synthetic"
+      },
+      "sequence": 5,
+      "prediction": {
+        "state": "conditional",
+        "value": {
+          "result": {
+            "request_version": "m6-v1",
+            "state_version": "m5-v1",
+            "reference_s": 0,
+            "target_x_kg_kg": 0.3,
+            "step_s": 10,
+            "future_conditions": [
+              {
+                "id": "steady",
+                "source": "synthetic_scenario",
+                "horizon_s": 2500,
+                "segments": [
+                  {
+                    "end_s": 2500,
+                    "drive": {
+                      "air_c": 25,
+                      "rh": 0.5,
+                      "wind_m_s": 0.5,
+                      "solar_w_m2": 0,
+                      "surround_c": 25,
+                      "rain_kg_s": 0,
+                      "rain_c": 25
+                    },
+                    "available_at_s": 0
+                  }
+                ]
+              }
+            ],
+            "step_budget": 200000,
+            "estimated_max_steps": 254,
+            "label": "SYNTHETIC_UNCALIBRATED",
+            "collection_authorized": false,
+            "scope": "finite_conditional_m5",
+            "as_of_s": 20,
+            "rows": [
+              {
+                "id": "high_x",
+                "status": "compatible",
+                "reason": null,
+                "variants": [
+                  {
+                    "id": "finite_state_0",
+                    "status": "compatible",
+                    "bias_interval": [
+                      -0.00301,
+                      0.00301
+                    ],
+                    "history_end_state": [
+                      0.2940596019925208,
+                      41229.22840821843,
+                      0.07841589386467224,
+                      11694.460908858247,
+                      5.7445908049016103e-08,
+                      0.5,
+                      -0.007524504142806997,
+                      -786.3106829233311
+                    ],
+                    "history_end_drive": {
+                      "air_c": 25,
+                      "rh": 0.5,
+                      "wind_m_s": 0.5,
+                      "solar_w_m2": 0,
+                      "surround_c": 25,
+                      "rain_kg_s": 0,
+                      "rain_c": 25
+                    },
+                    "future": [
+                      {
+                        "id": "steady",
+                        "status": "reached_sampled",
+                        "first_sample_s": 1210,
+                        "previous_sample_s": 1200,
+                        "remaining_sample_s": 1190,
+                        "later_sample_above_target": false,
+                        "last_successful_time_s": 2500,
+                        "final_state": [
+                          0.024625499592342903,
+                          13073.364707399835,
+                          0.0065667998912914425,
+                          4186.230588639947,
+                          5.7445908049016103e-08,
+                          0.5,
+                          -0.3488077005163657,
+                          -36450.4047039602
+                        ],
+                        "final_drive": {
+                          "air_c": 25,
+                          "rh": 0.5,
+                          "wind_m_s": 0.5,
+                          "solar_w_m2": 0,
+                          "surround_c": 25,
+                          "rain_kg_s": 0,
+                          "rain_c": 25
+                        }
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "upper_sample_s": 1210,
+            "upper_remaining_s": 1190,
+            "unresolved": false,
+            "set_status": "conditional",
+            "time_semantics": "grid detection only; continuous crossings may be missed"
+          },
+          "origin_s": 0,
+          "analysis_s": 20,
+          "received_s": 20,
+          "expires_s": 100,
+          "intent_key": "prediction:ev:e9ce17e8c8bf57c40d462be02b06bf4865506322857bfb31a456fd1a50449655:5"
+        },
+        "invalidation_reason": null
+      },
+      "forecast": {
+        "state": "upcoming_risk",
+        "evidence": {
+          "issued_s": 1,
+          "available_s": 2,
+          "valid_from_s": 40,
+          "valid_until_s": 90,
+          "expires_s": 110,
+          "risk": "risk",
+          "source": "synthetic_forecast",
+          "received_s": 2,
+          "occurred_s": 2,
+          "event_id": "ev:e9ce17e8c8bf57c40d462be02b06bf4865506322857bfb31a456fd1a50449655:4"
+        }
+      },
+      "local_wetting": {
+        "state": "dry",
+        "evidence": {
+          "state": "dry",
+          "source": "synthetic_external",
+          "occurred_s": 0,
+          "received_s": 0,
+          "expires_s": 120,
+          "exposure": "exposed"
+        },
+        "ever_wet": false,
+        "stuck_wet": false,
+        "wet_since_s": null
+      },
+      "observation": {
+        "contact": {
+          "state": "confirmed",
+          "source": "synthetic_external",
+          "occurred_s": 0,
+          "received_s": 0,
+          "expires_s": 120
+        },
+        "charging_heat": {
+          "state": "clear",
+          "source": "synthetic_external",
+          "occurred_s": 0,
+          "received_s": 0,
+          "expires_s": 120
+        },
+        "fault": false,
+        "eligible": true
+      },
+      "collection_authorized": false,
+      "intents": [
+        {
+          "kind": "forecast_risk",
+          "priority": 2,
+          "key": "forecast:ev:e9ce17e8c8bf57c40d462be02b06bf4865506322857bfb31a456fd1a50449655:4",
+          "evidence_s": 1,
+          "expires_s": 90,
+          "invalidation_reason": null
+        },
+        {
+          "kind": "prediction_conditional",
+          "priority": 3,
+          "key": "prediction:ev:e9ce17e8c8bf57c40d462be02b06bf4865506322857bfb31a456fd1a50449655:5",
+          "evidence_s": 20,
+          "expires_s": 100,
+          "invalidation_reason": null
+        }
+      ]
+    },
+    {
+      "version": "t11-p1-v1",
+      "label": "SYNTHETIC_UNCALIBRATED",
+      "now_s": 21,
+      "domain": {
+        "device": "device",
+        "boot": "boot",
+        "batch": "batch",
+        "installation": "synthetic"
+      },
+      "sequence": 6,
+      "prediction": {
+        "state": "unavailable",
+        "value": null,
+        "invalidation_reason": "local_wet"
+      },
+      "forecast": {
+        "state": "upcoming_risk",
+        "evidence": {
+          "issued_s": 1,
+          "available_s": 2,
+          "valid_from_s": 40,
+          "valid_until_s": 90,
+          "expires_s": 110,
+          "risk": "risk",
+          "source": "synthetic_forecast",
+          "received_s": 2,
+          "occurred_s": 2,
+          "event_id": "ev:e9ce17e8c8bf57c40d462be02b06bf4865506322857bfb31a456fd1a50449655:4"
+        }
+      },
+      "local_wetting": {
+        "state": "wet",
+        "evidence": {
+          "state": "wet",
+          "source": "synthetic_external",
+          "occurred_s": 21,
+          "received_s": 21,
+          "expires_s": 120,
+          "exposure": "exposed"
+        },
+        "ever_wet": true,
+        "stuck_wet": false,
+        "wet_since_s": 21
+      },
+      "observation": {
+        "contact": {
+          "state": "confirmed",
+          "source": "synthetic_external",
+          "occurred_s": 0,
+          "received_s": 0,
+          "expires_s": 120
+        },
+        "charging_heat": {
+          "state": "clear",
+          "source": "synthetic_external",
+          "occurred_s": 0,
+          "received_s": 0,
+          "expires_s": 120
+        },
+        "fault": false,
+        "eligible": false
+      },
+      "collection_authorized": false,
+      "intents": [
+        {
+          "kind": "local_wet",
+          "priority": 1,
+          "key": "local_wet:ev:e9ce17e8c8bf57c40d462be02b06bf4865506322857bfb31a456fd1a50449655:6",
+          "evidence_s": 21,
+          "expires_s": 120,
+          "invalidation_reason": null
+        },
+        {
+          "kind": "forecast_risk",
+          "priority": 2,
+          "key": "forecast:ev:e9ce17e8c8bf57c40d462be02b06bf4865506322857bfb31a456fd1a50449655:4",
+          "evidence_s": 1,
+          "expires_s": 90,
+          "invalidation_reason": null
+        },
+        {
+          "kind": "prediction_revoked",
+          "priority": 3,
+          "key": "prediction:ev:e9ce17e8c8bf57c40d462be02b06bf4865506322857bfb31a456fd1a50449655:5",
+          "evidence_s": 21,
+          "expires_s": 100,
+          "invalidation_reason": "local_wet"
+        }
+      ]
+    },
+    {
+      "version": "t11-p1-v1",
+      "label": "SYNTHETIC_UNCALIBRATED",
+      "now_s": 22,
+      "domain": {
+        "device": "device",
+        "boot": "boot",
+        "batch": "batch",
+        "installation": "synthetic"
+      },
+      "sequence": 7,
+      "prediction": {
+        "state": "unavailable",
+        "value": null,
+        "invalidation_reason": "local_wet"
+      },
+      "forecast": {
+        "state": "upcoming_risk",
+        "evidence": {
+          "issued_s": 1,
+          "available_s": 2,
+          "valid_from_s": 40,
+          "valid_until_s": 90,
+          "expires_s": 110,
+          "risk": "risk",
+          "source": "synthetic_forecast",
+          "received_s": 2,
+          "occurred_s": 2,
+          "event_id": "ev:e9ce17e8c8bf57c40d462be02b06bf4865506322857bfb31a456fd1a50449655:4"
+        }
+      },
+      "local_wetting": {
+        "state": "dry",
+        "evidence": {
+          "state": "dry",
+          "source": "synthetic_external",
+          "occurred_s": 22,
+          "received_s": 22,
+          "expires_s": 120,
+          "exposure": "exposed"
+        },
+        "ever_wet": true,
+        "stuck_wet": false,
+        "wet_since_s": null
+      },
+      "observation": {
+        "contact": {
+          "state": "confirmed",
+          "source": "synthetic_external",
+          "occurred_s": 0,
+          "received_s": 0,
+          "expires_s": 120
+        },
+        "charging_heat": {
+          "state": "clear",
+          "source": "synthetic_external",
+          "occurred_s": 0,
+          "received_s": 0,
+          "expires_s": 120
+        },
+        "fault": false,
+        "eligible": true
+      },
+      "collection_authorized": false,
+      "intents": [
+        {
+          "kind": "forecast_risk",
+          "priority": 2,
+          "key": "forecast:ev:e9ce17e8c8bf57c40d462be02b06bf4865506322857bfb31a456fd1a50449655:4",
+          "evidence_s": 1,
+          "expires_s": 90,
+          "invalidation_reason": null
+        },
+        {
+          "kind": "prediction_revoked",
+          "priority": 3,
+          "key": "prediction:ev:e9ce17e8c8bf57c40d462be02b06bf4865506322857bfb31a456fd1a50449655:5",
+          "evidence_s": 21,
+          "expires_s": 100,
+          "invalidation_reason": "local_wet"
+        }
+      ]
+    },
+    {
+      "version": "t11-p1-v1",
+      "label": "SYNTHETIC_UNCALIBRATED",
+      "now_s": 40,
+      "domain": {
+        "device": "device",
+        "boot": "boot",
+        "batch": "batch",
+        "installation": "synthetic"
+      },
+      "sequence": 8,
+      "prediction": {
+        "state": "unavailable",
+        "value": null,
+        "invalidation_reason": "local_wet"
+      },
+      "forecast": {
+        "state": "risk",
+        "evidence": {
+          "issued_s": 1,
+          "available_s": 2,
+          "valid_from_s": 40,
+          "valid_until_s": 90,
+          "expires_s": 110,
+          "risk": "risk",
+          "source": "synthetic_forecast",
+          "received_s": 2,
+          "occurred_s": 2,
+          "event_id": "ev:e9ce17e8c8bf57c40d462be02b06bf4865506322857bfb31a456fd1a50449655:4"
+        }
+      },
+      "local_wetting": {
+        "state": "dry",
+        "evidence": {
+          "state": "dry",
+          "source": "synthetic_external",
+          "occurred_s": 22,
+          "received_s": 22,
+          "expires_s": 120,
+          "exposure": "exposed"
+        },
+        "ever_wet": true,
+        "stuck_wet": false,
+        "wet_since_s": null
+      },
+      "observation": {
+        "contact": {
+          "state": "confirmed",
+          "source": "synthetic_external",
+          "occurred_s": 0,
+          "received_s": 0,
+          "expires_s": 120
+        },
+        "charging_heat": {
+          "state": "clear",
+          "source": "synthetic_external",
+          "occurred_s": 0,
+          "received_s": 0,
+          "expires_s": 120
+        },
+        "fault": false,
+        "eligible": true
+      },
+      "collection_authorized": false,
+      "intents": [
+        {
+          "kind": "forecast_risk",
+          "priority": 2,
+          "key": "forecast:ev:e9ce17e8c8bf57c40d462be02b06bf4865506322857bfb31a456fd1a50449655:4",
+          "evidence_s": 1,
+          "expires_s": 90,
+          "invalidation_reason": null
+        },
+        {
+          "kind": "prediction_revoked",
+          "priority": 3,
+          "key": "prediction:ev:e9ce17e8c8bf57c40d462be02b06bf4865506322857bfb31a456fd1a50449655:5",
+          "evidence_s": 21,
+          "expires_s": 100,
+          "invalidation_reason": "local_wet"
+        }
+      ]
+    },
+    {
+      "version": "t11-p1-v1",
+      "label": "SYNTHETIC_UNCALIBRATED",
+      "now_s": 100,
+      "domain": {
+        "device": "device",
+        "boot": "boot",
+        "batch": "batch",
+        "installation": "synthetic"
+      },
+      "sequence": 9,
+      "prediction": {
+        "state": "unavailable",
+        "value": null,
+        "invalidation_reason": "local_wet"
+      },
+      "forecast": {
+        "state": "unavailable",
+        "evidence": {
+          "issued_s": 1,
+          "available_s": 2,
+          "valid_from_s": 40,
+          "valid_until_s": 90,
+          "expires_s": 110,
+          "risk": "risk",
+          "source": "synthetic_forecast",
+          "received_s": 2,
+          "occurred_s": 2,
+          "event_id": "ev:e9ce17e8c8bf57c40d462be02b06bf4865506322857bfb31a456fd1a50449655:4"
+        }
+      },
+      "local_wetting": {
+        "state": "dry",
+        "evidence": {
+          "state": "dry",
+          "source": "synthetic_external",
+          "occurred_s": 22,
+          "received_s": 22,
+          "expires_s": 120,
+          "exposure": "exposed"
+        },
+        "ever_wet": true,
+        "stuck_wet": false,
+        "wet_since_s": null
+      },
+      "observation": {
+        "contact": {
+          "state": "confirmed",
+          "source": "synthetic_external",
+          "occurred_s": 0,
+          "received_s": 0,
+          "expires_s": 120
+        },
+        "charging_heat": {
+          "state": "clear",
+          "source": "synthetic_external",
+          "occurred_s": 0,
+          "received_s": 0,
+          "expires_s": 120
+        },
+        "fault": false,
+        "eligible": true
+      },
+      "collection_authorized": false,
+      "intents": []
+    }
+  ]
+}
