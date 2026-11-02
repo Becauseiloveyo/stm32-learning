@@ -461,7 +461,8 @@
       "接触/热/湿/故障、三个身份轴、合法缺测替代、重发过期、预报提前提示、缺测不升级持续湿、完整域键及计数上限通过。",
       "160个冻结输入、13个实际清单输入和2个结果匹配；9个保存事件JSON重放一致，生成字节相同，收据绑定172个文件。",
       "整合后project_status与P1来源收据通过；22个变更文件、65个本地链接及凭据模式检查通过。",
-      "22个暂存文件字节与工作区一致；暂存树导出副本的project_status及P1收据核对通过。源码空白检查通过。"
+      "22个暂存文件字节与工作区一致；暂存树导出副本的project_status及P1收据核对通过。源码空白检查通过。",
+      "内容提交 8bdc138784d56518a8b7101eaac4f98765081682 已推送，远端HEAD与GitHub审查blob一致；同步回执单独提交。"
     ],
     "limitations": "全部为合成软件证据。迟到新事件保守拒绝；只保留最新撤销及内存高水位，未接入持久队列/无线能量或真实手机。接触/热/遮挡仍是上游声明；无真实判干或下雨识别准确率，收衣授权false。",
     "unresolved_issues": [
@@ -896,20 +897,20 @@
     "repository": "Becauseiloveyo/stm32-learning",
     "branch": "master",
     "baseline_commit": "d2bdf65",
-    "status": "prepared",
+    "status": "synced",
     "scope": "Accepted T11 P1 event/prediction lifecycle and P2 handoff; T11 remains in_progress.",
     "prepared_content_verified": true,
     "evidence": "docs/verification/T11-P1-review.md; docs/STATUS.json last_handoff",
-    "verified_on": "2026-11-01",
-    "verified_content_commit": "b99107710231dfa891080ad2e6348544a40f9e7f",
-    "remote_head_at_verification": "b99107710231dfa891080ad2e6348544a40f9e7f",
+    "verified_on": "2026-11-03",
+    "verified_content_commit": "8bdc138784d56518a8b7101eaac4f98765081682",
+    "remote_head_at_verification": "8bdc138784d56518a8b7101eaac4f98765081682",
     "verification": [
-      "正常推送成功，git ls-remote 与内容提交 b99107710231dfa891080ad2e6348544a40f9e7f 一致。",
-      "GitHub 连接器复读 T12 审查，blob 48719c5488e028a739441b49519527d07f55130c 与本地一致。"
+      "正常推送成功；git ls-remote 与内容提交 8bdc138784d56518a8b7101eaac4f98765081682 一致。",
+      "GitHub 连接器复读 P1 审查，blob 6c26693fb490ff4b88097458d3c3b9b5c5c5cb9b 与本地一致。"
     ],
-    "receipt_note": "本条记录已独立核对的内容提交；同步回执单独提交，避免提交自引用。",
-    "last_attempt_on": "2026-11-01",
+    "receipt_note": "本记录核对内容提交；同步回执另行提交避免自引用。",
+    "last_attempt_on": "2026-11-03",
     "last_attempt_errors": [],
-    "resume_action": "Verify staged contents and push accepted P1, then record verified content commit separately."
+    "resume_action": "P1 已同步；下一步按 docs/T11-P2-HANDOFF.md 继续 T11 P2，不重做已接受 P1。"
   }
 }
