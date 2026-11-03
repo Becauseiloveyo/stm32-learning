@@ -468,7 +468,9 @@
     "verification": [
       "python -B -X utf8 tools/check_integration_power_transport.py --write-receipt 通过五组检查。电量 8 项、消息 7 项、独立联动 9 项，合计 24 项测试。",
       "九个合成情景重新运行后，回放及清单字节一致。收据绑定 190 个文件，含已验收 P1 的 172 个文件，七个冻结入口匹配。",
-      "分别在设备队列事务写入中和提交后强退子进程，恢复旧态或新态，并验证满队列、旧 ACK 与重启后不复活旧提醒。"
+      "分别在设备队列事务写入中和提交后强退子进程，恢复旧态或新态，并验证满队列、旧 ACK 与重启后不复活旧提醒。",
+      "22 个暂存文件与工作区字节一致，72 个文档相对链接有效，暂存空白检查通过。暂存树导出副本上的 project_status 与 P2 收据核查通过。",
+      "内容提交 56431ba6918fd1829ec018a1b62853d7efcb14c7 已推送，远程 master 与审查文件 blob 已复核。"
     ],
     "limitations": "单写者、可信单调逻辑时钟的电脑模拟。未购置硬件，未评估真实续航、传感器识别率、Flash 或手机送达。所有收衣授权为 false。",
     "unresolved_issues": [
@@ -909,11 +911,20 @@
     "repository": "Becauseiloveyo/stm32-learning",
     "branch": "master",
     "baseline_commit": "823af525e8626a5eed726e3262b8bc16318dcc35",
-    "status": "prepared",
+    "status": "synced",
     "scope": "T11 P2 battery and persistent notifications, P3 handoff",
-    "prepared_content_verified": false,
+    "prepared_content_verified": true,
     "evidence": "docs/verification/T11-P2-review.md",
     "receipt_note": "同步核对记录另行提交，避免自引用。",
-    "resume_action": "核对暂存树，正常推送后复读远程文件。"
+    "resume_action": "P2 已同步；下一步按 docs/T11-P3-HANDOFF.md 开始 T11 P3。",
+    "verified_on": "2026-11-03",
+    "verified_content_commit": "56431ba6918fd1829ec018a1b62853d7efcb14c7",
+    "remote_head_at_verification": "56431ba6918fd1829ec018a1b62853d7efcb14c7",
+    "last_attempt_on": "2026-11-03",
+    "last_attempt_errors": [],
+    "verification": [
+      "正常推送成功，git ls-remote 的 master 指向内容提交 56431ba6918fd1829ec018a1b62853d7efcb14c7。",
+      "GitHub 连接器复读 master 上的 P2 审查文件，blob 9917ced76ffd92bac53a14af9e27407aa5ca73cc 与本地一致。"
+    ]
   }
 }
