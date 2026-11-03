@@ -4,6 +4,10 @@
 
 ## 工作方式
 
+### T11 P2 分工
+
+当前分工见 [P2 任务书](team/assignments/integration-t11-p2.md)。独立 Terra 算法对话负责电量，Terra 通知工作者负责持久消息，协调者独占接线、端到端验证和全局记录。
+
 ### T11 P1 事件与预测生命周期（2026-11-02）
 
 复用已有 Terra 对话，按 `assignments/integration-t11-p1.md` 和 `T11-INTEGRATION-PLAN` 仅执行 P1。唯一写入 `research/integration_t11/p1/**`、`docs/T11-EVENT-CONTRACT.md`、`reports/integration-t11-p1.md`；替代该次旧算法/布局权限。输入冻结在 `baseline-t11-p1/snapshot.json`。协调者负责全局、来源、独立验收与 GitHub；交付后停止，不自行进入 P2/P3。

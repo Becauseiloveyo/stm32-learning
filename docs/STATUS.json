@@ -256,7 +256,7 @@
         "T12"
       ],
       "handoff": "docs/T11-HANDOFF.md",
-      "milestone": "P1 accepted; next bounded package P2 timed energy and persistent notification integration",
+      "milestone": "P2 accepted; P3 offline display and full T11 review next",
       "milestones": {
         "P1": {
           "status": "done",
@@ -270,11 +270,20 @@
           "scope": "Trusted single-writer synthetic event lifecycle with actual PC M6; no persistent delivery or hardware claim."
         },
         "P2": {
-          "status": "ready",
-          "handoff": "docs/T11-P2-HANDOFF.md"
+          "status": "done",
+          "handoff": "docs/T11-P2-HANDOFF.md",
+          "assignment": "docs/team/assignments/integration-t11-p2.md",
+          "frozen": "docs/team/baseline-t11-p2/snapshot.json",
+          "evidence": [
+            "docs/verification/T11-P2-review.md",
+            "docs/verification/T11-P2-tests.json",
+            "research/integration_t11/p2/results/manifest.json"
+          ],
+          "scope": "Synthetic timed battery, real P1/M6 adapter, SQLite persistence and simulated receiver only."
         },
         "P3": {
-          "status": "pending"
+          "status": "pending",
+          "handoff": "docs/T11-P3-HANDOFF.md"
         }
       },
       "plan": "docs/T11-INTEGRATION-PLAN.md"
@@ -302,9 +311,9 @@
   "current_findings": [
     "2026-10-28 用户取消太阳能并要求计划书、GitHub 同步和 Terra 分工，登记为 R15–R17；R05/R12/R14 中光伏部分已被替代。",
     "现行建议为电池＋人工 USB 充电；容量、化学体系、充电接口和真实续航未冻结。衣物日照仍是干燥模型输入，不增加电池能量。",
-    "T10 M1/M2a/M2b/M3/M4/M5 六包均按受限范围验收；M5 统一动态衣物和中央气路，局部空气温度仍为给定边界。下一包 M6 连接同一状态内的观测筛选和条件时间；T10 总体验收尚未完成。",
+    "T10 M1/M2a/M2b/M3/M4/M5 六包均按受限范围验收；M5 统一动态衣物和中央气路，局部空气温度仍为给定边界。M6 与 T10 的限定理论验收已完成，详见 tasks.T10。",
     "T12 已改为 T10 之后的衣架结构与电池预算；T11 接无光伏/人工充电、雨情、新通知和最小界面，最后 T08 总审查。",
-    "现有 Python/C 能量接口仍含历史 Solar/solar_battery_wh 等语义；本轮只规划。T11 如改动必须同步契约和相应验证，不能用旧光伏通过记录证明新版续航。",
+    "现有 Python/C 能量接口仍含历史 Solar/solar_battery_wh 等语义；T11 P2 使用独立人工充电层及来源收据，旧光伏记录仅供历史参考。",
     "T01–T07 的工作区源码、参数和收据未改；T09 参数及生成物未改。Git 同步须保持其原始字节，避免自动换行转换造成指纹不一致。",
     "NASA 武汉 2024 环境数据可继续用于衣物模型；PVGIS 2023 与面板预算为历史，不是当前必跑任务或阳台实测。",
     "12 KB U031 与约 20.4 KiB 现有主机基线的差距、实物标定、真实远程认证/推送与电池峰值能力仍未解决。",
@@ -315,7 +324,8 @@
     "M2b 在同一网格时刻检查两区共同目标；12 个合成组合中 8 个在时域内未检出，因此上界未知。解析对照和 20→5 s 加密通过；不能把网格检出当连续首次穿越或真实干燥时间。",
     "M3 的初始水量 0.06/0.03 kg 合成例在 60 s 的 RH 比例最大差约 8.65e-5；仅在指定误差和模型下相容，不证明真实面料不可辨识。通过观测必要条件也不能证明未测织物等温。",
     "M4 对同一候选整个窗口使用共同偏差，合成高/低水量候选均相容、第三组不相容；未知或失败保留，不输出水量界或概率。声明误差界不是实测或严格数值证明。",
-    "M5 将覆盖交换、水汽比内能、液水输入/排液和温度边界跳变分别记账；RH 响应连续。外部热库、中央映射、覆盖热影响及仪器参数仍未标定。"
+    "M5 将覆盖交换、水汽比内能、液水输入/排液和温度边界跳变分别记账；RH 响应连续。外部热库、中央映射、覆盖热影响及仪器参数仍未标定。",
+    "T11 P2 已在电脑接通能量准入与消息持久化。本地受水后到模拟接收在两组合成情景分别为 6 秒与 86 秒；远端离线时仅知道最后同步且尚有效的证据。"
   ],
   "open_issues": [
     {
@@ -429,55 +439,44 @@
   ],
   "last_handoff": {
     "task": "T11",
-    "kind": "P1_accepted_P2_prepared",
-    "summary": "完成版本化事件、独立预报/本地受水状态、真实M6适配与预测失效生命周期；P1限定验收通过，T11整体仍进行中。",
+    "kind": "P2_accepted_P3_prepared",
+    "summary": "已接受电量与持久链路的离线联动。九个回放、进程中断与冷启动、过期重试和充电边界均有证据。T11 总体仍进行中。",
     "changed_files": [
       "docs/DECISIONS.md",
       "docs/ROADMAP.md",
       "docs/STATUS.json",
-      "docs/T11-EVENT-CONTRACT.md",
-      "docs/T11-INTEGRATION-PLAN.md",
-      "docs/T11-P2-HANDOFF.md",
+      "docs/T11-P2-TRANSPORT.md",
+      "docs/T11-P3-HANDOFF.md",
       "docs/TEAM.md",
-      "docs/references/T11-P1-sources.md",
-      "docs/team/assignments/integration-t11-p1.md",
-      "docs/team/baseline-t11-p1/snapshot.json",
-      "docs/team/reports/integration-t11-p1.md",
-      "docs/verification/T11-P1-review.md",
-      "docs/verification/T11-P1-tests.json",
-      "research/integration_t11/p1/config.json",
-      "research/integration_t11/p1/controller.py",
-      "research/integration_t11/p1/fixtures.py",
-      "research/integration_t11/p1/replay.py",
-      "research/integration_t11/p1/results/events.json",
-      "research/integration_t11/p1/results/manifest.json",
-      "research/integration_t11/p1/results/snapshots.json",
-      "research/integration_t11/p1/test_controller.py",
-      "tools/check_integration_events.py"
+      "docs/team/assignments/integration-t11-p2.md",
+      "docs/team/baseline-t11-p2/snapshot.json",
+      "docs/team/reports/power-t11-p2.md",
+      "docs/team/reports/transport-t11-p2.md",
+      "docs/verification/T11-P2-review.md",
+      "docs/verification/T11-P2-tests.json",
+      "research/integration_t11/p2/power.py",
+      "research/integration_t11/p2/replay.py",
+      "research/integration_t11/p2/results/manifest.json",
+      "research/integration_t11/p2/results/replay.json",
+      "research/integration_t11/p2/runner.py",
+      "research/integration_t11/p2/test_integration.py",
+      "research/integration_t11/p2/test_power.py",
+      "research/integration_t11/p2/test_transport.py",
+      "research/integration_t11/p2/transport.py",
+      "tools/check_integration_power_transport.py"
     ],
     "verification": [
-      "python -B -X utf8 tools/check_integration_events.py --write-receipt：9组通过，其中包含18项工作测试。",
-      "独立指数排液/RH参考给出41.109812秒连续剩余值；0.2秒网格为41.2秒，两个时间偏移适配一致。",
-      "接触/热/湿/故障、三个身份轴、合法缺测替代、重发过期、预报提前提示、缺测不升级持续湿、完整域键及计数上限通过。",
-      "160个冻结输入、13个实际清单输入和2个结果匹配；9个保存事件JSON重放一致，生成字节相同，收据绑定172个文件。",
-      "整合后project_status与P1来源收据通过；22个变更文件、65个本地链接及凭据模式检查通过。",
-      "22个暂存文件字节与工作区一致；暂存树导出副本的project_status及P1收据核对通过。源码空白检查通过。",
-      "内容提交 8bdc138784d56518a8b7101eaac4f98765081682 已推送，远端HEAD与GitHub审查blob一致；同步回执单独提交。"
+      "python -B -X utf8 tools/check_integration_power_transport.py --write-receipt 通过五组检查。电量 8 项、消息 7 项、独立联动 9 项，合计 24 项测试。",
+      "九个合成情景重新运行后，回放及清单字节一致。收据绑定 190 个文件，含已验收 P1 的 172 个文件，七个冻结入口匹配。",
+      "分别在设备队列事务写入中和提交后强退子进程，恢复旧态或新态，并验证满队列、旧 ACK 与重启后不复活旧提醒。"
     ],
-    "limitations": "全部为合成软件证据。迟到新事件保守拒绝；只保留最新撤销及内存高水位，未接入持久队列/无线能量或真实手机。接触/热/遮挡仍是上游声明；无真实判干或下雨识别准确率，收衣授权false。",
+    "limitations": "单写者、可信单调逻辑时钟的电脑模拟。未购置硬件，未评估真实续航、传感器识别率、Flash 或手机送达。所有收衣授权为 false。",
     "unresolved_issues": [
-      "U01",
-      "U02",
-      "U03",
-      "U05",
-      "U06",
-      "U07",
-      "U08",
-      "U09",
-      "U10",
-      "U11"
+      "P3 最小状态界面和 T11 全矩阵逐项核对。",
+      "MCU 端队列和样本占用、长期历史与去重键的安全回收。",
+      "掉电后电池与执行器状态、真实证据校准、充电口防水、远程认证和手机投递须另行实测。"
     ],
-    "resume_action": "继续 T11 P2：读 PROJECT/STATUS、ROADMAP T11、T11-INTEGRATION-PLAN、T11-P2-HANDOFF、事件契约与P1审查，先核对P1收据。保持已验收包原字节，在新目录定义T05完整动作/T12人工充电与T07持久语义的版本化适配；明确真实复用与仅语义复用，冻结实际输入并分配新所有权后实现。测试准入/取消/能量单次计费、不借未来电量、优先级/断网/多撤销/满队列/ACK/重启，不把P1意图当已发送。P2未接受不执行P3，T11未总验收不转T08/H01。"
+    "resume_action": "保持 T11 in_progress；下一次继续时先核对 P2 收据，按 docs/T11-P3-HANDOFF.md 开始 P3 中文离线状态界面与总体审查，暂不转 T08。"
   },
   "team_work": {
     "mode": "shared_checkout_with_file_ownership",
@@ -642,23 +641,36 @@
         }
       },
       "integration": {
-        "scope": "T11 P1 accepted; no P2 assignment",
-        "assignment": "docs/team/assignments/integration-t11-p1.md",
-        "report": "docs/team/reports/integration-t11-p1.md",
+        "scope": "T11 P2 timed battery",
+        "assignment": "docs/team/assignments/integration-t11-p2.md",
+        "baseline": "docs/team/baseline-t11-p2/snapshot.json",
+        "report": "docs/team/reports/power-t11-p2.md",
         "thread_id": "01a18179-0c80-73f3-aa5b-9ff1c0b4b4da",
         "host_id": "local",
         "model": "gpt-6.1-terra",
-        "thinking": "xhigh implementation; high final bounded follow-up",
+        "thinking": "high",
         "dispatch_state": "delivery_submitted",
-        "review_state": "accepted_P1_restricted",
-        "baseline": "docs/team/baseline-t11-p1/snapshot.json",
+        "review_state": "accepted_P2_restricted",
+        "coordinator_review": "docs/verification/T11-P2-review.md",
+        "prior_reports": [
+          "docs/team/reports/integration-t11-p1.md"
+        ],
         "latest_progress_snapshot": {
           "thread_status": "idle",
           "turn_status": "completed",
-          "wait_cursor": "c4899739-ec19-4182-b187-678310c822de:11",
-          "note": "Worker stopped; coordinator corrected one stale comment, regenerated new package and independently accepted P1. Reassign scope before P2."
-        },
-        "coordinator_review": "docs/verification/T11-P1-review.md"
+          "wait_cursor": "0b876e88-2ae8-4b3a-8135-a640eaf80d0e:3"
+        }
+      },
+      "p2_transport": {
+        "scope": "T11 P2 persistent messages",
+        "assignment": "docs/team/assignments/integration-t11-p2.md",
+        "baseline": "docs/team/baseline-t11-p2/snapshot.json",
+        "report": "docs/team/reports/transport-t11-p2.md",
+        "agent": "/root/p2_transport",
+        "model": "gpt-6.1-terra",
+        "dispatch_state": "delivery_submitted",
+        "review_state": "accepted_P2_restricted",
+        "coordinator_review": "docs/verification/T11-P2-review.md"
       }
     },
     "model_policy": {
@@ -896,21 +908,12 @@
   "github_sync": {
     "repository": "Becauseiloveyo/stm32-learning",
     "branch": "master",
-    "baseline_commit": "d2bdf65",
-    "status": "synced",
-    "scope": "Accepted T11 P1 event/prediction lifecycle and P2 handoff; T11 remains in_progress.",
-    "prepared_content_verified": true,
-    "evidence": "docs/verification/T11-P1-review.md; docs/STATUS.json last_handoff",
-    "verified_on": "2026-11-03",
-    "verified_content_commit": "8bdc138784d56518a8b7101eaac4f98765081682",
-    "remote_head_at_verification": "8bdc138784d56518a8b7101eaac4f98765081682",
-    "verification": [
-      "正常推送成功；git ls-remote 与内容提交 8bdc138784d56518a8b7101eaac4f98765081682 一致。",
-      "GitHub 连接器复读 P1 审查，blob 6c26693fb490ff4b88097458d3c3b9b5c5c5cb9b 与本地一致。"
-    ],
-    "receipt_note": "本记录核对内容提交；同步回执另行提交避免自引用。",
-    "last_attempt_on": "2026-11-03",
-    "last_attempt_errors": [],
-    "resume_action": "P1 已同步；下一步按 docs/T11-P2-HANDOFF.md 继续 T11 P2，不重做已接受 P1。"
+    "baseline_commit": "823af525e8626a5eed726e3262b8bc16318dcc35",
+    "status": "prepared",
+    "scope": "T11 P2 battery and persistent notifications, P3 handoff",
+    "prepared_content_verified": false,
+    "evidence": "docs/verification/T11-P2-review.md",
+    "receipt_note": "同步核对记录另行提交，避免自引用。",
+    "resume_action": "核对暂存树，正常推送后复读远程文件。"
   }
 }

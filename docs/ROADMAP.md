@@ -124,7 +124,7 @@
 ## T11 — 雨情、能量与新通知分支的离线接入
 
 - **执行交接**：[T11-HANDOFF](T11-HANDOFF.md)，先读版本化接口和旧收据，再冻结输入及划分有限工作包；本交接不自动启动实现。
-- **工作包与当前证据**：[三包计划](T11-INTEGRATION-PLAN.md)；P1 的限定范围见 [事件审查](verification/T11-P1-review.md)。后续按 [P2 交接](T11-P2-HANDOFF.md) 连接完整能量与持久链路，之后 P3 才做界面和总体端到端验收；动态状态仅以 STATUS 为准。
+- 工作包见[三包计划](T11-INTEGRATION-PLAN.md)。P1 的范围见[事件审查](verification/T11-P1-review.md)，P2 的供电与离线消息见[联动审查](verification/T11-P2-review.md)。下一包按 [P3 交接](T11-P3-HANDOFF.md) 制作界面并进行总体审查。任务状态以 STATUS 为准。
 
 - **依赖**：T12（承接 T10）。
 - **输入**：设计补充第 7–8/11 节、NEXT-PHASE-PLAN、T05/T07 契约、T10 输出和 T12 电池/结构契约；原光伏供电章节仅作历史，不作为当前输入。

@@ -1,0 +1,9 @@
+{
+  "docs/verification/T11-P1-tests.json": "e283ac5e49b85efa61dc7867b584c69d25776a20df1ced8f339d25ea56c47789",
+  "docs/T11-P2-HANDOFF.md": "1f1d10dddc45c701b31e7ce34d65b93d8d2a4b57a9e12a38258a59dde38cc61c",
+  "research/energy_t05/contracts.py": "958ac72f7944141d2cf3a3de00ec973e6d3914bb28509ca9718c200feb09590b",
+  "research/notification_t07/storage.py": "07d7e7cf21956dae67a60566e9e89d789cffc1260ecd12740ab2341d979577da",
+  "research/hanger_layout/results/t11-interface.json": "b10e482b4329f12c668482fc2e8656c62fc8cd15c84f27d407f0d9e51de806e0",
+  "research/integration_t11/p1/controller.py": "7d963fccd8cac171b698169f2543d0e403e3268c38eecc8cd7ea98ad746287a6",
+  "research/integration_t11/p1/results/events.json": "6ccf2e400a59a87ab5c32638afc63b012293e792b7e8d33598a401c490d00222"
+}

@@ -1,0 +1,2431 @@
+{
+  "version": "t11-p2-v1",
+  "label": "SYNTHETIC_UNCALIBRATED",
+  "seed": null,
+  "time_unit": "s",
+  "energy_unit": "J",
+  "horizon_s": 189,
+  "cases": [
+    {
+      "case": "wet_connected",
+      "trace": [
+        {
+          "t": 0,
+          "action": "state_saved",
+          "kind": "contact",
+          "seq": 1,
+          "prediction": "unavailable",
+          "wet": "unavailable",
+          "intents": [],
+          "boot": "boot",
+          "batch": "batch",
+          "discarded_history": 0
+        },
+        {
+          "t": 0,
+          "action": "state_saved",
+          "kind": "heat",
+          "seq": 2,
+          "prediction": "unavailable",
+          "wet": "unavailable",
+          "intents": [],
+          "boot": "boot",
+          "batch": "batch",
+          "discarded_history": 0
+        },
+        {
+          "t": 0,
+          "action": "state_saved",
+          "kind": "local",
+          "seq": 3,
+          "prediction": "unavailable",
+          "wet": "dry",
+          "intents": [],
+          "boot": "boot",
+          "batch": "batch",
+          "discarded_history": 0
+        },
+        {
+          "t": 0,
+          "action": "local_sample",
+          "state": "dry",
+          "load_j": 0.02
+        },
+        {
+          "t": 0,
+          "action": "radio_start"
+        },
+        {
+          "t": 6,
+          "action": "server_saved",
+          "started_s": 0,
+          "record_id": "2e62885d9ec131060a66b7fa4d7250af9cd7e7c4340e98f8aaeeae354d5492d6",
+          "revision": 3,
+          "intents": []
+        },
+        {
+          "t": 6,
+          "action": "simulated_receiver",
+          "result": [],
+          "newly_notified": []
+        },
+        {
+          "t": 6,
+          "action": "device_ack",
+          "record_id": "2e62885d9ec131060a66b7fa4d7250af9cd7e7c4340e98f8aaeeae354d5492d6"
+        },
+        {
+          "t": 10,
+          "action": "observation_paid"
+        },
+        {
+          "t": 20,
+          "action": "observation_paid"
+        },
+        {
+          "t": 20,
+          "action": "radio_start"
+        },
+        {
+          "t": 26,
+          "action": "state_saved",
+          "kind": "prediction",
+          "seq": 4,
+          "prediction": "conditional",
+          "wet": "dry",
+          "intents": [
+            "prediction_conditional"
+          ],
+          "boot": "boot",
+          "batch": "batch",
+          "discarded_history": 0
+        },
+        {
+          "t": 26,
+          "action": "pc_analysis",
+          "analysis_s": 20
+        },
+        {
+          "t": 26,
+          "action": "server_saved",
+          "started_s": 20,
+          "record_id": "983c5d69c825d9ed6f7da0dd7099fba302320af923782785bbe03b4038f43771",
+          "revision": 4,
+          "intents": [
+            "prediction_conditional"
+          ]
+        },
+        {
+          "t": 26,
+          "action": "simulated_receiver",
+          "result": [
+            {
+              "evidence_s": 20,
+              "expires_s": 100,
+              "invalidation_reason": null,
+              "key": "prediction:ev:e9ce17e8c8bf57c40d462be02b06bf4865506322857bfb31a456fd1a50449655:4",
+              "kind": "prediction_conditional",
+              "priority": 3
+            }
+          ],
+          "newly_notified": [
+            "prediction:ev:e9ce17e8c8bf57c40d462be02b06bf4865506322857bfb31a456fd1a50449655:4"
+          ]
+        },
+        {
+          "t": 26,
+          "action": "device_ack",
+          "record_id": "983c5d69c825d9ed6f7da0dd7099fba302320af923782785bbe03b4038f43771"
+        },
+        {
+          "t": 27,
+          "action": "measurement_start"
+        },
+        {
+          "t": 62,
+          "action": "measurement_cancelled",
+          "reason": "local"
+        },
+        {
+          "t": 62,
+          "action": "state_saved",
+          "kind": "local",
+          "seq": 5,
+          "prediction": "unavailable",
+          "wet": "wet",
+          "intents": [
+            "local_wet",
+            "prediction_revoked"
+          ],
+          "boot": "boot",
+          "batch": "batch",
+          "discarded_history": 0
+        },
+        {
+          "t": 62,
+          "action": "local_sample",
+          "state": "wet",
+          "load_j": 0.025
+        },
+        {
+          "t": 62,
+          "action": "radio_start"
+        },
+        {
+          "t": 68,
+          "action": "server_saved",
+          "started_s": 62,
+          "record_id": "94ec18ae3235d0dcb6b90824892a92bcc9690ed49374c0789f30f94f73a2ef44",
+          "revision": 5,
+          "intents": [
+            "local_wet",
+            "prediction_revoked"
+          ]
+        },
+        {
+          "t": 68,
+          "action": "simulated_receiver",
+          "result": [
+            {
+              "evidence_s": 62,
+              "expires_s": 182,
+              "invalidation_reason": null,
+              "key": "local_wet:ev:e9ce17e8c8bf57c40d462be02b06bf4865506322857bfb31a456fd1a50449655:5",
+              "kind": "local_wet",
+              "priority": 1
+            }
+          ],
+          "newly_notified": [
+            "local_wet:ev:e9ce17e8c8bf57c40d462be02b06bf4865506322857bfb31a456fd1a50449655:5"
+          ]
+        },
+        {
+          "t": 68,
+          "action": "device_ack",
+          "record_id": "94ec18ae3235d0dcb6b90824892a92bcc9690ed49374c0789f30f94f73a2ef44"
+        },
+        {
+          "t": 120,
+          "action": "state_saved",
+          "kind": "tick",
+          "seq": 6,
+          "prediction": "unavailable",
+          "wet": "wet",
+          "intents": [
+            "local_wet"
+          ],
+          "boot": "boot",
+          "batch": "batch",
+          "discarded_history": 0
+        },
+        {
+          "t": 120,
+          "action": "radio_start"
+        },
+        {
+          "t": 126,
+          "action": "server_saved",
+          "started_s": 120,
+          "record_id": "60b4bb753e29d2207b480ddd50f484ae66b92ad0af5138623c271b3b31a1907c",
+          "revision": 6,
+          "intents": [
+            "local_wet"
+          ]
+        },
+        {
+          "t": 126,
+          "action": "simulated_receiver",
+          "result": [
+            {
+              "evidence_s": 62,
+              "expires_s": 182,
+              "invalidation_reason": null,
+              "key": "local_wet:ev:e9ce17e8c8bf57c40d462be02b06bf4865506322857bfb31a456fd1a50449655:5",
+              "kind": "local_wet",
+              "priority": 1
+            }
+          ],
+          "newly_notified": []
+        },
+        {
+          "t": 126,
+          "action": "device_ack",
+          "record_id": "60b4bb753e29d2207b480ddd50f484ae66b92ad0af5138623c271b3b31a1907c"
+        },
+        {
+          "t": 180,
+          "action": "radio_start"
+        },
+        {
+          "t": 182,
+          "action": "state_saved",
+          "kind": "tick",
+          "seq": 7,
+          "prediction": "unavailable",
+          "wet": "unavailable",
+          "intents": [],
+          "boot": "boot",
+          "batch": "batch",
+          "discarded_history": 0
+        },
+        {
+          "t": 182,
+          "action": "receiver_query",
+          "result": [],
+          "newly_notified": []
+        },
+        {
+          "t": 186,
+          "action": "server_saved",
+          "started_s": 180,
+          "record_id": "6d769e1c0938c0d77a4ac7dfaf3c206a46989ac3351b14d05cefdc824149ab04",
+          "revision": 7,
+          "intents": []
+        },
+        {
+          "t": 186,
+          "action": "simulated_receiver",
+          "result": [],
+          "newly_notified": []
+        },
+        {
+          "t": 186,
+          "action": "device_ack",
+          "record_id": "6d769e1c0938c0d77a4ac7dfaf3c206a46989ac3351b14d05cefdc824149ab04"
+        }
+      ],
+      "energy": {
+        "version": "t11-p2-v1",
+        "label": "SYNTHETIC_UNCALIBRATED",
+        "seed": null,
+        "now_s": 189,
+        "stored_j": 2641.302588235267,
+        "capacity_j": 2664.0000000000005,
+        "reserve_j": 133.20000000000002,
+        "active": null,
+        "vent_open": false,
+        "charge_input_w": 0.0,
+        "charge_efficiency": 0.0,
+        "remaining_reserved_j": 0.0,
+        "initial_j": 2664.0000000000005,
+        "charge_input_j": 0.0,
+        "charge_battery_j": 0.0,
+        "curtailed_j": 0.0,
+        "baseline_j": 0.04447058823529399,
+        "measurement_j": 1.3764705882352943,
+        "radio_j": 21.176470588235293,
+        "external_j": 0.1,
+        "unserved_baseline_j": 0.0
+      },
+      "wet_latency": {
+        "synthetic_water_onset_s": 61,
+        "local_observed_s": 62,
+        "first_queued_s": 62,
+        "first_radio_start_s": 62,
+        "first_server_saved_s": 68,
+        "first_simulated_receiver_s": 68,
+        "phone_received_s": null
+      },
+      "prediction": "unavailable",
+      "service_attempt_limit": 5,
+      "collection_authorized": false,
+      "phone_delivery_s": null
+    },
+    {
+      "case": "wet_reconnect",
+      "trace": [
+        {
+          "t": 0,
+          "action": "state_saved",
+          "kind": "contact",
+          "seq": 1,
+          "prediction": "unavailable",
+          "wet": "unavailable",
+          "intents": [],
+          "boot": "boot",
+          "batch": "batch",
+          "discarded_history": 0
+        },
+        {
+          "t": 0,
+          "action": "state_saved",
+          "kind": "heat",
+          "seq": 2,
+          "prediction": "unavailable",
+          "wet": "unavailable",
+          "intents": [],
+          "boot": "boot",
+          "batch": "batch",
+          "discarded_history": 0
+        },
+        {
+          "t": 0,
+          "action": "state_saved",
+          "kind": "local",
+          "seq": 3,
+          "prediction": "unavailable",
+          "wet": "dry",
+          "intents": [],
+          "boot": "boot",
+          "batch": "batch",
+          "discarded_history": 0
+        },
+        {
+          "t": 0,
+          "action": "local_sample",
+          "state": "dry",
+          "load_j": 0.02
+        },
+        {
+          "t": 0,
+          "action": "radio_start"
+        },
+        {
+          "t": 6,
+          "action": "server_saved",
+          "started_s": 0,
+          "record_id": "2e62885d9ec131060a66b7fa4d7250af9cd7e7c4340e98f8aaeeae354d5492d6",
+          "revision": 3,
+          "intents": []
+        },
+        {
+          "t": 6,
+          "action": "simulated_receiver",
+          "result": [],
+          "newly_notified": []
+        },
+        {
+          "t": 6,
+          "action": "device_ack",
+          "record_id": "2e62885d9ec131060a66b7fa4d7250af9cd7e7c4340e98f8aaeeae354d5492d6"
+        },
+        {
+          "t": 10,
+          "action": "observation_paid"
+        },
+        {
+          "t": 20,
+          "action": "observation_paid"
+        },
+        {
+          "t": 20,
+          "action": "radio_start"
+        },
+        {
+          "t": 26,
+          "action": "state_saved",
+          "kind": "prediction",
+          "seq": 4,
+          "prediction": "conditional",
+          "wet": "dry",
+          "intents": [
+            "prediction_conditional"
+          ],
+          "boot": "boot",
+          "batch": "batch",
+          "discarded_history": 0
+        },
+        {
+          "t": 26,
+          "action": "pc_analysis",
+          "analysis_s": 20
+        },
+        {
+          "t": 26,
+          "action": "server_saved",
+          "started_s": 20,
+          "record_id": "983c5d69c825d9ed6f7da0dd7099fba302320af923782785bbe03b4038f43771",
+          "revision": 4,
+          "intents": [
+            "prediction_conditional"
+          ]
+        },
+        {
+          "t": 26,
+          "action": "simulated_receiver",
+          "result": [
+            {
+              "evidence_s": 20,
+              "expires_s": 100,
+              "invalidation_reason": null,
+              "key": "prediction:ev:e9ce17e8c8bf57c40d462be02b06bf4865506322857bfb31a456fd1a50449655:4",
+              "kind": "prediction_conditional",
+              "priority": 3
+            }
+          ],
+          "newly_notified": [
+            "prediction:ev:e9ce17e8c8bf57c40d462be02b06bf4865506322857bfb31a456fd1a50449655:4"
+          ]
+        },
+        {
+          "t": 26,
+          "action": "device_ack",
+          "record_id": "983c5d69c825d9ed6f7da0dd7099fba302320af923782785bbe03b4038f43771"
+        },
+        {
+          "t": 27,
+          "action": "measurement_start"
+        },
+        {
+          "t": 62,
+          "action": "measurement_cancelled",
+          "reason": "local"
+        },
+        {
+          "t": 62,
+          "action": "state_saved",
+          "kind": "local",
+          "seq": 5,
+          "prediction": "unavailable",
+          "wet": "wet",
+          "intents": [
+            "local_wet",
+            "prediction_revoked"
+          ],
+          "boot": "boot",
+          "batch": "batch",
+          "discarded_history": 0
+        },
+        {
+          "t": 62,
+          "action": "local_sample",
+          "state": "wet",
+          "load_j": 0.025
+        },
+        {
+          "t": 62,
+          "action": "radio_start"
+        },
+        {
+          "t": 82,
+          "action": "radio_timeout",
+          "retry_at": 142
+        },
+        {
+          "t": 120,
+          "action": "state_saved",
+          "kind": "tick",
+          "seq": 6,
+          "prediction": "unavailable",
+          "wet": "wet",
+          "intents": [
+            "local_wet"
+          ],
+          "boot": "boot",
+          "batch": "batch",
+          "discarded_history": 0
+        },
+        {
+          "t": 142,
+          "action": "radio_start"
+        },
+        {
+          "t": 148,
+          "action": "server_saved",
+          "started_s": 142,
+          "record_id": "94ec18ae3235d0dcb6b90824892a92bcc9690ed49374c0789f30f94f73a2ef44",
+          "revision": 6,
+          "intents": [
+            "local_wet"
+          ]
+        },
+        {
+          "t": 148,
+          "action": "simulated_receiver",
+          "result": [
+            {
+              "evidence_s": 62,
+              "expires_s": 182,
+              "invalidation_reason": null,
+              "key": "local_wet:ev:e9ce17e8c8bf57c40d462be02b06bf4865506322857bfb31a456fd1a50449655:5",
+              "kind": "local_wet",
+              "priority": 1
+            }
+          ],
+          "newly_notified": [
+            "local_wet:ev:e9ce17e8c8bf57c40d462be02b06bf4865506322857bfb31a456fd1a50449655:5"
+          ]
+        },
+        {
+          "t": 148,
+          "action": "device_ack",
+          "record_id": "94ec18ae3235d0dcb6b90824892a92bcc9690ed49374c0789f30f94f73a2ef44"
+        },
+        {
+          "t": 180,
+          "action": "radio_start"
+        },
+        {
+          "t": 182,
+          "action": "state_saved",
+          "kind": "tick",
+          "seq": 7,
+          "prediction": "unavailable",
+          "wet": "unavailable",
+          "intents": [],
+          "boot": "boot",
+          "batch": "batch",
+          "discarded_history": 0
+        },
+        {
+          "t": 182,
+          "action": "receiver_query",
+          "result": [],
+          "newly_notified": []
+        },
+        {
+          "t": 186,
+          "action": "server_saved",
+          "started_s": 180,
+          "record_id": "60b4bb753e29d2207b480ddd50f484ae66b92ad0af5138623c271b3b31a1907c",
+          "revision": 7,
+          "intents": []
+        },
+        {
+          "t": 186,
+          "action": "simulated_receiver",
+          "result": [],
+          "newly_notified": []
+        },
+        {
+          "t": 186,
+          "action": "device_ack",
+          "record_id": "60b4bb753e29d2207b480ddd50f484ae66b92ad0af5138623c271b3b31a1907c"
+        }
+      ],
+      "energy": {
+        "version": "t11-p2-v1",
+        "label": "SYNTHETIC_UNCALIBRATED",
+        "seed": null,
+        "now_s": 189,
+        "stored_j": 2631.4202352940933,
+        "capacity_j": 2664.0000000000005,
+        "reserve_j": 133.20000000000002,
+        "active": null,
+        "vent_open": false,
+        "charge_input_w": 0.0,
+        "charge_efficiency": 0.0,
+        "remaining_reserved_j": 0.0,
+        "initial_j": 2664.0000000000005,
+        "charge_input_j": 0.0,
+        "charge_battery_j": 0.0,
+        "curtailed_j": 0.0,
+        "baseline_j": 0.04447058823529399,
+        "measurement_j": 1.3764705882352943,
+        "radio_j": 31.05882352941178,
+        "external_j": 0.1,
+        "unserved_baseline_j": 0.0
+      },
+      "wet_latency": {
+        "synthetic_water_onset_s": 61,
+        "local_observed_s": 62,
+        "first_queued_s": 62,
+        "first_radio_start_s": 62,
+        "first_server_saved_s": 148,
+        "first_simulated_receiver_s": 148,
+        "phone_received_s": null
+      },
+      "prediction": "unavailable",
+      "service_attempt_limit": 5,
+      "collection_authorized": false,
+      "phone_delivery_s": null
+    },
+    {
+      "case": "change_offline",
+      "trace": [
+        {
+          "t": 0,
+          "action": "state_saved",
+          "kind": "contact",
+          "seq": 1,
+          "prediction": "unavailable",
+          "wet": "unavailable",
+          "intents": [],
+          "boot": "boot",
+          "batch": "batch",
+          "discarded_history": 0
+        },
+        {
+          "t": 0,
+          "action": "state_saved",
+          "kind": "heat",
+          "seq": 2,
+          "prediction": "unavailable",
+          "wet": "unavailable",
+          "intents": [],
+          "boot": "boot",
+          "batch": "batch",
+          "discarded_history": 0
+        },
+        {
+          "t": 0,
+          "action": "state_saved",
+          "kind": "local",
+          "seq": 3,
+          "prediction": "unavailable",
+          "wet": "dry",
+          "intents": [],
+          "boot": "boot",
+          "batch": "batch",
+          "discarded_history": 0
+        },
+        {
+          "t": 0,
+          "action": "local_sample",
+          "state": "dry",
+          "load_j": 0.02
+        },
+        {
+          "t": 0,
+          "action": "radio_start"
+        },
+        {
+          "t": 6,
+          "action": "server_saved",
+          "started_s": 0,
+          "record_id": "2e62885d9ec131060a66b7fa4d7250af9cd7e7c4340e98f8aaeeae354d5492d6",
+          "revision": 3,
+          "intents": []
+        },
+        {
+          "t": 6,
+          "action": "simulated_receiver",
+          "result": [],
+          "newly_notified": []
+        },
+        {
+          "t": 6,
+          "action": "device_ack",
+          "record_id": "2e62885d9ec131060a66b7fa4d7250af9cd7e7c4340e98f8aaeeae354d5492d6"
+        },
+        {
+          "t": 10,
+          "action": "observation_paid"
+        },
+        {
+          "t": 20,
+          "action": "observation_paid"
+        },
+        {
+          "t": 20,
+          "action": "radio_start"
+        },
+        {
+          "t": 26,
+          "action": "state_saved",
+          "kind": "prediction",
+          "seq": 4,
+          "prediction": "conditional",
+          "wet": "dry",
+          "intents": [
+            "prediction_conditional"
+          ],
+          "boot": "boot",
+          "batch": "batch",
+          "discarded_history": 0
+        },
+        {
+          "t": 26,
+          "action": "pc_analysis",
+          "analysis_s": 20
+        },
+        {
+          "t": 26,
+          "action": "server_saved",
+          "started_s": 20,
+          "record_id": "983c5d69c825d9ed6f7da0dd7099fba302320af923782785bbe03b4038f43771",
+          "revision": 4,
+          "intents": [
+            "prediction_conditional"
+          ]
+        },
+        {
+          "t": 26,
+          "action": "simulated_receiver",
+          "result": [
+            {
+              "evidence_s": 20,
+              "expires_s": 100,
+              "invalidation_reason": null,
+              "key": "prediction:ev:e9ce17e8c8bf57c40d462be02b06bf4865506322857bfb31a456fd1a50449655:4",
+              "kind": "prediction_conditional",
+              "priority": 3
+            }
+          ],
+          "newly_notified": [
+            "prediction:ev:e9ce17e8c8bf57c40d462be02b06bf4865506322857bfb31a456fd1a50449655:4"
+          ]
+        },
+        {
+          "t": 26,
+          "action": "device_ack",
+          "record_id": "983c5d69c825d9ed6f7da0dd7099fba302320af923782785bbe03b4038f43771"
+        },
+        {
+          "t": 27,
+          "action": "measurement_start"
+        },
+        {
+          "t": 62,
+          "action": "measurement_cancelled",
+          "reason": "local"
+        },
+        {
+          "t": 62,
+          "action": "state_saved",
+          "kind": "local",
+          "seq": 5,
+          "prediction": "unavailable",
+          "wet": "wet",
+          "intents": [
+            "local_wet",
+            "prediction_revoked"
+          ],
+          "boot": "boot",
+          "batch": "batch",
+          "discarded_history": 0
+        },
+        {
+          "t": 62,
+          "action": "local_sample",
+          "state": "wet",
+          "load_j": 0.025
+        },
+        {
+          "t": 62,
+          "action": "radio_start"
+        },
+        {
+          "t": 73,
+          "action": "state_saved",
+          "kind": "identity",
+          "seq": 6,
+          "prediction": "unavailable",
+          "wet": "unavailable",
+          "intents": [
+            "prediction_revoked"
+          ],
+          "boot": "boot",
+          "batch": "new",
+          "discarded_history": 0
+        },
+        {
+          "t": 74,
+          "action": "receiver_query",
+          "result": [
+            {
+              "evidence_s": 20,
+              "expires_s": 100,
+              "invalidation_reason": null,
+              "key": "prediction:ev:e9ce17e8c8bf57c40d462be02b06bf4865506322857bfb31a456fd1a50449655:4",
+              "kind": "prediction_conditional",
+              "priority": 3
+            }
+          ],
+          "newly_notified": []
+        },
+        {
+          "t": 82,
+          "action": "radio_timeout",
+          "retry_at": 142
+        },
+        {
+          "t": 101,
+          "action": "receiver_query",
+          "result": [],
+          "newly_notified": []
+        },
+        {
+          "t": 142,
+          "action": "radio_start"
+        },
+        {
+          "t": 148,
+          "action": "server_saved",
+          "started_s": 142,
+          "record_id": "94ec18ae3235d0dcb6b90824892a92bcc9690ed49374c0789f30f94f73a2ef44",
+          "revision": 6,
+          "intents": [
+            "prediction_revoked"
+          ]
+        },
+        {
+          "t": 148,
+          "action": "simulated_receiver",
+          "result": [],
+          "newly_notified": []
+        },
+        {
+          "t": 148,
+          "action": "device_ack",
+          "record_id": "94ec18ae3235d0dcb6b90824892a92bcc9690ed49374c0789f30f94f73a2ef44"
+        },
+        {
+          "t": 180,
+          "action": "radio_start"
+        },
+        {
+          "t": 182,
+          "action": "receiver_query",
+          "result": [],
+          "newly_notified": []
+        },
+        {
+          "t": 186,
+          "action": "server_saved",
+          "started_s": 180,
+          "record_id": "60b4bb753e29d2207b480ddd50f484ae66b92ad0af5138623c271b3b31a1907c",
+          "revision": 6,
+          "intents": [
+            "prediction_revoked"
+          ]
+        },
+        {
+          "t": 186,
+          "action": "simulated_receiver",
+          "result": [],
+          "newly_notified": []
+        },
+        {
+          "t": 186,
+          "action": "device_ack",
+          "record_id": "60b4bb753e29d2207b480ddd50f484ae66b92ad0af5138623c271b3b31a1907c"
+        }
+      ],
+      "energy": {
+        "version": "t11-p2-v1",
+        "label": "SYNTHETIC_UNCALIBRATED",
+        "seed": null,
+        "now_s": 189,
+        "stored_j": 2631.4202352940933,
+        "capacity_j": 2664.0000000000005,
+        "reserve_j": 133.20000000000002,
+        "active": null,
+        "vent_open": false,
+        "charge_input_w": 0.0,
+        "charge_efficiency": 0.0,
+        "remaining_reserved_j": 0.0,
+        "initial_j": 2664.0000000000005,
+        "charge_input_j": 0.0,
+        "charge_battery_j": 0.0,
+        "curtailed_j": 0.0,
+        "baseline_j": 0.04447058823529399,
+        "measurement_j": 1.3764705882352943,
+        "radio_j": 31.05882352941178,
+        "external_j": 0.1,
+        "unserved_baseline_j": 0.0
+      },
+      "wet_latency": {
+        "synthetic_water_onset_s": 61,
+        "local_observed_s": 62,
+        "first_queued_s": 62,
+        "first_radio_start_s": 62,
+        "first_server_saved_s": null,
+        "first_simulated_receiver_s": null,
+        "phone_received_s": null
+      },
+      "prediction": "unavailable",
+      "service_attempt_limit": 5,
+      "collection_authorized": false,
+      "phone_delivery_s": null
+    },
+    {
+      "case": "boot_offline",
+      "trace": [
+        {
+          "t": 0,
+          "action": "state_saved",
+          "kind": "contact",
+          "seq": 1,
+          "prediction": "unavailable",
+          "wet": "unavailable",
+          "intents": [],
+          "boot": "boot",
+          "batch": "batch",
+          "discarded_history": 0
+        },
+        {
+          "t": 0,
+          "action": "state_saved",
+          "kind": "heat",
+          "seq": 2,
+          "prediction": "unavailable",
+          "wet": "unavailable",
+          "intents": [],
+          "boot": "boot",
+          "batch": "batch",
+          "discarded_history": 0
+        },
+        {
+          "t": 0,
+          "action": "state_saved",
+          "kind": "local",
+          "seq": 3,
+          "prediction": "unavailable",
+          "wet": "dry",
+          "intents": [],
+          "boot": "boot",
+          "batch": "batch",
+          "discarded_history": 0
+        },
+        {
+          "t": 0,
+          "action": "local_sample",
+          "state": "dry",
+          "load_j": 0.02
+        },
+        {
+          "t": 0,
+          "action": "radio_start"
+        },
+        {
+          "t": 6,
+          "action": "server_saved",
+          "started_s": 0,
+          "record_id": "2e62885d9ec131060a66b7fa4d7250af9cd7e7c4340e98f8aaeeae354d5492d6",
+          "revision": 3,
+          "intents": []
+        },
+        {
+          "t": 6,
+          "action": "simulated_receiver",
+          "result": [],
+          "newly_notified": []
+        },
+        {
+          "t": 6,
+          "action": "device_ack",
+          "record_id": "2e62885d9ec131060a66b7fa4d7250af9cd7e7c4340e98f8aaeeae354d5492d6"
+        },
+        {
+          "t": 10,
+          "action": "observation_paid"
+        },
+        {
+          "t": 20,
+          "action": "observation_paid"
+        },
+        {
+          "t": 20,
+          "action": "radio_start"
+        },
+        {
+          "t": 26,
+          "action": "state_saved",
+          "kind": "prediction",
+          "seq": 4,
+          "prediction": "conditional",
+          "wet": "dry",
+          "intents": [
+            "prediction_conditional"
+          ],
+          "boot": "boot",
+          "batch": "batch",
+          "discarded_history": 0
+        },
+        {
+          "t": 26,
+          "action": "pc_analysis",
+          "analysis_s": 20
+        },
+        {
+          "t": 26,
+          "action": "server_saved",
+          "started_s": 20,
+          "record_id": "983c5d69c825d9ed6f7da0dd7099fba302320af923782785bbe03b4038f43771",
+          "revision": 4,
+          "intents": [
+            "prediction_conditional"
+          ]
+        },
+        {
+          "t": 26,
+          "action": "simulated_receiver",
+          "result": [
+            {
+              "evidence_s": 20,
+              "expires_s": 100,
+              "invalidation_reason": null,
+              "key": "prediction:ev:e9ce17e8c8bf57c40d462be02b06bf4865506322857bfb31a456fd1a50449655:4",
+              "kind": "prediction_conditional",
+              "priority": 3
+            }
+          ],
+          "newly_notified": [
+            "prediction:ev:e9ce17e8c8bf57c40d462be02b06bf4865506322857bfb31a456fd1a50449655:4"
+          ]
+        },
+        {
+          "t": 26,
+          "action": "device_ack",
+          "record_id": "983c5d69c825d9ed6f7da0dd7099fba302320af923782785bbe03b4038f43771"
+        },
+        {
+          "t": 27,
+          "action": "measurement_start"
+        },
+        {
+          "t": 62,
+          "action": "measurement_cancelled",
+          "reason": "local"
+        },
+        {
+          "t": 62,
+          "action": "state_saved",
+          "kind": "local",
+          "seq": 5,
+          "prediction": "unavailable",
+          "wet": "wet",
+          "intents": [
+            "local_wet",
+            "prediction_revoked"
+          ],
+          "boot": "boot",
+          "batch": "batch",
+          "discarded_history": 0
+        },
+        {
+          "t": 62,
+          "action": "local_sample",
+          "state": "wet",
+          "load_j": 0.025
+        },
+        {
+          "t": 62,
+          "action": "radio_start"
+        },
+        {
+          "t": 73,
+          "action": "boot_state_saved",
+          "boot": "boot2",
+          "seq": 6
+        },
+        {
+          "t": 74,
+          "action": "receiver_query",
+          "result": [
+            {
+              "evidence_s": 20,
+              "expires_s": 100,
+              "invalidation_reason": null,
+              "key": "prediction:ev:e9ce17e8c8bf57c40d462be02b06bf4865506322857bfb31a456fd1a50449655:4",
+              "kind": "prediction_conditional",
+              "priority": 3
+            }
+          ],
+          "newly_notified": []
+        },
+        {
+          "t": 82,
+          "action": "radio_timeout",
+          "retry_at": 142
+        },
+        {
+          "t": 101,
+          "action": "receiver_query",
+          "result": [],
+          "newly_notified": []
+        },
+        {
+          "t": 142,
+          "action": "radio_start"
+        },
+        {
+          "t": 148,
+          "action": "server_saved",
+          "started_s": 142,
+          "record_id": "94ec18ae3235d0dcb6b90824892a92bcc9690ed49374c0789f30f94f73a2ef44",
+          "revision": 6,
+          "intents": []
+        },
+        {
+          "t": 148,
+          "action": "simulated_receiver",
+          "result": [],
+          "newly_notified": []
+        },
+        {
+          "t": 148,
+          "action": "device_ack",
+          "record_id": "94ec18ae3235d0dcb6b90824892a92bcc9690ed49374c0789f30f94f73a2ef44"
+        },
+        {
+          "t": 180,
+          "action": "radio_start"
+        },
+        {
+          "t": 182,
+          "action": "receiver_query",
+          "result": [],
+          "newly_notified": []
+        },
+        {
+          "t": 186,
+          "action": "server_saved",
+          "started_s": 180,
+          "record_id": "60b4bb753e29d2207b480ddd50f484ae66b92ad0af5138623c271b3b31a1907c",
+          "revision": 6,
+          "intents": []
+        },
+        {
+          "t": 186,
+          "action": "simulated_receiver",
+          "result": [],
+          "newly_notified": []
+        },
+        {
+          "t": 186,
+          "action": "device_ack",
+          "record_id": "60b4bb753e29d2207b480ddd50f484ae66b92ad0af5138623c271b3b31a1907c"
+        }
+      ],
+      "energy": {
+        "version": "t11-p2-v1",
+        "label": "SYNTHETIC_UNCALIBRATED",
+        "seed": null,
+        "now_s": 189,
+        "stored_j": 2631.4202352940933,
+        "capacity_j": 2664.0000000000005,
+        "reserve_j": 133.20000000000002,
+        "active": null,
+        "vent_open": false,
+        "charge_input_w": 0.0,
+        "charge_efficiency": 0.0,
+        "remaining_reserved_j": 0.0,
+        "initial_j": 2664.0000000000005,
+        "charge_input_j": 0.0,
+        "charge_battery_j": 0.0,
+        "curtailed_j": 0.0,
+        "baseline_j": 0.04447058823529399,
+        "measurement_j": 1.3764705882352943,
+        "radio_j": 31.05882352941178,
+        "external_j": 0.1,
+        "unserved_baseline_j": 0.0
+      },
+      "wet_latency": {
+        "synthetic_water_onset_s": 61,
+        "local_observed_s": 62,
+        "first_queued_s": 62,
+        "first_radio_start_s": 62,
+        "first_server_saved_s": null,
+        "first_simulated_receiver_s": null,
+        "phone_received_s": null
+      },
+      "prediction": "unavailable",
+      "service_attempt_limit": 5,
+      "collection_authorized": false,
+      "phone_delivery_s": null
+    },
+    {
+      "case": "ack_lost",
+      "trace": [
+        {
+          "t": 0,
+          "action": "state_saved",
+          "kind": "contact",
+          "seq": 1,
+          "prediction": "unavailable",
+          "wet": "unavailable",
+          "intents": [],
+          "boot": "boot",
+          "batch": "batch",
+          "discarded_history": 0
+        },
+        {
+          "t": 0,
+          "action": "state_saved",
+          "kind": "heat",
+          "seq": 2,
+          "prediction": "unavailable",
+          "wet": "unavailable",
+          "intents": [],
+          "boot": "boot",
+          "batch": "batch",
+          "discarded_history": 0
+        },
+        {
+          "t": 0,
+          "action": "state_saved",
+          "kind": "local",
+          "seq": 3,
+          "prediction": "unavailable",
+          "wet": "dry",
+          "intents": [],
+          "boot": "boot",
+          "batch": "batch",
+          "discarded_history": 0
+        },
+        {
+          "t": 0,
+          "action": "local_sample",
+          "state": "dry",
+          "load_j": 0.02
+        },
+        {
+          "t": 0,
+          "action": "radio_start"
+        },
+        {
+          "t": 6,
+          "action": "server_saved",
+          "started_s": 0,
+          "record_id": "2e62885d9ec131060a66b7fa4d7250af9cd7e7c4340e98f8aaeeae354d5492d6",
+          "revision": 3,
+          "intents": []
+        },
+        {
+          "t": 6,
+          "action": "simulated_receiver",
+          "result": [],
+          "newly_notified": []
+        },
+        {
+          "t": 6,
+          "action": "device_ack",
+          "record_id": "2e62885d9ec131060a66b7fa4d7250af9cd7e7c4340e98f8aaeeae354d5492d6"
+        },
+        {
+          "t": 10,
+          "action": "observation_paid"
+        },
+        {
+          "t": 20,
+          "action": "observation_paid"
+        },
+        {
+          "t": 20,
+          "action": "radio_start"
+        },
+        {
+          "t": 26,
+          "action": "state_saved",
+          "kind": "prediction",
+          "seq": 4,
+          "prediction": "conditional",
+          "wet": "dry",
+          "intents": [
+            "prediction_conditional"
+          ],
+          "boot": "boot",
+          "batch": "batch",
+          "discarded_history": 0
+        },
+        {
+          "t": 26,
+          "action": "pc_analysis",
+          "analysis_s": 20
+        },
+        {
+          "t": 26,
+          "action": "server_saved",
+          "started_s": 20,
+          "record_id": "983c5d69c825d9ed6f7da0dd7099fba302320af923782785bbe03b4038f43771",
+          "revision": 4,
+          "intents": [
+            "prediction_conditional"
+          ]
+        },
+        {
+          "t": 26,
+          "action": "simulated_receiver",
+          "result": [
+            {
+              "evidence_s": 20,
+              "expires_s": 100,
+              "invalidation_reason": null,
+              "key": "prediction:ev:e9ce17e8c8bf57c40d462be02b06bf4865506322857bfb31a456fd1a50449655:4",
+              "kind": "prediction_conditional",
+              "priority": 3
+            }
+          ],
+          "newly_notified": [
+            "prediction:ev:e9ce17e8c8bf57c40d462be02b06bf4865506322857bfb31a456fd1a50449655:4"
+          ]
+        },
+        {
+          "t": 26,
+          "action": "device_ack",
+          "record_id": "983c5d69c825d9ed6f7da0dd7099fba302320af923782785bbe03b4038f43771"
+        },
+        {
+          "t": 27,
+          "action": "measurement_start"
+        },
+        {
+          "t": 62,
+          "action": "measurement_cancelled",
+          "reason": "local"
+        },
+        {
+          "t": 62,
+          "action": "state_saved",
+          "kind": "local",
+          "seq": 5,
+          "prediction": "unavailable",
+          "wet": "wet",
+          "intents": [
+            "local_wet",
+            "prediction_revoked"
+          ],
+          "boot": "boot",
+          "batch": "batch",
+          "discarded_history": 0
+        },
+        {
+          "t": 62,
+          "action": "local_sample",
+          "state": "wet",
+          "load_j": 0.025
+        },
+        {
+          "t": 62,
+          "action": "radio_start"
+        },
+        {
+          "t": 68,
+          "action": "server_saved",
+          "started_s": 62,
+          "record_id": "94ec18ae3235d0dcb6b90824892a92bcc9690ed49374c0789f30f94f73a2ef44",
+          "revision": 5,
+          "intents": [
+            "local_wet",
+            "prediction_revoked"
+          ]
+        },
+        {
+          "t": 68,
+          "action": "simulated_receiver",
+          "result": [
+            {
+              "evidence_s": 62,
+              "expires_s": 182,
+              "invalidation_reason": null,
+              "key": "local_wet:ev:e9ce17e8c8bf57c40d462be02b06bf4865506322857bfb31a456fd1a50449655:5",
+              "kind": "local_wet",
+              "priority": 1
+            }
+          ],
+          "newly_notified": [
+            "local_wet:ev:e9ce17e8c8bf57c40d462be02b06bf4865506322857bfb31a456fd1a50449655:5"
+          ]
+        },
+        {
+          "t": 82,
+          "action": "radio_timeout",
+          "retry_at": 142
+        },
+        {
+          "t": 120,
+          "action": "state_saved",
+          "kind": "tick",
+          "seq": 6,
+          "prediction": "unavailable",
+          "wet": "wet",
+          "intents": [
+            "local_wet"
+          ],
+          "boot": "boot",
+          "batch": "batch",
+          "discarded_history": 0
+        },
+        {
+          "t": 142,
+          "action": "radio_start"
+        },
+        {
+          "t": 148,
+          "action": "server_saved",
+          "started_s": 142,
+          "record_id": "94ec18ae3235d0dcb6b90824892a92bcc9690ed49374c0789f30f94f73a2ef44",
+          "revision": 6,
+          "intents": [
+            "local_wet"
+          ]
+        },
+        {
+          "t": 148,
+          "action": "simulated_receiver",
+          "result": [
+            {
+              "evidence_s": 62,
+              "expires_s": 182,
+              "invalidation_reason": null,
+              "key": "local_wet:ev:e9ce17e8c8bf57c40d462be02b06bf4865506322857bfb31a456fd1a50449655:5",
+              "kind": "local_wet",
+              "priority": 1
+            }
+          ],
+          "newly_notified": []
+        },
+        {
+          "t": 148,
+          "action": "device_ack",
+          "record_id": "94ec18ae3235d0dcb6b90824892a92bcc9690ed49374c0789f30f94f73a2ef44"
+        },
+        {
+          "t": 180,
+          "action": "radio_start"
+        },
+        {
+          "t": 182,
+          "action": "state_saved",
+          "kind": "tick",
+          "seq": 7,
+          "prediction": "unavailable",
+          "wet": "unavailable",
+          "intents": [],
+          "boot": "boot",
+          "batch": "batch",
+          "discarded_history": 0
+        },
+        {
+          "t": 182,
+          "action": "receiver_query",
+          "result": [],
+          "newly_notified": []
+        },
+        {
+          "t": 186,
+          "action": "server_saved",
+          "started_s": 180,
+          "record_id": "60b4bb753e29d2207b480ddd50f484ae66b92ad0af5138623c271b3b31a1907c",
+          "revision": 7,
+          "intents": []
+        },
+        {
+          "t": 186,
+          "action": "simulated_receiver",
+          "result": [],
+          "newly_notified": []
+        },
+        {
+          "t": 186,
+          "action": "device_ack",
+          "record_id": "60b4bb753e29d2207b480ddd50f484ae66b92ad0af5138623c271b3b31a1907c"
+        }
+      ],
+      "energy": {
+        "version": "t11-p2-v1",
+        "label": "SYNTHETIC_UNCALIBRATED",
+        "seed": null,
+        "now_s": 189,
+        "stored_j": 2631.4202352940933,
+        "capacity_j": 2664.0000000000005,
+        "reserve_j": 133.20000000000002,
+        "active": null,
+        "vent_open": false,
+        "charge_input_w": 0.0,
+        "charge_efficiency": 0.0,
+        "remaining_reserved_j": 0.0,
+        "initial_j": 2664.0000000000005,
+        "charge_input_j": 0.0,
+        "charge_battery_j": 0.0,
+        "curtailed_j": 0.0,
+        "baseline_j": 0.04447058823529399,
+        "measurement_j": 1.3764705882352943,
+        "radio_j": 31.05882352941178,
+        "external_j": 0.1,
+        "unserved_baseline_j": 0.0
+      },
+      "wet_latency": {
+        "synthetic_water_onset_s": 61,
+        "local_observed_s": 62,
+        "first_queued_s": 62,
+        "first_radio_start_s": 62,
+        "first_server_saved_s": 68,
+        "first_simulated_receiver_s": 68,
+        "phone_received_s": null
+      },
+      "prediction": "unavailable",
+      "service_attempt_limit": 5,
+      "collection_authorized": false,
+      "phone_delivery_s": null
+    },
+    {
+      "case": "manual_charge",
+      "trace": [
+        {
+          "t": 0,
+          "action": "state_saved",
+          "kind": "contact",
+          "seq": 1,
+          "prediction": "unavailable",
+          "wet": "unavailable",
+          "intents": [],
+          "boot": "boot",
+          "batch": "batch",
+          "discarded_history": 0
+        },
+        {
+          "t": 0,
+          "action": "state_saved",
+          "kind": "heat",
+          "seq": 2,
+          "prediction": "unavailable",
+          "wet": "unavailable",
+          "intents": [],
+          "boot": "boot",
+          "batch": "batch",
+          "discarded_history": 0
+        },
+        {
+          "t": 0,
+          "action": "state_saved",
+          "kind": "local",
+          "seq": 3,
+          "prediction": "unavailable",
+          "wet": "dry",
+          "intents": [],
+          "boot": "boot",
+          "batch": "batch",
+          "discarded_history": 0
+        },
+        {
+          "t": 0,
+          "action": "local_sample",
+          "state": "dry",
+          "load_j": 0.02
+        },
+        {
+          "t": 0,
+          "action": "radio_denied",
+          "retry_at": 60
+        },
+        {
+          "t": 4,
+          "action": "state_saved",
+          "kind": "heat",
+          "seq": 4,
+          "prediction": "unavailable",
+          "wet": "dry",
+          "intents": [],
+          "boot": "boot",
+          "batch": "batch",
+          "discarded_history": 0
+        },
+        {
+          "t": 10,
+          "action": "observation_unavailable"
+        },
+        {
+          "t": 14,
+          "action": "state_saved",
+          "kind": "heat",
+          "seq": 5,
+          "prediction": "unavailable",
+          "wet": "dry",
+          "intents": [],
+          "boot": "boot",
+          "batch": "batch",
+          "discarded_history": 0
+        },
+        {
+          "t": 20,
+          "action": "observation_unavailable"
+        },
+        {
+          "t": 20,
+          "action": "analysis_ineligible",
+          "analysis_s": 20
+        },
+        {
+          "t": 22,
+          "action": "state_saved",
+          "kind": "heat",
+          "seq": 6,
+          "prediction": "unavailable",
+          "wet": "dry",
+          "intents": [],
+          "boot": "boot",
+          "batch": "batch",
+          "discarded_history": 0
+        },
+        {
+          "t": 27,
+          "action": "measurement_denied"
+        },
+        {
+          "t": 47,
+          "action": "state_saved",
+          "kind": "heat",
+          "seq": 7,
+          "prediction": "unavailable",
+          "wet": "dry",
+          "intents": [],
+          "boot": "boot",
+          "batch": "batch",
+          "discarded_history": 0
+        },
+        {
+          "t": 50,
+          "action": "state_saved",
+          "kind": "heat",
+          "seq": 8,
+          "prediction": "unavailable",
+          "wet": "dry",
+          "intents": [],
+          "boot": "boot",
+          "batch": "batch",
+          "discarded_history": 0
+        },
+        {
+          "t": 60,
+          "action": "radio_start"
+        },
+        {
+          "t": 66,
+          "action": "server_saved",
+          "started_s": 60,
+          "record_id": "2e62885d9ec131060a66b7fa4d7250af9cd7e7c4340e98f8aaeeae354d5492d6",
+          "revision": 8,
+          "intents": []
+        },
+        {
+          "t": 66,
+          "action": "simulated_receiver",
+          "result": [],
+          "newly_notified": []
+        },
+        {
+          "t": 66,
+          "action": "device_ack",
+          "record_id": "2e62885d9ec131060a66b7fa4d7250af9cd7e7c4340e98f8aaeeae354d5492d6"
+        },
+        {
+          "t": 120,
+          "action": "state_saved",
+          "kind": "tick",
+          "seq": 9,
+          "prediction": "unavailable",
+          "wet": "unavailable",
+          "intents": [],
+          "boot": "boot",
+          "batch": "batch",
+          "discarded_history": 0
+        },
+        {
+          "t": 120,
+          "action": "radio_start"
+        },
+        {
+          "t": 126,
+          "action": "server_saved",
+          "started_s": 120,
+          "record_id": "983c5d69c825d9ed6f7da0dd7099fba302320af923782785bbe03b4038f43771",
+          "revision": 9,
+          "intents": []
+        },
+        {
+          "t": 126,
+          "action": "simulated_receiver",
+          "result": [],
+          "newly_notified": []
+        },
+        {
+          "t": 126,
+          "action": "device_ack",
+          "record_id": "983c5d69c825d9ed6f7da0dd7099fba302320af923782785bbe03b4038f43771"
+        },
+        {
+          "t": 170,
+          "action": "state_saved",
+          "kind": "tick",
+          "seq": 10,
+          "prediction": "unavailable",
+          "wet": "unavailable",
+          "intents": [],
+          "boot": "boot",
+          "batch": "batch",
+          "discarded_history": 0
+        },
+        {
+          "t": 180,
+          "action": "radio_start"
+        },
+        {
+          "t": 186,
+          "action": "server_saved",
+          "started_s": 180,
+          "record_id": "94ec18ae3235d0dcb6b90824892a92bcc9690ed49374c0789f30f94f73a2ef44",
+          "revision": 10,
+          "intents": []
+        },
+        {
+          "t": 186,
+          "action": "simulated_receiver",
+          "result": [],
+          "newly_notified": []
+        },
+        {
+          "t": 186,
+          "action": "device_ack",
+          "record_id": "94ec18ae3235d0dcb6b90824892a92bcc9690ed49374c0789f30f94f73a2ef44"
+        }
+      ],
+      "energy": {
+        "version": "t11-p2-v1",
+        "label": "SYNTHETIC_UNCALIBRATED",
+        "seed": null,
+        "now_s": 189,
+        "stored_j": 147.6761176470565,
+        "capacity_j": 2664.0000000000005,
+        "reserve_j": 133.20000000000002,
+        "active": null,
+        "vent_open": false,
+        "charge_input_w": 0.0,
+        "charge_efficiency": 0.75,
+        "remaining_reserved_j": 0.0,
+        "initial_j": 134.2,
+        "charge_input_j": 35.0,
+        "charge_battery_j": 26.25,
+        "curtailed_j": 0.0,
+        "baseline_j": 0.04447058823529399,
+        "measurement_j": 0.0,
+        "radio_j": 12.705882352941172,
+        "external_j": 0.023529411764705882,
+        "unserved_baseline_j": 0.0
+      },
+      "wet_latency": null,
+      "prediction": "unavailable",
+      "service_attempt_limit": 5,
+      "collection_authorized": false,
+      "phone_delivery_s": null
+    },
+    {
+      "case": "no_charge",
+      "trace": [
+        {
+          "t": 0,
+          "action": "state_saved",
+          "kind": "contact",
+          "seq": 1,
+          "prediction": "unavailable",
+          "wet": "unavailable",
+          "intents": [],
+          "boot": "boot",
+          "batch": "batch",
+          "discarded_history": 0
+        },
+        {
+          "t": 0,
+          "action": "state_saved",
+          "kind": "heat",
+          "seq": 2,
+          "prediction": "unavailable",
+          "wet": "unavailable",
+          "intents": [],
+          "boot": "boot",
+          "batch": "batch",
+          "discarded_history": 0
+        },
+        {
+          "t": 0,
+          "action": "state_saved",
+          "kind": "local",
+          "seq": 3,
+          "prediction": "unavailable",
+          "wet": "dry",
+          "intents": [],
+          "boot": "boot",
+          "batch": "batch",
+          "discarded_history": 0
+        },
+        {
+          "t": 0,
+          "action": "local_sample",
+          "state": "dry",
+          "load_j": 0.02
+        },
+        {
+          "t": 0,
+          "action": "radio_denied",
+          "retry_at": 60
+        },
+        {
+          "t": 10,
+          "action": "observation_paid"
+        },
+        {
+          "t": 20,
+          "action": "observation_paid"
+        },
+        {
+          "t": 27,
+          "action": "measurement_denied"
+        },
+        {
+          "t": 60,
+          "action": "radio_denied",
+          "retry_at": 120
+        },
+        {
+          "t": 120,
+          "action": "state_saved",
+          "kind": "tick",
+          "seq": 4,
+          "prediction": "unavailable",
+          "wet": "unavailable",
+          "intents": [],
+          "boot": "boot",
+          "batch": "batch",
+          "discarded_history": 0
+        },
+        {
+          "t": 120,
+          "action": "radio_denied",
+          "retry_at": 180
+        },
+        {
+          "t": 180,
+          "action": "radio_denied",
+          "retry_at": 240
+        }
+      ],
+      "energy": {
+        "version": "t11-p2-v1",
+        "label": "SYNTHETIC_UNCALIBRATED",
+        "seed": null,
+        "now_s": 189,
+        "stored_j": 134.08494117646845,
+        "capacity_j": 2664.0000000000005,
+        "reserve_j": 133.20000000000002,
+        "active": null,
+        "vent_open": false,
+        "charge_input_w": 0.0,
+        "charge_efficiency": 0.0,
+        "remaining_reserved_j": 0.0,
+        "initial_j": 134.2,
+        "charge_input_j": 0.0,
+        "charge_battery_j": 0.0,
+        "curtailed_j": 0.0,
+        "baseline_j": 0.04447058823529399,
+        "measurement_j": 0.0,
+        "radio_j": 0.0,
+        "external_j": 0.07058823529411765,
+        "unserved_baseline_j": 0.0
+      },
+      "wet_latency": null,
+      "prediction": "unavailable",
+      "service_attempt_limit": 5,
+      "collection_authorized": false,
+      "phone_delivery_s": null
+    },
+    {
+      "case": "missing_packet",
+      "trace": [
+        {
+          "t": 0,
+          "action": "state_saved",
+          "kind": "contact",
+          "seq": 1,
+          "prediction": "unavailable",
+          "wet": "unavailable",
+          "intents": [],
+          "boot": "boot",
+          "batch": "batch",
+          "discarded_history": 0
+        },
+        {
+          "t": 0,
+          "action": "state_saved",
+          "kind": "heat",
+          "seq": 2,
+          "prediction": "unavailable",
+          "wet": "unavailable",
+          "intents": [],
+          "boot": "boot",
+          "batch": "batch",
+          "discarded_history": 0
+        },
+        {
+          "t": 0,
+          "action": "state_saved",
+          "kind": "local",
+          "seq": 3,
+          "prediction": "unavailable",
+          "wet": "dry",
+          "intents": [],
+          "boot": "boot",
+          "batch": "batch",
+          "discarded_history": 0
+        },
+        {
+          "t": 0,
+          "action": "local_sample",
+          "state": "dry",
+          "load_j": 0.02
+        },
+        {
+          "t": 0,
+          "action": "radio_start"
+        },
+        {
+          "t": 6,
+          "action": "server_saved",
+          "started_s": 0,
+          "record_id": "2e62885d9ec131060a66b7fa4d7250af9cd7e7c4340e98f8aaeeae354d5492d6",
+          "revision": 3,
+          "intents": []
+        },
+        {
+          "t": 6,
+          "action": "simulated_receiver",
+          "result": [],
+          "newly_notified": []
+        },
+        {
+          "t": 6,
+          "action": "device_ack",
+          "record_id": "2e62885d9ec131060a66b7fa4d7250af9cd7e7c4340e98f8aaeeae354d5492d6"
+        },
+        {
+          "t": 20,
+          "action": "observation_paid"
+        },
+        {
+          "t": 20,
+          "action": "radio_start"
+        },
+        {
+          "t": 26,
+          "action": "analysis_missing_sample",
+          "analysis_s": 20
+        },
+        {
+          "t": 26,
+          "action": "state_saved",
+          "kind": "prediction",
+          "seq": 4,
+          "prediction": "unresolved",
+          "wet": "dry",
+          "intents": [
+            "prediction_unresolved"
+          ],
+          "boot": "boot",
+          "batch": "batch",
+          "discarded_history": 0
+        },
+        {
+          "t": 26,
+          "action": "pc_analysis",
+          "analysis_s": 20
+        },
+        {
+          "t": 26,
+          "action": "server_saved",
+          "started_s": 20,
+          "record_id": "983c5d69c825d9ed6f7da0dd7099fba302320af923782785bbe03b4038f43771",
+          "revision": 4,
+          "intents": [
+            "prediction_unresolved"
+          ]
+        },
+        {
+          "t": 26,
+          "action": "simulated_receiver",
+          "result": [
+            {
+              "evidence_s": 20,
+              "expires_s": 100,
+              "invalidation_reason": null,
+              "key": "prediction:ev:e9ce17e8c8bf57c40d462be02b06bf4865506322857bfb31a456fd1a50449655:4",
+              "kind": "prediction_unresolved",
+              "priority": 3
+            }
+          ],
+          "newly_notified": [
+            "prediction:ev:e9ce17e8c8bf57c40d462be02b06bf4865506322857bfb31a456fd1a50449655:4"
+          ]
+        },
+        {
+          "t": 26,
+          "action": "device_ack",
+          "record_id": "983c5d69c825d9ed6f7da0dd7099fba302320af923782785bbe03b4038f43771"
+        },
+        {
+          "t": 27,
+          "action": "measurement_start"
+        },
+        {
+          "t": 100,
+          "action": "state_saved",
+          "kind": "tick",
+          "seq": 5,
+          "prediction": "unavailable",
+          "wet": "dry",
+          "intents": [],
+          "boot": "boot",
+          "batch": "batch",
+          "discarded_history": 0
+        },
+        {
+          "t": 120,
+          "action": "measurement_cancelled",
+          "reason": "tick"
+        },
+        {
+          "t": 120,
+          "action": "state_saved",
+          "kind": "tick",
+          "seq": 6,
+          "prediction": "unavailable",
+          "wet": "unavailable",
+          "intents": [],
+          "boot": "boot",
+          "batch": "batch",
+          "discarded_history": 0
+        },
+        {
+          "t": 120,
+          "action": "radio_start"
+        },
+        {
+          "t": 126,
+          "action": "server_saved",
+          "started_s": 120,
+          "record_id": "94ec18ae3235d0dcb6b90824892a92bcc9690ed49374c0789f30f94f73a2ef44",
+          "revision": 6,
+          "intents": []
+        },
+        {
+          "t": 126,
+          "action": "simulated_receiver",
+          "result": [],
+          "newly_notified": []
+        },
+        {
+          "t": 126,
+          "action": "device_ack",
+          "record_id": "94ec18ae3235d0dcb6b90824892a92bcc9690ed49374c0789f30f94f73a2ef44"
+        },
+        {
+          "t": 180,
+          "action": "radio_start"
+        },
+        {
+          "t": 186,
+          "action": "server_saved",
+          "started_s": 180,
+          "record_id": "ae0d636b6a80e6ef7c4dec35ec9af726920d81b239fd686e3f7ad76c78b5daee",
+          "revision": 6,
+          "intents": []
+        },
+        {
+          "t": 186,
+          "action": "simulated_receiver",
+          "result": [],
+          "newly_notified": []
+        },
+        {
+          "t": 186,
+          "action": "device_ack",
+          "record_id": "ae0d636b6a80e6ef7c4dec35ec9af726920d81b239fd686e3f7ad76c78b5daee"
+        }
+      ],
+      "energy": {
+        "version": "t11-p2-v1",
+        "label": "SYNTHETIC_UNCALIBRATED",
+        "seed": null,
+        "now_s": 189,
+        "stored_j": 2641.924941176446,
+        "capacity_j": 2664.0000000000005,
+        "reserve_j": 133.20000000000002,
+        "active": null,
+        "vent_open": false,
+        "charge_input_w": 0.0,
+        "charge_efficiency": 0.0,
+        "remaining_reserved_j": 0.0,
+        "initial_j": 2664.0000000000005,
+        "charge_input_j": 0.0,
+        "charge_battery_j": 0.0,
+        "curtailed_j": 0.0,
+        "baseline_j": 0.04447058823529399,
+        "measurement_j": 5.042352941176455,
+        "radio_j": 16.94117647058823,
+        "external_j": 0.047058823529411764,
+        "unserved_baseline_j": 0.0
+      },
+      "wet_latency": null,
+      "prediction": "unavailable",
+      "service_attempt_limit": 5,
+      "collection_authorized": false,
+      "phone_delivery_s": null
+    },
+    {
+      "case": "normal_cycle",
+      "trace": [
+        {
+          "t": 0,
+          "action": "state_saved",
+          "kind": "contact",
+          "seq": 1,
+          "prediction": "unavailable",
+          "wet": "unavailable",
+          "intents": [],
+          "boot": "boot",
+          "batch": "batch",
+          "discarded_history": 0
+        },
+        {
+          "t": 0,
+          "action": "state_saved",
+          "kind": "heat",
+          "seq": 2,
+          "prediction": "unavailable",
+          "wet": "unavailable",
+          "intents": [],
+          "boot": "boot",
+          "batch": "batch",
+          "discarded_history": 0
+        },
+        {
+          "t": 0,
+          "action": "state_saved",
+          "kind": "local",
+          "seq": 3,
+          "prediction": "unavailable",
+          "wet": "dry",
+          "intents": [],
+          "boot": "boot",
+          "batch": "batch",
+          "discarded_history": 0
+        },
+        {
+          "t": 0,
+          "action": "local_sample",
+          "state": "dry",
+          "load_j": 0.02
+        },
+        {
+          "t": 0,
+          "action": "radio_start"
+        },
+        {
+          "t": 6,
+          "action": "server_saved",
+          "started_s": 0,
+          "record_id": "2e62885d9ec131060a66b7fa4d7250af9cd7e7c4340e98f8aaeeae354d5492d6",
+          "revision": 3,
+          "intents": []
+        },
+        {
+          "t": 6,
+          "action": "simulated_receiver",
+          "result": [],
+          "newly_notified": []
+        },
+        {
+          "t": 6,
+          "action": "device_ack",
+          "record_id": "2e62885d9ec131060a66b7fa4d7250af9cd7e7c4340e98f8aaeeae354d5492d6"
+        },
+        {
+          "t": 10,
+          "action": "observation_paid"
+        },
+        {
+          "t": 20,
+          "action": "observation_paid"
+        },
+        {
+          "t": 20,
+          "action": "radio_start"
+        },
+        {
+          "t": 26,
+          "action": "state_saved",
+          "kind": "prediction",
+          "seq": 4,
+          "prediction": "conditional",
+          "wet": "dry",
+          "intents": [
+            "prediction_conditional"
+          ],
+          "boot": "boot",
+          "batch": "batch",
+          "discarded_history": 0
+        },
+        {
+          "t": 26,
+          "action": "pc_analysis",
+          "analysis_s": 20
+        },
+        {
+          "t": 26,
+          "action": "server_saved",
+          "started_s": 20,
+          "record_id": "983c5d69c825d9ed6f7da0dd7099fba302320af923782785bbe03b4038f43771",
+          "revision": 4,
+          "intents": [
+            "prediction_conditional"
+          ]
+        },
+        {
+          "t": 26,
+          "action": "simulated_receiver",
+          "result": [
+            {
+              "evidence_s": 20,
+              "expires_s": 100,
+              "invalidation_reason": null,
+              "key": "prediction:ev:e9ce17e8c8bf57c40d462be02b06bf4865506322857bfb31a456fd1a50449655:4",
+              "kind": "prediction_conditional",
+              "priority": 3
+            }
+          ],
+          "newly_notified": [
+            "prediction:ev:e9ce17e8c8bf57c40d462be02b06bf4865506322857bfb31a456fd1a50449655:4"
+          ]
+        },
+        {
+          "t": 26,
+          "action": "device_ack",
+          "record_id": "983c5d69c825d9ed6f7da0dd7099fba302320af923782785bbe03b4038f43771"
+        },
+        {
+          "t": 27,
+          "action": "measurement_start"
+        },
+        {
+          "t": 95,
+          "action": "state_saved",
+          "kind": "contact",
+          "seq": 5,
+          "prediction": "conditional",
+          "wet": "dry",
+          "intents": [
+            "prediction_conditional"
+          ],
+          "boot": "boot",
+          "batch": "batch",
+          "discarded_history": 0
+        },
+        {
+          "t": 95,
+          "action": "state_saved",
+          "kind": "heat",
+          "seq": 6,
+          "prediction": "conditional",
+          "wet": "dry",
+          "intents": [
+            "prediction_conditional"
+          ],
+          "boot": "boot",
+          "batch": "batch",
+          "discarded_history": 0
+        },
+        {
+          "t": 95,
+          "action": "state_saved",
+          "kind": "local",
+          "seq": 7,
+          "prediction": "conditional",
+          "wet": "dry",
+          "intents": [
+            "prediction_conditional"
+          ],
+          "boot": "boot",
+          "batch": "batch",
+          "discarded_history": 0
+        },
+        {
+          "t": 95,
+          "action": "local_sample",
+          "state": "dry",
+          "load_j": 0.02
+        },
+        {
+          "t": 100,
+          "action": "state_saved",
+          "kind": "tick",
+          "seq": 8,
+          "prediction": "unavailable",
+          "wet": "dry",
+          "intents": [],
+          "boot": "boot",
+          "batch": "batch",
+          "discarded_history": 0
+        },
+        {
+          "t": 167,
+          "action": "measurement_budget_complete",
+          "started_s": 27
+        },
+        {
+          "t": 167,
+          "action": "radio_start"
+        },
+        {
+          "t": 173,
+          "action": "server_saved",
+          "started_s": 167,
+          "record_id": "94ec18ae3235d0dcb6b90824892a92bcc9690ed49374c0789f30f94f73a2ef44",
+          "revision": 8,
+          "intents": []
+        },
+        {
+          "t": 173,
+          "action": "simulated_receiver",
+          "result": [],
+          "newly_notified": []
+        },
+        {
+          "t": 173,
+          "action": "device_ack",
+          "record_id": "94ec18ae3235d0dcb6b90824892a92bcc9690ed49374c0789f30f94f73a2ef44"
+        },
+        {
+          "t": 180,
+          "action": "radio_start"
+        },
+        {
+          "t": 186,
+          "action": "server_saved",
+          "started_s": 180,
+          "record_id": "60b4bb753e29d2207b480ddd50f484ae66b92ad0af5138623c271b3b31a1907c",
+          "revision": 8,
+          "intents": []
+        },
+        {
+          "t": 186,
+          "action": "simulated_receiver",
+          "result": [],
+          "newly_notified": []
+        },
+        {
+          "t": 186,
+          "action": "device_ack",
+          "record_id": "60b4bb753e29d2207b480ddd50f484ae66b92ad0af5138623c271b3b31a1907c"
+        }
+      ],
+      "energy": {
+        "version": "t11-p2-v1",
+        "label": "SYNTHETIC_UNCALIBRATED",
+        "seed": null,
+        "now_s": 189,
+        "stored_j": 2641.7672941176224,
+        "capacity_j": 2664.0000000000005,
+        "reserve_j": 133.20000000000002,
+        "active": null,
+        "vent_open": false,
+        "charge_input_w": 0.0,
+        "charge_efficiency": 0.0,
+        "remaining_reserved_j": 0.0,
+        "initial_j": 2664.0000000000005,
+        "charge_input_j": 0.0,
+        "charge_battery_j": 0.0,
+        "curtailed_j": 0.0,
+        "baseline_j": 0.04447058823529399,
+        "measurement_j": 5.152941176470556,
+        "radio_j": 16.94117647058823,
+        "external_j": 0.09411764705882353,
+        "unserved_baseline_j": 0.0
+      },
+      "wet_latency": null,
+      "prediction": "unavailable",
+      "service_attempt_limit": 5,
+      "collection_authorized": false,
+      "phone_delivery_s": null
+    }
+  ]
+}
