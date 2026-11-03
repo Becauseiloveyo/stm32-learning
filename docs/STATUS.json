@@ -491,7 +491,9 @@
     "verification": [
       "P3 收据绑定 210 个文件；HTML 与来源清单从模型重新生成后逐字节一致。七项投影测试通过，九个旧情景的动作序列与 P2 一致。",
       "Edge 实际遍历 16 个情景、264 帧；选定帧验证受水、过期、撤销、远端滞后及确认去重。键盘和 320/390/768/1344 px 宽度通过。窄屏和桌面截图已查看。",
-      "Chrome 以本地 file 方式直接打开单文件 HTML，默认现场标题和模拟接收时刻正确。T11 的 P1/P2 验收证据依旧有效。"
+      "Chrome 以本地 file 方式直接打开单文件 HTML，默认现场标题和模拟接收时刻正确。T11 的 P1/P2 验收证据依旧有效。",
+      "26 个暂存文件与工作区字节相同，109 个文档相对链接有效。暂存树导出后，项目入口检查与 P3 收据检查通过。",
+      "内容提交 c0facdd1c6e13e7a78339da086c614dcd90fae13 已同步，HTML 原始字节经远程核对。"
     ],
     "limitations": "合成数据、可信单写者、电脑端推算，仅模拟接收；没有实物判干率、真实手机推送或目标 MCU 占用证据。",
     "unresolved_issues": [
@@ -954,11 +956,20 @@
     "repository": "Becauseiloveyo/stm32-learning",
     "branch": "master",
     "baseline_commit": "123b7f3dbadc3253c0c4e063f45a23585a6a569e",
-    "status": "prepared",
+    "status": "synced",
     "scope": "T11 P3 offline replay UI and T11 acceptance; T08 ready",
     "evidence": "docs/verification/T11-P3-review.md",
-    "prepared_content_verified": false,
+    "prepared_content_verified": true,
     "receipt_note": "另行记录内容提交校验，避免自引用。",
-    "resume_action": "核对暂存树并正常推送，复读 GitHub 上的 HTML。"
+    "resume_action": "T11 已同步；下一步按 ROADMAP T08 做理论阶段评审。",
+    "verified_on": "2026-11-03",
+    "verified_content_commit": "c0facdd1c6e13e7a78339da086c614dcd90fae13",
+    "remote_head_at_verification": "c0facdd1c6e13e7a78339da086c614dcd90fae13",
+    "last_attempt_on": "2026-11-03",
+    "last_attempt_errors": [],
+    "verification": [
+      "推送成功，git ls-remote 核对 master 为 c0facdd1c6e13e7a78339da086c614dcd90fae13。",
+      "通过 GitHub 连接器复读 docs/demo/hanger.html，远程 blob 36cf2618386cca532ee0ff412f10041dbbf153c2 与本机一致。"
+    ]
   }
 }
