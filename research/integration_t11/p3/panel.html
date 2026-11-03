@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="zh-CN">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<link rel="icon" href="data:,">
+<title>晾衣观察室 · 阳台记录回放</title>
+<style>@@STYLE@@</style>
+<body>
+<header class="bar"><div class="bar-in">
+  <div class="brand"><svg aria-hidden="true" viewBox="0 0 32 32"><rect width="32" height="32" rx="9" fill="currentColor"/><path d="M13.5 11a2.5 2.5 0 1 1 4 2c-1.2.8-1.5 1.2-1.5 2.6l8.8 5.6q1.3 1.1-.6 1.1H8q-1.9 0-.7-1.2l7.5-4.8" fill="none" stroke="#fff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>晾衣观察室</div>
+  <span class="mode"><span class="dot"></span>离线演示</span>
+</div></header>
+<main>
+  <div class="heading"><div><div class="eyebrow"><span class="rule"></span> 智能衣架实验记录</div><h1>阳台晾衣回放</h1><p>对照同一时刻衣架发现的变化与远端收到的消息。</p></div>
+    <div class="picker"><label for="case">选择回放情景</label><select id="case"></select></div>
+  </div>
+  <section class="playhead" aria-label="回放控制">
+    <div class="clock"><span>时刻 · 分秒</span><output id="clock" for="frame"></output></div>
+    <div class="track"><label for="frame" class="tracklabel">关键帧 <span id="frame-count"></span></label><input id="frame" type="range" min="0" value="0" step="1" aria-label="选择回放关键帧"></div>
+    <div class="steps"><button id="prev" type="button" aria-label="上一帧" title="上一帧">‹</button><button id="next" type="button" aria-label="下一帧" title="下一帧">›</button></div>
+  </section>
+  <div class="boards">
+    <section class="local" aria-labelledby="local-label">
+      <div class="cardhead"><h2 id="local-label"><span class="led"></span>衣架现场</h2><span class="plate">LOCAL</span></div>
+      <div class="hero"><div class="headline"><div class="over">当前判断</div><h3 id="headline"></h3><p id="explain"></p></div>
+        <svg class="drawing" viewBox="0 0 260 145" role="img" aria-label="衣架横杆中央的观测位置示意">
+          <defs><pattern id="weave" width="5" height="5" patternUnits="userSpaceOnUse"><path d="M0 1h5M1 0v5" stroke="#cfebe6" opacity=".28" stroke-width=".7"/></pattern></defs>
+          <g fill="none" stroke-linecap="round" stroke-linejoin="round"><path d="M119 20a10 10 0 1 1 15 8q-5 3-5 11v5l81 46q9 6-2 6H51q-10 0-2-6l71-40" stroke="#a8d8d1" stroke-width="3"/>
+          <path d="M86 90q24-4 54 0l8 44q-28 5-58 0z" fill="#398181" stroke="#9ecac4" stroke-width="1.5"/><path d="M86 90q24-4 54 0l8 44q-28 5-58 0z" fill="url(#weave)"/>
+          <path d="M88 93h51m-45 36q23 3 48 0" stroke="#acd0c6" stroke-width="1" stroke-dasharray="2 3"/>
+          <circle cx="127" cy="94" r="6" fill="#ddf498" stroke="#113e44" stroke-width="2"/><path d="M135 94h36l14 18h35" stroke="#d5e99b" stroke-dasharray="2 3"/></g>
+          <text x="177" y="128" fill="#deeee4" font-size="10">横杆中央</text>
+        </svg>
+      </div>
+      <dl class="reads"><div><dt>中央接触</dt><dd id="contact"></dd></div><div><dt>本地雨头</dt><dd id="wet"></dd></div><div><dt>天气预报</dt><dd id="forecast"></dd></div></dl>
+    </section>
+    <section class="remote" aria-labelledby="remote-label">
+      <div class="cardhead"><h2 id="remote-label"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 18h11a4.2 4.2 0 0 0 .3-8.4A6.1 6.1 0 0 0 5.7 8.5 4.8 4.8 0 0 0 6 18Z"/></svg>远端视图</h2><span class="plate">REMOTE</span></div>
+      <div id="sync-tag" class="tag"></div><h3 id="remote-title"></h3><p id="remote-explain"></p>
+      <dl class="remote-info"><div><dt>最近服务保存</dt><dd id="saved"></dd></div><div><dt>最近模拟接收</dt><dd id="received"></dd></div><div><dt>真实手机送达</dt><dd>未知</dd></div></dl>
+      <details class="remote-more"><summary>查看远端依据</summary><dl class="facts"><div><dt>中央接触</dt><dd id="r-contact"></dd></div><div><dt>本地雨头</dt><dd id="r-wet"></dd></div><div><dt>天气预报</dt><dd id="r-forecast"></dd></div><div><dt>预测条件</dt><dd id="r-conditions"></dd></div></dl></details>
+    </section>
+  </div>
+  <div class="detail-grid">
+    <section class="details"><div class="section-title"><h2>干燥预测</h2><span>衣架侧</span></div>
+      <strong class="metric" id="estimate"></strong><p id="prediction-note"></p><dl class="facts"><div><dt>分析时刻</dt><dd id="analysis"></dd></div><div><dt>证据有效至</dt><dd id="expiry"></dd></div><div><dt>计算条件</dt><dd id="conditions"></dd></div><div><dt>充电热影响</dt><dd id="heat"></dd></div></dl>
+    </section>
+    <section class="details"><div class="section-title"><h2>消息与电量</h2><span>当前帧</span></div>
+      <dl class="facts"><div><dt>情景网络</dt><dd id="link"></dd></div><div><dt>历史待确认</dt><dd id="queue"></dd></div><div><dt>已淘汰历史</dt><dd id="drops"></dd></div><div><dt>电池模型存量</dt><dd id="energy"></dd></div><div><dt>最新状态</dt><dd id="delivery"></dd></div><div><dt>本帧新增提示</dt><dd id="notices"></dd></div></dl>
+    </section>
+  </div>
+  <section class="journal"><div class="section-title"><h2>事件记录</h2><span>截至当前帧 · 最近五次变化</span></div><ol id="events"></ol></section>
+  <footer>合成情景回放。干燥时间依赖列出的条件，尚未校准为实际收衣依据。</footer>
+  <noscript>请在浏览器中启用 JavaScript 以查看离线回放。</noscript>
+</main>
+<script type="application/json" id="replay-data">@@DATA@@</script>
+<script>@@SCRIPT@@</script>
+</body></html>

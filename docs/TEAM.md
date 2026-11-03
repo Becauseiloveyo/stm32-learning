@@ -4,6 +4,10 @@
 
 ## 工作方式
 
+### T11 P3 离线界面与总体审查
+
+按 [P3 任务书](team/assignments/integration-t11-p3.md) 分工。两个 Terra 工作者分别负责回放数据与资源核对。协调者负责界面、浏览器检查和总体验收。
+
 ### T11 P2 分工
 
 当前分工见 [P2 任务书](team/assignments/integration-t11-p2.md)。独立 Terra 算法对话负责电量，Terra 通知工作者负责持久消息，协调者独占接线、端到端验证和全局记录。

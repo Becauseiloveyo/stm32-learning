@@ -2,8 +2,8 @@
   "schema_version": 1,
   "updated_on": "2026-11-03",
   "phase": "theory_only_no_hardware_purchase",
-  "active_task": "T11",
-  "next_task": "T11",
+  "active_task": null,
+  "next_task": "T08",
   "tasks": {
     "T00": {
       "status": "done",
@@ -100,7 +100,7 @@
       ]
     },
     "T08": {
-      "status": "pending",
+      "status": "ready",
       "depends_on": [
         "T11"
       ]
@@ -251,12 +251,12 @@
       "scope": "Computer-only synthetic two-zone forward physics, central observation mapping, finite conditional candidate screening and sampled target times; no real calibration, collection authorization or deployed hardware."
     },
     "T11": {
-      "status": "in_progress",
+      "status": "done",
       "depends_on": [
         "T12"
       ],
       "handoff": "docs/T11-HANDOFF.md",
-      "milestone": "P2 accepted; P3 offline display and full T11 review next",
+      "milestone": "P3 accepted; offline T11 integration complete",
       "milestones": {
         "P1": {
           "status": "done",
@@ -282,11 +282,29 @@
           "scope": "Synthetic timed battery, real P1/M6 adapter, SQLite persistence and simulated receiver only."
         },
         "P3": {
-          "status": "pending",
-          "handoff": "docs/T11-P3-HANDOFF.md"
+          "status": "done",
+          "handoff": "docs/T11-P3-HANDOFF.md",
+          "frozen": "docs/team/baseline-t11-p3/snapshot.json",
+          "assignment": "docs/team/assignments/integration-t11-p3.md",
+          "evidence": [
+            "docs/verification/T11-P3-review.md",
+            "docs/verification/T11-P3-tests.json",
+            "research/integration_t11/p3/manifest.json",
+            "docs/T11-REPLAY-UI.md"
+          ],
+          "scope": "Two-view offline UI and T11 review using synthetic inputs, without hardware or real phone delivery."
         }
       },
-      "plan": "docs/T11-INTEGRATION-PLAN.md"
+      "plan": "docs/T11-INTEGRATION-PLAN.md",
+      "evidence": [
+        "docs/verification/T11-P1-review.md",
+        "docs/verification/T11-P2-review.md",
+        "docs/verification/T11-P3-review.md",
+        "docs/verification/T11-P3-tests.json",
+        "docs/T11-ACCEPTANCE-MATRIX.md",
+        "docs/T11-RESOURCE-REVIEW.md",
+        "docs/demo/hanger.html"
+      ]
     },
     "T12": {
       "status": "done",
@@ -325,7 +343,8 @@
     "M3 的初始水量 0.06/0.03 kg 合成例在 60 s 的 RH 比例最大差约 8.65e-5；仅在指定误差和模型下相容，不证明真实面料不可辨识。通过观测必要条件也不能证明未测织物等温。",
     "M4 对同一候选整个窗口使用共同偏差，合成高/低水量候选均相容、第三组不相容；未知或失败保留，不输出水量界或概率。声明误差界不是实测或严格数值证明。",
     "M5 将覆盖交换、水汽比内能、液水输入/排液和温度边界跳变分别记账；RH 响应连续。外部热库、中央映射、覆盖热影响及仪器参数仍未标定。",
-    "T11 P2 已在电脑接通能量准入与消息持久化。本地受水后到模拟接收在两组合成情景分别为 6 秒与 86 秒；远端离线时仅知道最后同步且尚有效的证据。"
+    "T11 P2 已在电脑接通能量准入与消息持久化。本地受水后到模拟接收在两组合成情景分别为 6 秒与 86 秒；远端离线时仅知道最后同步且尚有效的证据。",
+    "T11 的电脑离线范围已验收。衣架和远端各自保留分析时刻、证据期限与条件；不能把单中央观测、模型上界或模拟接收当成整衣已干或手机送达。"
   ],
   "open_issues": [
     {
@@ -439,46 +458,48 @@
   ],
   "last_handoff": {
     "task": "T11",
-    "kind": "P2_accepted_P3_prepared",
-    "summary": "已接受电量与持久链路的离线联动。九个回放、进程中断与冷启动、过期重试和充电边界均有证据。T11 总体仍进行中。",
+    "kind": "T11_accepted_T08_ready",
+    "summary": "完成 P3 中文离线回放、T11 验收矩阵与 MCU 资源候选核算，限定电脑理论联动范围。下一项为 T08 理论评审。",
     "changed_files": [
+      "README.md",
       "docs/DECISIONS.md",
       "docs/ROADMAP.md",
       "docs/STATUS.json",
-      "docs/T11-P2-TRANSPORT.md",
-      "docs/T11-P3-HANDOFF.md",
+      "docs/T11-ACCEPTANCE-MATRIX.md",
+      "docs/T11-REPLAY-UI.md",
+      "docs/T11-RESOURCE-REVIEW.md",
       "docs/TEAM.md",
-      "docs/team/assignments/integration-t11-p2.md",
-      "docs/team/baseline-t11-p2/snapshot.json",
-      "docs/team/reports/power-t11-p2.md",
-      "docs/team/reports/transport-t11-p2.md",
-      "docs/verification/T11-P2-review.md",
-      "docs/verification/T11-P2-tests.json",
-      "research/integration_t11/p2/power.py",
-      "research/integration_t11/p2/replay.py",
-      "research/integration_t11/p2/results/manifest.json",
-      "research/integration_t11/p2/results/replay.json",
-      "research/integration_t11/p2/runner.py",
-      "research/integration_t11/p2/test_integration.py",
-      "research/integration_t11/p2/test_power.py",
-      "research/integration_t11/p2/test_transport.py",
-      "research/integration_t11/p2/transport.py",
-      "tools/check_integration_power_transport.py"
+      "docs/demo/hanger.html",
+      "docs/team/assignments/integration-t11-p3.md",
+      "docs/team/baseline-t11-p3/snapshot.json",
+      "docs/team/reports/projection-t11-p3.md",
+      "docs/team/reports/resource-t11-p3.md",
+      "docs/verification/T11-P3-review.md",
+      "docs/verification/T11-P3-tests.json",
+      "output/playwright/t11-p3/desktop.png",
+      "output/playwright/t11-p3/mobile.png",
+      "research/integration_t11/p3/browser_review.js",
+      "research/integration_t11/p3/build_panel.py",
+      "research/integration_t11/p3/manifest.json",
+      "research/integration_t11/p3/panel.css",
+      "research/integration_t11/p3/panel.html",
+      "research/integration_t11/p3/panel.js",
+      "research/integration_t11/p3/projection.py",
+      "research/integration_t11/p3/test_projection.py",
+      "tools/check_hanger_panel.py"
     ],
     "verification": [
-      "python -B -X utf8 tools/check_integration_power_transport.py --write-receipt 通过五组检查。电量 8 项、消息 7 项、独立联动 9 项，合计 24 项测试。",
-      "九个合成情景重新运行后，回放及清单字节一致。收据绑定 190 个文件，含已验收 P1 的 172 个文件，七个冻结入口匹配。",
-      "分别在设备队列事务写入中和提交后强退子进程，恢复旧态或新态，并验证满队列、旧 ACK 与重启后不复活旧提醒。",
-      "22 个暂存文件与工作区字节一致，72 个文档相对链接有效，暂存空白检查通过。暂存树导出副本上的 project_status 与 P2 收据核查通过。",
-      "内容提交 56431ba6918fd1829ec018a1b62853d7efcb14c7 已推送，远程 master 与审查文件 blob 已复核。"
+      "P3 收据绑定 210 个文件；HTML 与来源清单从模型重新生成后逐字节一致。七项投影测试通过，九个旧情景的动作序列与 P2 一致。",
+      "Edge 实际遍历 16 个情景、264 帧；选定帧验证受水、过期、撤销、远端滞后及确认去重。键盘和 320/390/768/1344 px 宽度通过。窄屏和桌面截图已查看。",
+      "Chrome 以本地 file 方式直接打开单文件 HTML，默认现场标题和模拟接收时刻正确。T11 的 P1/P2 验收证据依旧有效。"
     ],
-    "limitations": "单写者、可信单调逻辑时钟的电脑模拟。未购置硬件，未评估真实续航、传感器识别率、Flash 或手机送达。所有收衣授权为 false。",
+    "limitations": "合成数据、可信单写者、电脑端推算，仅模拟接收；没有实物判干率、真实手机推送或目标 MCU 占用证据。",
     "unresolved_issues": [
-      "P3 最小状态界面和 T11 全矩阵逐项核对。",
-      "MCU 端队列和样本占用、长期历史与去重键的安全回收。",
-      "掉电后电池与执行器状态、真实证据校准、充电口防水、远程认证和手机投递须另行实测。"
+      "T08 要把 R01–R21 逐项对应到证据、未知值和最小实验，并给出 BOM 数量与可追溯报价或未知值。",
+      "真实中央接触可靠性、风吹和日照、充电口防水、测量热影响、无线峰值电流和目标 MCU RAM/Flash 需后续校准或实测。",
+      "长期掉电恢复与安全回收、真实离家通知与送达时延仍需有设备后验证。"
     ],
-    "resume_action": "保持 T11 in_progress；下一次继续时先核对 P2 收据，按 docs/T11-P3-HANDOFF.md 开始 P3 中文离线状态界面与总体审查，暂不转 T08。"
+    "resume_action": "开始 T08 理论阶段评审。先核对 tools/check_hanger_panel.py --check-receipt，再按 ROADMAP 的 T08 对照 R01–R21 编写 docs/THEORY-REVIEW.md 并更新最小硬件验证计划；当前不采购、不部署。"
   },
   "team_work": {
     "mode": "shared_checkout_with_file_ownership",
@@ -673,6 +694,28 @@
         "dispatch_state": "delivery_submitted",
         "review_state": "accepted_P2_restricted",
         "coordinator_review": "docs/verification/T11-P2-review.md"
+      },
+      "p3_projection": {
+        "scope": "T11 P3 projection",
+        "assignment": "docs/team/assignments/integration-t11-p3.md",
+        "baseline": "docs/team/baseline-t11-p3/snapshot.json",
+        "model": "gpt-6.1-terra",
+        "thinking": "high",
+        "report": "docs/team/reports/projection-t11-p3.md",
+        "dispatch_state": "delivery_submitted",
+        "review_state": "accepted_P3_restricted",
+        "coordinator_review": "docs/verification/T11-P3-review.md"
+      },
+      "p3_resource": {
+        "scope": "T11 P3 resource",
+        "assignment": "docs/team/assignments/integration-t11-p3.md",
+        "baseline": "docs/team/baseline-t11-p3/snapshot.json",
+        "model": "gpt-6.1-terra",
+        "thinking": "high",
+        "report": "docs/team/reports/resource-t11-p3.md",
+        "dispatch_state": "delivery_submitted",
+        "review_state": "accepted_P3_restricted",
+        "coordinator_review": "docs/verification/T11-P3-review.md"
       }
     },
     "model_policy": {
@@ -910,21 +953,12 @@
   "github_sync": {
     "repository": "Becauseiloveyo/stm32-learning",
     "branch": "master",
-    "baseline_commit": "823af525e8626a5eed726e3262b8bc16318dcc35",
-    "status": "synced",
-    "scope": "T11 P2 battery and persistent notifications, P3 handoff",
-    "prepared_content_verified": true,
-    "evidence": "docs/verification/T11-P2-review.md",
-    "receipt_note": "同步核对记录另行提交，避免自引用。",
-    "resume_action": "P2 已同步；下一步按 docs/T11-P3-HANDOFF.md 开始 T11 P3。",
-    "verified_on": "2026-11-03",
-    "verified_content_commit": "56431ba6918fd1829ec018a1b62853d7efcb14c7",
-    "remote_head_at_verification": "56431ba6918fd1829ec018a1b62853d7efcb14c7",
-    "last_attempt_on": "2026-11-03",
-    "last_attempt_errors": [],
-    "verification": [
-      "正常推送成功，git ls-remote 的 master 指向内容提交 56431ba6918fd1829ec018a1b62853d7efcb14c7。",
-      "GitHub 连接器复读 master 上的 P2 审查文件，blob 9917ced76ffd92bac53a14af9e27407aa5ca73cc 与本地一致。"
-    ]
+    "baseline_commit": "123b7f3dbadc3253c0c4e063f45a23585a6a569e",
+    "status": "prepared",
+    "scope": "T11 P3 offline replay UI and T11 acceptance; T08 ready",
+    "evidence": "docs/verification/T11-P3-review.md",
+    "prepared_content_verified": false,
+    "receipt_note": "另行记录内容提交校验，避免自引用。",
+    "resume_action": "核对暂存树并正常推送，复读 GitHub 上的 HTML。"
   }
 }

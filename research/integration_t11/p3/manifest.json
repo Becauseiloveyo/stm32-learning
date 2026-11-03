@@ -1,0 +1,43 @@
+{
+  "version": "t11-p3-v1",
+  "label": "SYNTHETIC_UNCALIBRATED",
+  "seed": null,
+  "page": "docs/demo/hanger.html",
+  "page_sha256": "74f000277b07d824e2e39f627e96283826731411b10a2450a9deeb0c7a49c827",
+  "collection_authorized": false,
+  "real_phone_delivery": null,
+  "frames": {
+    "wet_connected": 16,
+    "wet_reconnect": 18,
+    "change_offline": 20,
+    "boot_offline": 20,
+    "ack_lost": 19,
+    "manual_charge": 17,
+    "no_charge": 8,
+    "missing_packet": 11,
+    "normal_cycle": 14,
+    "forecast_boundary": 19,
+    "forecast_wet": 20,
+    "contact_missing": 17,
+    "queue_full": 15,
+    "model_mismatch": 14,
+    "fault_revoke": 18,
+    "probe_obstructed": 18
+  },
+  "frozen_sha256": {
+    "docs/verification/T11-P2-tests.json": "46a1d18d536ff1c5c39565a89731360355e959b8930759174a391ec925fca114",
+    "docs/T11-P3-HANDOFF.md": "4a166a84439732bde2e93206496300e3abe840b983751d4b899b13adf7568f6e",
+    "research/integration_t11/p1/controller.py": "7d963fccd8cac171b698169f2543d0e403e3268c38eecc8cd7ea98ad746287a6",
+    "research/integration_t11/p2/runner.py": "3ad4b836f2fba98b47f7bc6f7bb2342d38c2d75794d8eaace52a7ad6d61a8237",
+    "research/integration_t11/p2/replay.py": "7ff8511a51f4037d43f7f6b2cfe17f11fedd9bb0826c9a8c96b8cd735a9b0e1b",
+    "research/integration_t11/p2/transport.py": "415d6deebf93eb2aa1bdd94c08cbc710be8603d5ca1cd1f2cde8c9950b666ceb",
+    "research/integration_t11/p2/results/replay.json": "43214a3f36a9c858ae071c63a1a489ee777abd9f715903fa52748d955087afab"
+  },
+  "sources": {
+    "research/integration_t11/p3/panel.html": "fcf4c615f7212763ea3d1b3868942204519c74015082b55fc5e6fabe21e80640",
+    "research/integration_t11/p3/panel.css": "dbcfd710c9efe0eee372db90a00bc984ab33ad064320feebade89fbfc5055ab2",
+    "research/integration_t11/p3/panel.js": "411ca520f8814d16f73cd76ae77af9c18082d10f4ab763de5e033dc2e31565b9",
+    "research/integration_t11/p3/projection.py": "b40922e46fef8db263df97ab234722e2be2668e0e50e4bab1dc451fd18c76106",
+    "research/integration_t11/p3/build_panel.py": "3c47489bea04a02ecd7af8447ffb977358fadc5a6de1fcb8fcaaeda706c320f2"
+  }
+}
