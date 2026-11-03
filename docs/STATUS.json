@@ -484,7 +484,9 @@
       "python -B -X utf8 tools/project_status.py --check 和 tools/check_hanger_panel.py --check-receipt 通过；T11 的 210 个文件来源记录有效，仅核对收据。",
       "python -B -X utf8 tools/check_theory_review.py --write-receipt 后进行只读复核，R01–R21 各有唯一条目、状态、证据路径及后续核验列。本包绑定 38 个来源。",
       "从既有收据/产物核对约 60 g 合成反例、两种协议的腔壁等效、武汉数据字节及五变量样本数、本地至模拟接收 6/86 s 等证据。未重跑未变化的模型或新增设备实验。",
-      "核对 T08 引用的织物实验期刊页、衣架专利摘要与 Adafruit 5665 模块单价；开发台参考报价不作为整机/国内零售价。"
+      "核对 T08 引用的织物实验期刊页、衣架专利摘要与 Adafruit 5665 模块单价；开发台参考报价不作为整机/国内零售价。",
+      "11 个暂存文件字节一致，155 个文档相对链接有效。导出暂存树后，项目状态与 T08 来源检查均通过。",
+      "远程内容提交 3a030d62eace85b01fc6d0eed5410ccc0be5bc12 已核对；新空仓库复读两项交付与本地一致。"
     ],
     "limitations": "本轮交付文件和已有证据审查。真实衣物批次数为零，中央代表性、阈值、概率、创新优势、续航及真机手机提醒均未实测。核价仅一个模块实例，其余费用保留未知。",
     "unresolved_issues": [
@@ -957,11 +959,22 @@
     "repository": "Becauseiloveyo/stm32-learning",
     "branch": "master",
     "baseline_commit": "6698eb50ad49f150a28536b06b11d5bbd591ef25",
-    "status": "prepared",
+    "status": "synced",
     "scope": "T08 theory review and minimal validation plan; H01 deferred",
-    "prepared_content_verified": false,
+    "prepared_content_verified": true,
     "evidence": "docs/verification/T08-review.json",
     "receipt_note": "同步回执另行提交，避免提交自引用。",
-    "resume_action": "核对暂存树并推送，复读远程评审。"
+    "resume_action": "T08 已同步，H01 待用户明确改变预算或实施条件。",
+    "verified_on": "2026-11-03",
+    "last_attempt_on": "2026-11-03",
+    "verified_content_commit": "3a030d62eace85b01fc6d0eed5410ccc0be5bc12",
+    "remote_head_at_verification": "3a030d62eace85b01fc6d0eed5410ccc0be5bc12",
+    "verification": [
+      "普通推送成功，git ls-remote 显示 master 指向内容提交 3a030d62eace85b01fc6d0eed5410ccc0be5bc12。",
+      "在全新空 Git 对象库从 GitHub master 浅抓取，核对 FETCH_HEAD；总评审与首轮计划均与本地逐字节一致。"
+    ],
+    "last_attempt_errors": [
+      "GitHub 连接器两次读取返回传输错误。独立空对象库抓取已成功核实远端实际内容。"
+    ]
   }
 }
