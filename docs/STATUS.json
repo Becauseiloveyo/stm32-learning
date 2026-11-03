@@ -3,7 +3,7 @@
   "updated_on": "2026-11-03",
   "phase": "theory_only_no_hardware_purchase",
   "active_task": null,
-  "next_task": "T08",
+  "next_task": null,
   "tasks": {
     "T00": {
       "status": "done",
@@ -100,10 +100,16 @@
       ]
     },
     "T08": {
-      "status": "ready",
+      "status": "done",
       "depends_on": [
         "T11"
-      ]
+      ],
+      "evidence": [
+        "docs/THEORY-REVIEW.md",
+        "first-validation-plan.md",
+        "docs/verification/T08-review.json"
+      ],
+      "scope": "Course-design review only. Real garment ground truth, power and mobile delivery remain untested."
     },
     "H01": {
       "status": "deferred",
@@ -344,7 +350,8 @@
     "M4 对同一候选整个窗口使用共同偏差，合成高/低水量候选均相容、第三组不相容；未知或失败保留，不输出水量界或概率。声明误差界不是实测或严格数值证明。",
     "M5 将覆盖交换、水汽比内能、液水输入/排液和温度边界跳变分别记账；RH 响应连续。外部热库、中央映射、覆盖热影响及仪器参数仍未标定。",
     "T11 P2 已在电脑接通能量准入与消息持久化。本地受水后到模拟接收在两组合成情景分别为 6 秒与 86 秒；远端离线时仅知道最后同步且尚有效的证据。",
-    "T11 的电脑离线范围已验收。衣架和远端各自保留分析时刻、证据期限与条件；不能把单中央观测、模型上界或模拟接收当成整衣已干或手机送达。"
+    "T11 的电脑离线范围已验收。衣架和远端各自保留分析时刻、证据期限与条件；不能把单中央观测、模型上界或模拟接收当成整衣已干或手机送达。",
+    "T08 已对 R01–R21 逐项核对。现有单中央输入存在不同未测区水量的合成反例；先用整件质量与厚层独立参考检验代表性，再决定主动换气是否值得自动化。没有衣物实测、安全收衣、续航或真机送达证据。"
   ],
   "open_issues": [
     {
@@ -457,51 +464,34 @@
     }
   ],
   "last_handoff": {
-    "task": "T11",
-    "kind": "T11_accepted_T08_ready",
-    "summary": "完成 P3 中文离线回放、T11 验收矩阵与 MCU 资源候选核算，限定电脑理论联动范围。下一项为 T08 理论评审。",
+    "task": "T08",
+    "kind": "theory_review_complete_H01_deferred",
+    "summary": "理论阶段总评审完成，21 项要求都有证据与未知项。第一轮实物计划、验证顺序、对照及候选物料数量已整理，H01 尚未启动。",
     "changed_files": [
       "README.md",
       "docs/DECISIONS.md",
       "docs/ROADMAP.md",
       "docs/STATUS.json",
-      "docs/T11-ACCEPTANCE-MATRIX.md",
-      "docs/T11-REPLAY-UI.md",
-      "docs/T11-RESOURCE-REVIEW.md",
       "docs/TEAM.md",
-      "docs/demo/hanger.html",
-      "docs/team/assignments/integration-t11-p3.md",
-      "docs/team/baseline-t11-p3/snapshot.json",
-      "docs/team/reports/projection-t11-p3.md",
-      "docs/team/reports/resource-t11-p3.md",
-      "docs/verification/T11-P3-review.md",
-      "docs/verification/T11-P3-tests.json",
-      "output/playwright/t11-p3/desktop.png",
-      "output/playwright/t11-p3/mobile.png",
-      "research/integration_t11/p3/browser_review.js",
-      "research/integration_t11/p3/build_panel.py",
-      "research/integration_t11/p3/manifest.json",
-      "research/integration_t11/p3/panel.css",
-      "research/integration_t11/p3/panel.html",
-      "research/integration_t11/p3/panel.js",
-      "research/integration_t11/p3/projection.py",
-      "research/integration_t11/p3/test_projection.py",
-      "tools/check_hanger_panel.py"
+      "docs/THEORY-REVIEW.md",
+      "docs/team/assignments/review-t08.md",
+      "docs/team/reports/validation-t08.md",
+      "docs/verification/T08-review.json",
+      "first-validation-plan.md",
+      "tools/check_theory_review.py"
     ],
     "verification": [
-      "P3 收据绑定 210 个文件；HTML 与来源清单从模型重新生成后逐字节一致。七项投影测试通过，九个旧情景的动作序列与 P2 一致。",
-      "Edge 实际遍历 16 个情景、264 帧；选定帧验证受水、过期、撤销、远端滞后及确认去重。键盘和 320/390/768/1344 px 宽度通过。窄屏和桌面截图已查看。",
-      "Chrome 以本地 file 方式直接打开单文件 HTML，默认现场标题和模拟接收时刻正确。T11 的 P1/P2 验收证据依旧有效。",
-      "26 个暂存文件与工作区字节相同，109 个文档相对链接有效。暂存树导出后，项目入口检查与 P3 收据检查通过。",
-      "内容提交 c0facdd1c6e13e7a78339da086c614dcd90fae13 已同步，HTML 原始字节经远程核对。"
+      "python -B -X utf8 tools/project_status.py --check 和 tools/check_hanger_panel.py --check-receipt 通过；T11 的 210 个文件来源记录有效，仅核对收据。",
+      "python -B -X utf8 tools/check_theory_review.py --write-receipt 后进行只读复核，R01–R21 各有唯一条目、状态、证据路径及后续核验列。本包绑定 38 个来源。",
+      "从既有收据/产物核对约 60 g 合成反例、两种协议的腔壁等效、武汉数据字节及五变量样本数、本地至模拟接收 6/86 s 等证据。未重跑未变化的模型或新增设备实验。",
+      "核对 T08 引用的织物实验期刊页、衣架专利摘要与 Adafruit 5665 模块单价；开发台参考报价不作为整机/国内零售价。"
     ],
-    "limitations": "合成数据、可信单写者、电脑端推算，仅模拟接收；没有实物判干率、真实手机推送或目标 MCU 占用证据。",
+    "limitations": "本轮交付文件和已有证据审查。真实衣物批次数为零，中央代表性、阈值、概率、创新优势、续航及真机手机提醒均未实测。核价仅一个模块实例，其余费用保留未知。",
     "unresolved_issues": [
-      "T08 要把 R01–R21 逐项对应到证据、未知值和最小实验，并给出 BOM 数量与可追溯报价或未知值。",
-      "真实中央接触可靠性、风吹和日照、充电口防水、测量热影响、无线峰值电流和目标 MCU RAM/Flash 需后续校准或实测。",
-      "长期掉电恢复与安全回收、真实离家通知与送达时延仍需有设备后验证。"
+      "H01 待用户明确改变预算或实施条件。先检验中央与其他可能慢干部位，记录质量参考及其误差、接触与不确定终点。",
+      "后续整批留出、主动相对被动收益、热恢复、充电口防护、电源峰值和目标内存、真实远程投递均有待独立验证。"
     ],
-    "resume_action": "开始 T08 理论阶段评审。先核对 tools/check_hanger_panel.py --check-receipt，再按 ROADMAP 的 T08 对照 R01–R21 编写 docs/THEORY-REVIEW.md 并更新最小硬件验证计划；当前不采购、不部署。"
+    "resume_action": "零采购理论路线已评审完毕，当前无可自动执行的实物任务。可查阅 docs/THEORY-REVIEW.md；用户明确改变预算或实施条件后，按 first-validation-plan.md 与 ROADMAP 的 H01 从首个现实反证开始。"
   },
   "team_work": {
     "mode": "shared_checkout_with_file_ownership",
@@ -718,6 +708,17 @@
         "dispatch_state": "delivery_submitted",
         "review_state": "accepted_P3_restricted",
         "coordinator_review": "docs/verification/T11-P3-review.md"
+      },
+      "t08_validation": {
+        "scope": "T08 future validation plan",
+        "assignment": "docs/team/assignments/review-t08.md",
+        "report": "docs/team/reports/validation-t08.md",
+        "agent": "/root/t08_validation",
+        "model": "gpt-6.1-terra",
+        "thinking": "high",
+        "dispatch_state": "delivery_submitted",
+        "review_state": "accepted_T08_restricted",
+        "coordinator_review": "docs/THEORY-REVIEW.md"
       }
     },
     "model_policy": {
@@ -955,21 +956,12 @@
   "github_sync": {
     "repository": "Becauseiloveyo/stm32-learning",
     "branch": "master",
-    "baseline_commit": "123b7f3dbadc3253c0c4e063f45a23585a6a569e",
-    "status": "synced",
-    "scope": "T11 P3 offline replay UI and T11 acceptance; T08 ready",
-    "evidence": "docs/verification/T11-P3-review.md",
-    "prepared_content_verified": true,
-    "receipt_note": "另行记录内容提交校验，避免自引用。",
-    "resume_action": "T11 已同步；下一步按 ROADMAP T08 做理论阶段评审。",
-    "verified_on": "2026-11-03",
-    "verified_content_commit": "c0facdd1c6e13e7a78339da086c614dcd90fae13",
-    "remote_head_at_verification": "c0facdd1c6e13e7a78339da086c614dcd90fae13",
-    "last_attempt_on": "2026-11-03",
-    "last_attempt_errors": [],
-    "verification": [
-      "推送成功，git ls-remote 核对 master 为 c0facdd1c6e13e7a78339da086c614dcd90fae13。",
-      "通过 GitHub 连接器复读 docs/demo/hanger.html，远程 blob 36cf2618386cca532ee0ff412f10041dbbf153c2 与本机一致。"
-    ]
+    "baseline_commit": "6698eb50ad49f150a28536b06b11d5bbd591ef25",
+    "status": "prepared",
+    "scope": "T08 theory review and minimal validation plan; H01 deferred",
+    "prepared_content_verified": false,
+    "evidence": "docs/verification/T08-review.json",
+    "receipt_note": "同步回执另行提交，避免提交自引用。",
+    "resume_action": "核对暂存树并推送，复读远程评审。"
   }
 }

@@ -6,6 +6,8 @@
 
 **打开[晾衣观察室](docs/demo/hanger.html)**，可以对照衣架本地和远端在同一秒看到的状态。在 GitHub 文件页下载原始 HTML 后双击即可离线使用。[回放操作与数据说明](docs/T11-REPLAY-UI.md)
 
+课程设计的[理论评审](docs/THEORY-REVIEW.md)逐项回答 21 项要求，列出已验证的模型行为与未测的产品能力。后续若具备实物条件，从[中央接触能否代表整件衣物的最小实验](first-validation-plan.md)开始。
+
 ![衣架在断网时检测到受水，远端仍显示上次同步的条件预测](output/playwright/t11-p3/desktop.png)
 
 研究依据和阶段安排见[开发计划书](docs/NEXT-PHASE-PLAN.md)。日照仍是衣物干燥模型的输入。
